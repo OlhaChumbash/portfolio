@@ -29,6 +29,11 @@ jobs:
 
       - run: npm run generate
 
+      - name: Check generated files
+        run: |
+          ls -la dist
+          head -30 dist/index.html
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
