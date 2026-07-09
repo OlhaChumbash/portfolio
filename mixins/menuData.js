@@ -6,19 +6,19 @@ export default {
           id: 1,
           hasDropdown: false,
           title: this.$t('menu.university'),
-          link: "#university",
+          link: '#university',
         },
         {
           id: 2,
           title: this.$t('menu.faculties'),
           hasDropdown: false,
-          link: "#faculties",
+          link: '#faculties',
         },
         {
           id: 3,
           title: this.$t('menu.contacts'),
           hasDropdown: false,
-          link: "#contacts",
+          link: '#contacts',
         }
       ]
     }
