@@ -1,7 +1,6 @@
 <template>
-  <div>
-    <header-one :top_bar="false" :commonOffcanvas="true" />
-    <about-me-topbar/>
+  <LayoutMain>
+    <HeroBlock/>
     <about-me-info/>
     <personal-port-services :style_2="true" />
     <personal-port-skills/>
@@ -9,19 +8,16 @@
     <about-me-testimonial/>
     <agency-brands :spacing="true" :style_2="true" />
     <about-cta/>
-    <footer-six :style_2="true"/>
-    <back-to-top />
-  </div>
+   </LayoutMain>
 </template>
 
 <script>
-import HeaderOne from "~~/layouts/headers/HeaderOne.vue";
+import LayoutMain  from "~~/layouts/LayoutMain.vue"; 
+import HeroBlock from '~/components/index/HeroBlock.vue';
 import AboutMeTopbar from '~~/components/abouts/about-page-com/AboutMeTopbar.vue';
 import PersonalPortServices from "~~/components/services/PersonalPortServices.vue";
 import AgencyBrands from '~~/components/brands/AgencyBrands.vue';
 import AboutCta from '~~/components/cta/AboutCta.vue';
-import FooterSix from '~~/layouts/footers/FooterSix.vue';
-import BackToTop from "~~/layouts/footers/component/BackToTop.vue";
 import AboutMeInfo from '~~/components/abouts/about-page-com/AboutMeInfo.vue';
 import PersonalPortSkills from '~~/components/skills/PersonalPortSkills.vue';
 import AboutMePortfolio from '~~/components/abouts/about-page-com/AboutMePortfolio.vue';
@@ -29,12 +25,11 @@ import AboutMeTestimonial from '~~/components/testimonials/AboutMeTestimonial.vu
 
 export default {
   components: {
-    HeaderOne,
-    BackToTop,
+    LayoutMain,
+    HeroBlock,
     PersonalPortServices,
     AgencyBrands,
     AboutCta,
-    FooterSix,
     AboutMeTopbar,
     AboutMeInfo,
     PersonalPortSkills,
