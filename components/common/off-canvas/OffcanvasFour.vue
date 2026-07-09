@@ -31,10 +31,10 @@
               <nav>
                   <ul>
                     <li><nuxt-link href="/home-agency">Home</nuxt-link></li>
-                    <li><nuxt-link href="/about">About</nuxt-link></li>
-                    <li><nuxt-link href="/services">Service</nuxt-link></li>
-                    <li><nuxt-link href="/blog-grid">Blog</nuxt-link></li>
-                    <li><nuxt-link href="/portfolio">Portfoilo</nuxt-link></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
                     <li><nuxt-link href="/contact">Contact</nuxt-link></li>
                   </ul>
               </nav>

@@ -51,12 +51,12 @@
 
                 <div class="footer__widget-content">
                   <ul>
-                    <li><nuxt-link href="/home-startup">Home</nuxt-link></li>
-                    <li><nuxt-link href="/about">About</nuxt-link></li>
-                    <li><nuxt-link href="/services">Service</nuxt-link></li>
-                    <li><nuxt-link href="/portfolio-2">Portfoilo</nuxt-link></li>
-                    <li><nuxt-link href="/blog">News</nuxt-link></li>
-                    <li><nuxt-link href="/contact">Contact</nuxt-link></li>
+                    <li><a href="#top">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#blog">News</a></li>
+                    <li><a href="#contact">Contact</a></li>
                   </ul>
                 </div>
               </div>
@@ -67,12 +67,12 @@
 
                 <div class="footer__widget-content">
                   <ul>
-                    <li><nuxt-link href="/job">Careers</nuxt-link></li>
-                    <li><nuxt-link href="/job">Job Post</nuxt-link></li>
-                    <li><nuxt-link href="/portfolio-2">Case Studies</nuxt-link></li>
-                    <li><nuxt-link href="/help">Need Help</nuxt-link></li>
-                    <li><nuxt-link href="/register">Register</nuxt-link></li>
-                    <li><nuxt-link href="/error">Error 404</nuxt-link></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Job Post</a></li>
+                    <li><a href="#portfolio">Case Studies</a></li>
+                    <li><a href="#contact">Need Help</a></li>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">Error 404</a></li>
                   </ul>
                 </div>
               </div>
@@ -111,8 +111,8 @@
             <div class="row">
               <div class="col-md-4 col-sm-6">
                 <div class="footer__link-7">
-                  <nuxt-link href="/policy">Privacy Policy</nuxt-link>
-                  <nuxt-link href="/terms">Terms of Use</nuxt-link>
+                  <a href="#">Privacy Policy</a>
+                  <a href="#">Terms of Use</a>
                 </div>
               </div>
               <div class="col-md-4 col-sm-6">

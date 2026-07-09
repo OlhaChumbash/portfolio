@@ -33,25 +33,25 @@
                             <li><nuxt-link href="/home-freelancer">Freelancer</nuxt-link></li>
                         </ul>
                       </li>
-                      <li><nuxt-link href="/about">About</nuxt-link></li>
+                      <li><a href="#about">About</a></li>
                       <li class="has-dropdown">
-                        <nuxt-link href="/services">Service</nuxt-link>
+                        <a href="#services">Service</a>
                         <ul class="submenu">
-                            <li><nuxt-link href="/services">Classic Style</nuxt-link></li>
-                            <li><nuxt-link href="/services-2">Creative Agency</nuxt-link></li>
-                            <li><nuxt-link href="/services-3">UI Service</nuxt-link></li>
+                            <li><a href="#services">Classic Style</a></li>
+                            <li><a href="#services">Creative Agency</a></li>
+                            <li><a href="#services">UI Service</a></li>
                         </ul>
                       </li>
-                      <li><nuxt-link href="/blog-grid">Blog</nuxt-link></li>
+                      <li><a href="#blog">Blog</a></li>
                       <li class="has-dropdown">
-                        <nuxt-link href="/portfolio">Portfoilo</nuxt-link>
+                        <a href="#portfolio">Portfoilo</a>
                         <ul class="submenu">
-                            <li><nuxt-link href="/portfolio">Classic Style</nuxt-link></li>
-                            <li><nuxt-link href="/portfolio-metro">Metro Style</nuxt-link></li>
-                            <li><nuxt-link href="/portfolio-slider">Classic Slider</nuxt-link></li>
+                            <li><a href="#portfolio">Classic Style</a></li>
+                            <li><a href="#portfolio">Metro Style</a></li>
+                            <li><a href="#portfolio">Classic Slider</a></li>
                         </ul>
                       </li>
-                      <li><nuxt-link href="/contact">Contact</nuxt-link></li>
+                      <li><a href="#contact">Contact</a></li>
                   </ul>
                 </nav>
             </div>
