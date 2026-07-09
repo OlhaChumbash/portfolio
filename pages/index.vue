@@ -1,43 +1,50 @@
 <template>
-  <Layout>
-    <LawyerBanner/>
-    <LawyerAwards/>
-    <!-- <LawyerCases/> -->
-    <LawyerAbout/>
-    <LawyerFunFact/>
-    <!-- <LawyerHistory/> -->
-    <lawyerVideo/>
-    <LawyerServices/>
-    <!-- <LawyerBlogs/>
-    <LawyerTestimonial/>
-    <LawyerTeams/>
-    <LawyerCounter/> -->
-    <LawyerContact/>
-  </Layout>
+  <div>
+    <header-one :top_bar="false" :commonOffcanvas="true" />
+    <about-me-topbar/>
+    <about-me-info/>
+    <personal-port-services :style_2="true" />
+    <personal-port-skills/>
+    <about-me-portfolio/>
+    <about-me-testimonial/>
+    <agency-brands :spacing="true" :style_2="true" />
+    <about-cta/>
+    <footer-six :style_2="true"/>
+    <back-to-top />
+  </div>
 </template>
 
-<script setup>
-import Layout from '~/layouts/LayoutTwo.vue';
-import LawyerBanner from '~/components/hero-banner/LawyerBanner.vue';
-import LawyerAwards from '~/components/awards/LawyerAwards.vue';
-// import LawyerCases from '~/components/portfolios/LawyerCases.vue';
-import LawyerAbout from '~/components/abouts/LawyerAbout.vue';
-import LawyerFunFact from '~/components/fun-facts/LawyerFunFact.vue';
-// import LawyerHistory from '~/components/history/LawyerHistory.vue';
-import LawyerServices from '~/components/services/LawyerServices.vue';
+<script>
+import HeaderOne from "~~/layouts/headers/HeaderOne.vue";
+import AboutMeTopbar from '~~/components/abouts/about-page-com/AboutMeTopbar.vue';
+import PersonalPortServices from "~~/components/services/PersonalPortServices.vue";
+import AgencyBrands from '~~/components/brands/AgencyBrands.vue';
+import AboutCta from '~~/components/cta/AboutCta.vue';
+import FooterSix from '~~/layouts/footers/FooterSix.vue';
+import BackToTop from "~~/layouts/footers/component/BackToTop.vue";
+import AboutMeInfo from '~~/components/abouts/about-page-com/AboutMeInfo.vue';
+import PersonalPortSkills from '~~/components/skills/PersonalPortSkills.vue';
+import AboutMePortfolio from '~~/components/abouts/about-page-com/AboutMePortfolio.vue';
+import AboutMeTestimonial from '~~/components/testimonials/AboutMeTestimonial.vue';
 
-import lawyerVideo from '~/components/video-area/LawyerVideo.vue';
-
-// import LawyerBlogs from '~/components/blogs/LawyerBlogs.vue';
-// import LawyerTestimonial from '~/components/testimonials/LawyerTestimonial.vue';
-// import LawyerTeams from '~/components/teams/LawyerTeams.vue';
-// import LawyerCounter from '~~/components/counters/LawyerCounter.vue';
-import LawyerContact from '~~/components/contact/LawyerContact.vue';
-
-
-useHead({
-  title: "IT-Ліцей INTITA Програмуй майбутнє",
-  description: "IT-Ліцей INTITA - це навчальний заклад, що готує майбутніх IT-фахівців. Ми пропонуємо інноваційні програми навчання, які допомагають учням розвивати навички програмування та технологічного мислення.",
-}); 
-
+export default {
+  components: {
+    HeaderOne,
+    BackToTop,
+    PersonalPortServices,
+    AgencyBrands,
+    AboutCta,
+    FooterSix,
+    AboutMeTopbar,
+    AboutMeInfo,
+    PersonalPortSkills,
+    AboutMePortfolio,
+    AboutMeTestimonial,
+  },
+  setup() {
+    useHead({
+      title: "About Me - Creative Agency & Portfolio Vue Nuxt 3 Template",
+    });
+  },
+};
 </script>
