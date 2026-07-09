@@ -1,0 +1,124 @@
+@forward '../css/font-awesome-pro.css';
+@forward '../css/animate.css';
+@forward '../css/elegant-icon.css';
+@forward 'components/nice-select';
+@forward 'components/sal';
+@forward 'components/theme';
+@forward 'components/spacing';
+@forward 'components/settings';
+@forward 'components/buttons';
+@forward 'components/animation';
+@forward 'components/preloader';
+@forward 'components/background';
+@forward 'components/carousel';
+@forward 'components/offcanvas';
+@forward 'components/breadcrumb';
+@forward 'components/accordion';
+@forward 'components/tab';
+@forward 'components/modal';
+@forward 'components/search';
+@forward 'components/section-title';
+@forward 'layout/logo';
+@forward 'layout/header';
+@forward 'layout/menu';
+@forward 'layout/meanmenu';
+@forward 'layout/slider';
+@forward 'layout/about';
+@forward 'layout/counter';
+@forward 'layout/services';
+@forward 'layout/event';
+@forward 'layout/team';
+@forward 'layout/faq';
+@forward 'layout/portfolio';
+@forward 'layout/testimonial';
+@forward 'layout/brand';
+@forward 'layout/skill';
+@forward 'layout/award';
+@forward 'layout/cta';
+@forward 'layout/pricing';
+@forward 'layout/review';
+@forward 'layout/instagram';
+@forward 'layout/case';
+@forward 'layout/video';
+@forward 'layout/history';
+@forward 'layout/contact';
+@forward 'layout/ticket';
+@forward 'layout/features';
+@forward 'layout/support';
+@forward 'layout/donate';
+@forward 'layout/vision';
+@forward 'layout/biography';
+@forward 'layout/product';
+@forward 'layout/newsletter';
+@forward 'layout/job';
+@forward 'layout/login';
+@forward 'layout/error';
+@forward 'layout/coming';
+@forward 'layout/policy';
+@forward 'layout/help';
+@forward 'layout/article';
+@forward 'layout/banner';
+@forward 'layout/profile';
+@forward 'layout/blog';
+@forward 'layout/footer';
+
+.blue-color {
+    color: #5C94C5;
+}
+.blue-clolor-bg {
+    background-color: #5C94C5;
+}
+.blue-dark-color-bg{
+    background-color: #37648B;
+}
+.gray-color {
+    color: #6c757d;
+}
+.orange-color{
+    color: #fd7e14;
+}
+.white-color{
+    color: #fff;
+}
+.font-banner{
+    font-family: "Space Grotesk", sans-serif;
+}
+.mbm-skip{
+ mix-blend-mode: normal; 
+}
+.m-icon{
+    left: 57%;
+    top: 55%;
+}
+
+.slider__thumb-4 img
+ {
+    background-color: transparent;
+    mix-blend-mode: normal;
+    width: 100%;
+    height: auto;
+}
+.bg-t{
+    background: transparent;
+}
+.header__info-icon span{
+    border: 1px solid #37648B; 
+}
+.teachers{
+    width: 68px;
+    border-radius: 30px;
+}
+.modal-backdrop{
+z-index:0;
+display: none;
+}
+.modal-backdrop .fade .show {
+    z-index:-10;
+    display:none;
+}
+.swiper, .swiper-container{
+    z-index: -8;
+}
+div.swiper .swiper-initialized .swiper-horizontal .award__item-wrapper .swiper-backface-hidden {
+    z-index: -8;
+}
