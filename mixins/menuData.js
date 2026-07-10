@@ -1,26 +1,29 @@
 export default {
   computed: {
     menuData() {
-      return [
+      return [       
+       
         {
           id: 1,
+          title: this.$t("menu.projects"),
           hasDropdown: false,
-          title: this.$t('menu.university'),
-          link: '#university',
+          link: "/projects",
+          external: true,
         },
         {
           id: 2,
-          title: this.$t('menu.faculties'),
+          title: this.$t("menu.contact"),
           hasDropdown: false,
-          link: '#faculties',
+          link: "/contact",
         },
-        {
-          id: 3,
-          title: this.$t('menu.contacts'),
-          hasDropdown: false,
-          link: '#contacts',
-        }
-      ]
-    }
-  }
+      ];
+    },
+    footerMenu() {
+      return [
+        { title: this.$t("menu.about_lyceum"), link: "/projects" },
+        { title: this.$t("menu.lyceum_life"), link: "/contact" },
+      
+      ];
+    },
+  },
 };

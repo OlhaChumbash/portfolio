@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-xl-4 col-lg-3">
-          <span class="about__me-info-subtitle">ABOUT ME</span>
+          <span class="about__me-info-subtitle"> {{ $t('index.about_me.subtitle') }}</span>
         </div>
         <div class="col-xl-8 col-lg-9">
           <div
@@ -11,21 +11,15 @@
             data-sal="slide-up" data-sal-delay="130" data-sal-duration="1000"
           >
             <h4 class="about__me-info-title">
-              Hi, I'm brian wilson!
+              {{ $t('index.about_me.title') }}
               <img src="~/assets/img/about/about-me-title-icon.png" alt="" />
             </h4>
             <p>
-              I'm a UX designer, prototyper, and a part-time 3D artist. I'm
-              currently a Working at Fraxos, working remotely from Boston. If
-              you're a creative in Boston, say hi! I love words that start with
-              people, process, problem solving, paper sketches, prototyping,
-              polished design, pixel-perfect products, design system, UI
-              animation
+             {{ $t('index.about_me.description_1') }}
             </p>
 
             <p>
-              I’m a writer and designer working in New York City. primarily
-              designs book jackets, working for Creative techs since 2000.
+              {{ $t('index.about_me.description_2') }}
             </p>
 
             <div
@@ -37,7 +31,7 @@
                   target="_blank"
                   class="tp-btn"
                 >
-                  Download CV
+                   {{ $t('index.about_me.download_cv') }}
                   <svg
                     width="14"
                     height="14"
@@ -63,9 +57,12 @@
                 </a>
               </div>
               <div class="about__me-info-social">
-                <a href="#"><i class="fa-brands fa-facebook-f"></i> Facebook</a>
-                <a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a>
                 <a href="#"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+                <a href="#"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                <a href="#"><i class="fa-brands fa-telegram"></i> Telegram</a>
+                <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+
               </div>
             </div>
           </div>
