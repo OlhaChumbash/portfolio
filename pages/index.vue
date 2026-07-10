@@ -1,7 +1,7 @@
 <template>
   <LayoutMain>
     <HeroBlock/>
-    <about-me-info/>
+    <AboutMeInfo/>
     <personal-port-services :style_2="true" />
     <personal-port-skills/>
     <about-me-portfolio/>
@@ -14,11 +14,11 @@
 <script>
 import LayoutMain  from "~~/layouts/LayoutMain.vue"; 
 import HeroBlock from '~/components/index/HeroBlock.vue';
+import AboutMeInfo from '~~/components/abouts/about-page-com/AboutMeInfo.vue';
 import AboutMeTopbar from '~~/components/abouts/about-page-com/AboutMeTopbar.vue';
 import PersonalPortServices from "~~/components/services/PersonalPortServices.vue";
 import AgencyBrands from '~~/components/brands/AgencyBrands.vue';
 import AboutCta from '~~/components/cta/AboutCta.vue';
-import AboutMeInfo from '~~/components/abouts/about-page-com/AboutMeInfo.vue';
 import PersonalPortSkills from '~~/components/skills/PersonalPortSkills.vue';
 import AboutMePortfolio from '~~/components/abouts/about-page-com/AboutMePortfolio.vue';
 import AboutMeTestimonial from '~~/components/testimonials/AboutMeTestimonial.vue';
