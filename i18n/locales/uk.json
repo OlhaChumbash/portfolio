@@ -1,4 +1,13 @@
 {
+  "index": {
+      "pre_title_1": "Ольга Чумбаш",
+      "title_1": "Full Stack",
+      "title_2": "Developer",
+      "button": "Давайте працювати разом",
+      "all_projects": "All Projects",
+      "scroll_down": "Scroll Down"
+    },
+
   "slider": {
     "pre_title_1": "INTITA",
     "title_1": "ІТ-Ліцей",
