@@ -7,7 +7,7 @@
     </div>
 
     <div class="slider__portfolio-btn">
-      <nuxt-link href="/portfolio-masonry" class="slider-portfolio-btn">
+      <nuxt-link href="/" class="slider-portfolio-btn">
         <svg width="12" height="12" viewBox="0 0 14 14" fill="none">
           <path
             d="M3.5 2.25001C3.5 1.28351 2.7165 0.500001 1.75 0.500001C0.783502 0.500001 0 1.28351 0 2.25001C0 3.2165 0.783502 4 1.75 4C2.7165 4 3.5 3.2165 3.5 2.25001Z"

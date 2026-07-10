@@ -37,11 +37,11 @@
             
             
             <div class="offcanvas__contact mb-40">
-              <p class="offcanvas__contact-call"><a href="tel:+380631892256">{{ $t("header-main-page.phone_number") }}</a></p>              
+              <!-- <p class="offcanvas__contact-call"><a href="tel:+380631892256">{{ $t("header-main-page.phone_number") }}</a></p>               -->
               <p class="offcanvas__contact-mail">
-                <a :href="`mailto:${$t('header-main-page.mail_adress').replace('(at)','@')}`">
+                <!-- <a :href="`mailto:${$t('header-main-page.mail_adress').replace('(at)','@')}`">
                           {{ $t('header-main-page.mail_adress').replace('(at)','@') }}
-                 </a>
+                 </a> -->
               </p>
             </div>
         </div>

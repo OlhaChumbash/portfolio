@@ -22,7 +22,7 @@ import AgencyBrands from '~~/components/brands/AgencyBrands.vue';
 import AboutCta from '~~/components/cta/AboutCta.vue';
 import FooterSix from '~~/layouts/footers/FooterSix.vue';
 import BackToTop from "~~/layouts/footers/component/BackToTop.vue";
-import AboutMeInfo from '~~/components/abouts/about-page-com/AboutMeInfo.vue';
+import AboutMeInfo from '~/components/index/AboutMeInfo.vue';
 import PersonalPortSkills from '~~/components/skills/PersonalPortSkills.vue';
 import AboutMePortfolio from '~~/components/abouts/about-page-com/AboutMePortfolio.vue';
 import AboutMeTestimonial from '~~/components/testimonials/AboutMeTestimonial.vue';
