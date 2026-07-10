@@ -3,12 +3,13 @@
     <HeroBlock/>
     <AboutMeInfo/>
     <CertificatesGallery/>
+    <WorkExperienceBlock/>
     <!-- <personal-port-services :style_2="true" />
     <personal-port-skills/>
     <about-me-portfolio/>
     <about-me-testimonial/>
     <agency-brands :spacing="true" :style_2="true" />
-    <about-cta/> -->
+    <about-cta/>  -->
    </LayoutMain>
 </template>
 
@@ -17,6 +18,7 @@ import LayoutMain  from "~~/layouts/LayoutMain.vue";
 import HeroBlock from '~/components/index/HeroBlock.vue';
 import AboutMeInfo from '~/components/index/AboutMeInfo.vue';
 import CertificatesGallery from '~~/components/index/CertificatesGallery.vue';
+import WorkExperienceBlock from '~~/components/index/WorkExperienceBlock.vue';
 import AboutMeTopbar from '~~/components/abouts/about-page-com/AboutMeTopbar.vue';
 import PersonalPortServices from "~~/components/services/PersonalPortServices.vue";
 import AgencyBrands from '~~/components/brands/AgencyBrands.vue';
@@ -40,6 +42,7 @@ export default {
     PersonalPortSkills,
     AboutMePortfolio,
     AboutMeTestimonial,
+    WorkExperienceBlock
   },
   setup() {
     useHead({
