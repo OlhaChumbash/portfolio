@@ -59,6 +59,7 @@
               <div class="about__me-info-social">
                 <a href="#"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
                 <a href="#"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
                 <a href="#"><i class="fa-brands fa-telegram"></i> Telegram</a>
                 <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
 

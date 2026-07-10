@@ -12,22 +12,17 @@ export default {
         },
         {
           id: 2,
-          title: this.$t("menu.contacts"),
+          title: this.$t("menu.contact"),
           hasDropdown: false,
-          link: "/contacts",
+          link: "/contact",
         },
       ];
     },
     footerMenu() {
       return [
-        { title: this.$t("menu.about_lyceum"), link: "/about" },
-        { title: this.$t("menu.lyceum_life"), link: "/lyceum-life" },
-        { title: this.$t("menu.specializations"), link: "/specializations" },
-        { title: this.$t("menu.educational_process"), link: "/education-process" },
-        { title: this.$t("menu.admission"), link: "/admission" },
-        { title: this.$t("menu.blog"), link: "/blog" },
-        { title: this.$t("menu.university"), link: "https://university.intita.com/", external: true },
-        { title: this.$t("menu.contacts"), link: "/contacts" },
+        { title: this.$t("menu.about_lyceum"), link: "/projects" },
+        { title: this.$t("menu.lyceum_life"), link: "/contact" },
+      
       ];
     },
   },

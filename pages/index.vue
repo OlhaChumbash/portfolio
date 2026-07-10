@@ -2,19 +2,21 @@
   <LayoutMain>
     <HeroBlock/>
     <AboutMeInfo/>
-    <personal-port-services :style_2="true" />
+    <CertificatesGallery/>
+    <!-- <personal-port-services :style_2="true" />
     <personal-port-skills/>
     <about-me-portfolio/>
     <about-me-testimonial/>
     <agency-brands :spacing="true" :style_2="true" />
-    <about-cta/>
+    <about-cta/> -->
    </LayoutMain>
 </template>
 
 <script>
 import LayoutMain  from "~~/layouts/LayoutMain.vue"; 
 import HeroBlock from '~/components/index/HeroBlock.vue';
-import AboutMeInfo from '~~/components/abouts/about-page-com/AboutMeInfo.vue';
+import AboutMeInfo from '~/components/index/AboutMeInfo.vue';
+import CertificatesGallery from '~~/components/index/CertificatesGallery.vue';
 import AboutMeTopbar from '~~/components/abouts/about-page-com/AboutMeTopbar.vue';
 import PersonalPortServices from "~~/components/services/PersonalPortServices.vue";
 import AgencyBrands from '~~/components/brands/AgencyBrands.vue';
@@ -23,10 +25,13 @@ import PersonalPortSkills from '~~/components/skills/PersonalPortSkills.vue';
 import AboutMePortfolio from '~~/components/abouts/about-page-com/AboutMePortfolio.vue';
 import AboutMeTestimonial from '~~/components/testimonials/AboutMeTestimonial.vue';
 
+
+
 export default {
   components: {
     LayoutMain,
     HeroBlock,
+    CertificatesGallery,
     PersonalPortServices,
     AgencyBrands,
     AboutCta,
