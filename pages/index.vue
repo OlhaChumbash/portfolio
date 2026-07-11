@@ -4,6 +4,7 @@
     <AboutMeInfo/>
     <CertificatesGallery/>
     <WorkExperienceBlock/>
+    <MyProjects/>
     <!-- <personal-port-services :style_2="true" />
     <personal-port-skills/>
     <about-me-portfolio/>
@@ -19,6 +20,7 @@ import HeroBlock from '~/components/index/HeroBlock.vue';
 import AboutMeInfo from '~/components/index/AboutMeInfo.vue';
 import CertificatesGallery from '~~/components/index/CertificatesGallery.vue';
 import WorkExperienceBlock from '~~/components/index/WorkExperienceBlock.vue';
+import MyProjects from '~~/components/index/MyProjects.vue';
 import AboutMeTopbar from '~~/components/abouts/about-page-com/AboutMeTopbar.vue';
 import PersonalPortServices from "~~/components/services/PersonalPortServices.vue";
 import AgencyBrands from '~~/components/brands/AgencyBrands.vue';
@@ -41,6 +43,7 @@ export default {
     AboutMeInfo,
     PersonalPortSkills,
     AboutMePortfolio,
+    MyProjects,
     AboutMeTestimonial,
     WorkExperienceBlock
   },
