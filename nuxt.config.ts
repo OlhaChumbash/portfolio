@@ -17,13 +17,13 @@ export default defineNuxtConfig({
     }
   },
 
-  nitro: {
-  preset: 'github-pages',
+//   nitro: {
+//   preset: 'github-pages',
 
-  prerender: {
-    crawlLinks: false,
-  },
-},
+//   prerender: {
+//     crawlLinks: false,
+//   },
+// },
 
   modules: [
     '@nuxtjs/i18n',
@@ -39,6 +39,9 @@ export default defineNuxtConfig({
   ],
 
   i18n: {
+      bundle: {
+      optimizeTranslationDirective: false // Добавьте сюда
+    },
     strategy: 'no_prefix',
     defaultLocale: 'uk',
     lazy: true,
