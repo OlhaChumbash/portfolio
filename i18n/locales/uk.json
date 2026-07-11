@@ -115,6 +115,23 @@
   }
 
 },
+ "projects": {
+  "hero": {
+    "pre_title": "МОЇ ПРОЄКТИ",
+    "title": "Рішення, які поєднують дизайн і технології",
+    "breadcrumb_main": "Головна",
+    "breadcrumb_current": "Проєкти"
+  },
+
+  "filters": {
+    "all": "Усі",
+    "education": "Освіта",
+    "creative": "Креативні",
+    "health": "Медицина"
+  },
+
+  "button": "Переглянути проєкт"
+},
 "slider": {
   "pre_title_1": "INTITA",
   "title_1": "ІТ-Ліцей",
