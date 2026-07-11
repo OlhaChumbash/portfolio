@@ -1,6 +1,6 @@
 <template>
-  <section class="projects-section">
-    <div class="projects-section__grid">
+  <section class="projects-section mt-60">
+    <div class="projects-section__grid">  
      <SingleProjectCard
   v-for="(project, index) in projectsData"
   :key="project.id"
