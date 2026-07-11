@@ -4,7 +4,7 @@
       <div class="row projects__titles-container">
         <div class="col-xxl-7 col-xl-7">
           <div class="tp-section-wrapper-3">
-            <h2 class="projects__title">{{ $t("my-projects.title") }}</h2>           
+            <h2 class="projects__title">{{ $t("projects.title") }}</h2>
           </div>
         </div>
 
@@ -12,7 +12,7 @@
           <div class="projects__button_container d-flex justify-content-center">
             <nuxt-link to="projects" aria-label="Open page with all projects"
               class="tp-btn-4 tp-style-border projects__button">
-              {{ $t("my-projects.button") }}
+              {{ $t("projects.button") }}
             </nuxt-link>
           </div>
         </div>
@@ -22,14 +22,15 @@
     <div class="row">
       <div class="col-xl-12">
         <div class="elements__carousel p-relative">
-          <Carousel ref="detailsSlider" :items-to-show="4" :wrap-around="true" :snapAlign="'start'" :autoplay="5000" :breakpoints="{
+          <Carousel ref="detailsSlider" :items-to-show="4" :wrap-around="true" :snapAlign="'start'" :autoplay="5000"
+            :breakpoints="{
               992: { itemsToShow: 4 },
               700: { itemsToShow: 2 },
               0: { itemsToShow: 1 }
             }" class="elements__carousel-active">
             <Slide v-for="project in projectsData" :key="project.id" class="project-slide">
               <div class="project-card">
-                <img class="project-card__img" :src="project.img" alt="" />
+                <img class="project-card__img" :src="project.image" alt="" />
 
                 <div class="project-overlay">
                   <a :href="project.link" target="_blank" class="project-overlay__btn" aria-label="Open project"
@@ -78,36 +79,31 @@
 
 <script>
 import { Carousel, Slide, Pagination } from "vue3-carousel";
+import ProjectsData from '~/mixins/ProjectsData'
 
 export default {
-  components: { Carousel, Slide, Pagination },
-
- computed: {
-  projectsData() {
-    const projectKeys = Object.keys(
-      this.$tm("my-projects.projects")
-    );
-
-    return projectKeys.map((key, index) => {
-      return {
-        id: index + 1,
-        img: `/projects/${this.$t(`my-projects.projects.${key}.image`)}`,
-        title: this.$t(`my-projects.projects.${key}.title`),
-        description: this.$t(`my-projects.projects.${key}.description`),
-        link: this.$t(`my-projects.projects.${key}.link`),
-      };
-    });
+  components: {
+    Carousel,
+    Slide,
+    Pagination
   },
-},
+
+  mixins: [ProjectsData],
+
 
   methods: {
+
     handlePrev() {
       this.$refs.detailsSlider?.prev();
     },
+
+
     handleNext() {
       this.$refs.detailsSlider?.next();
     },
+
   },
+
 };
 </script>
 
@@ -175,6 +171,9 @@ export default {
     padding: 0 8px;
     box-sizing: border-box;
   }
+}
+.project-subtitle{
+  text-align: left;
 }
 
 .elements__carousel {
