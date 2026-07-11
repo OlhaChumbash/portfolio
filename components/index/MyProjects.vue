@@ -90,13 +90,10 @@ export default {
 
   mixins: [ProjectsData],
 
-
   methods: {
-
     handlePrev() {
       this.$refs.detailsSlider?.prev();
     },
-
 
     handleNext() {
       this.$refs.detailsSlider?.next();
@@ -109,7 +106,7 @@ export default {
 
 <style lang="scss" scoped>
 .elements__carousel-area {
-  padding: 10px 0 120px;
+  padding: 10px 0 60px;
 
   @media (max-width: 992px) {
     padding: 5px 0;
