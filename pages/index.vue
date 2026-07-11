@@ -5,7 +5,8 @@
     <CertificatesGallery/>
     <WorkExperienceBlock/>
     <MyProjects/>
-    <PersonalPortSkills/>
+    <SkillsBlock/>
+    <EducationBlock/>
     <!-- <personal-port-services :style_2="true" />
     <about-me-portfolio/>
     <about-me-testimonial/>
@@ -21,7 +22,8 @@ import AboutMeInfo from '~/components/index/AboutMeInfo.vue';
 import CertificatesGallery from '~~/components/index/CertificatesGallery.vue';
 import WorkExperienceBlock from '~~/components/index/WorkExperienceBlock.vue';
 import MyProjects from '~~/components/index/MyProjects.vue';
-import PersonalPortSkills from '~~/components/index/PersonalPortSkills.vue';
+import SkillsBlock from '~~/components/index/SkillsBlock.vue';
+import EducationBlock from '~~/components/index/EducationBlock.vue';
 
 import AboutMeTopbar from '~~/components/abouts/about-page-com/AboutMeTopbar.vue';
 import PersonalPortServices from "~~/components/services/PersonalPortServices.vue";
@@ -42,7 +44,8 @@ export default {
     AboutCta,
     AboutMeTopbar,
     AboutMeInfo,
-    PersonalPortSkills,
+    SkillsBlock,
+    EducationBlock,
     AboutMePortfolio,
     MyProjects,
     AboutMeTestimonial,
