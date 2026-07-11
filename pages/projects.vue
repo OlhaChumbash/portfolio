@@ -1,7 +1,6 @@
 <template>
   <LayoutMain>
-    <StudentsProjectsHero :bg="heroBg"/>
-    <ProjectsFilter v-model="selectedCategory" />
+    <ProjectsHero :bg="heroBg"/>
     <ProjectCard :selected-category="selectedCategory"/> 
     <!-- <UniversityFloatingMessengers/> -->
   </LayoutMain>
@@ -9,12 +8,12 @@
 
 <script setup>
 import LayoutMain  from "~~/layouts/LayoutMain.vue"; 
-// import StudentsProjectsHero from "~/components/students-projects/StudentsProjectsHero.vue";
-import ProjectCard from "~/components/students-projects/ProjectCard.vue";
-// import heroBg from "/projects/projects-hero-bg.webp";
-import ProjectsFilter from "~/components/students-projects/ProjectsFilter.vue";
+import ProjectsHero from "~/components/projects/ProjectsHero.vue.vue";
+import ProjectCard from "~/components/projects/ProjectCard.vue";
 
 import { ref } from 'vue'
+
+const heroBg = "/projects/projects-hero-bg.webp"
 
 const selectedCategory = ref('all')
 
