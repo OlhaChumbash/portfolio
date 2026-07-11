@@ -18,24 +18,38 @@ export default {
 
         items: this.getArrayTranslations(`projects.${key}.items`),
 
-        technologies: this.getArrayTranslations(
-          `projects.${key}.technologies`
-        ),
+       technologies: this.getTechnologies(`projects.${key}.technologies`),
       }));
     },
   },
 
-  methods: {
-    getArrayTranslations(path) {
-      const array = this.$tm(path);
+ methods: {
 
-      if (!Array.isArray(array)) {
-        return [];
-      }
+  getArrayTranslations(path) {
+    const array = this.$tm(path);
 
-      return array.map((_, index) =>
-        this.$t(`${path}.${index}`)
-      );
-    },
+    if (!Array.isArray(array)) {
+      return [];
+    }
+
+    return array.map((_, index) =>
+      this.$t(`${path}.${index}`)
+    );
   },
+
+
+  getTechnologies(path) {
+    const technologies = this.$tm(path);
+
+    if (!Array.isArray(technologies)) {
+      return [];
+    }
+
+    return technologies.map((technology, index) => ({
+      name: this.$t(`${path}.${index}.name`),
+      icon: this.$t(`${path}.${index}.icon`)
+    }));
+  }
+
+}
 };

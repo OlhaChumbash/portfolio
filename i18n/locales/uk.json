@@ -37,289 +37,482 @@
       }
     }
   },
-"projects": {
-  "title": "Мої проєкти",
-  "button": "Усі проєкти",
-  "view_project": "Переглянути проєкт",
+  "projects": {
+    "title": "Мої проєкти",
+    "button": "Усі проєкти",
+    "view_project": "Переглянути проєкт",
+    "hero": {
+      "pre_title": "МОЇ ПРОЄКТИ",
+      "title": "Рішення, які поєднують дизайн і технології",
+      "breadcrumb_main": "Головна",
+      "breadcrumb_current": "Проєкти"
+    },
+    "filters": {
+      "all": "Усі",
+      "education": "Освіта",
+      "creative": "Креативні",
+      "health": "Медицина"
+    },
+    "project_1": {
+      "title": "Університет INTITA",
+      "description": "Офіційний сайт університету для представлення освітніх програм, можливостей навчання та взаємодії зі студентами.",
+      "image": "/projects/project_1.webp",
+      "link": "https://university.intita.com/",
+      "date": "Листопад 2025 — Квітень 2026",
+      "items": [
+        "Розробка адаптивного та динамічного frontend на Vue.js та Nuxt 3.",
+        "Створення інтерактивних форм реєстрації студентів та запитів.",
+        "Покращення доступності сайту: семантична структура, ARIA-атрибути, підтримка screen reader та клавіатурної навігації.",
+        "Розробка modal-компонентів з динамічним контентом, включаючи PDF-інформаційні блоки."
+      ],
+      "technologies": [
+        {
+          "name": "Vue.js",
+          "icon": "devicon-vuejs-plain"
+        },
+        {
+          "name": "Nuxt 3",
+          "icon": "devicon-nuxtjs-plain"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "devicon-javascript-plain"
+        },
+        {
+          "name": "HTML",
+          "icon": "devicon-html5-plain"
+        },
+        {
+          "name": "CSS",
+          "icon": "devicon-css3-plain"
+        },
+       {
+          "name": "GitHub",
+          "icon": "devicon-github-original"
+        }
+      ]
+    },
+    "project_2": {
+      "title": "Технологічний ліцей INTITA",
+      "description": "Сучасний освітній простір із технологічним напрямом та практичним підходом до навчання.",
+      "image": "/projects/project_2.webp",
+      "link": "https://lyceum.intita.com/",
+      "date": "Жовтень 2025 — Листопад 2025",
+      "items": [
+        "Розробка адаптивного та динамічного frontend на Vue.js та Nuxt 3.",
+        "Реалізація багатомовності українською та англійською мовами.",
+        "Створення інтерактивних форм реєстрації учнів та запитів.",
+        "Інтеграція галерей, слайдерів та Google Maps."
+      ],
+      "technologies": [
+        {
+          "name": "Vue.js",
+          "icon": "devicon-vuejs-plain"
+        },
+        {
+          "name": "Nuxt 3",
+          "icon": "devicon-nuxtjs-plain"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "devicon-javascript-plain"
+        },
+        {
+          "name": "HTML",
+          "icon": "devicon-html5-plain"
+        },
+        {
+          "name": "CSS",
+          "icon": "devicon-css3-plain"
+        },
+        {
+          "name": "Git",
+          "icon": "devicon-git-plain"
+        }
+      ]
+    },
+    "project_3": {
+      "title": "INJOBE",
+      "description": "Job-Matching платформа для пошуку роботи, управління вакансіями та взаємодії між кандидатами і компаніями.",
+      "image": "/projects/project_3.webp",
+      "link": "",
+      "date": "Червень 2025",
+      "items": [
+        "Розробка адміністративної панелі для керування користувачами, вакансіями та заявками.",
+        "Реалізація backend-логіки за допомогою контролерів, моделей та API-маршрутів.",
+        "Проєктування та реалізація CRUD-операцій для вакансій і даних кандидатів.",
+        "Реалізація валідації форм та обробки помилок для підвищення надійності системи."
+      ],
+      "technologies": [
+        {
+          "name": "PHP",
+          "icon": "devicon-php-plain"
+        },
+        {
+          "name": "Laravel",
+          "icon": "devicon-laravel-plain"
+        },
+        {
+          "name": "Vue.js",
+          "icon": "devicon-vuejs-plain"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "devicon-javascript-plain"
+        },
+        {
+          "name": "HTML",
+          "icon": "devicon-html5-plain"
+        },
+        {
+          "name": "CSS",
+          "icon": "devicon-css3-plain"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "devicon-postgresql-plain"
+        },
+        {
+          "name": "Docker",
+          "icon": "devicon-docker-plain"
+        },
+        {
+          "name": "GitHub",
+          "icon": "devicon-github-original"
+        }
+      ]
+    },
+    "project_4": {
+      "title": "Жива пам’ять Вінниці",
+      "description": "Сайт, що береже пам’ять про людей, які віддали життя за свободу України. Простір вшанування мужності, жертовності та любові до Батьківщини.",
+      "image": "/projects/project_4.webp",
+      "link": "https://live-memory.vn.ua/",
+      "date": "Січень 2025 — Березень 2025",
+      "items": [
+        "Розробка та налаштування структури бази даних і міграцій.",
+        "Реалізація серверної логіки за допомогою контролерів та моделей.",
+        "Створення API та Web-маршрутів для взаємодії клієнтської та серверної частин.",
+        "Реалізація обробки помилок та валідації форм."
+      ],
+      "technologies": [
+        {
+          "name": "PHP",
+          "icon": "devicon-php-plain"
+        },
+        {
+          "name": "Laravel",
+          "icon": "devicon-laravel-original"
+        },
+        {
+          "name": "Vue.js",
+          "icon": "devicon-vuejs-plain"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "devicon-javascript-plain"
+        },
+        {
+          "name": "HTML",
+          "icon": "devicon-html5-plain"
+        },
+        {
+          "name": "CSS",
+          "icon": "devicon-css3-plain"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "devicon-postgresql-plain"
+        },
+        {
+          "name": "Docker",
+          "icon": "devicon-docker-plain"
+        },
+        {
+          "name": "GitHub",
+          "icon": "devicon-github-original"
+        }
+      ]
+    },
+    "project_5": {
+      "title": "KAVA VETERANA",
+      "description": "Соціальний проєкт підтримки ветеранів, який допомагає розвивати професійні навички та адаптацію.",
+      "image": "/projects/project_5.webp",
+      "link": "",
+      "date": "Травень 2024 — Грудень 2024",
+      "items": [
+        "Розробка та підтримка адміністративної панелі.",
+        "Реалізація серверної логіки та функцій управління даними.",
+        "Робота зі структурою бази даних, моделями та міграціями.",
+        "Виконання CRUD-операцій для ефективної обробки інформації.",
+        "Тестування API-endpoints для стабільної взаємодії frontend, backend та адміністративної частини."
+      ],
+      "technologies": [
+        {
+          "name": "Node.js",
+          "icon": "devicon-nodejs-plain"
+        },
+        {
+          "name": "Express",
+          "icon": "devicon-express-original"
+        },
+        {
+          "name": "EJS",
+          "icon": "devicon-javascript-plain"
+        },
+        {
+          "name": "MongoDB",
+          "icon": "devicon-mongodb-plain"
+        },
+        {
+          "name": "Mongoose",
+          "icon": "devicon-mongodb-plain"
+        },
+        {
+          "name": "Docker",
+          "icon": "devicon-docker-plain"
+        },
+        {
+          "name": "Swagger",
+          "icon": "devicon-swagger-plain"
+        },
+        {
+          "name": "Postman",
+          "icon": "devicon-postman-plain"
+        },
+        {
+          "name": "GitHub",
+          "icon": "devicon-github-original"
+        }
+      ]
+    },
+    "project_6": {
+      "title": "Oksana Tatarina School",
+      "description": "Сайт школи англійської мови з курсами, програмами навчання та інформацією для студентів.",
+      "image": "/projects/project_6.webp",
+      "link": "https://tatarina.intita.com/",
+      "date": "Лютий 2024 — Квітень 2024",
+      "items": [
+        "Розробка pixel-perfect адаптивної landing page.",
+        "Перенесення дизайну з Figma у повноцінну frontend-реалізацію.",
+        "Створення інтерактивної навігації та UI-елементів.",
+        "Забезпечення коректного відображення на різних пристроях."
+      ],
+      "technologies": [
+        {
+          "name": "HTML",
+          "icon": "devicon-html5-plain"
+        },
+        {
+          "name": "CSS",
+          "icon": "devicon-css3-plain"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "devicon-javascript-plain"
+        },
+        {
+          "name": "jQuery",
+          "icon": "devicon-jquery-plain"
+        },
+        {
+          "name": "Bootstrap",
+          "icon": "devicon-bootstrap-plain"
+        },
+        {
+          "name": "Swiper",
+          "icon": "devicon-swiper-original"
+        },
+        {
+          "name": "GitHub",
+          "icon": "devicon-github-original"
+        }
+      ]
+    },
+    "project_7": {
+      "title": "Онлайн-школа німецької мови",
+      "description": "Платформа для вивчення німецької мови з акцентом на практику спілкування та розвиток мовних навичок.",
+      "image": "/projects/project_7.webp",
+      "link": "https://pokhilkodarina.intita.com/",
+      "date": "Листопад 2023 — Грудень 2023",
+      "items": [
+        "Розробка адаптивного лендингу для презентації послуг викладача.",
+        "Створення інтерактивних елементів, слайдерів та плавної навігації.",
+        "Оптимізація відображення сайту для різних пристроїв та браузерів.",
+        "Організація задач через Trello для ефективного робочого процесу."
+      ],
+      "technologies": [
+        {
+          "name": "HTML",
+          "icon": "devicon-html5-plain"
+        },
+        {
+          "name": "CSS",
+          "icon": "devicon-css3-plain"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "devicon-javascript-plain"
+        },
+        {
+          "name": "jQuery",
+          "icon": "devicon-jquery-plain"
+        },
+        {
+          "name": "Bootstrap",
+          "icon": "devicon-bootstrap-plain"
+        },
+        {
+          "name": "Swiper",
+          "icon": "devicon-swiper-original"
+        },
+        {
+          "name": "Trello",
+          "icon": "devicon-trello-plain"
+        },
+        {
+          "name": "GitHub",
+          "icon": "devicon-github-original"
+        }
+      ]
+    },
+    "project_8": {
+      "title": "TUI Travel Agency",
+      "description": "Сайт туристичної агенції для підбору подорожей та зручної взаємодії з клієнтами.",
+      "image": "/projects/project_8.webp",
+      "link": "https://travelagency.intita.com/",
+      "date": "Листопад 2023 — Грудень 2023",
+      "items": [
+        "Розробка візуально точного та адаптивного лендингу.",
+        "Реалізація інтерактивних слайдерів та функції плавного прокручування.",
+        "Створення багатомовного інтерфейсу користувача.",
+        "Оптимізація продуктивності та кросбраузерності."
+      ],
+      "technologies": [
+        {
+          "name": "HTML",
+          "icon": "devicon-html5-plain"
+        },
+        {
+          "name": "CSS",
+          "icon": "devicon-css3-plain"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "devicon-javascript-plain"
+        },
+        {
+          "name": "jQuery",
+          "icon": "devicon-jquery-plain"
+        },
+        {
+          "name": "Bootstrap",
+          "icon": "devicon-bootstrap-plain"
+        },
+        {
+          "name": "Swiper",
+          "icon": "devicon-swiper-original"
+        },
+        {
+          "name": "Trello",
+          "icon": "devicon-trello-plain"
+        },
+        {
+          "name": "GitHub",
+          "icon": "devicon-github-original"
+        }
+      ]
+    },
+    "project_9": {
+      "title": "Програма працевлаштування IT-початківців",
+      "description": "Проєкт підтримки спеціалістів, які роблять перші кроки в IT та розвивають професійні навички.",
+      "image": "/projects/project_9.webp",
+      "link": "https://it.uspih.vn.ua/",
+      "date": "Жовтень 2023 — Листопад 2023",
+      "items": [
+        "Розробка адаптивної landing page для презентації курсів та програм академії.",
+        "Створення інтерактивних блоків з відео та інформаційним контентом.",
+        "Реалізація дизайну з Figma у готовий frontend.",
+        "Оптимізація навігації та мобільної версії."
+      ],
+      "technologies": [
+        {
+          "name": "HTML",
+          "icon": "devicon-html5-plain"
+        },
+        {
+          "name": "CSS",
+          "icon": "devicon-css3-plain"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "devicon-javascript-plain"
+        },
+        {
+          "name": "jQuery",
+          "icon": "devicon-jquery-plain"
+        },
+        {
+          "name": "Bootstrap",
+          "icon": "devicon-bootstrap-plain"
+        },
+        {
+          "name": "Swiper",
+          "icon": "devicon-swiper-original"
+        },
+        {
+          "name": "GitHub",
+          "icon": "devicon-github-original"
+        }
+      ]
+    },
+    "project_10": {
+      "title": "Програма підтримки ветеранів та ВПО",
+      "description": "Соціальний проєкт, спрямований на розвиток IT-навичок та професійну адаптацію ветеранів і внутрішньо переміщених осіб.",
+      "image": "/projects/project_10.webp",
+      "link": "https://dobrogolight.intita.com/",
+      "date": "Вересень 2023 — Жовтень 2023",
+      "items": [
+        "Розробка адаптивної та візуально точної landing page для презентації програм академії.",
+        "Реалізація дизайну з Figma у повноцінний frontend.",
+        "Створення інтерактивних блоків, відеосекцій та інформаційних компонентів.",
+        "Оптимізація навігації, мобільної адаптації та користувацького досвіду."
+      ],
+      "technologies": [
+        {
+          "name": "HTML",
+          "icon": "devicon-html5-plain"
+        },
+        {
+          "name": "CSS",
+          "icon": "devicon-css3-plain"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "devicon-javascript-plain"
+        },
+        {
+          "name": "jQuery",
+          "icon": "devicon-jquery-plain"
+        },
+        {
+          "name": "Bootstrap",
+          "icon": "devicon-bootstrap-plain"
+        },
+        {
+          "name": "Swiper",
+          "icon": "devicon-swiper-original"
+        },
+        {
+          "name": "Trello",
+          "icon": "devicon-trello-plain"
+        },
+        {
+          "name": "GitHub",
+          "icon": "devicon-github-original"
+        }
+      ]
+    }
   
-  "hero": {
-    "pre_title": "МОЇ ПРОЄКТИ",
-    "title": "Рішення, які поєднують дизайн і технології",
-    "breadcrumb_main": "Головна",
-    "breadcrumb_current": "Проєкти"
-  },
-
-  "filters": {
-    "all": "Усі",
-    "education": "Освіта",
-    "creative": "Креативні",
-    "health": "Медицина"
-  },
-  "project_1": {
-    "title": "Жива пам’ять Вінниці",
-    "description": "Сайт, що береже пам’ять про людей, які віддали життя за свободу України. Простір вшанування мужності, жертовності та любові до Батьківщини.",
-    "image": "/projects/project_1.webp",
-    "link": "https://live-memory.vn.ua/",
-    "date": "Січень 2025 — Березень 2025",
-
-    "items": [
-      "Розробка та налаштування структури бази даних і міграцій.",
-      "Реалізація серверної логіки за допомогою контролерів та моделей.",
-      "Створення API та Web-маршрутів для взаємодії клієнтської та серверної частин.",
-      "Реалізація обробки помилок та валідації форм."
-    ],
-
-    "technologies": [
-      "PHP",
-      "Laravel",
-      "Vue.js",
-      "JavaScript",
-      "HTML",
-      "CSS",
-      "PostgreSQL",
-      "Docker",
-      "Git"
-    ]
-  },
-
-
-  "project_2": {
-    "title": "Онлайн-школа німецької мови",
-    "description": "Платформа для вивчення німецької мови з акцентом на практику спілкування та розвиток мовних навичок.",
-    "image": "/projects/project_2.webp",
-    "link": "https://pokhilkodarina.intita.com/",
-    "date": "Листопад 2023 — Грудень 2023",
-
-    "items": [
-      "Розробка адаптивного лендингу для презентації послуг викладача.",
-      "Створення інтерактивних елементів, слайдерів та плавної навігації.",
-      "Оптимізація відображення сайту для різних пристроїв та браузерів.",
-      "Організація задач через Trello для ефективного робочого процесу."
-    ],
-
-    "technologies": [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "jQuery",
-      "Bootstrap",
-      "Swiper",
-      "Trello",
-      "GitHub"
-    ]
-  },
-
-
-  "project_3": {
-    "title": "TUI Travel Agency",
-    "description": "Сайт туристичної агенції для підбору подорожей та зручної взаємодії з клієнтами.",
-    "image": "/projects/project_3.webp",
-    "link": "https://travelagency.intita.com/",
-    "date": "Листопад 2023 — Грудень 2023",
-
-    "items": [
-      "Розробка візуально точного та адаптивного лендингу.",
-      "Реалізація інтерактивних слайдерів та функції плавного прокручування.",
-      "Створення багатомовного інтерфейсу користувача.",
-      "Оптимізація продуктивності та кросбраузерності."
-    ],
-
-    "technologies": [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "jQuery",
-      "Bootstrap",
-      "Swiper",
-      "Trello",
-      "GitHub"
-    ]
-  },
-
-
-  "project_4": {
-    "title": "Oksana Tatarina School",
-    "description": "Сайт школи англійської мови з курсами, програмами навчання та інформацією для студентів.",
-    "image": "/projects/project_4.webp",
-    "link": "https://tatarina.intita.com/",
-    "date": "Лютий 2024 — Квітень 2024",
-
-    "items": [
-      "Розробка pixel-perfect адаптивної landing page.",
-      "Перенесення дизайну з Figma у повноцінну frontend-реалізацію.",
-      "Створення інтерактивної навігації та UI-елементів.",
-      "Забезпечення коректного відображення на різних пристроях."
-    ],
-
-    "technologies": [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "jQuery",
-      "Bootstrap",
-      "Swiper",
-      "GitHub"
-    ]
-  },
-
-
-  "project_5": {
-    "title": "Технологічний ліцей INTITA",
-    "description": "Сучасний освітній простір із технологічним напрямом та практичним підходом до навчання.",
-    "image": "/projects/project_5.webp",
-    "link": "https://lyceum.intita.com/",
-    "date": "Жовтень 2025 — Листопад 2025",
-
-    "items": [
-      "Розробка адаптивного та динамічного frontend на Vue.js та Nuxt 3.",
-      "Реалізація багатомовності українською та англійською мовами.",
-      "Створення інтерактивних форм реєстрації учнів та запитів.",
-      "Інтеграція галерей, слайдерів та Google Maps."
-    ],
-
-    "technologies": [
-      "Vue.js",
-      "Nuxt 3",
-      "JavaScript",
-      "HTML",
-      "CSS",
-      "Git"
-    ]
-  },
-
-
-  "project_6": {
-    "title": "Програма працевлаштування IT-початківців",
-    "description": "Проєкт підтримки спеціалістів, які роблять перші кроки в IT та розвивають професійні навички.",
-    "image": "/projects/project_6.webp",
-    "link": "https://it.uspih.vn.ua/",
-    "date": "Жовтень 2023 — Листопад 2023",
-
-    "items": [
-      "Розробка адаптивної landing page для презентації курсів та програм академії.",
-      "Створення інтерактивних блоків з відео та інформаційним контентом.",
-      "Реалізація дизайну з Figma у готовий frontend.",
-      "Оптимізація навігації та мобільної версії."
-    ],
-
-    "technologies": [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "jQuery",
-      "Bootstrap",
-      "Swiper",
-      "GitHub"
-    ]
-  },
-  "project_7": {
-    "title": "Програма підтримки ветеранів та ВПО",
-    "description": "Соціальний проєкт, спрямований на розвиток IT-навичок та професійну адаптацію ветеранів і внутрішньо переміщених осіб.",
-    "image": "/projects/project_7.webp",
-    "link": "https://dobrogolight.intita.com/",
-    "date": "Вересень 2023 — Жовтень 2023",
-
-    "items": [
-      "Розробка адаптивної та візуально точної landing page для презентації програм академії.",
-      "Реалізація дизайну з Figma у повноцінний frontend.",
-      "Створення інтерактивних блоків, відеосекцій та інформаційних компонентів.",
-      "Оптимізація навігації, мобільної адаптації та користувацького досвіду."
-    ],
-
-    "technologies": [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "jQuery",
-      "Bootstrap",
-      "Swiper",
-      "Trello",
-      "GitHub"
-    ]
-  },
-
-
-  "project_8": {
-    "title": "Університет INTITA",
-    "description": "Офіційний сайт університету для представлення освітніх програм, можливостей навчання та взаємодії зі студентами.",
-    "image": "/projects/project_8.webp",
-    "link": "https://university.intita.com/",
-    "date": "Листопад 2025 — Теперішній час",
-
-    "items": [
-      "Розробка адаптивного та динамічного frontend на Vue.js та Nuxt 3.",
-      "Створення інтерактивних форм реєстрації студентів та запитів.",
-      "Покращення доступності сайту: семантична структура, ARIA-атрибути, підтримка screen reader та клавіатурної навігації.",
-      "Розробка modal-компонентів з динамічним контентом, включаючи PDF-інформаційні блоки."
-    ],
-
-    "technologies": [
-      "Vue.js",
-      "Nuxt 3",
-      "JavaScript",
-      "HTML",
-      "CSS",
-      "Git"
-    ]
-  },
-
-
-  "project_9": {
-    "title": "INJOBE",
-    "description": "Job-Matching платформа для пошуку роботи, управління вакансіями та взаємодії між кандидатами і компаніями.",
-    "image": "/projects/project_9.webp",
-    "link": "",
-    "date": "Червень 2025",
-
-    "items": [
-      "Розробка адміністративної панелі для керування користувачами, вакансіями та заявками.",
-      "Реалізація backend-логіки за допомогою контролерів, моделей та API-маршрутів.",
-      "Проєктування та реалізація CRUD-операцій для вакансій і даних кандидатів.",
-      "Реалізація валідації форм та обробки помилок для підвищення надійності системи."
-    ],
-
-    "technologies": [
-      "PHP",
-      "Laravel",
-      "Vue.js",
-      "JavaScript",
-      "HTML",
-      "CSS",
-      "PostgreSQL",
-      "Docker",
-      "Git"
-    ]
-  },
-
-
-  "project_10": {
-    "title": "KAVA VETERANA",
-    "description": "Соціальний проєкт підтримки ветеранів, який допомагає розвивати професійні навички та адаптацію.",
-    "image": "/projects/project_9.webp",
-    "link": "",
-    "date": "Травень 2024 — Грудень 2024",
-
-    "items": [
-      "Розробка та підтримка адміністративної панелі.",
-      "Реалізація серверної логіки та функцій управління даними.",
-      "Робота зі структурою бази даних, моделями та міграціями.",
-      "Виконання CRUD-операцій для ефективної обробки інформації.",
-      "Тестування API-endpoints для стабільної взаємодії frontend, backend та адміністративної частини."
-    ],
-
-    "technologies": [
-      "Node.js",
-      "Express",
-      "EJS",
-      "MongoDB",
-      "Mongoose",
-      "Docker",
-      "Swagger",
-      "Postman",
-      "Git"
-    ]
-  }
-
 },
 "slider": {
   "pre_title_1": "INTITA",

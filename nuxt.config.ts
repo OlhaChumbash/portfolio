@@ -4,6 +4,7 @@ export default defineNuxtConfig({
     "swiper/css/bundle",
     "vue3-carousel/dist/carousel.css",
     "~/assets/scss/main.scss",
+    'devicon/devicon.min.css'
   ],
 
   vite: {
