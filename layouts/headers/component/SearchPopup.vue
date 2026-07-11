@@ -9,7 +9,7 @@
             >
               <div class="search__logo">
                 <nuxt-link href="/">
-                  <img src="~/assets/img/logo/logo.svg" alt="logo" />
+                  <img src="~/assets/img/logo/logo.webp" alt="logo" />
                 </nuxt-link>
               </div>
               <div class="search__close">

@@ -35,7 +35,7 @@
           <div class="row"> <div class="header-main-content d-flex justify-content-between align-items-center w-100 flex-wrap">
           <div class="col-auto"> <div class="logo logo-border">
               <nuxt-link href="/" v-if="!header_solid && !header_black">
-                <img class="logo-light" src="~/assets/img/logo/logo.svg" alt="logo" />
+                <img class="logo-light" src="~/assets/img/logo/logo.webp" alt="logo" />
                 <img class="logo-dark" src="~/assets/img/logo/logo-black.svg" alt="logo" />
               </nuxt-link>
               <nuxt-link href="/" v-if="header_solid">

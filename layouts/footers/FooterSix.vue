@@ -12,7 +12,7 @@
               <div class="footer__widget footer__widget-7 mb-50 footer-col-7-1">
                 <div class="footer__logo">
                   <NuxtLink to="/">
-                    <img src="~/assets/img/logo/logo.svg" alt="footer__logo" />
+                    <img src="~/assets/img/logo/logo.webp" alt="footer__logo" />
                   </NuxtLink>
                 </div>
 
