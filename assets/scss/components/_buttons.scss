@@ -696,7 +696,7 @@
 	font-size: 16px;
 	font-weight: 700;
 	color: var(--tp-common-white);
-	background: var(--tp-theme-1);
+	background-color: var(--tp-common-black);
 	text-align: center;
 	font-family: var(--tp-ff-space);
 	padding: 10px 30px;
@@ -720,8 +720,10 @@
 	}
 
 	&:hover{
-		color: var(--tp-common-white);
-		background-color: var(--tp-common-purple);
+		color:  var(--tp-common-black)!important;
+		background-color: var(--tp-common-white)!important;
+		border: 1px solid var(--tp-common-black);
+		
 	}
 	&:focus{
 		color: var(--tp-common-white);
