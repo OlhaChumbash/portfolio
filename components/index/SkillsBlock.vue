@@ -1,5 +1,5 @@
 <template>
-  <section class="skill__area pt-60 grey-bg-12 pb-125">
+  <section id="my-skills" class="skill__area pt-110 grey-bg-12 pb-125">
     <div class="container">
       <div class="row">
          <div class="section__title-wrapper-9 mb-55">

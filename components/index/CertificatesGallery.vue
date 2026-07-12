@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section id="photo_video_gallery" class="portfolio__area p-relative z-index-1 pt-110 pb-140 blue-bg-5">
+    <section id="my-sertificates" class="portfolio__area p-relative z-index-1 pt-110 pb-140 blue-bg-5">
       <div class="portfolio__bg-6 p-relative include-bg"></div>
       <div class="portfolio__shape">
         <img class="portfolio__shape-8" src="~/assets/img/index/certificates/portfolio-shape-1.webp"

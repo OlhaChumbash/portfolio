@@ -1,5 +1,5 @@
 <template>
-  <section class="vision__area pt-110 pb-110 grey-bg-4">
+  <section id="my-education" class="vision__area pt-110 pb-110 grey-bg-4">
     <div class="container">
       <div class="row">
         <div class="col-xxl-8 col-xl-9 col-lg-10">
