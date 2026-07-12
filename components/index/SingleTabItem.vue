@@ -1,5 +1,6 @@
 <template>
   <div :class="`tab-pane fade ${active ? 'show active' : ''}`" :id="id">
+    <SertificatesPhotoCarouse v-if="images.length" :key="item" :images="images" />
     <div class="vision__item">
       <div v-if="isImageExist" class="vision__thumb m-img mb-30" ref="imageBlock">
         <img :src="imageUrl" :alt="$t(`index.education.${item}.title`)">
@@ -33,26 +34,39 @@
 </template>
 
 <script>
+import SertificatesPhotoCarouse from './SertificatesPhotoCarouse.vue';
+
 export default {
+  components: {
+    SertificatesPhotoCarouse
+  },
   props: {
     id: String,
     active: Boolean,
     item: String
   },
-
   data() {
     return {
       isImageExist: false
     }
   },
-
   computed: {
+    images() {
+      const key = `index.education.${this.item}.images`;
+      const images = this.$tm(key);
+      if (!Array.isArray(images)) {
+        return [];      }
+
+      return images.map((_, index) =>
+        this.$t(`${key}.${index}`)
+      );
+    },
     imageUrl() {
-      const key = `index.education.${this.item}.image`
+      const key = `index.education.${this.item}.image`;
       if (this.$te(key) && this.$t(key) !== key) {
-        return this.$t(key)
+        return this.$t(key);
       }
-      return null
+      return null;
     }
   },
 
