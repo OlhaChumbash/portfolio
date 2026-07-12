@@ -27,9 +27,9 @@
     </div>
 
     <div class="slider__mouse-scroll smooth d-flex align-items-center">
-      <a href="#about" class="mouse-scroll-icon"></a>
+      <a href="#footer" class="mouse-scroll-icon"></a>
       <p>
-        <a href="#about">{{ $t('index.scroll_down') }}</a>
+        <a href="#footer">{{ $t('index.scroll_down') }}</a>
       </p>
     </div>
 

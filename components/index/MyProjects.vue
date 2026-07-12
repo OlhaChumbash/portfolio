@@ -1,5 +1,5 @@
 <template>
-  <section id="student-projects" class="elements__carousel-area">
+  <section id="my-projects" class="elements__carousel-area pt-110">
     <div class="container">
       <div class="row projects__titles-container">
         <div class="col-xxl-7 col-xl-7">
