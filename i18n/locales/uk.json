@@ -891,10 +891,16 @@
     "recaptcha": "Будь ласка, підтвердіть, що ви не робот"
   },
   "menu": {
-    "index": "Головна",
-    "projects": "Проєкти",
-    "contact": "Контакти"
-  },
+  "index": "Головна",
+  "projects": "Проєкти",
+  "contact": "Контакти",
+
+  "about": "Про мене",
+  "skills": "Навички",
+  "experience": "Досвід",
+  "education": "Освіта",
+  "certificates": "Сертифікати"
+},
  "contacts": {
   "title": "Контакти",
   "form_title": "Надіслати повідомлення",

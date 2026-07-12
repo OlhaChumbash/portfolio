@@ -2,11 +2,11 @@
   <LayoutMain>
     <HeroBlock/>
     <AboutMeInfo/>
-    <CertificatesGallery/>
-    <WorkExperienceBlock/>
     <MyProjects/>
     <SkillsBlock/>
+    <WorkExperienceBlock/>
     <EducationBlock/>
+    <CertificatesGallery/>
     <!-- <personal-port-services :style_2="true" />
     <about-me-portfolio/>
     <about-me-testimonial/>
