@@ -34,250 +34,339 @@
           "meta": "Маріупольська школа № 44"
         }
       }
-    },    
-  "skills": {
-    "title_1": "Навички &",
-    "title_2": "Знання",
-    "languages_title": "Мови",
-    "softSkills_title": "Soft Skills",
-    "technicalSkills": [
-
-      {
-        "title": "Frontend Development",
-        "items": [
-          {
-            "title": "JavaScript",
-            "icon": "devicon-javascript-plain colored"
-          },
-          {
-            "title": "React JS",
-            "icon": "devicon-react-original colored"
-          },
-          {
-            "title": "Vue JS",
-            "icon": "devicon-vuejs-plain colored"
-          },
-          {
-            "title": "Nuxt JS",
-            "icon": "devicon-nuxtjs-plain colored"
-          },
-          {
-            "title": "HTML5",
-            "icon": "devicon-html5-plain colored"
-          },
-          {
-            "title": "CSS3",
-            "icon": "devicon-css3-plain colored"
-          },
-          {
-            "title": "Bootstrap",
-            "icon": "devicon-bootstrap-plain colored"
-          },
-          {
-            "title": "Tailwind CSS",
-            "icon": "devicon-tailwindcss-original colored"
-          },
-          {
-            "title": "jQuery",
-            "icon": "devicon-jquery-plain colored"
-          },
-          { 
-            "title": "TypeScript", 
-            "icon": "devicon-typescript-plain colored" 
+    },
+    "skills": {
+      "title_1": "Навички &",
+      "title_2": "Знання",
+      "languages_title": "Мови",
+      "softSkills_title": "Soft Skills",
+      "technicalSkills": [
+        {
+          "title": "Frontend Development",
+          "items": [
+            {
+              "title": "JavaScript",
+              "icon": "devicon-javascript-plain colored"
+            },
+            {
+              "title": "React JS",
+              "icon": "devicon-react-original colored"
+            },
+            {
+              "title": "Vue JS",
+              "icon": "devicon-vuejs-plain colored"
+            },
+            {
+              "title": "Nuxt JS",
+              "icon": "devicon-nuxtjs-plain colored"
+            },
+            {
+              "title": "HTML5",
+              "icon": "devicon-html5-plain colored"
+            },
+            {
+              "title": "CSS3",
+              "icon": "devicon-css3-plain colored"
+            },
+            {
+              "title": "Bootstrap",
+              "icon": "devicon-bootstrap-plain colored"
+            },
+            {
+              "title": "Tailwind CSS",
+              "icon": "devicon-tailwindcss-original colored"
+            },
+            {
+              "title": "jQuery",
+              "icon": "devicon-jquery-plain colored"
+            },
+            {
+              "title": "TypeScript",
+              "icon": "devicon-typescript-plain colored"
+            }
+          ]
+        },
+        {
+          "title": "Backend Development",
+          "items": [
+            {
+              "title": "Node.js",
+              "icon": "devicon-nodejs-plain colored"
+            },
+            {
+              "title": "Express.js",
+              "icon": "devicon-express-original"
+            },
+            {
+              "title": "Laravel",
+              "icon": "devicon-laravel-plain colored"
+            },
+            {
+              "title": "EJS",
+              "icon": "devicon-nodejs-plain colored"
+            },
+            {
+              "title": "Python",
+              "icon": "devicon-python-plain colored"
+            },
+            {
+              "title": "Django",
+              "icon": "devicon-django-plain colored"
+            },
+            {
+              "title": "REST API",
+              "icon": "devicon-fastapi-plain colored"
+            },
+            {
+              "title": "Next.js",
+              "icon": "devicon-nextjs-plain colored"
+            }
+          ]
+        },
+        {
+          "title": "Бази даних",
+          "items": [
+            {
+              "title": "MongoDB",
+              "icon": "devicon-mongodb-plain colored"
+            },
+            {
+              "title": "PostgreSQL",
+              "icon": "devicon-postgresql-plain colored"
+            }
+          ]
+        },
+        {
+          "title": "Інструменти та робочий процес",
+          "items": [
+            {
+              "title": "GitHub",
+              "icon": "devicon-github-original"
+            },
+            {
+              "title": "Git",
+              "icon": "devicon-git-plain colored"
+            },
+            {
+              "title": "Docker",
+              "icon": "devicon-docker-plain colored"
+            },
+            {
+              "title": "Postman",
+              "icon": "devicon-postman-plain colored"
+            },
+            {
+              "title": "Insomnia",
+              "icon": "devicon-openapi-plain colored"
+            },
+            {
+              "title": "Jira",
+              "icon": "devicon-jira-plain colored"
+            },
+            {
+              "title": "Figma",
+              "icon": "devicon-figma-plain colored"
+            },
+            {
+              "title": "VS Code",
+              "icon": "devicon-vscode-plain colored"
+            },
+            {
+              "title": "Trello",
+              "icon": "devicon-trello-plain colored"
+            },
+            {
+              "title": "Slack",
+              "icon": "devicon-slack-plain colored"
+            },
+            {
+              "title": "Vite",
+              "icon": "devicon-vite-plain colored"
+            },
+            {
+              "title": "MS Office",
+              "icon": "devicon-windows8-original colored"
+            }
+          ]
+        },
+        {
+          "title": "Концепції та методології",
+          "items": [
+            {
+              "title": "OOP",
+              "icon": "devicon-java-plain colored"
+            },
+            {
+              "title": "Pixel Perfect",
+              "icon": "devicon-css3-plain colored"
+            },
+            {
+              "title": "Responsive Design",
+              "icon": "devicon-html5-plain colored"
+            },
+            {
+              "title": "CI/CD Basics",
+              "icon": "devicon-githubactions-plain colored"
+            },
+            {
+              "title": "Unit Testing",
+              "icon": "devicon-jest-plain colored"
+            },
+            {
+              "title": "PWA",
+              "icon": "devicon-chrome-plain colored"
+            },
+            {
+              "title": "SDLC",
+              "icon": "devicon-git-plain colored"
+            },
+            {
+              "title": "Scrum",
+              "icon": "devicon-jira-plain colored"
+            },
+            {
+              "title": "Microservices",
+              "icon": "fa-solid fa-cubes"
+            }
+          ]
         }
+      ],
+      "languages": [
+        {
+          "title": "Deutsch",
+          "level": "B2",
+          "icon": "fa-solid fa-language"
+        },
+        {
+          "title": "English",
+          "level": "B2",
+          "icon": "fa-solid fa-language"
+        },
+        {
+          "title": "Українська",
+          "level": "Рідна",
+          "icon": "fa-solid fa-language"
+        },
+        {
+          "title": "Русский",
+          "level": "Рідна",
+          "icon": "fa-solid fa-language"
+        }
+      ],
+      "softSkills": [
+        {
+          "title": "Teamwork",
+          "icon": "fa-solid fa-users colored"
+        },
+        {
+          "title": "Problem Solving",
+          "icon": "fa-solid fa-lightbulb colored"
+        },
+        {
+          "title": "Adaptability",
+          "icon": "fa-solid fa-arrows-rotate colored"
+        },
+        {
+          "title": "Fast Learning",
+          "icon": "fa-solid fa-brain"
+        },
+        {
+          "title": "Self Organization",
+          "icon": "fa-solid fa-list-check colored"
+        }
+      ]
+    },
+    "education": {
+      "title": "ОСВІТА ТА ПІДВИЩЕННЯ КВАЛІФІКАЦІЇ",
+      "item_1": {
+        "image": "/index/education/certificates/certificate_1.webp",
+        "title": "Fullstack Developer",
+        "place": "Вінницька IT-Академія",
+        "date": "Лютий 2023 — дотепер",
+        "description": "Навчання за напрямом Fullstack Developer. Отримані практичні навички створення сучасних вебзастосунків, роботи з клієнтською та серверною частиною.",
+        "list": [
+          "Frontend-розробка",
+          "Backend-розробка",
+          "Бази даних",
+          "JavaScript",
+          "HTML/CSS",
+          "Розробка повноцінних вебзастосунків"
         ]
       },
-      {
-        "title": "Backend Development",
-        "items": [
-          {
-            "title": "Node.js",
-            "icon": "devicon-nodejs-plain colored"
-          },
-          {
-            "title": "Express.js",
-            "icon": "devicon-express-original"
-          },
-          {
-            "title": "Laravel",
-            "icon": "devicon-laravel-plain colored"
-          },
-          {
-            "title": "EJS",
-            "icon": "devicon-nodejs-plain colored"
-          },
-          {
-            "title": "Python",
-            "icon": "devicon-python-plain colored"
-          },
-          {
-            "title": "Django",
-            "icon": "devicon-django-plain colored"
-          },
-          {
-            "title": "REST API",
-            "icon": "devicon-fastapi-plain colored"
-          },
-          { 
-            "title": "Next.js", 
-            "icon": "devicon-nextjs-plain colored"
-          }
+      "item_2": {
+        "image": "/index/education/certificates/certificate_25.webp",
+        "title": "Німецький мовний курс B2",
+        "place": "Volkshochschule Chemnitz",
+        "date": "Січень 2025 — Червень 2025",
+        "description": "Інтенсивний курс німецької мови рівня B2 для покращення професійної та повсякденної комунікації.",
+        "list": [
+          "Граматика рівня B2",
+          "Професійна лексика",
+          "Розмовна практика",
+          "Підготовка до роботи в німецькомовному середовищі"
         ]
       },
-      {
-        "title": "Бази даних",
-        "items": [
-          {
-            "title": "MongoDB",
-            "icon": "devicon-mongodb-plain colored"
-          },
-          {
-            "title": "PostgreSQL",
-            "icon": "devicon-postgresql-plain colored"
-          }
+      "item_3": {
+        "image": "/index/education/certificates/certificate_7.webp",
+        "title": "Meta сертифікати",
+        "place": "Meta",
+        "date": "Вересень 2024 — Вересень 2025",
+        "description": "Онлайн-сертифікаційні програми від Meta з веброзробки та сучасних технологій.",
+        "list": [
+          "Front-End Development",
+          "Back-End Development",
+          "API",
+          "React",
+          "UX/UI",
+          "JavaScript",
+          "HTML/CSS",
+          "Full-Stack Development"
         ]
       },
-      {
-        "title": "Інструменти та робочий процес",
-        "items": [
-          {
-            "title": "GitHub",
-            "icon": "devicon-github-original"
-          },
-          { "title": "Git", 
-            "icon": "devicon-git-plain colored" 
-          },
-          {
-            "title": "Docker",
-            "icon": "devicon-docker-plain colored"
-          },
-          {
-            "title": "Postman",
-            "icon": "devicon-postman-plain colored"
-          },
-          {
-            "title": "Insomnia",
-            "icon": "devicon-openapi-plain colored"
-          },
-          {
-            "title": "Jira",
-            "icon": "devicon-jira-plain colored"
-          },
-          {
-            "title": "Figma",
-            "icon": "devicon-figma-plain colored"
-          },
-          {
-            "title": "VS Code",
-            "icon": "devicon-vscode-plain colored"
-          },
-          {
-            "title": "Trello",
-            "icon": "devicon-trello-plain colored"
-          },
-          {
-            "title": "Slack",
-            "icon": "devicon-slack-plain colored"
-          },
-          {
-            "title": "Vite",
-            "icon": "devicon-vite-plain colored"
-          },
-          {
-            "title": "MS Office",
-            "icon": "devicon-windows8-original colored"
-          }
+      "item_4": {
+        "image": "/index/education/certificates/certificate_9.webp",
+        "title": "Google Сертифікати",
+        "place": "Google",
+        "date": "Червень 2025 — Вересень 2025",
+        "description": "Сертифікаційна програма Google, присвячена основам IT-підтримки та технічного обслуговування.",
+        "list": [
+          "Основи IT-підтримки",
+          "Комп'ютерні системи",
+          "Мережі",
+          "Безпека",
+          "Усунення технічних проблем"
         ]
       },
-      {
-        "title": "Концепції та методології",
-        "items": [
-          {
-            "title": "OOP",
-            "icon": "devicon-java-plain colored"
-          },
-          {
-            "title": "Pixel Perfect",
-            "icon": "devicon-css3-plain colored"
-          },
-          {
-            "title": "Responsive Design",
-            "icon": "devicon-html5-plain colored"
-          },
-          {
-            "title": "CI/CD Basics",
-            "icon": "devicon-githubactions-plain colored"
-          },
-          {
-            "title": "Unit Testing",
-            "icon": "devicon-jest-plain colored"
-          },
-          {
-            "title": "PWA",
-            "icon": "devicon-chrome-plain colored"
-          },
-          {
-            "title": "SDLC",
-            "icon": "devicon-git-plain colored"
-          },
-          {
-            "title": "Scrum",
-            "icon": "devicon-jira-plain colored"
-          },
-          { 
-            "title": "Microservices", 
-            "icon": "fa-solid fa-cubes" 
-          }
+      "item_5": {
+        "image": "/index/education/certificates/certificate_21.webp",
+        "title": "SheCodes сертифікати",
+        "place": "SheCodes",
+        "date": "Вересень 2024",
+        "description": "Практичні курси з веброзробки та створення адаптивних вебінтерфейсів.",
+        "list": [
+          "Web Development",
+          "Responsive Design",
+          "React",
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ]
+      },
+      "item_6": {
+        "image": "/index/education/certificates/certificate_26.webp",
+        "title": "Бакалавр права",
+        "place": "Харьківський Національний університет внутрішніх справ",
+        "date": "Жовтень 2008 — Жовтень 2012",
+        "description": "Вища освіта за спеціальністю право.",
+        "list": [
+          "Юридична освіта",
+          "Правові дисципліни",
+          "Аналітичне мислення",
+          "Робота з нормативними документами"
         ]
       }
-    ],
-    "languages": [
-      {
-        "title": "Deutsch",
-        "level": "B2",
-        "icon": "fa-solid fa-language"
-      },
-      {
-        "title": "English",
-        "level": "B2",
-        "icon": "fa-solid fa-language"
-      },
-      {
-        "title": "Українська",
-        "level": "Рідна",
-        "icon": "fa-solid fa-language"
-      },
-      {
-        "title": "Русский",
-        "level": "Рідна",
-        "icon": "fa-solid fa-language"
-      }
-    ],
-
-    "softSkills": [
-      {
-        "title": "Teamwork",
-        "icon": "fa-solid fa-users colored"
-      },
-      {
-        "title": "Problem Solving",
-        "icon": "fa-solid fa-lightbulb colored"
-      },
-      {
-        "title": "Adaptability",
-        "icon": "fa-solid fa-arrows-rotate colored"
-      },
-      {
-        "title": "Fast Learning",
-        "icon": "fa-solid fa-brain"
-      },
-      {
-        "title": "Self Organization",
-        "icon": "fa-solid fa-list-check colored"
-      }
-    ]
-  }
-},
+    }
+  },
   "projects": {
     "title": "Мої проєкти",
     "button": "Усі проєкти",
@@ -327,7 +416,7 @@
           "name": "CSS",
           "icon": "devicon-css3-plain"
         },
-       {
+        {
           "name": "GitHub",
           "icon": "devicon-github-original"
         }
@@ -753,34 +842,23 @@
         }
       ]
     }
-  
-},
-"slider": {
-  "pre_title_1": "INTITA",
-  "title_1": "ІТ-Ліцей",
-  "title_2": "Програмуй",
-  "title_3": "майбутнє",
-  "button": "Хочу навчатися"
-},
-"request": {
-  "title": "Анкета для учня на навчання в IT-Ліцеї INTITA",
-  "first_name": "Ім'я",
-  "second_name": "Прізвище",
-  "email": "E-mail",
-  "phone": "Мобільний телефон",
-  "address": "Місто проживання",
-  "about_us": "Звідки отримали інформацію про нас?",
-  "button": "ВІДПРАВИТИ",
-  "success": "Ваша анкета успішно відправлена",
-  "success_btn": "Зрозуміло",
-  "recaptcha": "Будь ласка, підтвердіть, що ви не робот"
-},
-"menu": {
-  "index": "Головна",
-  "projects": "Проєкти",
-  "contact": "Контакти"
-},
-"contacts": {
-  "title": "Контакти"
-}
+  },
+  "request": {
+    "title": "Анкета для учня на навчання в IT-Ліцеї INTITA",
+    "first_name": "Ім'я",
+    "second_name": "Прізвище",
+    "email": "E-mail",
+    "phone": "Мобільний телефон",
+    "address": "Місто проживання",
+    "about_us": "Звідки отримали інформацію про нас?",
+    "button": "ВІДПРАВИТИ",
+    "success": "Ваша анкета успішно відправлена",
+    "success_btn": "Зрозуміло",
+    "recaptcha": "Будь ласка, підтвердіть, що ви не робот"
+  },
+  "menu": {
+    "index": "Головна",
+    "projects": "Проєкти",
+    "contact": "Контакти"
+  }
 }
