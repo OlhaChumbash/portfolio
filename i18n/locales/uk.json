@@ -891,68 +891,65 @@
     "recaptcha": "Будь ласка, підтвердіть, що ви не робот"
   },
   "menu": {
-  "index": "Головна",
-  "projects": "Проєкти",
-  "contact": "Контакти",
-
-  "about": "Про мене",
-  "skills": "Навички",
-  "experience": "Досвід",
-  "education": "Освіта",
-  "certificates": "Сертифікати"
-},
- "contacts": {
-  "title": "Контакти",
-  "form_title": "Надіслати повідомлення",
-
-  "items": {
-    "contact": {
-      "title": "Контакт",
-      "email": "olhachumbash{'@'}gmail.com",
-      "phones": [
-        "+4915174466630",
-        "+380973246983"
-      ]
-    },
-
-    "address": {
-      "title": "Адреса",
-     "values": [
-        "09111 Chemnitz, Deutschland",
-        "0629 Mariupol, Ukraine"
-  ]
-    },
-
-    "social": {
-      "title": "Соціальні мережі",
-      "links": [
-        {
-          "name": "LinkedIn",
-          "url": "https://www.linkedin.com/in/olha-chumbash-597568269/",
-          "icon": "fa-brands fa-linkedin-in"
-        },
-        {
-          "name": "GitHub",
-          "url": "https://github.com/OlhaChumbash",
-          "icon": "fa-brands fa-github"
-        },
-        {
-          "name": "Telegram",
-          "url": "https://t.me/olya_from_m",
-          "icon": "fa-brands fa-telegram"
-        },
-        {
-          "name": "WhatsApp",
-          "url": "https://wa.me/380973246983",
-          "icon": "fa-brands fa-whatsapp"
-        },
-        {
-          "name": "Instagram",
-          "url": "https://www.instagram.com/olya_from_m?igsh=MXBlM2E5YzdwY2Rzbw==",
-          "icon": "fa-brands fa-instagram"
-        }
-      ]
+    "index": "Головна",
+    "projects": "Проєкти",
+    "contact": "Контакти",
+    "about": "Про мене",
+    "skills": "Навички",
+    "experience": "Досвід",
+    "education": "Освіта",
+    "certificates": "Сертифікати",
+    "privacy_policy": "Політика приватності"
+  },
+  "contacts": {
+    "title": "Контакти",
+    "form_title": "Надіслати повідомлення",
+    "items": {
+      "contact": {
+        "title": "Контакт",
+        "email": "olhachumbash{'@'}gmail.com",
+        "phones": [
+          "+4915174466630",
+          "+380973246983"
+        ]
+      },
+      "address": {
+        "title": "Адреса",
+        "values": [
+          "09111 Chemnitz, Deutschland",
+          "0629 Mariupol, Ukraine"
+        ]
+      },
+      "social": {
+        "title": "Соціальні мережі",
+        "links": [
+          {
+            "name": "LinkedIn",
+            "url": "https://www.linkedin.com/in/olha-chumbash-597568269/",
+            "icon": "fa-brands fa-linkedin-in"
+          },
+          {
+            "name": "GitHub",
+            "url": "https://github.com/OlhaChumbash",
+            "icon": "fa-brands fa-github"
+          },
+          {
+            "name": "Telegram",
+            "url": "https://t.me/olya_from_m",
+            "icon": "fa-brands fa-telegram"
+          },
+          {
+            "name": "WhatsApp",
+            "url": "https://wa.me/380973246983",
+            "icon": "fa-brands fa-whatsapp"
+          },
+          {
+            "name": "Instagram",
+            "url": "https://www.instagram.com/olya_from_m?igsh=MXBlM2E5YzdwY2Rzbw==",
+            "icon": "fa-brands fa-instagram"
+          }
+        ]
+      }
     }
   }
-}
 }
