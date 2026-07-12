@@ -279,7 +279,10 @@
     "education": {
       "title": "ОСВІТА ТА ПІДВИЩЕННЯ КВАЛІФІКАЦІЇ",
       "item_1": {
-        "image": "/index/education/certificates/certificate_1.webp",
+        "images":
+            [
+              "/index/education/certificates/certificate_1.webp"
+            ],        
         "title": "Fullstack Developer",
         "place": "Вінницька IT-Академія",
         "date": "Лютий 2023 — дотепер",
@@ -294,7 +297,11 @@
         ]
       },
       "item_2": {
-        "image": "/index/education/certificates/certificate_25.webp",
+         "images":
+            [
+              "/index/education/certificates/certificate_25.webp",
+              "/index/education/certificates/certificate_31.webp"
+            ],
         "title": "Німецький мовний курс B2",
         "place": "Volkshochschule Chemnitz",
         "date": "Січень 2025 — Червень 2025",
@@ -307,7 +314,24 @@
         ]
       },
       "item_3": {
-        "image": "/index/education/certificates/certificate_7.webp",
+        "images":
+            [
+              "/index/education/certificates/certificate_1.webp",
+              "/index/education/certificates/certificate_2.webp",
+              "/index/education/certificates/certificate_4.webp",
+              "/index/education/certificates/certificate_5.webp",
+              "/index/education/certificates/certificate_7.webp",
+              "/index/education/certificates/certificate_10.webp",
+              "/index/education/certificates/certificate_11.webp",
+              "/index/education/certificates/certificate_12.webp",
+              "/index/education/certificates/certificate_13.webp",
+              "/index/education/certificates/certificate_14.webp",
+              "/index/education/certificates/certificate_15.webp",
+              "/index/education/certificates/certificate_16.webp",
+              "/index/education/certificates/certificate_17.webp",
+              "/index/education/certificates/certificate_18.webp",
+              "/index/education/certificates/certificate_19.webp"
+            ], 
         "title": "Meta сертифікати",
         "place": "Meta",
         "date": "Вересень 2024 — Вересень 2025",
@@ -324,7 +348,11 @@
         ]
       },
       "item_4": {
-        "image": "/index/education/certificates/certificate_9.webp",
+       "images":
+            [
+              "/index/education/certificates/certificate_8.webp",
+              "/index/education/certificates/certificate_9.webp"
+            ], 
         "title": "Google Сертифікати",
         "place": "Google",
         "date": "Червень 2025 — Вересень 2025",
@@ -338,7 +366,13 @@
         ]
       },
       "item_5": {
-        "image": "/index/education/certificates/certificate_21.webp",
+         "images":
+            [
+              "/index/education/certificates/certificate_21.webp",
+              "/index/education/certificates/certificate_22.webp",
+              "/index/education/certificates/certificate_23.webp"
+
+            ], 
         "title": "SheCodes сертифікати",
         "place": "SheCodes",
         "date": "Вересень 2024",
@@ -353,7 +387,14 @@
         ]
       },
       "item_6": {
-        "image": "/index/education/certificates/certificate_26.webp",
+        "images":
+            [
+              "/index/education/certificates/certificate_26.webp",
+              "/index/education/certificates/certificate_27.webp",
+              "/index/education/certificates/certificate_28.webp",
+              "/index/education/certificates/certificate_29.webp",
+              "/index/education/certificates/certificate_30.webp"
+            ], 
         "title": "Бакалавр права",
         "place": "Харьківський Національний університет внутрішніх справ",
         "date": "Жовтень 2008 — Жовтень 2012",

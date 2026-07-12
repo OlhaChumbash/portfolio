@@ -1,11 +1,11 @@
 <template>
   <LayoutMain>
-    <!-- <HeroBlock/>
+    <HeroBlock/>
     <AboutMeInfo/>
     <CertificatesGallery/>
     <WorkExperienceBlock/>
     <MyProjects/>
-    <SkillsBlock/> -->
+    <SkillsBlock/>
     <EducationBlock/>
     <!-- <personal-port-services :style_2="true" />
     <about-me-portfolio/>
@@ -49,7 +49,7 @@ export default {
     AboutMePortfolio,
     MyProjects,
     AboutMeTestimonial,
-    WorkExperienceBlock
+    WorkExperienceBlock,
   },
   setup() {
     useHead({

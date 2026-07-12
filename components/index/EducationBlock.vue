@@ -22,7 +22,6 @@
                   <div class="tab-date"> {{ tab.date }}</div>
                 </button>
               </li>
-
             </ul>
           </div>
         </div>
@@ -30,7 +29,6 @@
         <div class="col-xxl-9 col-xl-8 col-lg-8 col-md-7">
           <div class="vision__tab-content pl-70">
             <div class="tab-content" id="visionTabContent">
-
               <SingleTabItem v-for="(tab, index) in tabs" :key="tab.id" :id="tab.id" :item="tab.key"
                 :active="index === 0" />
             </div>
