@@ -103,7 +103,7 @@
             },
             {
               "title": "EJS",
-              "icon": "devicon-nodejs-plain colored"
+              "icon": "fa-solid fa-code text-primary"
             },
             {
               "title": "Python",
@@ -133,6 +133,11 @@
             {
               "title": "PostgreSQL",
               "icon": "devicon-postgresql-plain colored"
+            },
+            {
+              "title": "SQL",
+              "icon": "fa-solid fa-database text-primary",
+              "color": "#336791"
             }
           ]
         },
@@ -146,6 +151,10 @@
             {
               "title": "Git",
               "icon": "devicon-git-plain colored"
+            },
+            {
+              "title": "GitHub Copilot",
+              "icon": "fa-solid fa-robot  text-info"
             },
             {
               "title": "Docker",
@@ -186,6 +195,10 @@
             {
               "title": "MS Office",
               "icon": "devicon-windows8-original colored"
+            },
+            {
+              "title": "ChatGPT",
+              "icon": "fa-solid fa-robot text-success"
             }
           ]
         },
@@ -233,12 +246,12 @@
       ],
       "languages": [
         {
-          "title": "Deutsch",
+          "title": "Німецька",
           "level": "B2",
           "icon": "fa-solid fa-language"
         },
         {
-          "title": "English",
+          "title": "Англійська",
           "level": "B2",
           "icon": "fa-solid fa-language"
         },
@@ -248,36 +261,36 @@
           "icon": "fa-solid fa-language"
         },
         {
-          "title": "Русский",
+          "title": "Російська",
           "level": "Рідна",
           "icon": "fa-solid fa-language"
         }
       ],
       "softSkills": [
         {
-          "title": "Teamwork",
-          "icon": "fa-solid fa-users colored"
+          "title": "Командна робота",
+          "icon": "fa-solid fa-users"
         },
         {
-          "title": "Problem Solving",
-          "icon": "fa-solid fa-lightbulb colored"
+          "title": "Вирішення проблем",
+          "icon": "fa-solid fa-lightbulb"
         },
         {
-          "title": "Adaptability",
-          "icon": "fa-solid fa-arrows-rotate colored"
+          "title": "Адаптивність",
+          "icon": "fa-solid fa-arrows-rotate"
         },
         {
-          "title": "Fast Learning",
+          "title": "Швидке навчання",
           "icon": "fa-solid fa-brain"
         },
         {
-          "title": "Self Organization",
-          "icon": "fa-solid fa-list-check colored"
+          "title": "Самоорганізація",
+          "icon": "fa-solid fa-list-check"
         }
       ]
     },
     "education": {
-      "title": "ОСВІТА ТА ПІДВИЩЕННЯ КВАЛІФІКАЦІЇ",
+      "title": "Освіта та підвищення кваліфікації",
       "item_1": {
         "images": [
           "/index/education/certificates/certificate_1.webp"
@@ -877,18 +890,23 @@
       ]
     }
   },
-  "request": {
-    "title": "Анкета для учня на навчання в IT-Ліцеї INTITA",
-    "first_name": "Ім'я",
-    "second_name": "Прізвище",
-    "email": "E-mail",
-    "phone": "Мобільний телефон",
-    "address": "Місто проживання",
-    "about_us": "Звідки отримали інформацію про нас?",
-    "button": "ВІДПРАВИТИ",
-    "success": "Ваша анкета успішно відправлена",
-    "success_btn": "Зрозуміло",
-    "recaptcha": "Будь ласка, підтвердіть, що ви не робот"
+  "contact-form": {
+    "name": "Ім'я*",
+    "email": "Email*",
+    "phone": "Телефон*",
+    "message": "Ваше повідомлення*",
+    "privacy_text": "Я погоджуюся з",
+    "privacy_link": "політикою конфіденційності",    
+    "button": "Надіслати",
+    "success": "Ваше повідомлення успішно відправлено",
+
+    "errors": {
+      "required": "Поле обов'язкове",
+      "email": "Введіть коректний Email",
+      "phone": "Введіть коректний номер телефону",
+      "message": "Повідомлення має містити мінімум 10 символів",
+      "privacy": "Потрібно погодитися з політикою конфіденційності"
+    }
   },
   "menu": {
     "index": "Головна",
@@ -903,7 +921,7 @@
   },
   "contacts": {
     "title": "Контакти",
-    "form_title": "Надіслати повідомлення",
+    "form_title": "Надіслати мені повідомлення",
     "items": {
       "contact": {
         "title": "Контакт",
@@ -914,12 +932,12 @@
         ]
       },
       "address": {
-        "title": "Адреса",
-        "values": [
-          "09111 Chemnitz, Deutschland",
-          "0629 Mariupol, Ukraine"
-        ]
-      },
+      "title": "Адреса",
+      "values": [
+        "09111 Хемніц, Німеччина",
+        "0629 Маріуполь, Україна"
+      ]
+    },
       "social": {
         "title": "Соціальні мережі",
         "links": [
