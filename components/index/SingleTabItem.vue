@@ -35,6 +35,7 @@
 
 <script>
 import CertificatesPhotoCarouse from './CertificatesPhotoCarouse.vue';
+import { useRuntimeConfig } from '#imports';
 
 export default {
   components: {
@@ -52,19 +53,31 @@ export default {
   },
   computed: {
     images() {
+      const config = useRuntimeConfig();
+      const base = config.app.baseURL || "/";
+      const cleanBase = base.endsWith("/") ? base.slice(0, -1) : base;
       const key = `index.education.${this.item}.images`;
       const images = this.$tm(key);
       if (!Array.isArray(images)) {
-        return [];      }
+        return [];
+      }
 
-      return images.map((_, index) =>
-        this.$t(`${key}.${index}`)
-      );
+      return images.map((_, index) => {
+        const imagePath = this.$t(`${key}.${index}`);
+        const cleanPath = imagePath.startsWith("/") ? imagePath : `/${imagePath}`;
+        return `${cleanBase}${cleanPath}`;
+      });
     },
     imageUrl() {
+      if (!this.item) return null;
+      const config = useRuntimeConfig();
+      const base = config.app.baseURL || "/";
+      const cleanBase = base.endsWith("/") ? base.slice(0, -1) : base;
       const key = `index.education.${this.item}.image`;
       if (this.$te(key) && this.$t(key) !== key) {
-        return this.$t(key);
+        const imagePath = this.$t(key);
+        const cleanPath = imagePath.startsWith("/") ? imagePath : `/${imagePath}`;
+        return `${cleanBase}${cleanPath}`;
       }
       return null;
     }

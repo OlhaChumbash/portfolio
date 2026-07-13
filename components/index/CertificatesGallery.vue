@@ -17,6 +17,16 @@
 
 <script setup>
 import { ref } from "vue";
+import { useRuntimeConfig } from "#imports";
+import ImagePopup from "~/components/common/modals/ImagePopup.vue";
+
+const config = useRuntimeConfig();
+const baseAsset = (path) => {
+  const base = config.app.baseURL || "/";
+  const cleanBase = base.endsWith("/") ? base.slice(0, -1) : base;
+  const cleanPath = path.startsWith("/") ? path : `/${path}`;
+  return `${cleanBase}${cleanPath}`;
+};
 
 const imagePopup = ref(null);
 const paused = ref(false);
@@ -25,37 +35,37 @@ function openPopup(index) {
 }
 
 const galleryImages = [
-  "/index/education/certificates/certificate_1.webp",
-  "/index/education/certificates/certificate_2.webp",
-  "/index/education/certificates/certificate_3.webp",
-  "/index/education/certificates/certificate_4.webp",
-  "/index/education/certificates/certificate_5.webp",
-  "/index/education/certificates/certificate_6.webp",
-  "/index/education/certificates/certificate_7.webp",
-  "/index/education/certificates/certificate_8.webp",
-  "/index/education/certificates/certificate_9.webp",
-  "/index/education/certificates/certificate_10.webp",
-  "/index/education/certificates/certificate_11.webp",
-  "/index/education/certificates/certificate_12.webp",
-  "/index/education/certificates/certificate_13.webp",
-  "/index/education/certificates/certificate_14.webp",
-  "/index/education/certificates/certificate_15.webp",
-  "/index/education/certificates/certificate_16.webp",
-  "/index/education/certificates/certificate_17.webp",
-  "/index/education/certificates/certificate_18.webp",
-  "/index/education/certificates/certificate_19.webp",
-  "/index/education/certificates/certificate_20.webp",
-  "/index/education/certificates/certificate_21.webp",
-  "/index/education/certificates/certificate_22.webp",
-  "/index/education/certificates/certificate_23.webp",
-  "/index/education/certificates/certificate_24.webp",
-  "/index/education/certificates/certificate_25.webp",
-  "/index/education/certificates/certificate_26.webp",
-  "/index/education/certificates/certificate_27.webp",
-  "/index/education/certificates/certificate_28.webp",
-  "/index/education/certificates/certificate_29.webp",
-  "/index/education/certificates/certificate_30.webp",
-  "/index/education/certificates/certificate_31.webp",
+  baseAsset("/index/education/certificates/certificate_1.webp"),
+  baseAsset("/index/education/certificates/certificate_2.webp"),
+  baseAsset("/index/education/certificates/certificate_3.webp"),
+  baseAsset("/index/education/certificates/certificate_4.webp"),
+  baseAsset("/index/education/certificates/certificate_5.webp"),
+  baseAsset("/index/education/certificates/certificate_6.webp"),
+  baseAsset("/index/education/certificates/certificate_7.webp"),
+  baseAsset("/index/education/certificates/certificate_8.webp"),
+  baseAsset("/index/education/certificates/certificate_9.webp"),
+  baseAsset("/index/education/certificates/certificate_10.webp"),
+  baseAsset("/index/education/certificates/certificate_11.webp"),
+  baseAsset("/index/education/certificates/certificate_12.webp"),
+  baseAsset("/index/education/certificates/certificate_13.webp"),
+  baseAsset("/index/education/certificates/certificate_14.webp"),
+  baseAsset("/index/education/certificates/certificate_15.webp"),
+  baseAsset("/index/education/certificates/certificate_16.webp"),
+  baseAsset("/index/education/certificates/certificate_17.webp"),
+  baseAsset("/index/education/certificates/certificate_18.webp"),
+  baseAsset("/index/education/certificates/certificate_19.webp"),
+  baseAsset("/index/education/certificates/certificate_20.webp"),
+  baseAsset("/index/education/certificates/certificate_21.webp"),
+  baseAsset("/index/education/certificates/certificate_22.webp"),
+  baseAsset("/index/education/certificates/certificate_23.webp"),
+  baseAsset("/index/education/certificates/certificate_24.webp"),
+  baseAsset("/index/education/certificates/certificate_25.webp"),
+  baseAsset("/index/education/certificates/certificate_26.webp"),
+  baseAsset("/index/education/certificates/certificate_27.webp"),
+  baseAsset("/index/education/certificates/certificate_28.webp"),
+  baseAsset("/index/education/certificates/certificate_29.webp"),
+  baseAsset("/index/education/certificates/certificate_30.webp"),
+  baseAsset("/index/education/certificates/certificate_31.webp"),
 ];
 </script>
 

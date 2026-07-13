@@ -293,7 +293,7 @@
       "title": "Освіта та підвищення кваліфікації",
       "item_1": {
         "images": [
-          "/index/education/certificates/certificate_1.webp"
+          "index/education/certificates/certificate_1.webp"
         ],
         "title": "Fullstack Developer",
         "place": "Вінницька IT-Академія",
@@ -310,8 +310,8 @@
       },
       "item_2": {
         "images": [
-          "/index/education/certificates/certificate_25.webp",
-          "/index/education/certificates/certificate_31.webp"
+          "index/education/certificates/certificate_25.webp",
+          "index/education/certificates/certificate_31.webp"
         ],
         "title": "Німецький мовний курс B2",
         "place": "Volkshochschule Chemnitz",
@@ -326,21 +326,21 @@
       },
       "item_3": {
         "images": [
-          "/index/education/certificates/certificate_1.webp",
-          "/index/education/certificates/certificate_2.webp",
-          "/index/education/certificates/certificate_4.webp",
-          "/index/education/certificates/certificate_5.webp",
-          "/index/education/certificates/certificate_7.webp",
-          "/index/education/certificates/certificate_10.webp",
-          "/index/education/certificates/certificate_11.webp",
-          "/index/education/certificates/certificate_12.webp",
-          "/index/education/certificates/certificate_13.webp",
-          "/index/education/certificates/certificate_14.webp",
-          "/index/education/certificates/certificate_15.webp",
-          "/index/education/certificates/certificate_16.webp",
-          "/index/education/certificates/certificate_17.webp",
-          "/index/education/certificates/certificate_18.webp",
-          "/index/education/certificates/certificate_19.webp"
+          "index/education/certificates/certificate_1.webp",
+          "index/education/certificates/certificate_2.webp",
+          "index/education/certificates/certificate_4.webp",
+          "index/education/certificates/certificate_5.webp",
+          "index/education/certificates/certificate_7.webp",
+          "index/education/certificates/certificate_10.webp",
+          "index/education/certificates/certificate_11.webp",
+          "index/education/certificates/certificate_12.webp",
+          "index/education/certificates/certificate_13.webp",
+          "index/education/certificates/certificate_14.webp",
+          "index/education/certificates/certificate_15.webp",
+          "index/education/certificates/certificate_16.webp",
+          "index/education/certificates/certificate_17.webp",
+          "index/education/certificates/certificate_18.webp",
+          "index/education/certificates/certificate_19.webp"
         ],
         "title": "Meta сертифікати",
         "place": "Meta",
@@ -359,8 +359,8 @@
       },
       "item_4": {
         "images": [
-          "/index/education/certificates/certificate_8.webp",
-          "/index/education/certificates/certificate_9.webp"
+          "index/education/certificates/certificate_8.webp",
+          "index/education/certificates/certificate_9.webp"
         ],
         "title": "Google Сертифікати",
         "place": "Google",
@@ -376,9 +376,9 @@
       },
       "item_5": {
         "images": [
-          "/index/education/certificates/certificate_21.webp",
-          "/index/education/certificates/certificate_22.webp",
-          "/index/education/certificates/certificate_23.webp"
+          "index/education/certificates/certificate_21.webp",
+          "index/education/certificates/certificate_22.webp",
+          "index/education/certificates/certificate_23.webp"
         ],
         "title": "SheCodes сертифікати",
         "place": "SheCodes",
@@ -395,11 +395,11 @@
       },
       "item_6": {
         "images": [
-          "/index/education/certificates/certificate_26.webp",
-          "/index/education/certificates/certificate_27.webp",
-          "/index/education/certificates/certificate_28.webp",
-          "/index/education/certificates/certificate_29.webp",
-          "/index/education/certificates/certificate_30.webp"
+          "index/education/certificates/certificate_26.webp",
+          "index/education/certificates/certificate_27.webp",
+          "index/education/certificates/certificate_28.webp",
+          "index/education/certificates/certificate_29.webp",
+          "index/education/certificates/certificate_30.webp"
         ],
         "title": "Бакалавр права",
         "place": "Харьківський Національний університет внутрішніх справ",
@@ -424,16 +424,10 @@
       "breadcrumb_main": "Головна",
       "breadcrumb_current": "Проєкти"
     },
-    "filters": {
-      "all": "Усі",
-      "education": "Освіта",
-      "creative": "Креативні",
-      "health": "Медицина"
-    },
     "project_1": {
       "title": "Університет INTITA",
       "description": "Офіційний сайт університету для представлення освітніх програм, можливостей навчання та взаємодії зі студентами.",
-      "image": "/projects/project_1.webp",
+      "image": "projects/project_1.webp",
       "link": "https://university.intita.com/",
       "date": "Листопад 2025 — Квітень 2026",
       "items": [
@@ -472,7 +466,7 @@
     "project_2": {
       "title": "Технологічний ліцей INTITA",
       "description": "Сучасний освітній простір із технологічним напрямом та практичним підходом до навчання.",
-      "image": "/projects/project_2.webp",
+      "image": "projects/project_2.webp",
       "link": "https://lyceum.intita.com/",
       "date": "Жовтень 2025 — Листопад 2025",
       "items": [
@@ -511,7 +505,7 @@
     "project_3": {
       "title": "INJOBE",
       "description": "Job-Matching платформа для пошуку роботи, управління вакансіями та взаємодії між кандидатами і компаніями.",
-      "image": "/projects/project_3.webp",
+      "image": "projects/project_3.webp",
       "link": "",
       "date": "Червень 2025",
       "items": [
@@ -562,7 +556,7 @@
     "project_4": {
       "title": "Жива пам’ять Вінниці",
       "description": "Сайт, що береже пам’ять про людей, які віддали життя за свободу України. Простір вшанування мужності, жертовності та любові до Батьківщини.",
-      "image": "/projects/project_4.webp",
+      "image": "projects/project_4.webp",
       "link": "https://live-memory.vn.ua/",
       "date": "Січень 2025 — Березень 2025",
       "items": [
@@ -613,7 +607,7 @@
     "project_5": {
       "title": "KAVA VETERANA",
       "description": "Соціальний проєкт підтримки ветеранів, який допомагає розвивати професійні навички та адаптацію.",
-      "image": "/projects/project_5.webp",
+      "image": "projects/project_5.webp",
       "link": "",
       "date": "Травень 2024 — Грудень 2024",
       "items": [
@@ -665,7 +659,7 @@
     "project_6": {
       "title": "Oksana Tatarina School",
       "description": "Сайт школи англійської мови з курсами, програмами навчання та інформацією для студентів.",
-      "image": "/projects/project_6.webp",
+      "image": "projects/project_6.webp",
       "link": "https://tatarina.intita.com/",
       "date": "Лютий 2024 — Квітень 2024",
       "items": [
@@ -708,7 +702,7 @@
     "project_7": {
       "title": "Онлайн-школа німецької мови",
       "description": "Платформа для вивчення німецької мови з акцентом на практику спілкування та розвиток мовних навичок.",
-      "image": "/projects/project_7.webp",
+      "image": "projects/project_7.webp",
       "link": "https://pokhilkodarina.intita.com/",
       "date": "Листопад 2023 — Грудень 2023",
       "items": [
@@ -755,7 +749,7 @@
     "project_8": {
       "title": "TUI Travel Agency",
       "description": "Сайт туристичної агенції для підбору подорожей та зручної взаємодії з клієнтами.",
-      "image": "/projects/project_8.webp",
+      "image": "projects/project_8.webp",
       "link": "https://travelagency.intita.com/",
       "date": "Листопад 2023 — Грудень 2023",
       "items": [
@@ -802,7 +796,7 @@
     "project_9": {
       "title": "Програма працевлаштування IT-початківців",
       "description": "Проєкт підтримки спеціалістів, які роблять перші кроки в IT та розвивають професійні навички.",
-      "image": "/projects/project_9.webp",
+      "image": "projects/project_9.webp",
       "link": "https://it.uspih.vn.ua/",
       "date": "Жовтень 2023 — Листопад 2023",
       "items": [
@@ -845,7 +839,7 @@
     "project_10": {
       "title": "Програма підтримки ветеранів та ВПО",
       "description": "Соціальний проєкт, спрямований на розвиток IT-навичок та професійну адаптацію ветеранів і внутрішньо переміщених осіб.",
-      "image": "/projects/project_10.webp",
+      "image": "projects/project_10.webp",
       "link": "https://dobrogolight.intita.com/",
       "date": "Вересень 2023 — Жовтень 2023",
       "items": [
