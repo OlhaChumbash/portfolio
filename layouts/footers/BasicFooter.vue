@@ -29,7 +29,7 @@
             <div class="footer__menu-wrapper">
               <div class="main-menu main-menu-ff-space">
                 <nav id="mobile-menu" aria-label="Footer Navigation">
-                   <menus />
+                  <menus />
                   <!-- <NavMenu role="navigation" /> -->
                 </nav>
               </div>
@@ -45,9 +45,9 @@
               <div class="col-sm-4">
                 <div class="footer__privacy_policy">
                   <p>
-                    <a :href="privacyPdf" class="policy-link" data-bs-toggle="modal"
-                      data-bs-target="#privacyPolicyModal" aria-label="Open Privacy Policy">{{ $t("menu.privacy_policy")
-                      }}</a>
+                    <NuxtLink class="policy-link" to="/privacy-policy" target="_blank">
+                      {{ $t('menu.privacy_policy') }}
+                    </NuxtLink>
                   </p>
                 </div>
               </div>
@@ -90,7 +90,7 @@ import menus from "~/layouts/headers/menus.vue";
 
 export default {
   // components: { Social, ImagePopup, NavMenu, PrivacyPolicyModal },
-  components: { Social, menus},
+  components: { Social, menus },
 
   data() {
     return {

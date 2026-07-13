@@ -1,12 +1,12 @@
 <template>
-  <common-breadcrumb
+  <!-- <common-breadcrumb
     title="Have a look to our Gallery Style"
     subtitle="Elements"
   />
   <el-gallery-style-one />
   <home-portfolio />
   <el-gallery-style-two />
-  <el-gallery-style-three />
+  <el-gallery-style-three />-->
   <creative-portfolio/>
   <el-gallery-style-four/>
   <el-gallery-style-five/>
