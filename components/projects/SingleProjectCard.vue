@@ -2,7 +2,7 @@
   <div class="project-card" :class="{ 'project-card--reverse': isEven }">
 
     <div class="project-card__image-container">
-      <img :src="image" :alt="title" class="project-card__image" />
+      <img :src="getImagePath(image)" :alt="title" class="project-card__image" />
     </div>
 
 
@@ -24,14 +24,14 @@
         </div>
       </div>
       <div class="mb-30 blog__meta-10 has-date" bis_skin_checked="1">
-        <span><svg width="15" height="15" viewBox="0 0 15 15"
-            fill="none" xmlns="http://www.w3.org/2000/svg">
+        <span><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M7.5 14C11.0899 14 14 11.0899 14 7.5C14 3.91015 11.0899 1 7.5 1C3.91015 1 1 3.91015 1 7.5C1 11.0899 3.91015 14 7.5 14Z"
               stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
             <path d="M7.5 3.59961V7.49961L10.1 8.79961" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
               stroke-linejoin="round"></path>
-          </svg> {{ date }}</span></div>
+          </svg> {{ date }}</span>
+      </div>
 
 
       <div class="project-card__description">
@@ -62,6 +62,8 @@
 
 
 <script>
+import { useRuntimeConfig } from '#imports';
+
 export default {
   name: "SingleProjectCard",
   props: {
@@ -89,6 +91,16 @@ export default {
     isEven: {
       type: Boolean,
       default: false
+    }
+  },
+  methods: {
+    getImagePath(path) {
+      if (!path) return "";
+      const config = useRuntimeConfig();
+      const base = config.app.baseURL || "/";
+      const cleanBase = base.endsWith("/") ? base.slice(0, -1) : base;
+      const normalized = path.startsWith("/") ? path : `/${path}`;
+      return `${cleanBase}${normalized}`;
     }
   }
 };
@@ -127,7 +139,7 @@ export default {
   display: block;
 }
 
-.project-card__list{
+.project-card__list {
   list-style-type: none;
   font-size: 18px;
   margin-bottom: 32px;
@@ -135,8 +147,8 @@ export default {
   border-left: 2px solid #101010;
 }
 
-.project-card__list li{ 
-  margin-bottom: 10px;  
+.project-card__list li {
+  margin-bottom: 10px;
 }
 
 
