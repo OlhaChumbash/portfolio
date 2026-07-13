@@ -6,7 +6,7 @@
       <SkillsBlock/>
       <WorkExperienceBlock/>
       <EducationBlock/>
-      <CertificatesGallery/>
+      <CertificatesGalleryBlock/>
   </LayoutMain>
 </template>
 
@@ -18,7 +18,7 @@ import MyProjects from '~~/components/index/MyProjects.vue';
 import SkillsBlock from '~~/components/index/SkillsBlock.vue';
 import WorkExperienceBlock from '~~/components/index/WorkExperienceBlock.vue';
 import EducationBlock from '~~/components/index/EducationBlock.vue';
-import CertificatesGallery from '~~/components/index/CertificatesGallery.vue';
+import CertificatesGalleryBlock from '~~/components/index/CertificatesGalleryBlock.vue';
 
 export default {
   components: {
@@ -29,7 +29,7 @@ export default {
     SkillsBlock,
     WorkExperienceBlock,
     EducationBlock,
-    CertificatesGallery
+    CertificatesGalleryBlock
   },
   setup() {
     useHead({

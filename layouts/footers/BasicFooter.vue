@@ -29,7 +29,7 @@
             <div class="footer__menu-wrapper">
               <div class="main-menu main-menu-ff-space">
                 <nav id="mobile-menu" aria-label="Footer Navigation">
-                  <menus />
+                  <FooterMenu/>
                   <!-- <NavMenu role="navigation" /> -->
                 </nav>
               </div>
@@ -86,11 +86,11 @@ import Social from "~~/components/social/Social.vue";
 // import qrcode from "~/assets/img/icon/qrcode.webp";
 // import NavMenu from "./NavMenu.vue";
 // import PrivacyPolicyModal from "~~/components/common/modals/PrivacyPolicyModal.vue";
-import menus from "~/layouts/headers/menus.vue";
+import FooterMenu from "~/layouts/footers/FooterMenu.vue";
 
 export default {
   // components: { Social, ImagePopup, NavMenu, PrivacyPolicyModal },
-  components: { Social, menus },
+  components: { Social, FooterMenu },
 
   data() {
     return {
@@ -121,6 +121,8 @@ export default {
 
 .footer__wrapper {
   display: flex;
+  width: 100%;
+  justify-content: space-between;
 
   @media #{$xsx, $xs2} {
     flex-direction: column;

@@ -15,9 +15,10 @@
             <ul class="nav nav-tabs flex-column" id="visionTab" role="tablist">
 
               <li v-for="(tab, index) in tabs" :key="tab.key" class="nav-item" role="presentation">
-                <button class="nav-link" :class="{ active: index === 0 }" :id="`${tab.id}-tab`" data-bs-toggle="tab"
-                  :data-bs-target="`#${tab.id}`" type="button" role="tab" :aria-controls="tab.id"
-                  :aria-selected="index === 0">
+                <button class="nav-link" :class="{ active: activeTab === tab.id }" :id="`${tab.id}-tab`"
+                  type="button" role="tab" :aria-controls="tab.id"
+                  :aria-selected="activeTab === tab.id"
+                  @click.prevent="setActiveTab(tab.id)">
                   <div class="tab-title">{{ tab.title }}</div>
                   <div class="tab-date"> {{ tab.date }}</div>
                 </button>
@@ -29,8 +30,13 @@
         <div class="col-xxl-9 col-xl-8 col-lg-8 col-md-7">
           <div class="vision__tab-content pl-70">
             <div class="tab-content" id="visionTabContent">
-              <SingleTabItem v-for="(tab, index) in tabs" :key="tab.id" :id="tab.id" :item="tab.key"
-                :active="index === 0" />
+              <SingleTabItem
+                v-if="activeTabItem"
+                :key="activeTabItem.id"
+                :id="activeTabItem.id"
+                :item="activeTabItem.key"
+                :active="true"
+              />
             </div>
           </div>
         </div>
@@ -50,6 +56,12 @@ export default {
     SingleTabItem
   },
 
+  data() {
+    return {
+      activeTab: 'education-1'
+    };
+  },
+
   computed: {
     tabs() {
       const education = this.$tm('index.education');
@@ -61,8 +73,16 @@ export default {
           key: key,
           title: this.$t(`index.education.${key}.title`),
           date: this.$t(`index.education.${key}.date`)
-
         }));
+    },
+    activeTabItem() {
+      return this.tabs.find(tab => tab.id === this.activeTab) || this.tabs[0];
+    }
+  },
+
+  methods: {
+    setActiveTab(tabId) {
+      this.activeTab = tabId;
     }
   }
 }
