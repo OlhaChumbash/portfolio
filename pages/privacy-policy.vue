@@ -1,20 +1,23 @@
 <template>
-    <LayoutMain>
-      privacy-policy
-    </LayoutMain> 
+  <LayoutMain>
+    privacy-policy
+  </LayoutMain>
 </template>
 
-<script>
+<script setup>
+import { useI18n } from "vue-i18n";
+
 import LayoutMain from "~~/layouts/LayoutMain.vue";
- 
-export default {
-  components: {
-    LayoutMain
-  },
-  setup() {
-    useHead({
-      title: "Contact - Creative Agency & Portfolio Vue Nuxt 3 Template",
-    });
-  },
-};
+
+const { t } = useI18n();
+
+useHead({
+  title: () => t("seo.privacy-policy.title"),
+  meta: [
+    {
+      name: "description",
+      content: () => t("seo.privacy-policy.description"),
+    },
+  ],
+});
 </script>

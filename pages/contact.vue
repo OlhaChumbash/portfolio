@@ -1,23 +1,24 @@
 <template>
-    <LayoutMain>
-     <ContactArea />
-    </LayoutMain> 
+  <LayoutMain>
+    <ContactArea />
+  </LayoutMain>
 </template>
 
-<script>
-import LayoutMain from "~~/layouts/LayoutMain.vue";
-import ContactArea from '~~/components/contact-page/ContactArea.vue';
-// import BackToTop from '~~/layouts/footers/component/BackToTop.vue';
+<script setup>
+import { useI18n } from "vue-i18n";
 
-export default {
-  components: {
-    LayoutMain,
-    ContactArea
-  },
-  setup() {
-    useHead({
-      title: "Contact - Creative Agency & Portfolio Vue Nuxt 3 Template",
-    });
-  },
-};
+import LayoutMain from "~~/layouts/LayoutMain.vue";
+import ContactArea from "~~/components/contact-page/ContactArea.vue";
+
+const { t } = useI18n();
+
+useHead({
+  title: () => t("seo.contact.title"),
+  meta: [
+    {
+      name: "description",
+      content: () => t("seo.contact.description"),
+    },
+  ],
+});
 </script>
