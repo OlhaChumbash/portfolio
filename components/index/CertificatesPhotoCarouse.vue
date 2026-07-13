@@ -1,55 +1,90 @@
 <template>
-  <section class="elements__carousel-area pb-110">
-    <div class="container">
-      <div class="elements__carousel elements__carousel-img p-relative fix">
-
-        <Carousel v-if="images.length" :key="images.join('-')" ref="detailsSlider" :items-to-show="1"
-          :wrap-around="images.length > 1" :snapAlign="'center'" class="elements__carousel-img-active">
-          <Slide v-for="(img, i) in images" :key="i" class="elements__carousel-item w-img">
-            <img :src="img" alt="project image" />
-          </Slide>
-        </Carousel>
-
-        <div v-if="images.length > 1" class="elements-img-arrow">
-          <button @click="handlePrev" type="button" class="elements-img-button-prev slick-prev slick-arrow">
-            <i class="fa-solid fa-angle-left"></i>
-          </button>
-          <button @click="handleNext" type="button" class="elements-img-button-next slick-next slick-arrow">
-            <i class="fa-solid fa-angle-right"></i>
-          </button>
+  <section class="certificates-carousel">
+    <Carousel
+      :key="carouselId"
+      :items-to-show="1"
+      :wrap-around="images.length > 1"
+    >
+      <Slide 
+        v-for="(img, index) in images" 
+        :key="`${carouselId}-slide-${index}`"
+      >
+        <div class="carousel__item">
+          <img 
+            :src="img"
+            alt="certificate"
+            class="certificate-image"
+            @click="handleImageClick(index)"
+          />
         </div>
-      </div>
-    </div>
+      </Slide>
+      
+      <template #addons v-if="images.length > 1">
+        <Navigation />
+      </template>
+    </Carousel>
   </section>
 </template>
 
-
 <script>
-import { Carousel, Slide } from "vue3-carousel";
+import { Carousel, Slide, Navigation } from "vue3-carousel";
+import "vue3-carousel/dist/carousel.css";
 
 export default {
   name: "CertificatesPhotoCarouse",
+
   components: {
     Carousel,
     Slide,
+    Navigation,
   },
+
   props: {
     images: {
       type: Array,
-      default: () => [],
+      default: () => []
     },
+    carouselId: {
+      type: String,
+      default: ''
+    }
   },
+
+  emits: ['image-click'],
+
   methods: {
-    handlePrev() {
-      if (this.$refs.detailsSlider) {
-        this.$refs.detailsSlider.prev();
-      }
-    },
-    handleNext() {
-      if (this.$refs.detailsSlider) {
-        this.$refs.detailsSlider.next();
-      }
-    },
+    handleImageClick(index) {
+      this.$emit('image-click', index);
+    }
   }
 };
 </script>
+
+<style scoped>
+.certificates-carousel {
+  width: 100%;
+  margin-bottom: 25px;
+}
+.carousel__item {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.certificate-image {
+  max-width: 100%;
+  max-height: 500px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  cursor: zoom-in;
+}
+
+.carousel__item {
+  min-height: 420px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+</style>

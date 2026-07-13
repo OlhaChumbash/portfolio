@@ -293,7 +293,7 @@
       "title": "Освіта та підвищення кваліфікації",
       "item_1": {
         "images": [
-          "index/education/certificates/certificate_1.webp"
+          
         ],
         "title": "Fullstack Developer",
         "place": "Вінницька IT-Академія",
@@ -506,7 +506,7 @@
       "title": "INJOBE",
       "description": "Job-Matching платформа для пошуку роботи, управління вакансіями та взаємодії між кандидатами і компаніями.",
       "image": "projects/project_3.webp",
-      "link": "",
+      "link": "https://injobe.com/",
       "date": "Червень 2025",
       "items": [
         "Розробка адміністративної панелі для керування користувачами, вакансіями та заявками.",
