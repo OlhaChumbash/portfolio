@@ -12,8 +12,12 @@ import ProjectsHero from "~/components/projects/ProjectsHero.vue.vue";
 import ProjectCard from "~/components/projects/ProjectCard.vue";
 
 import { ref } from 'vue'
+import { useRuntimeConfig } from '#imports'
 
-const heroBg = "/projects/projects-hero-bg.webp"
+const config = useRuntimeConfig();
+const base = config.app.baseURL || '/';
+const cleanBase = base.endsWith('/') ? base.slice(0, -1) : base;
+const heroBg = `${cleanBase}/projects/projects-hero-bg.webp`
 
 const selectedCategory = ref('all')
 
