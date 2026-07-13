@@ -1,68 +1,67 @@
 <template>
-  <form id="contact-form" @submit.prevent="handleSubmit">
+  <form @submit.prevent="handleSubmit">
     <div class="row">
       <div class="col-md-6">
         <div class="contact__input-2">
-          <input name="name" v-model="formValue.name" type="text" placeholder="Enter your name" />
+          <input v-model="formValue.name" type="text" :placeholder="$t('contact-form.name')"
+            @blur="validateField('name')">
+          <FormFieldError :message="errors.name" />
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="contact__input-2">
+          <input v-model="formValue.email" type="email" :placeholder="$t('contact-form.email')"
+            @blur="validateField('email')">
+          <FormFieldError :message="errors.email" />
         </div>
       </div>
       <div class="col-md-6">
         <div class="contact__input-2">
-          <input name="email" v-model="formValue.email" type="email" placeholder="Enter your email" />
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="contact__input-2">
-          <input name="phone" v-model="formValue.phone" type="text" placeholder="Mobile no" />
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="contact__input-2">
-          <input name="company" v-model="formValue.company" type="text" placeholder="Company" />
+          <input v-model="formValue.phone" type="text" :placeholder="$t('contact-form.phone')"
+            @blur="validateField('phone')">
+
+          <FormFieldError :message="errors.phone" />
         </div>
       </div>
       <div class="col-md-12">
         <div class="contact__input-2">
-          <textarea name="message" v-model="formValue.msg" placeholder="Your message"></textarea>
+          <textarea v-model="formValue.message" :placeholder="$t('contact-form.message')"
+            @blur="validateField('message')"></textarea>
+          <FormFieldError :message="errors.message" />
         </div>
       </div>
       <div class="col-md-12">
-        <div class="contact__agree d-flex align-items-start mb-25">
-          <input class="e-check-input" type="checkbox" id="e-agree" />
-          <label class="e-check-label" for="e-agree">
-            I am bound by the terms of the Service I accept Privacy
-            Policy.
+        <div class="contact__agree d-flex mb-20">
+          <input id="privacy" type="checkbox" v-model="termsAccepted" @change="clearTermsError">
+
+          <label for="privacy">
+            {{ $t('contact-form.privacy_text') }}
+            <NuxtLink to="/privacy-policy" target="_blank">
+              {{ $t('contact-form.privacy_link') }}
+            </NuxtLink>
           </label>
+
         </div>
+        <FormFieldError :message="termsError" />
       </div>
-      <div class="col-md-5">
-        <div class="contact__btn-2">
-          <button type="submit" class="tp-btn">Send Message</button>
-        </div>
+      <div class="col-md-5 w-100 d-flex  justify-content-end">
+        <button type="submit" class="tp-btn" :disabled="isSubmitting">
+          {{ $t('contact-form.button') }}
+        </button>
       </div>
-      <div v-if="style_2" class="col-md-7">
-        <!-- for wp = this will hide in style one -->
-        <div class="contact__form-call float-md-end">
-          <span>Call for Consultation</span>
-          <p>
-            <a href="tel:2236-384-870">
-              <i class="fa-solid fa-phone-flip"></i> 
-              +2236 384 870
-            </a>
-          </p>
-        </div>
-      </div>
+    </div>
+    <div v-if="success" class="text-success mt-3">
+      {{ $t('contact-form.success') }}
     </div>
   </form>
 </template>
 
 <script>
+import FormFieldError from '@/components/forms/FormFieldError.vue'
 export default {
-  props:{
-    style_2:{
-      type:Boolean,
-      default:false,
-    }
+  components: {
+    FormFieldError
   },
   data() {
     return {
@@ -70,16 +69,86 @@ export default {
         name: "",
         email: "",
         phone: "",
-        company: "",
-        msg: "",
+        message: ""
       },
-    };
+      errors: {},
+      termsAccepted: false,
+      termsError: "",
+      success: false,
+      isSubmitting: false
+    }
   },
   methods: {
-    handleSubmit() {
-      console.log(this.formValue);
-      this.formValue = {};
+    validateField(field) {
+      const value = this.formValue[field].trim()
+      let error = ""
+
+      if (field === "name" && !value) {
+        error = this.$t('contact-form.errors.required')
+      }
+      if (field === "email") {
+        if (!value)
+          error = this.$t('contact-form.errors.required')
+        else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value))
+          error = this.$t('contact-form.errors.email')
+      }
+
+      if (field === "phone") {
+        if (!value)
+          error = this.$t('contact-form.errors.required')
+        else if (!/^[\d\s()+-]+$/.test(value))
+          error = this.$t('contact-form.errors.phone')
+      }
+
+      if (field === "message") {
+        if (!value)
+          error = this.$t('contact-form.errors.required')
+        else if (value.length < 10)
+          error = this.$t('contact-form.errors.message')
+      }
+      if (error) {
+        this.errors = {
+          ...this.errors,
+          [field]: error
+        }
+      } else {
+        delete this.errors[field]
+      }
     },
-  },
-};
+    clearTermsError() {
+      if (this.termsAccepted) {
+        this.termsError = "";
+      }
+    },
+    async handleSubmit() {
+      Object.keys(this.formValue)
+        .forEach(field => this.validateField(field))
+
+      if (!this.termsAccepted) {
+        this.termsError = this.$t('contact-form.errors.privacy')
+        return
+
+      }
+      if (Object.keys(this.errors).length)
+        return
+      this.isSubmitting = true
+      const formData = new FormData()
+
+      Object.entries(this.formValue)
+        .forEach(([key, value]) => {
+          formData.append(key, value)
+        })
+
+      this.success = true
+      this.isSubmitting = false
+
+      this.formValue = {
+        name: "",
+        email: "",
+        phone: "",
+        message: ""
+      }
+    }
+  }
+}
 </script>

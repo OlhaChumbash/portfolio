@@ -37,7 +37,7 @@
       </div>
     </div>
   </div>
-  <section class="contact__form-area pt-90">
+  <section class="contact__form-area pt-90 pb-90">
     <div class="container">
       <div class="row">
         <div class="col-xl-12">
