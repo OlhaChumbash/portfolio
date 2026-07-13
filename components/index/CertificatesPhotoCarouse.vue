@@ -28,7 +28,7 @@
 import { Carousel, Slide } from "vue3-carousel";
 
 export default {
-  name: "ProjectsPhotoCarouse",
+  name: "CertificatesPhotoCarouse",
   components: {
     Carousel,
     Slide,

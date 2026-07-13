@@ -6,9 +6,10 @@
 
 <script>
 import LayoutMain from "~~/layouts/LayoutMain.vue";
+ 
 export default {
   components: {
-    LayoutMain,
+    LayoutMain
   },
   setup() {
     useHead({
