@@ -1,6 +1,6 @@
 <template>
   <div>
-    <header-one :top_bar="false" :header_solid="true" :commonOffcanvas="true" />
+    <LayoutMain>
     <section class="error__area error__bg pb-110">
       <div class="container">
         <div class="row justify-content-center">
@@ -64,7 +64,7 @@
                     </svg>                           
                   </div>
                   <div class="error__content">
-                    <h3 class="error__title">{{error.message}}</h3>
+                    <!-- <h3 class="error__title">{{error.message}}</h3> -->
                     <p>Whoops, this is embarassing. Looks like the page you were looking for wasn't found.</p>
                     <a href="#" @click.prevent="handleClearError" class="tp-btn">
                         Back to Home
@@ -79,13 +79,12 @@
         </div>
       </div>
     </section>
-    <footer-six :style_2="true" />
+  </LayoutMain>
   </div>
 </template>
 
 <script setup>
-import FooterSix from './layouts/footers/FooterSix.vue';
-import HeaderOne from './layouts/headers/HeaderOne.vue';
+import LayoutMain from "~~/layouts/LayoutMain.vue";
 
 defineProps(['error'])
 
