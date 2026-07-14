@@ -19,15 +19,13 @@
             </div>
            <div class="mobile-menu fix mb-40 menu-counter mean-container d-lg-none">
               <div class="mean-bar">
-                <!-- MobileMenus start -->
-                <mobile-menus />
-                <!-- MobileMenus end -->
+                <mobile-menus @close="closeOffcanvas" />
               </div>
             </div>
 
             <div class="offcanvas__btn-switcher-wrapper">
               <div class="offcanvas__btn">
-                <button class="tp-btn-offcanvas" data-bs-toggle="modal" :data-bs-target="`#requestModal`">{{ $t("slider.button") }}</button>
+                <!-- <button class="tp-btn-offcanvas" data-bs-toggle="modal" :data-bs-target="`#requestModal`">{{ $t("slider.button") }}</button> -->
               </div>
               <div>
                 <LanguageSwitcher labelFormat="short" direction="down" />
@@ -47,7 +45,7 @@
         </div>
       </div>
 
-      <RequestModal modal_id="requestModal"/>
+      <ProductModal modal_id="requestModal"/>
   </div>
   <!-- body overlay start -->
   <div @click="closeOffcanvas" :class="`body-overlay ${isOffCanvasOpen ? 'opened' : ''}`"></div>
@@ -56,11 +54,12 @@
 
 <script>
 import MobileMenus from './MobileMenus.vue';
-import RequestModal from "~/components/common/modals/RequestModal.vue";
+import ProductModal from '~/components/common/modals/ProductModal.vue'
+
 import LanguageSwitcher from "~~/components/common/LanguageSwitcher.vue";
 
   export default {
-  components: { MobileMenus, RequestModal, LanguageSwitcher },
+  components: { MobileMenus, ProductModal, LanguageSwitcher },
   data(){
     return {
       isOffCanvasOpen:false,

@@ -65,9 +65,14 @@
               data-sal-delay="160"
               data-sal-duration="1100"
             >
-              <nuxt-link href="/contact" class="tp-btn-green">
+              <button
+  type="button"
+  class="tp-btn-green"
+  data-bs-toggle="modal"
+  data-bs-target="#requestModal"
+>
                 {{ $t('index.button') }}
-              </nuxt-link>
+              </button>
             </div>
 
           </div>
@@ -85,16 +90,27 @@
             </div>
           </div>
         </div>
-
       </div>
     </div>
+<ProductModal modal_id="requestModal" />
   </section>
 </template>
 
 <script>
-import SalScrollAnimationMixin from '~/mixins/SalScrollAnimationMixin';
+import SalScrollAnimationMixin from '~/mixins/SalScrollAnimationMixin'
+import ProductModal from '~/components/common/modals/ProductModal.vue'
 
 export default {
-  mixins:[SalScrollAnimationMixin],
+  components: {
+    ProductModal
+  },
+
+  mixins: [SalScrollAnimationMixin],
+
+  data() {
+    return {
+      isModalOpen: false
+    }
+  }
 }
 </script>

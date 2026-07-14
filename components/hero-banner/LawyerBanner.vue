@@ -58,18 +58,18 @@
       </div>
     </div>
     
-    <RequestModal modal_id="requestModal"/>
+    <ProductModal modal_id="requestModal"/>
   </section>
 </template>
 
 
 <script>
 import SalScrollAnimationMixin from '~/mixins/SalScrollAnimationMixin';
-import RequestModal from "~/components/common/modals/RequestModal.vue";
+import ProductModal from '~/components/common/modals/ProductModal.vue'
 
 export default {
    components: {
-    RequestModal  
+    ProductModal  
   },
   mixins:[SalScrollAnimationMixin]
 };

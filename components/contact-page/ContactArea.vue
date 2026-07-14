@@ -42,9 +42,9 @@
       <div class="row">
         <div class="col-xl-12">
           <div class="contact__form-2">
-            <h3 class="contact__form-2-title">
+            <!-- <h3 class="contact__form-2-title">
               {{ $t('contacts.form_title') }}
-            </h3>
+            </h3> -->
             <contact-form />
             <p class="ajax-response"></p>
           </div>

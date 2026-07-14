@@ -32,7 +32,7 @@
 <!--                  <SliderForm />-->
 <!--                </div>-->
                 <button type="button" class="tp-btn-4 tp-style-border" data-bs-toggle="modal" :data-bs-target="`#requestModal`">
-                  {{$t('slider.button')}}
+                  <!-- {{$t('slider.button')}} -->
                 </button>
               </div>
             </div>
@@ -45,7 +45,7 @@
     <div class="mouse-scroll">
       <a href="#tpabout" class="mouse-scroll-btn"></a>
     </div>
-    <RequestModal modal_id="requestModal"/>
+    <ProductModal modal_id="requestModal"/>
   </section>
 </template>
 
@@ -56,7 +56,7 @@ import SliderForm from "~~/components/forms/SliderForm.vue";
 // external
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { Pagination, Navigation, EffectFade } from "swiper";
-import RequestModal from "~/components/common/modals/RequestModal.vue";
+import ProductModal from '~/components/common/modals/ProductModal.vue'
 
 export default {
   components: {
