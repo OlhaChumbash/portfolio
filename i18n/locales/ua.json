@@ -219,6 +219,7 @@
         },
         {
           "title": "Концепції та методології",
+          "type": "concepts",
           "items": [
             {
               "title": "OOP",
