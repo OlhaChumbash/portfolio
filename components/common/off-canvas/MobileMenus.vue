@@ -26,7 +26,7 @@ const items = computed(() => [
   { to: "/contact", label: t("menu.contact") },
   { to: "/privacy-policy", label: t("menu.privacy_policy") },
   { to: "/impressum", label: t("menu.impressum") },
-  { to: "/cookies", label: t("menu.cookies") },
+  // { to: "/cookies", label: t("menu.cookies") },
 ]);
 
 const closeMenu = () => {

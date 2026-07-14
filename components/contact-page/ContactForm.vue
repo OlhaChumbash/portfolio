@@ -1,9 +1,13 @@
 <template>
   <form @submit.prevent="handleSubmit">
     <div class="row">
+      <h3 class="contact__form-2-title">
+        {{ $t('contacts.form_title') }}
+      </h3>
       <div class="col-md-6">
         <div class="contact__input-2">
-          <input v-model="formValue.name" type="text" :placeholder="$t('contact-form.name')"
+
+          <input v-model="formValue.name" type="text" autocomplete="name" :placeholder="$t('contact-form.name')"
             @blur="validateField('name')">
           <FormFieldError :message="errors.name" />
         </div>
@@ -11,15 +15,15 @@
 
       <div class="col-md-6">
         <div class="contact__input-2">
-          <input v-model="formValue.email" type="email" :placeholder="$t('contact-form.email')"
+          <input v-model="formValue.email" type="email" autocomplete="email" :placeholder="$t('contact-form.email')"
             @blur="validateField('email')">
           <FormFieldError :message="errors.email" />
         </div>
       </div>
       <div class="col-md-6">
         <div class="contact__input-2">
-          <input v-model="formValue.phone" type="text" :placeholder="$t('contact-form.phone')"
-            @blur="validateField('phone')">
+          <VueTelInput v-model="formValue.phone" autocomplete="tel" mode="international" :defaultCountry="'DE'"
+            @blur="validateField('phone')" />
 
           <FormFieldError :message="errors.phone" />
         </div>
@@ -33,8 +37,7 @@
       </div>
       <div class="col-md-12">
         <div class="contact__agree d-flex mb-20">
-          <input id="privacy" type="checkbox" v-model="termsAccepted" @change="clearTermsError">
-
+          <input id="privacy" type="checkbox" v-model="termsAccepted" required @change="clearTermsError" />
           <label for="privacy">
             {{ $t('contact-form.privacy_text') }}
             <NuxtLink to="/privacy-policy" target="_blank">
@@ -45,11 +48,15 @@
         </div>
         <FormFieldError :message="termsError" />
       </div>
+      <input type="checkbox" name="botcheck" class="hidden" style="display:none" />
       <div class="col-md-5 w-100 d-flex  justify-content-end">
         <button type="submit" class="tp-btn" :disabled="isSubmitting">
           {{ $t('contact-form.button') }}
         </button>
       </div>
+    </div>
+    <div v-if="submitError" class="text-danger mt-3">
+      {{ $t('contact-form.error') }}
     </div>
     <div v-if="success" class="text-success mt-3">
       {{ $t('contact-form.success') }}
@@ -59,6 +66,8 @@
 
 <script>
 import FormFieldError from '@/components/forms/FormFieldError.vue'
+import { isValidPhoneNumber } from 'libphonenumber-js'
+
 export default {
   components: {
     FormFieldError
@@ -71,16 +80,18 @@ export default {
         phone: "",
         message: ""
       },
+      accessKey: "7fb36cf8-5c17-4f30-837c-2319e2050073",
       errors: {},
       termsAccepted: false,
       termsError: "",
       success: false,
-      isSubmitting: false
+      isSubmitting: false,
+      submitError: false
     }
   },
   methods: {
     validateField(field) {
-      const value = this.formValue[field].trim()
+      const value = String(this.formValue[field] || "").trim()
       let error = ""
 
       if (field === "name" && !value) {
@@ -94,10 +105,12 @@ export default {
       }
 
       if (field === "phone") {
-        if (!value)
+        if (!value) {
           error = this.$t('contact-form.errors.required')
-        else if (!/^[\d\s()+-]+$/.test(value))
+        }
+        else if (!isValidPhoneNumber(value)) {
           error = this.$t('contact-form.errors.phone')
+        }
       }
 
       if (field === "message") {
@@ -121,32 +134,56 @@ export default {
       }
     },
     async handleSubmit() {
-      Object.keys(this.formValue)
-        .forEach(field => this.validateField(field))
+      Object.keys(this.formValue).forEach(field => this.validateField(field))
 
       if (!this.termsAccepted) {
         this.termsError = this.$t('contact-form.errors.privacy')
         return
-
       }
-      if (Object.keys(this.errors).length)
-        return
-      this.isSubmitting = true
-      const formData = new FormData()
 
-      Object.entries(this.formValue)
-        .forEach(([key, value]) => {
+      if (Object.keys(this.errors).length) {
+        return
+      }
+
+      this.isSubmitting = true
+      this.success = false
+      this.submitError = false
+
+      try {
+        const formData = new FormData()
+        formData.append("access_key", this.accessKey)
+
+        Object.entries(this.formValue).forEach(([key, value]) => {
           formData.append(key, value)
         })
 
-      this.success = true
-      this.isSubmitting = false
+        const response = await fetch(
+          "https://api.web3forms.com/submit",
+          {
+            method: "POST",
+            body: formData
+          }
+        )
+        const result = await response.json()
+        if (result.success) {
+          this.success = true
+          // Очищаем форму после успешной отправки
+          this.formValue = {
+            name: "",
+            email: "",
+            phone: "",
+            message: ""
+          }
+          this.termsAccepted = false
+        } else {
+          this.submitError = true
+        }
 
-      this.formValue = {
-        name: "",
-        email: "",
-        phone: "",
-        message: ""
+      } catch (error) {
+        this.submitError = true
+        console.error("Form error:", error)
+      } finally {
+        this.isSubmitting = false
       }
     }
   }

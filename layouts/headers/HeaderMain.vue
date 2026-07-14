@@ -31,7 +31,7 @@
       </div>
     </div>
 
-    <RequestModal modal_id="requestModal"/>
+    <ProductModal modal_id="requestModal"/>
   </header>
 
   <BurgerMenuMain ref="mobileMenu" />
@@ -40,11 +40,12 @@
 <script>
 import menus from "~/layouts/headers/menus.vue";
 import BurgerMenuMain from "~/components/common/off-canvas/BurgerMenuMain.vue";
-import RequestModal from "~/components/common/modals/RequestModal.vue";
+import ProductModal from '~/components/common/modals/ProductModal.vue'
+
 import LanguageSwitcher from "~~/components/common/LanguageSwitcher.vue";
 
 export default {
-  components: { menus, BurgerMenuMain, RequestModal, LanguageSwitcher },
+  components: { menus, BurgerMenuMain, ProductModal, LanguageSwitcher },
   data() {
     return {
       isSticky: false,
