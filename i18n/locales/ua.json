@@ -1,0 +1,1043 @@
+{
+  "seo": {
+    "index": {
+      "title": "Ольга Чумбаш Портфоліо Junior Full Stack Developer ",
+      "description": "Портфоліо Ольги Чумбаш — Junior Full Stack Developer. Проєкти, навички, досвід роботи, освіта, сертифікати та контактна інформація."
+    },
+    "projects": {
+      "title": "Проєкти Ольга Чумбаш Junior Full Stack Developer",
+      "description": "Добірка вебпроєктів Ольги Чумбаш, створених із використанням Vue.js, Nuxt.js, React, Node.js, Express.js, MongoDB, PostgreSQL та сучасних вебтехнологій."
+    },
+    "contact": {
+      "title": "Контакти Ольга Чумбаш",
+      "description": "Зв'яжіться з Ольгою Чумбаш щодо співпраці, працевлаштування, фриланс-проєктів або професійних консультацій у сфері веброзробки."
+    },
+    "privacy": {
+      "title": "Політика приватності Ольга Чумбаш",
+      "description": "Політика приватності сайту-портфоліо Ольги Чумбаш. Інформація про обробку персональних даних, використання файлів cookie та права користувачів."
+    }
+  },
+  "index": {
+    "pre_title_1": "Ольга Чумбаш",
+    "title_1": "Full Stack",
+    "title_2": "Developer",
+    "button": "Давайте працювати разом",
+    "all_projects": "All Projects",
+    "scroll_down": "Scroll Down",
+    "about_me": {
+      "subtitle": "ПРО МЕНЕ",
+      "title": "Привіт, я Ольга Чумбаш!",
+      "description_1": "Я — Junior Fullstack Developer, захоплена створенням сучасних вебзастосунків і вивченням новітніх технологій. Постійно вдосконалюю свої знання, працюю над власними проєктами та прагну писати зрозумілий, якісний і підтримуваний код.",
+      "description_2": "Попередній професійний досвід навчив мене системно підходити до вирішення складних завдань, швидко адаптуватися до нових викликів і знаходити ефективні рішення. У роботі ціную відповідальність, увагу до деталей, командну взаємодію та відкриту комунікацію.",
+      "description_3": "Моя мета — розвиватися як Fullstack Developer, брати участь у створенні корисних цифрових продуктів і робити внесок у розвиток команди та проєктів.",
+      "download_cv": "Завантажити CV"
+    },
+    "work_experience": {
+      "title": "Мій професійний розвиток та досвід",
+      "awards": "Професійні досягнення",
+      "items": {
+        "logistics_manager": {
+          "year": "Лютий 2017 - Лютий 2022",
+          "title": "Менеджерка з логістики",
+          "text": "Координація логістичних процесів та керування командою з 5 водіїв. Управління бюджетом і організація понад 35 транспортних замовлень щодня. Оптимізація процесів, що дозволило скоротити затримки на 20 % та підвищити загальну ефективність роботи на 13 %.",
+          "meta": "Zapravsky GmbH"
+        },
+        "school_secretary": {
+          "year": "Серпень 2012 - Січень 2017",
+          "title": "Секретарка",
+          "text": "Адміністративна підтримка команди з 25 співробітників. Ведення понад 200 документів, звітів і робочих записів щомісяця. Покращення організації офісних процесів та комунікації з батьками й зовнішніми партнерами.",
+          "meta": "Маріупольська школа № 44"
+        }
+      }
+    },
+    "skills": {
+      "title_1": "Навички &",
+      "title_2": "Знання",
+      "languages_title": "Мови",
+      "softSkills_title": "Soft Skills",
+      "technicalSkills": [
+        {
+          "title": "Frontend Development",
+          "items": [
+            {
+              "title": "JavaScript",
+              "icon": "devicon-javascript-plain colored"
+            },
+            {
+              "title": "React JS",
+              "icon": "devicon-react-original colored"
+            },
+            {
+              "title": "Vue JS",
+              "icon": "devicon-vuejs-plain colored"
+            },
+            {
+              "title": "Nuxt JS",
+              "icon": "devicon-nuxtjs-plain colored"
+            },
+            {
+              "title": "HTML5",
+              "icon": "devicon-html5-plain colored"
+            },
+            {
+              "title": "CSS3",
+              "icon": "devicon-css3-plain colored"
+            },
+            {
+              "title": "Bootstrap",
+              "icon": "devicon-bootstrap-plain colored"
+            },
+            {
+              "title": "Tailwind CSS",
+              "icon": "devicon-tailwindcss-original colored"
+            },
+            {
+              "title": "jQuery",
+              "icon": "devicon-jquery-plain colored"
+            },
+            {
+              "title": "TypeScript",
+              "icon": "devicon-typescript-plain colored"
+            }
+          ]
+        },
+        {
+          "title": "Backend Development",
+          "items": [
+            {
+              "title": "Node.js",
+              "icon": "devicon-nodejs-plain colored"
+            },
+            {
+              "title": "Express.js",
+              "icon": "devicon-express-original"
+            },
+            {
+              "title": "Laravel",
+              "icon": "devicon-laravel-plain colored"
+            },
+            {
+              "title": "EJS",
+              "icon": "fa-solid fa-code text-primary"
+            },
+            {
+              "title": "Python",
+              "icon": "devicon-python-plain colored"
+            },
+            {
+              "title": "Django",
+              "icon": "devicon-django-plain colored"
+            },
+            {
+              "title": "REST API",
+              "icon": "devicon-fastapi-plain colored"
+            },
+            {
+              "title": "Next.js",
+              "icon": "devicon-nextjs-plain colored"
+            }
+          ]
+        },
+        {
+          "title": "Бази даних",
+          "items": [
+            {
+              "title": "MongoDB",
+              "icon": "devicon-mongodb-plain colored"
+            },
+            {
+              "title": "PostgreSQL",
+              "icon": "devicon-postgresql-plain colored"
+            },
+            {
+              "title": "SQL",
+              "icon": "fa-solid fa-database text-primary",
+              "color": "#336791"
+            }
+          ]
+        },
+        {
+          "title": "Інструменти та робочий процес",
+          "items": [
+            {
+              "title": "GitHub",
+              "icon": "devicon-github-original"
+            },
+            {
+              "title": "Git",
+              "icon": "devicon-git-plain colored"
+            },
+            {
+              "title": "GitHub Copilot",
+              "icon": "fa-solid fa-robot  text-info"
+            },
+            {
+              "title": "Docker",
+              "icon": "devicon-docker-plain colored"
+            },
+            {
+              "title": "Postman",
+              "icon": "devicon-postman-plain colored"
+            },
+            {
+              "title": "Insomnia",
+              "icon": "devicon-openapi-plain colored"
+            },
+            {
+              "title": "Jira",
+              "icon": "devicon-jira-plain colored"
+            },
+            {
+              "title": "Figma",
+              "icon": "devicon-figma-plain colored"
+            },
+            {
+              "title": "VS Code",
+              "icon": "devicon-vscode-plain colored"
+            },
+            {
+              "title": "Trello",
+              "icon": "devicon-trello-plain colored"
+            },
+            {
+              "title": "Slack",
+              "icon": "devicon-slack-plain colored"
+            },
+            {
+              "title": "Vite",
+              "icon": "devicon-vite-plain colored"
+            },
+            {
+              "title": "MS Office",
+              "icon": "devicon-windows8-original colored"
+            },
+            {
+              "title": "ChatGPT",
+              "icon": "fa-solid fa-robot text-success"
+            }
+          ]
+        },
+        {
+          "title": "Концепції та методології",
+          "items": [
+            {
+              "title": "OOP",
+              "icon": "devicon-java-plain colored"
+            },
+            {
+              "title": "Pixel Perfect",
+              "icon": "devicon-css3-plain colored"
+            },
+            {
+              "title": "Responsive Design",
+              "icon": "devicon-html5-plain colored"
+            },
+            {
+              "title": "CI/CD Basics",
+              "icon": "devicon-githubactions-plain colored"
+            },
+            {
+              "title": "Unit Testing",
+              "icon": "devicon-jest-plain colored"
+            },
+            {
+              "title": "PWA",
+              "icon": "devicon-chrome-plain colored"
+            },
+            {
+              "title": "SDLC",
+              "icon": "devicon-git-plain colored"
+            },
+            {
+              "title": "Scrum",
+              "icon": "devicon-jira-plain colored"
+            },
+            {
+              "title": "Microservices",
+              "icon": "fa-solid fa-cubes"
+            }
+          ]
+        }
+      ],
+      "languages": [
+        {
+          "title": "Німецька",
+          "level": "B2",
+          "icon": "fa-solid fa-language"
+        },
+        {
+          "title": "Англійська",
+          "level": "B2",
+          "icon": "fa-solid fa-language"
+        },
+        {
+          "title": "Українська",
+          "level": "Рідна",
+          "icon": "fa-solid fa-language"
+        },
+        {
+          "title": "Російська",
+          "level": "Рідна",
+          "icon": "fa-solid fa-language"
+        }
+      ],
+      "softSkills": [
+        {
+          "title": "Командна робота",
+          "icon": "fa-solid fa-users"
+        },
+        {
+          "title": "Вирішення проблем",
+          "icon": "fa-solid fa-lightbulb"
+        },
+        {
+          "title": "Адаптивність",
+          "icon": "fa-solid fa-arrows-rotate"
+        },
+        {
+          "title": "Швидке навчання",
+          "icon": "fa-solid fa-brain"
+        },
+        {
+          "title": "Самоорганізація",
+          "icon": "fa-solid fa-list-check"
+        }
+      ]
+    },
+    "education": {
+      "title": "Освіта та підвищення кваліфікації",
+      "item_1": {
+        "images": [],
+        "title": "Fullstack Developer",
+        "place": "Вінницька IT-Академія",
+        "date": "Лютий 2023 — дотепер",
+        "description": "Навчання за напрямом Fullstack Developer. Отримані практичні навички створення сучасних вебзастосунків, роботи з клієнтською та серверною частиною.",
+        "list": [
+          "Frontend-розробка",
+          "Backend-розробка",
+          "Бази даних",
+          "JavaScript",
+          "HTML/CSS",
+          "Розробка повноцінних вебзастосунків"
+        ]
+      },
+      "item_2": {
+        "images": [
+          "index/education/certificates/certificate_25.webp",
+          "index/education/certificates/certificate_31.webp"
+        ],
+        "title": "Німецький мовний курс B2",
+        "place": "Volkshochschule Chemnitz",
+        "date": "Січень 2025 — Червень 2025",
+        "description": "Інтенсивний курс німецької мови рівня B2 для покращення професійної та повсякденної комунікації.",
+        "list": [
+          "Граматика рівня B2",
+          "Професійна лексика",
+          "Розмовна практика",
+          "Підготовка до роботи в німецькомовному середовищі"
+        ]
+      },
+      "item_3": {
+        "images": [
+          "index/education/certificates/certificate_1.webp",
+          "index/education/certificates/certificate_2.webp",
+          "index/education/certificates/certificate_4.webp",
+          "index/education/certificates/certificate_5.webp",
+          "index/education/certificates/certificate_7.webp",
+          "index/education/certificates/certificate_10.webp",
+          "index/education/certificates/certificate_11.webp",
+          "index/education/certificates/certificate_12.webp",
+          "index/education/certificates/certificate_13.webp",
+          "index/education/certificates/certificate_14.webp",
+          "index/education/certificates/certificate_15.webp",
+          "index/education/certificates/certificate_16.webp",
+          "index/education/certificates/certificate_17.webp",
+          "index/education/certificates/certificate_18.webp",
+          "index/education/certificates/certificate_19.webp"
+        ],
+        "title": "Meta сертифікати",
+        "place": "Meta",
+        "date": "Вересень 2024 — Вересень 2025",
+        "description": "Онлайн-сертифікаційні програми від Meta з веброзробки та сучасних технологій.",
+        "list": [
+          "Front-End Development",
+          "Back-End Development",
+          "API",
+          "React",
+          "UX/UI",
+          "JavaScript",
+          "HTML/CSS",
+          "Full-Stack Development"
+        ]
+      },
+      "item_4": {
+        "images": [
+          "index/education/certificates/certificate_8.webp",
+          "index/education/certificates/certificate_9.webp"
+        ],
+        "title": "Google Сертифікати",
+        "place": "Google",
+        "date": "Червень 2025 — Вересень 2025",
+        "description": "Сертифікаційна програма Google, присвячена основам IT-підтримки та технічного обслуговування.",
+        "list": [
+          "Основи IT-підтримки",
+          "Комп'ютерні системи",
+          "Мережі",
+          "Безпека",
+          "Усунення технічних проблем"
+        ]
+      },
+      "item_5": {
+        "images": [
+          "index/education/certificates/certificate_21.webp",
+          "index/education/certificates/certificate_22.webp",
+          "index/education/certificates/certificate_23.webp"
+        ],
+        "title": "SheCodes сертифікати",
+        "place": "SheCodes",
+        "date": "Вересень 2024",
+        "description": "Практичні курси з веброзробки та створення адаптивних вебінтерфейсів.",
+        "list": [
+          "Web Development",
+          "Responsive Design",
+          "React",
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ]
+      },
+      "item_6": {
+        "images": [
+          "index/education/certificates/certificate_26.webp",
+          "index/education/certificates/certificate_27.webp",
+          "index/education/certificates/certificate_28.webp",
+          "index/education/certificates/certificate_29.webp",
+          "index/education/certificates/certificate_30.webp"
+        ],
+        "title": "Бакалавр права",
+        "place": "Харьківський Національний університет внутрішніх справ",
+        "date": "Жовтень 2008 — Жовтень 2012",
+        "description": "Вища освіта за спеціальністю право.",
+        "list": [
+          "Юридична освіта",
+          "Правові дисципліни",
+          "Аналітичне мислення",
+          "Робота з нормативними документами"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "title": "Мої проєкти",
+    "button": "Усі проєкти",
+    "view_project": "Переглянути проєкт",
+    "hero": {
+      "pre_title": "МОЇ ПРОЄКТИ",
+      "title": "Рішення, які поєднують дизайн і технології",
+      "breadcrumb_main": "Головна",
+      "breadcrumb_current": "Проєкти"
+    },
+    "project_1": {
+      "title": "Університет INTITA",
+      "description": "Офіційний сайт університету для представлення освітніх програм, можливостей навчання та взаємодії зі студентами.",
+      "image": "projects/project_1.webp",
+      "link": "https://university.intita.com/",
+      "date": "Листопад 2025 — Квітень 2026",
+      "items": [
+        "Розробка адаптивного та динамічного frontend на Vue.js та Nuxt 3.",
+        "Створення інтерактивних форм реєстрації студентів та запитів.",
+        "Покращення доступності сайту: семантична структура, ARIA-атрибути, підтримка screen reader та клавіатурної навігації.",
+        "Розробка modal-компонентів з динамічним контентом, включаючи PDF-інформаційні блоки."
+      ],
+      "technologies": [
+        {
+          "name": "Vue.js",
+          "icon": "devicon-vuejs-plain"
+        },
+        {
+          "name": "Nuxt 3",
+          "icon": "devicon-nuxtjs-plain"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "devicon-javascript-plain"
+        },
+        {
+          "name": "HTML",
+          "icon": "devicon-html5-plain"
+        },
+        {
+          "name": "CSS",
+          "icon": "devicon-css3-plain"
+        },
+        {
+          "name": "GitHub",
+          "icon": "devicon-github-original"
+        }
+      ]
+    },
+    "project_2": {
+      "title": "Технологічний ліцей INTITA",
+      "description": "Сучасний освітній простір із технологічним напрямом та практичним підходом до навчання.",
+      "image": "projects/project_2.webp",
+      "link": "https://lyceum.intita.com/",
+      "date": "Жовтень 2025 — Листопад 2025",
+      "items": [
+        "Розробка адаптивного та динамічного frontend на Vue.js та Nuxt 3.",
+        "Реалізація багатомовності українською та англійською мовами.",
+        "Створення інтерактивних форм реєстрації учнів та запитів.",
+        "Інтеграція галерей, слайдерів та Google Maps."
+      ],
+      "technologies": [
+        {
+          "name": "Vue.js",
+          "icon": "devicon-vuejs-plain"
+        },
+        {
+          "name": "Nuxt 3",
+          "icon": "devicon-nuxtjs-plain"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "devicon-javascript-plain"
+        },
+        {
+          "name": "HTML",
+          "icon": "devicon-html5-plain"
+        },
+        {
+          "name": "CSS",
+          "icon": "devicon-css3-plain"
+        },
+        {
+          "name": "Git",
+          "icon": "devicon-git-plain"
+        }
+      ]
+    },
+    "project_3": {
+      "title": "INJOBE",
+      "description": "Job-Matching платформа для пошуку роботи, управління вакансіями та взаємодії між кандидатами і компаніями.",
+      "image": "projects/project_3.webp",
+      "link": "https://injobe.com/",
+      "date": "Червень 2025",
+      "items": [
+        "Розробка адміністративної панелі для керування користувачами, вакансіями та заявками.",
+        "Реалізація backend-логіки за допомогою контролерів, моделей та API-маршрутів.",
+        "Проєктування та реалізація CRUD-операцій для вакансій і даних кандидатів.",
+        "Реалізація валідації форм та обробки помилок для підвищення надійності системи."
+      ],
+      "technologies": [
+        {
+          "name": "PHP",
+          "icon": "devicon-php-plain"
+        },
+        {
+          "name": "Laravel",
+          "icon": "devicon-laravel-plain"
+        },
+        {
+          "name": "Vue.js",
+          "icon": "devicon-vuejs-plain"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "devicon-javascript-plain"
+        },
+        {
+          "name": "HTML",
+          "icon": "devicon-html5-plain"
+        },
+        {
+          "name": "CSS",
+          "icon": "devicon-css3-plain"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "devicon-postgresql-plain"
+        },
+        {
+          "name": "Docker",
+          "icon": "devicon-docker-plain"
+        },
+        {
+          "name": "GitHub",
+          "icon": "devicon-github-original"
+        }
+      ]
+    },
+    "project_4": {
+      "title": "Жива пам’ять Вінниці",
+      "description": "Сайт, що береже пам’ять про людей, які віддали життя за свободу України. Простір вшанування мужності, жертовності та любові до Батьківщини.",
+      "image": "projects/project_4.webp",
+      "link": "https://live-memory.vn.ua/",
+      "date": "Січень 2025 — Березень 2025",
+      "items": [
+        "Розробка та налаштування структури бази даних і міграцій.",
+        "Реалізація серверної логіки за допомогою контролерів та моделей.",
+        "Створення API та Web-маршрутів для взаємодії клієнтської та серверної частин.",
+        "Реалізація обробки помилок та валідації форм."
+      ],
+      "technologies": [
+        {
+          "name": "PHP",
+          "icon": "devicon-php-plain"
+        },
+        {
+          "name": "Laravel",
+          "icon": "devicon-laravel-original"
+        },
+        {
+          "name": "Vue.js",
+          "icon": "devicon-vuejs-plain"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "devicon-javascript-plain"
+        },
+        {
+          "name": "HTML",
+          "icon": "devicon-html5-plain"
+        },
+        {
+          "name": "CSS",
+          "icon": "devicon-css3-plain"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "devicon-postgresql-plain"
+        },
+        {
+          "name": "Docker",
+          "icon": "devicon-docker-plain"
+        },
+        {
+          "name": "GitHub",
+          "icon": "devicon-github-original"
+        }
+      ]
+    },
+    "project_5": {
+      "title": "KAVA VETERANA",
+      "description": "Соціальний проєкт підтримки ветеранів, який допомагає розвивати професійні навички та адаптацію.",
+      "image": "projects/project_5.webp",
+      "link": "",
+      "date": "Травень 2024 — Грудень 2024",
+      "items": [
+        "Розробка та підтримка адміністративної панелі.",
+        "Реалізація серверної логіки та функцій управління даними.",
+        "Робота зі структурою бази даних, моделями та міграціями.",
+        "Виконання CRUD-операцій для ефективної обробки інформації.",
+        "Тестування API-endpoints для стабільної взаємодії frontend, backend та адміністративної частини."
+      ],
+      "technologies": [
+        {
+          "name": "Node.js",
+          "icon": "devicon-nodejs-plain"
+        },
+        {
+          "name": "Express",
+          "icon": "devicon-express-original"
+        },
+        {
+          "name": "EJS",
+          "icon": "devicon-javascript-plain"
+        },
+        {
+          "name": "MongoDB",
+          "icon": "devicon-mongodb-plain"
+        },
+        {
+          "name": "Mongoose",
+          "icon": "devicon-mongodb-plain"
+        },
+        {
+          "name": "Docker",
+          "icon": "devicon-docker-plain"
+        },
+        {
+          "name": "Swagger",
+          "icon": "devicon-swagger-plain"
+        },
+        {
+          "name": "Postman",
+          "icon": "devicon-postman-plain"
+        },
+        {
+          "name": "GitHub",
+          "icon": "devicon-github-original"
+        }
+      ]
+    },
+    "project_6": {
+      "title": "Oksana Tatarina School",
+      "description": "Сайт школи англійської мови з курсами, програмами навчання та інформацією для студентів.",
+      "image": "projects/project_6.webp",
+      "link": "https://tatarina.intita.com/",
+      "date": "Лютий 2024 — Квітень 2024",
+      "items": [
+        "Розробка pixel-perfect адаптивної landing page.",
+        "Перенесення дизайну з Figma у повноцінну frontend-реалізацію.",
+        "Створення інтерактивної навігації та UI-елементів.",
+        "Забезпечення коректного відображення на різних пристроях."
+      ],
+      "technologies": [
+        {
+          "name": "HTML",
+          "icon": "devicon-html5-plain"
+        },
+        {
+          "name": "CSS",
+          "icon": "devicon-css3-plain"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "devicon-javascript-plain"
+        },
+        {
+          "name": "jQuery",
+          "icon": "devicon-jquery-plain"
+        },
+        {
+          "name": "Bootstrap",
+          "icon": "devicon-bootstrap-plain"
+        },
+        {
+          "name": "Swiper",
+          "icon": "devicon-swiper-original"
+        },
+        {
+          "name": "GitHub",
+          "icon": "devicon-github-original"
+        }
+      ]
+    },
+    "project_7": {
+      "title": "Онлайн-школа німецької мови",
+      "description": "Платформа для вивчення німецької мови з акцентом на практику спілкування та розвиток мовних навичок.",
+      "image": "projects/project_7.webp",
+      "link": "https://pokhilkodarina.intita.com/",
+      "date": "Листопад 2023 — Грудень 2023",
+      "items": [
+        "Розробка адаптивного лендингу для презентації послуг викладача.",
+        "Створення інтерактивних елементів, слайдерів та плавної навігації.",
+        "Оптимізація відображення сайту для різних пристроїв та браузерів.",
+        "Організація задач через Trello для ефективного робочого процесу."
+      ],
+      "technologies": [
+        {
+          "name": "HTML",
+          "icon": "devicon-html5-plain"
+        },
+        {
+          "name": "CSS",
+          "icon": "devicon-css3-plain"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "devicon-javascript-plain"
+        },
+        {
+          "name": "jQuery",
+          "icon": "devicon-jquery-plain"
+        },
+        {
+          "name": "Bootstrap",
+          "icon": "devicon-bootstrap-plain"
+        },
+        {
+          "name": "Swiper",
+          "icon": "devicon-swiper-original"
+        },
+        {
+          "name": "Trello",
+          "icon": "devicon-trello-plain"
+        },
+        {
+          "name": "GitHub",
+          "icon": "devicon-github-original"
+        }
+      ]
+    },
+    "project_8": {
+      "title": "TUI Travel Agency",
+      "description": "Сайт туристичної агенції для підбору подорожей та зручної взаємодії з клієнтами.",
+      "image": "projects/project_8.webp",
+      "link": "https://travelagency.intita.com/",
+      "date": "Листопад 2023 — Грудень 2023",
+      "items": [
+        "Розробка візуально точного та адаптивного лендингу.",
+        "Реалізація інтерактивних слайдерів та функції плавного прокручування.",
+        "Створення багатомовного інтерфейсу користувача.",
+        "Оптимізація продуктивності та кросбраузерності."
+      ],
+      "technologies": [
+        {
+          "name": "HTML",
+          "icon": "devicon-html5-plain"
+        },
+        {
+          "name": "CSS",
+          "icon": "devicon-css3-plain"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "devicon-javascript-plain"
+        },
+        {
+          "name": "jQuery",
+          "icon": "devicon-jquery-plain"
+        },
+        {
+          "name": "Bootstrap",
+          "icon": "devicon-bootstrap-plain"
+        },
+        {
+          "name": "Swiper",
+          "icon": "devicon-swiper-original"
+        },
+        {
+          "name": "Trello",
+          "icon": "devicon-trello-plain"
+        },
+        {
+          "name": "GitHub",
+          "icon": "devicon-github-original"
+        }
+      ]
+    },
+    "project_9": {
+      "title": "Програма працевлаштування IT-початківців",
+      "description": "Проєкт підтримки спеціалістів, які роблять перші кроки в IT та розвивають професійні навички.",
+      "image": "projects/project_9.webp",
+      "link": "https://it.uspih.vn.ua/",
+      "date": "Жовтень 2023 — Листопад 2023",
+      "items": [
+        "Розробка адаптивної landing page для презентації курсів та програм академії.",
+        "Створення інтерактивних блоків з відео та інформаційним контентом.",
+        "Реалізація дизайну з Figma у готовий frontend.",
+        "Оптимізація навігації та мобільної версії."
+      ],
+      "technologies": [
+        {
+          "name": "HTML",
+          "icon": "devicon-html5-plain"
+        },
+        {
+          "name": "CSS",
+          "icon": "devicon-css3-plain"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "devicon-javascript-plain"
+        },
+        {
+          "name": "jQuery",
+          "icon": "devicon-jquery-plain"
+        },
+        {
+          "name": "Bootstrap",
+          "icon": "devicon-bootstrap-plain"
+        },
+        {
+          "name": "Swiper",
+          "icon": "devicon-swiper-original"
+        },
+        {
+          "name": "GitHub",
+          "icon": "devicon-github-original"
+        }
+      ]
+    },
+    "project_10": {
+      "title": "Програма підтримки ветеранів та ВПО",
+      "description": "Соціальний проєкт, спрямований на розвиток IT-навичок та професійну адаптацію ветеранів і внутрішньо переміщених осіб.",
+      "image": "projects/project_10.webp",
+      "link": "https://dobrogolight.intita.com/",
+      "date": "Вересень 2023 — Жовтень 2023",
+      "items": [
+        "Розробка адаптивної та візуально точної landing page для презентації програм академії.",
+        "Реалізація дизайну з Figma у повноцінний frontend.",
+        "Створення інтерактивних блоків, відеосекцій та інформаційних компонентів.",
+        "Оптимізація навігації, мобільної адаптації та користувацького досвіду."
+      ],
+      "technologies": [
+        {
+          "name": "HTML",
+          "icon": "devicon-html5-plain"
+        },
+        {
+          "name": "CSS",
+          "icon": "devicon-css3-plain"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "devicon-javascript-plain"
+        },
+        {
+          "name": "jQuery",
+          "icon": "devicon-jquery-plain"
+        },
+        {
+          "name": "Bootstrap",
+          "icon": "devicon-bootstrap-plain"
+        },
+        {
+          "name": "Swiper",
+          "icon": "devicon-swiper-original"
+        },
+        {
+          "name": "Trello",
+          "icon": "devicon-trello-plain"
+        },
+        {
+          "name": "GitHub",
+          "icon": "devicon-github-original"
+        }
+      ]
+    }
+  },
+  "contact-form": {
+    "name": "Ім'я*",
+    "email": "Email*",
+    "phone": "Телефон*",
+    "message": "Ваше повідомлення*",
+    "privacy_text": "Я погоджуюся з",
+    "privacy_link": "політикою приватності",    
+    "button": "Надіслати",
+    "success": "Ваше повідомлення успішно відправлено",
+
+    "errors": {
+      "required": "Поле обов'язкове",
+      "email": "Введіть коректний Email",
+      "phone": "Введіть коректний номер телефону",
+      "message": "Повідомлення має містити мінімум 10 символів",
+      "privacy": "Потрібно погодитися з політикою приватності"
+    }
+  },
+  "menu": {
+    "index": "Головна",
+    "projects": "Проєкти",
+    "contact": "Контакти",
+    "about": "Про мене",
+    "skills": "Навички",
+    "experience": "Досвід",
+    "education": "Освіта",
+    "certificates": "Сертифікати",
+    "privacy_policy": "Політика приватності",
+    "impressum": "Контакти та правова інформація"
+  },
+  "contacts": {
+    "title": "Зв’яжіться зі мною",
+    "form_title": "Надіслати мені повідомлення",
+    "items": {
+      "contact": {
+        "title": "Контакт",
+        "email": "olhachumbash{'@'}gmail.com",
+        "phones": [
+          "+4915174466630",
+          "+380973246983"
+        ]
+      },
+      "address": {
+      "title": "Адреса",
+      "values": [
+        "09111 Хемніц, Німеччина",
+        "0629 Маріуполь, Україна"
+      ]
+    },
+      "social": {
+        "title": "Соціальні мережі",
+        "links": [
+          {
+            "name": "LinkedIn",
+            "url": "https://www.linkedin.com/in/olha-chumbash-597568269/",
+            "icon": "fa-brands fa-linkedin-in"
+          },
+          {
+            "name": "GitHub",
+            "url": "https://github.com/OlhaChumbash",
+            "icon": "fa-brands fa-github"
+          },
+          {
+            "name": "Telegram",
+            "url": "https://t.me/olya_from_m",
+            "icon": "fa-brands fa-telegram"
+          },
+          {
+            "name": "WhatsApp",
+            "url": "https://wa.me/380973246983",
+            "icon": "fa-brands fa-whatsapp"
+          },
+          {
+            "name": "Instagram",
+            "url": "https://www.instagram.com/olya_from_m?igsh=MXBlM2E5YzdwY2Rzbw==",
+            "icon": "fa-brands fa-instagram"
+          }
+        ]
+      }
+    }
+  },
+  "cookie_banner": {
+    "title": "Ми використовуємо cookie",
+    "description": "Цей сайт використовує cookie для покращення роботи та персоналізації. Продовжуючи користуватися сайтом, ви приймаєте нашу",
+    "link": "Політику cookie",
+    "accept": "Прийняти",
+    "reject": "Відхилити"
+  },
+  "modal_work_together": {
+    "title": "Давайте працювати разом",
+    "name": "Ім'я",
+    "email": "Email",
+    "message": "Повідомлення",
+    "submit": "Надіслати",
+    "success": "Повідомлення успішно надіслано"
+  },
+  "legal": {
+    "privacy": {
+      "title": "Політика приватності",
+      "intro": "Ця політика пояснює, як ми збираємо, використовуємо та захищаємо ваші персональні дані.",
+      "blocks": [
+        {
+          "title": "Збір даних",
+          "paragraphs": [
+            "Ми збираємо лише ту інформацію, яку ви добровільно надаєте через форму контакту або під час використання сайту."
+          ]
+        },
+        {
+          "title": "Використання даних",
+          "paragraphs": [
+            "Зібрані дані використовуються для відповіді на ваші запити, покращення роботи сайту та забезпечення безпеки."
+          ]
+        }
+      ]
+    },
+    "impressum": {
+      "title": "Impressum",
+      "intro": "Відповідно до законодавства Німеччини, тут подано інформацію про власника сайту.",
+      "blocks": [
+        {
+          "title": "Власник",
+          "paragraphs": [
+            "Ольга Чумбаш",
+            "09111 Хемніц, Німеччина",
+            "Email: olhachumbash{'@'}gmail.com"
+          ]
+        }
+      ]
+    },
+    "cookies": {
+      "title": "Політика cookie",
+      "intro": "Цей сайт використовує cookie для роботи сайтів, аналітики та поліпшення користувацького досвіду.",
+      "blocks": [
+        {
+          "title": "Що ми використовуємо",
+          "paragraphs": [
+            "Технічні cookie для збереження вибору мови та роботи меню.",
+            "Аналітичні cookie для розуміння використання сайту."
+          ]
+        }
+      ]
+    }
+  }
+}

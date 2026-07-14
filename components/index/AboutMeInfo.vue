@@ -21,8 +21,7 @@
 
             <div class="about__me-info-bottom d-sm-flex align-items-center mt-40">
               <div class="about__me-info-btn mr-30">
-                <a href="https://weblearnbd.net/wp/bioxlab/wp-content/uploads/2022/09/demo-cv.pdf" target="_blank"
-                  class="tp-btn">
+                <button type="button" class="tp-btn" @click="downloadCv">
                   {{ $t('index.about_me.download_cv') }}
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1 7H13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
@@ -30,7 +29,7 @@
                     <path d="M7 1L13 7L7 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
                       stroke-linejoin="round" />
                   </svg>
-                </a>
+                </button>
               </div>
               <div class="about__me-info-social">
                 <a href="https://www.linkedin.com/in/olha-chumbash-597568269/" target="_blank"
@@ -69,6 +68,17 @@ import SalScrollAnimationMixin from "~/mixins/SalScrollAnimationMixin";
 
 export default {
   mixins: [SalScrollAnimationMixin],
-
+  methods: {
+    downloadCv() {
+      const locale = this.$i18n.locale || 'uk';
+      const fileName = locale === 'de' ? 'cv-de.pdf' : locale === 'en' ? 'cv-en.pdf' : 'cv-ua.pdf';
+      const link = document.createElement('a');
+      link.href = `/cv/${fileName}`;
+      link.download = fileName;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    },
+  },
 };
 </script>

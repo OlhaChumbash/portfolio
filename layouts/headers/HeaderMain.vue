@@ -15,12 +15,13 @@
               <div class="d-none d-lg-block menu-flex-width">
                 <div class="main-menu main-menu-6">
                   <nav id="mobile-menu">
-                    <!-- menus start -->
                     <menus />
-                    <!-- menus end -->
                   </nav>
                 </div>
               </div>
+              <button class="mobile-menu-toggle d-lg-none" type="button" @click="handleOpenSidebar" aria-label="Open mobile menu">
+                <span></span><span></span><span></span>
+              </button>
               <div class="header__language-switcher language-switcher-flex-width">
                 <LanguageSwitcher labelFormat="short" direction="down" />
               </div>
@@ -33,20 +34,17 @@
     <RequestModal modal_id="requestModal"/>
   </header>
 
-  <!-- off canvas start -->
-  <!-- <BurgerMenuBasic ref="off_canvas" /> -->
-  <!-- off canvas end -->
+  <BurgerMenuMain ref="mobileMenu" />
 </template>
 
 <script>
 import menus from "~/layouts/headers/menus.vue";
-// import BurgerMenuBasic from "~/components/common/off-canvas/BurgerMenuBasic.vue";
+import BurgerMenuMain from "~/components/common/off-canvas/BurgerMenuMain.vue";
 import RequestModal from "~/components/common/modals/RequestModal.vue";
 import LanguageSwitcher from "~~/components/common/LanguageSwitcher.vue";
 
 export default {
-  // components: { menus, BurgerMenuBasic, RequestModal, LanguageSwitcher },
-  components: { menus, RequestModal, LanguageSwitcher },
+  components: { menus, BurgerMenuMain, RequestModal, LanguageSwitcher },
   data() {
     return {
       isSticky: false,
@@ -64,7 +62,7 @@ export default {
       }
     },
     handleOpenSidebar() {
-      this.$refs.off_canvas.openOffcanvas();
+      this.$refs.mobileMenu?.openOffcanvas();
     },
   },
   mounted() {
@@ -114,6 +112,28 @@ export default {
 @media #{$md}, #{$sm}, #{$xsx}, #{$xs4} {
   .header__language-switcher {
     display: none;
+  }
+}
+
+.mobile-menu-toggle {
+  display: none;
+  border: 0;
+  background: transparent;
+  padding: 6px;
+  margin-right: 8px;
+}
+
+.mobile-menu-toggle span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--tp-common-black);
+  margin: 4px 0;
+}
+
+@media (max-width: 768px) {
+  .mobile-menu-toggle {
+    display: inline-block;
   }
 }
 
