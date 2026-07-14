@@ -219,42 +219,34 @@
         },
         {
           "title": "Konzepte & Methodiken",
+          "type": "concepts",
           "items": [
             {
-              "title": "OOP",
-              "icon": "devicon-java-plain colored"
+              "title": "OOP"
             },
             {
-              "title": "Pixel Perfect",
-              "icon": "devicon-css3-plain colored"
+              "title": "Pixel Perfect"            
             },
             {
-              "title": "Responsive Design",
-              "icon": "devicon-html5-plain colored"
+              "title": "Responsive Design"            
             },
             {
-              "title": "CI/CD Basics",
-              "icon": "devicon-githubactions-plain colored"
+              "title": "CI/CD Basics"            
             },
             {
-              "title": "Unit Testing",
-              "icon": "devicon-jest-plain colored"
+              "title": "Unit Testing"            
             },
             {
-              "title": "PWA",
-              "icon": "devicon-chrome-plain colored"
+              "title": "PWA"
             },
             {
-              "title": "SDLC",
-              "icon": "devicon-git-plain colored"
+              "title": "SDLC"              
             },
             {
-              "title": "Scrum",
-              "icon": "devicon-jira-plain colored"
+              "title": "Scrum"
             },
             {
-              "title": "Microservices",
-              "icon": "fa-solid fa-cubes"
+              "title": "Microservices"
             }
           ]
         }
@@ -906,6 +898,7 @@
     "privacy_link": "Datenschutzerklärung zu",    
     "button": "Senden",
     "success": "Ihre Nachricht wurde erfolgreich gesendet",
+    "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
     "errors": {
       "required": "Dieses Feld ist erforderlich",
       "email": "Bitte geben Sie eine gültige E-Mail-Adresse ein",

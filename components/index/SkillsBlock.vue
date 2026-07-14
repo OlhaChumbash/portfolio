@@ -164,10 +164,22 @@ export default {
       if (!Array.isArray(items)) {
         return [];
       }
-      return items.map((_, index) => ({
-        title: this.$t(`${path}.${index}.title`),
-        icon: this.$t(`${path}.${index}.icon`)
-      }));
+
+      return items.map((item, index) => {
+        // Create the structured object
+        const result = {
+          title: this.$t(`${path}.${index}.title`)
+        };
+
+        // ONLY call $t for icon if the key exists in the raw locale file
+        if (item && typeof item === 'object' && 'icon' in item) {
+          result.icon = this.$t(`${path}.${index}.icon`);
+        } else {
+          result.icon = null;
+        }
+
+        return result;
+      });
     }
   }
 }
