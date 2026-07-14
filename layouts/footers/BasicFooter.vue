@@ -45,9 +45,10 @@
               <div class="col-sm-4">
                 <div class="footer__privacy_policy">
                   <p>
-                    <NuxtLink class="policy-link" to="/privacy-policy" target="_blank">
-                      {{ $t('menu.privacy_policy') }}
-                    </NuxtLink>
+                    <NuxtLink class="policy-link" to="/privacy-policy">{{ $t('menu.privacy_policy') }}</NuxtLink>
+                  </p>
+                  <p>
+                    <NuxtLink class="policy-link" to="/impressum">{{ $t('menu.impressum') }}</NuxtLink>
                   </p>
                 </div>
               </div>

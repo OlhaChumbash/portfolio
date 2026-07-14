@@ -1,62 +1,59 @@
 {
   "seo": {
     "index": {
-      "title": "Ольга Чумбаш Портфоліо Junior Full Stack Developer ",
-      "description": "Портфоліо Ольги Чумбаш — Junior Full Stack Developer. Проєкти, навички, досвід роботи, освіта, сертифікати та контактна інформація."
+      "title": "Olha Chumbash Portfolio Junior Full Stack Developer",
+      "description": "Portfolio von Olha Chumbash — Junior Full Stack Developer. Projekte, Fähigkeiten, Berufserfahrung, Ausbildung, Zertifikate und Kontaktinformationen."
     },
     "projects": {
-      "title": "Проєкти Ольга Чумбаш Junior Full Stack Developer",
-      "description": "Добірка вебпроєктів Ольги Чумбаш, створених із використанням Vue.js, Nuxt.js, React, Node.js, Express.js, MongoDB, PostgreSQL та сучасних вебтехнологій."
+      "title": "Projekte Olha Chumbash Junior Full Stack Developer",
+      "description": "Eine Auswahl an Webprojekten von Olha Chumbash, erstellt mit Vue.js, Nuxt.js, React, Node.js, Express.js, MongoDB, PostgreSQL und modernen Webtechnologien."
     },
     "contact": {
-      "title": "Контакти Ольга Чумбаш",
-      "description": "Зв'яжіться з Ольгою Чумбаш щодо співпраці, працевлаштування, фриланс-проєктів або професійних консультацій у сфері веброзробки."
+      "title": "Kontakt Olha Chumbash",
+      "description": "Kontaktieren Sie Olha Chumbash für Zusammenarbeit, Beschäftigung, Freelance-Projekte oder professionelle Beratung im Bereich Webentwicklung."
     },
     "privacy": {
-      "title": "Політика конфіденційності Ольга Чумбаш",
-      "description": "Політика конфіденційності сайту-портфоліо Ольги Чумбаш. Інформація про обробку персональних даних, використання файлів cookie та права користувачів."
+      "title": "Datenschutzerklärung Olha Chumbash",
+      "description": "Datenschutzerklärung der Portfolio-Website von Olha Chumbash. Informationen über die Verarbeitung personenbezogener Daten, die Verwendung von Cookies und Nutzerrechte."
     }
   },
   "index": {
-    "pre_title_1": "Ольга Чумбаш",
+    "pre_title_1": "Olha Chumbash",
     "title_1": "Full Stack",
     "title_2": "Developer",
-    "button": "Давайте працювати разом",
+    "button": "Lassen Sie uns zusammenarbeiten",
     "all_projects": "All Projects",
     "scroll_down": "Scroll Down",
     "about_me": {
-      "subtitle": "ПРО МЕНЕ",
-      "title": "Привіт, я Ольга Чумбаш!",
-      "description_1": "Я — Junior Fullstack Developer, захоплена створенням сучасних вебзастосунків і вивченням новітніх технологій. Постійно вдосконалюю свої знання, працюю над власними проєктами та прагну писати зрозумілий, якісний і підтримуваний код.",
-      "description_2": "Попередній професійний досвід навчив мене системно підходити до вирішення складних завдань, швидко адаптуватися до нових викликів і знаходити ефективні рішення. У роботі ціную відповідальність, увагу до деталей, командну взаємодію та відкриту комунікацію.",
-      "description_3": "Моя мета — розвиватися як Fullstack Developer, брати участь у створенні корисних цифрових продуктів і робити внесок у розвиток команди та проєктів.",
-      "download_cv": "Завантажити CV"
-    },
-    "certificates": {
-      "title": "МОЇ СЕРТИФІКАТИ"
+      "subtitle": "ÜBER MICH",
+      "title": "Hallo, ich bin Olha Chumbash!",
+      "description_1": "Ich bin eine Junior Fullstack-Entwicklerin mit einer Leidenschaft für die Erstellung moderner Webanwendungen und das Erlernen neuester Technologien. Ich verbessere ständig mein Wissen, arbeite an eigenen Projekten und strebe danach, sauberen, qualitativ hochwertigen und wartbaren Code zu schreiben.",
+      "description_2": "Meine bisherige Berufserfahrung hat mich gelehrt, komplexe Aufgaben systematisch anzugehen, mich schnell an neue Herausforderungen anzupassen und effektive Lösungen zu finden. Bei der Arbeit schätze ich Verantwortungsbewusstsein, Liebe zum Detail, Teamarbeit und offene Kommunikation.",
+      "description_3": "Mein Ziel ist es, mich als Fullstack-Entwicklerin weiterzuentwickeln, an der Erstellung nützlicher digitaler Produkte mitzuwirken und einen Beitrag zur Entwicklung des Teams und der Projekte zu leisten.",
+      "download_cv": "CV herunterladen"
     },
     "work_experience": {
-      "title": "Мій професійний розвиток та досвід",
-      "awards": "Професійні досягнення",
+      "title": "Meine berufliche Entwicklung und Erfahrung",
+      "awards": "Berufliche Erfolge",
       "items": {
         "logistics_manager": {
-          "year": "Лютий 2017 - Лютий 2022",
-          "title": "Логістична менеджерка",
-          "text": "Координація логістичних процесів та керування командою з 5 водіїв. Управління бюджетом і організація понад 35 транспортних замовлень щодня. Оптимізація процесів, що дозволило скоротити затримки на 20 % та підвищити загальну ефективність роботи на 13 %.",
+          "year": "Februar 2017 - Februar 2022",
+          "title": "Logistikmanagerin",
+          "text": "Koordination von Logistikprozessen und Führung eines Teams von 5 Fahrern. Budgetverwaltung und Organisation von über 35 Transportaufträgen täglich. Optimierung von Prozessen, was zu einer Reduzierung von Verzögerungen um 20 % und einer Steigerung der Gesamteffizienz um 13 % führte.",
           "meta": "Zapravsky GmbH"
         },
         "school_secretary": {
-          "year": "Серпень 2012 - Січень 2017",
-          "title": "Секретарка",
-          "text": "Адміністративна підтримка команди з 25 співробітників. Ведення понад 200 документів, звітів і робочих записів щомісяця. Покращення організації офісних процесів та комунікації з батьками й зовнішніми партнерами.",
-          "meta": "Маріупольська школа № 44"
+          "year": "August 2012 - Januar 2017",
+          "title": "Sekretärin",
+          "text": "Administrative Unterstützung für ein Team von 25 Mitarbeitern. Verwaltung von über 200 Dokumenten, Berichten und Arbeitsaufzeichnungen monatlich. Verbesserung der Organisation von Büroprozessen sowie der Kommunikation mit Eltern und externen Partnern.",
+          "meta": "Mariupoler Schule Nr. 44"
         }
       }
     },
     "skills": {
-      "title_1": "Навички &",
-      "title_2": "Знання",
-      "languages_title": "Мови",
+      "title_1": "Fähigkeiten &",
+      "title_2": "Wissen",
+      "languages_title": "Sprachen",
       "softSkills_title": "Soft Skills",
       "technicalSkills": [
         {
@@ -142,7 +139,7 @@
           ]
         },
         {
-          "title": "Бази даних",
+          "title": "Datenbanken",
           "items": [
             {
               "title": "MongoDB",
@@ -160,7 +157,7 @@
           ]
         },
         {
-          "title": "Інструменти та робочий процес",
+          "title": "Tools & Workflow",
           "items": [
             {
               "title": "GitHub",
@@ -221,7 +218,7 @@
           ]
         },
         {
-          "title": "Концепції та методології",
+          "title": "Konzepte & Methodiken",
           "items": [
             {
               "title": "OOP",
@@ -264,66 +261,64 @@
       ],
       "languages": [
         {
-          "title": "Німецька",
+          "title": "Deutsch",
           "level": "B2",
           "icon": "fa-solid fa-language"
         },
         {
-          "title": "Англійська",
+          "title": "Englisch",
           "level": "B2",
           "icon": "fa-solid fa-language"
         },
         {
-          "title": "Українська",
-          "level": "Рідна",
+          "title": "Ukrainisch",
+          "level": "Muttersprache",
           "icon": "fa-solid fa-language"
         },
         {
-          "title": "Російська",
-          "level": "Рідна",
+          "title": "Russisch",
+          "level": "Muttersprache",
           "icon": "fa-solid fa-language"
         }
       ],
       "softSkills": [
         {
-          "title": "Командна робота",
+          "title": "Teamarbeit",
           "icon": "fa-solid fa-users"
         },
         {
-          "title": "Вирішення проблем",
+          "title": "Problemlösungskompetenz",
           "icon": "fa-solid fa-lightbulb"
         },
         {
-          "title": "Адаптивність",
+          "title": "Anpassungsfähigkeit",
           "icon": "fa-solid fa-arrows-rotate"
         },
         {
-          "title": "Швидке навчання",
+          "title": "Schnelle Auffassungsgabe",
           "icon": "fa-solid fa-brain"
         },
         {
-          "title": "Самоорганізація",
+          "title": "Selbstorganisation",
           "icon": "fa-solid fa-list-check"
         }
       ]
     },
     "education": {
-      "title": "Освіта та підвищення кваліфікації",
+      "title": "Ausbildung und Weiterbildung",
       "item_1": {
-        "images": [
-          
-        ],
+        "images": [],
         "title": "Fullstack Developer",
-        "place": "Вінницька IT-Академія",
-        "date": "Лютий 2023 — дотепер",
-        "description": "Навчання за напрямом Fullstack Developer. Отримані практичні навички створення сучасних вебзастосунків, роботи з клієнтською та серверною частиною.",
+        "place": "IT-Akademie Winnyzja",
+        "date": "Februar 2023 — heute",
+        "description": "Ausbildung im Bereich Fullstack Development. Erwerb praktischer Fähigkeiten in der Erstellung moderner Webanwendungen sowie in der Arbeit mit Client- und Serverseite.",
         "list": [
-          "Frontend-розробка",
-          "Backend-розробка",
-          "Бази даних",
+          "Frontend-Entwicklung",
+          "Backend-Entwicklung",
+          "Datenbanken",
           "JavaScript",
           "HTML/CSS",
-          "Розробка повноцінних вебзастосунків"
+          "Entwicklung vollwertiger Webanwendungen"
         ]
       },
       "item_2": {
@@ -331,15 +326,15 @@
           "index/education/certificates/certificate_25.webp",
           "index/education/certificates/certificate_31.webp"
         ],
-        "title": "Німецький мовний курс B2",
+        "title": "Deutsch-Sprachkurs B2",
         "place": "Volkshochschule Chemnitz",
-        "date": "Січень 2025 — Червень 2025",
-        "description": "Інтенсивний курс німецької мови рівня B2 для покращення професійної та повсякденної комунікації.",
+        "date": "Januar 2025 — Juni 2025",
+        "description": "Intensiver Deutschkurs auf dem Niveau B2 zur Verbesserung der beruflichen und alltäglichen Kommunikation.",
         "list": [
-          "Граматика рівня B2",
-          "Професійна лексика",
-          "Розмовна практика",
-          "Підготовка до роботи в німецькомовному середовищі"
+          "Grammatik auf B2-Niveau",
+          "Fachvokabular",
+          "Konversationstraining",
+          "Vorbereitung auf das Arbeiten im deutschsprachigen Umfeld"
         ]
       },
       "item_3": {
@@ -360,10 +355,10 @@
           "index/education/certificates/certificate_18.webp",
           "index/education/certificates/certificate_19.webp"
         ],
-        "title": "Meta сертифікати",
+        "title": "Meta-Zertifikate",
         "place": "Meta",
-        "date": "Вересень 2024 — Вересень 2025",
-        "description": "Онлайн-сертифікаційні програми від Meta з веброзробки та сучасних технологій.",
+        "date": "September 2024 — September 2025",
+        "description": "Online-Zertifizierungsprogramme von Meta in Webentwicklung und modernen Technologien.",
         "list": [
           "Front-End Development",
           "Back-End Development",
@@ -380,16 +375,16 @@
           "index/education/certificates/certificate_8.webp",
           "index/education/certificates/certificate_9.webp"
         ],
-        "title": "Google Сертифікати",
+        "title": "Google-Zertifikate",
         "place": "Google",
-        "date": "Червень 2025 — Вересень 2025",
-        "description": "Сертифікаційна програма Google, присвячена основам IT-підтримки та технічного обслуговування.",
+        "date": "Juni 2025 — September 2025",
+        "description": "Google-Zertifizierungsprogramm zu den Grundlagen des IT-Supports und der technischen Wartung.",
         "list": [
-          "Основи IT-підтримки",
-          "Комп'ютерні системи",
-          "Мережі",
-          "Безпека",
-          "Усунення технічних проблем"
+          "Grundlagen des IT-Supports",
+          "Computersysteme",
+          "Netzwerke",
+          "Sicherheit",
+          "Fehlerbehebung bei technischen Problemen"
         ]
       },
       "item_5": {
@@ -398,10 +393,10 @@
           "index/education/certificates/certificate_22.webp",
           "index/education/certificates/certificate_23.webp"
         ],
-        "title": "SheCodes сертифікати",
+        "title": "SheCodes-Zertifikate",
         "place": "SheCodes",
-        "date": "Вересень 2024",
-        "description": "Практичні курси з веброзробки та створення адаптивних вебінтерфейсів.",
+        "date": "September 2024",
+        "description": "Praktische Kurse in Webentwicklung und der Erstellung responsiver Web-Interfaces.",
         "list": [
           "Web Development",
           "Responsive Design",
@@ -419,40 +414,40 @@
           "index/education/certificates/certificate_29.webp",
           "index/education/certificates/certificate_30.webp"
         ],
-        "title": "Бакалавр права",
-        "place": "Харьківський Національний університет внутрішніх справ",
-        "date": "Жовтень 2008 — Жовтень 2012",
-        "description": "Вища освіта за спеціальністю право.",
+        "title": "Bachelor of Laws (Rechtswissenschaften)",
+        "place": "Nationale Universität für innere Angelegenheiten Charkiw",
+        "date": "Oktober 2008 — Oktober 2012",
+        "description": "Hochschulstudium im Fachbereich Rechtswissenschaften.",
         "list": [
-          "Юридична освіта",
-          "Правові дисципліни",
-          "Аналітичне мислення",
-          "Робота з нормативними документами"
+          "Juristische Ausbildung",
+          "Rechtsdisziplinen",
+          "Analytisches Denken",
+          "Arbeit mit regulatorischen Dokumenten"
         ]
       }
     }
   },
   "projects": {
-    "title": "Мої проєкти",
-    "button": "Усі проєкти",
-    "view_project": "Переглянути проєкт",
+    "title": "Meine Projekte",
+    "button": "Alle Projekte",
+    "view_project": "Projekt ansehen",
     "hero": {
-      "pre_title": "МОЇ ПРОЄКТИ",
-      "title": "Рішення, які поєднують дизайн і технології",
-      "breadcrumb_main": "Головна",
-      "breadcrumb_current": "Проєкти"
+      "pre_title": "MEINE PROJEKTE",
+      "title": "Lösungen, die Design und Technologie verbinden",
+      "breadcrumb_main": "Startseite",
+      "breadcrumb_current": "Projekte"
     },
     "project_1": {
-      "title": "Університет INTITA",
-      "description": "Офіційний сайт університету для представлення освітніх програм, можливостей навчання та взаємодії зі студентами.",
+      "title": "Universität INTITA",
+      "description": "Offizielle Website der Universität zur Präsentation von Bildungsprogrammen, Studienmöglichkeiten und zur Interaktion mit Studierenden.",
       "image": "projects/project_1.webp",
       "link": "https://university.intita.com/",
-      "date": "Листопад 2025 — Квітень 2026",
+      "date": "November 2025 — April 2026",
       "items": [
-        "Розробка адаптивного та динамічного frontend на Vue.js та Nuxt 3.",
-        "Створення інтерактивних форм реєстрації студентів та запитів.",
-        "Покращення доступності сайту: семантична структура, ARIA-атрибути, підтримка screen reader та клавіатурної навігації.",
-        "Розробка modal-компонентів з динамічним контентом, включаючи PDF-інформаційні блоки."
+        "Entwicklung eines responsiven und dynamischen Frontends mit Vue.js und Nuxt 3.",
+        "Erstellung interaktiver Formulare für die Registrierung von Studierenden und für Anfragen.",
+        "Verbesserung der Barrierefreiheit der Website: semantische Struktur, ARIA-Attribute, Unterstützung für Screenreader und Tastaturnavigation.",
+        "Entwicklung von Modal-Komponenten mit dynamischen Inhalten, einschließlich PDF-Informationsblöcken."
       ],
       "technologies": [
         {
@@ -482,16 +477,16 @@
       ]
     },
     "project_2": {
-      "title": "Технологічний ліцей INTITA",
-      "description": "Сучасний освітній простір із технологічним напрямом та практичним підходом до навчання.",
+      "title": "Technologisches Lyzeum INTITA",
+      "description": "Ein moderner Bildungsraum mit technologischem Schwerpunkt und praktischem Lernansatz.",
       "image": "projects/project_2.webp",
       "link": "https://lyceum.intita.com/",
-      "date": "Жовтень 2025 — Листопад 2025",
+      "date": "Oktober 2025 — November 2025",
       "items": [
-        "Розробка адаптивного та динамічного frontend на Vue.js та Nuxt 3.",
-        "Реалізація багатомовності українською та англійською мовами.",
-        "Створення інтерактивних форм реєстрації учнів та запитів.",
-        "Інтеграція галерей, слайдерів та Google Maps."
+        "Entwicklung eines responsiven und dynamischen Frontends mit Vue.js und Nuxt 3.",
+        "Implementierung von Mehrsprachigkeit (Ukrainisch und Englisch).",
+        "Erstellung interaktiver Formulare für Schülerregistrierung und Anfragen.",
+        "Integration von Galerien, Slidern und Google Maps."
       ],
       "technologies": [
         {
@@ -522,15 +517,15 @@
     },
     "project_3": {
       "title": "INJOBE",
-      "description": "Job-Matching платформа для пошуку роботи, управління вакансіями та взаємодії між кандидатами і компаніями.",
+      "description": "Job-Matching-Plattform für die Stellensuche, das Stellenmanagement und die Interaktion zwischen Bewerbern und Unternehmen.",
       "image": "projects/project_3.webp",
       "link": "https://injobe.com/",
-      "date": "Червень 2025",
+      "date": "Juni 2025",
       "items": [
-        "Розробка адміністративної панелі для керування користувачами, вакансіями та заявками.",
-        "Реалізація backend-логіки за допомогою контролерів, моделей та API-маршрутів.",
-        "Проєктування та реалізація CRUD-операцій для вакансій і даних кандидатів.",
-        "Реалізація валідації форм та обробки помилок для підвищення надійності системи."
+        "Entwicklung eines Administrationspanels zur Verwaltung von Nutzern, Stellenangeboten und Bewerbungen.",
+        "Implementierung der Backend-Logik mittels Controllern, Modellen und API-Routen.",
+        "Konzeption und Umsetzung von CRUD-Operationen für Stellenangebote und Bewerberdaten.",
+        "Implementierung von Formularvalidierung und Fehlerbehandlung zur Erhöhung der Systemstabilität."
       ],
       "technologies": [
         {
@@ -572,16 +567,16 @@
       ]
     },
     "project_4": {
-      "title": "Жива пам’ять Вінниці",
-      "description": "Сайт, що береже пам’ять про людей, які віддали життя за свободу України. Простір вшанування мужності, жертовності та любові до Батьківщини.",
+      "title": "Lebendige Erinnerung an Winnyzja",
+      "description": "Eine Website, die das Andenken an die Menschen bewahrt, die ihr Leben für die Freiheit der Ukraine gegeben haben. Ein Ort des Gedenkens an Mut, Opferbereitschaft und Vaterlandsliebe.",
       "image": "projects/project_4.webp",
       "link": "https://live-memory.vn.ua/",
-      "date": "Січень 2025 — Березень 2025",
+      "date": "Januar 2025 — März 2025",
       "items": [
-        "Розробка та налаштування структури бази даних і міграцій.",
-        "Реалізація серверної логіки за допомогою контролерів та моделей.",
-        "Створення API та Web-маршрутів для взаємодії клієнтської та серверної частин.",
-        "Реалізація обробки помилок та валідації форм."
+        "Entwicklung und Konfiguration der Datenbankstruktur und der Migrationen.",
+        "Implementierung der Serverlogik mithilfe von Controllern und Modellen.",
+        "Erstellung von API- und Web-Routen für das Zusammenspiel von Client und Server.",
+        "Implementierung von Fehlerbehandlung und Formularvalidierung."
       ],
       "technologies": [
         {
@@ -624,16 +619,16 @@
     },
     "project_5": {
       "title": "KAVA VETERANA",
-      "description": "Соціальний проєкт підтримки ветеранів, який допомагає розвивати професійні навички та адаптацію.",
+      "description": "Ein soziales Projekt zur Unterstützung von Veteranen, das bei der Entwicklung beruflicher Fähigkeiten und der sozialen Anpassung hilft.",
       "image": "projects/project_5.webp",
       "link": "",
-      "date": "Травень 2024 — Грудень 2024",
+      "date": "Mai 2024 — Dezember 2024",
       "items": [
-        "Розробка та підтримка адміністративної панелі.",
-        "Реалізація серверної логіки та функцій управління даними.",
-        "Робота зі структурою бази даних, моделями та міграціями.",
-        "Виконання CRUD-операцій для ефективної обробки інформації.",
-        "Тестування API-endpoints для стабільної взаємодії frontend, backend та адміністративної частини."
+        "Entwicklung und Pflege des Administrationspanels.",
+        "Implementierung von Serverlogik und Datenverwaltungsfunktionen.",
+        "Arbeit mit der Datenbankstruktur, Modellen und Migrationen.",
+        "Ausführung von CRUD-Operationen für eine effiziente Informationsverarbeitung.",
+        "Testen von API-Endpunkten für eine stabile Interaktion zwischen Frontend, Backend und Administrationsteil."
       ],
       "technologies": [
         {
@@ -676,15 +671,15 @@
     },
     "project_6": {
       "title": "Oksana Tatarina School",
-      "description": "Сайт школи англійської мови з курсами, програмами навчання та інформацією для студентів.",
+      "description": "Website einer Englisch-Sprachschule mit Kursen, Lernprogrammen und Informationen für Studierende.",
       "image": "projects/project_6.webp",
       "link": "https://tatarina.intita.com/",
-      "date": "Лютий 2024 — Квітень 2024",
+      "date": "Februar 2024 — April 2024",
       "items": [
-        "Розробка pixel-perfect адаптивної landing page.",
-        "Перенесення дизайну з Figma у повноцінну frontend-реалізацію.",
-        "Створення інтерактивної навігації та UI-елементів.",
-        "Забезпечення коректного відображення на різних пристроях."
+        "Entwicklung einer pixelgenauen, responsiven Landingpage.",
+        "Übertragung des Designs aus Figma in eine vollwertige Frontend-Implementierung.",
+        "Erstellung interaktiver Navigation und UI-Elemente.",
+        "Sicherstellung der korrekten Darstellung auf verschiedenen Geräten."
       ],
       "technologies": [
         {
@@ -718,16 +713,16 @@
       ]
     },
     "project_7": {
-      "title": "Онлайн-школа німецької мови",
-      "description": "Платформа для вивчення німецької мови з акцентом на практику спілкування та розвиток мовних навичок.",
+      "title": "Online-Deutsch-Sprachschule",
+      "description": "Plattform zum Deutschlernen mit dem Fokus auf Kommunikationspraxis und die Entwicklung von Sprachkenntnissen.",
       "image": "projects/project_7.webp",
       "link": "https://pokhilkodarina.intita.com/",
-      "date": "Листопад 2023 — Грудень 2023",
+      "date": "November 2023 — Dezember 2023",
       "items": [
-        "Розробка адаптивного лендингу для презентації послуг викладача.",
-        "Створення інтерактивних елементів, слайдерів та плавної навігації.",
-        "Оптимізація відображення сайту для різних пристроїв та браузерів.",
-        "Організація задач через Trello для ефективного робочого процесу."
+        "Entwicklung einer responsiven Landingpage zur Präsentation der Dienstleistungen des Lehrers.",
+        "Erstellung interaktiver Elemente, Slider und flüssiger Navigation.",
+        "Optimierung der Websitedarstellung für verschiedene Geräte und Browser.",
+        "Organisation von Aufgaben über Trello für einen effizienten Arbeitsablauf."
       ],
       "technologies": [
         {
@@ -765,16 +760,16 @@
       ]
     },
     "project_8": {
-      "title": "TUI Travel Agency",
-      "description": "Сайт туристичної агенції для підбору подорожей та зручної взаємодії з клієнтами.",
+      "title": "TUI Reisebüro",
+      "description": "Website eines Reisebüros zur Reiseauswahl und komfortablen Interaktion mit Kunden.",
       "image": "projects/project_8.webp",
       "link": "https://travelagency.intita.com/",
-      "date": "Листопад 2023 — Грудень 2023",
+      "date": "November 2023 — Dezember 2023",
       "items": [
-        "Розробка візуально точного та адаптивного лендингу.",
-        "Реалізація інтерактивних слайдерів та функції плавного прокручування.",
-        "Створення багатомовного інтерфейсу користувача.",
-        "Оптимізація продуктивності та кросбраузерності."
+        "Entwicklung einer visuell präzisen und responsiven Landingpage.",
+        "Implementierung interaktiver Slider und einer sanften Scroll-Funktion.",
+        "Erstellung einer mehrsprachigen Benutzeroberfläche.",
+        "Optimierung der Performance und der Cross-Browser-Kompatibilität."
       ],
       "technologies": [
         {
@@ -812,16 +807,16 @@
       ]
     },
     "project_9": {
-      "title": "Програма працевлаштування IT-початківців",
-      "description": "Проєкт підтримки спеціалістів, які роблять перші кроки в IT та розвивають професійні навички.",
+      "title": "Beschäftigungsprogramm für IT-Einsteiger",
+      "description": "Ein Unterstützungsprojekt für Fachkräfte, die ihre ersten Schritte in der IT machen und ihre beruflichen Fähigkeiten weiterentwickeln.",
       "image": "projects/project_9.webp",
       "link": "https://it.uspih.vn.ua/",
-      "date": "Жовтень 2023 — Листопад 2023",
+      "date": "Oktober 2023 — November 2023",
       "items": [
-        "Розробка адаптивної landing page для презентації курсів та програм академії.",
-        "Створення інтерактивних блоків з відео та інформаційним контентом.",
-        "Реалізація дизайну з Figma у готовий frontend.",
-        "Оптимізація навігації та мобільної версії."
+        "Entwicklung einer responsiven Landingpage zur Präsentation von Kursen und Programmen der Akademie.",
+        "Erstellung interaktiver Blöcke mit Videos und Informationsinhalten.",
+        "Übertragung des Figma-Designs in fertiges Frontend.",
+        "Optimierung der Navigation und der mobilen Version."
       ],
       "technologies": [
         {
@@ -855,16 +850,16 @@
       ]
     },
     "project_10": {
-      "title": "Програма підтримки ветеранів та ВПО",
-      "description": "Соціальний проєкт, спрямований на розвиток IT-навичок та професійну адаптацію ветеранів і внутрішньо переміщених осіб.",
+      "title": "Unterstützungsprogramm für Veteranen und Binnengeflüchtete (IDPs)",
+      "description": "Ein soziales Projekt zur Entwicklung von IT-Kenntnissen und zur beruflichen Anpassung von Veteranen und Binnenvertriebenen.",
       "image": "projects/project_10.webp",
       "link": "https://dobrogolight.intita.com/",
-      "date": "Вересень 2023 — Жовтень 2023",
+      "date": "September 2023 — Oktober 2023",
       "items": [
-        "Розробка адаптивної та візуально точної landing page для презентації програм академії.",
-        "Реалізація дизайну з Figma у повноцінний frontend.",
-        "Створення інтерактивних блоків, відеосекцій та інформаційних компонентів.",
-        "Оптимізація навігації, мобільної адаптації та користувацького досвіду."
+        "Entwicklung einer responsiven und visuell präzisen Landingpage zur Präsentation der Akademieprogramme.",
+        "Übertragung des Figma-Designs in ein vollwertiges Frontend.",
+        "Erstellung interaktiver Blöcke, Videosektionen und Informationskomponenten.",
+        "Optimierung von Navigation, mobiler Anpassung und Benutzererfahrung."
       ],
       "technologies": [
         {
@@ -903,40 +898,40 @@
     }
   },
   "contact-form": {
-    "name": "Ім'я*",
-    "email": "Email*",
-    "phone": "Телефон*",
-    "message": "Ваше повідомлення*",
-    "privacy_text": "Я погоджуюся з",
-    "privacy_link": "політикою конфіденційності",    
-    "button": "Надіслати",
-    "success": "Ваше повідомлення успішно відправлено",
-
+    "name": "Name*",
+    "email": "E-Mail*",
+    "phone": "Telefon*",
+    "message": "Ihre Nachricht*",
+    "privacy_text": "Ich stimme der",
+    "privacy_link": "Datenschutzerklärung zu",    
+    "button": "Senden",
+    "success": "Ihre Nachricht wurde erfolgreich gesendet",
     "errors": {
-      "required": "Поле обов'язкове",
-      "email": "Введіть коректний Email",
-      "phone": "Введіть коректний номер телефону",
-      "message": "Повідомлення має містити мінімум 10 символів",
-      "privacy": "Потрібно погодитися з політикою конфіденційності"
+      "required": "Dieses Feld ist erforderlich",
+      "email": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+      "phone": "Bitte geben Sie eine gültige Telefonnummer ein",
+      "message": "Die Nachricht muss mindestens 10 Zeichen enthalten",
+      "privacy": "Sie müssen der Datenschutzerklärung zustimmen"
     }
   },
   "menu": {
-    "index": "Головна",
-    "projects": "Проєкти",
-    "contact": "Контакти",
-    "about": "Про мене",
-    "skills": "Навички",
-    "experience": "Досвід",
-    "education": "Освіта",
-    "certificates": "Сертифікати",
-    "privacy_policy": "Політика приватності"
+    "index": "Startseite",
+    "projects": "Projekte",
+    "contact": "Kontakt",
+    "about": "Über mich",
+    "skills": "Fähigkeiten",
+    "experience": "Erfahrung",
+    "education": "Ausbildung",
+    "certificates": "Zertifikate",
+    "privacy_policy": "Datenschutzerklärung",
+    "impressum": "Impressum"
   },
   "contacts": {
-    "title": "Контакти",
-    "form_title": "Надіслати мені повідомлення",
+    "title": "Kontaktieren Sie mich",
+    "form_title": "Schreiben Sie mir eine Nachricht",
     "items": {
       "contact": {
-        "title": "Контакт",
+        "title": "Kontakt",
         "email": "olhachumbash{'@'}gmail.com",
         "phones": [
           "+4915174466630",
@@ -944,14 +939,14 @@
         ]
       },
       "address": {
-      "title": "Адреса",
-      "values": [
-        "09111 Хемніц, Німеччина",
-        "0629 Маріуполь, Україна"
-      ]
-    },
+        "title": "Adresse",
+        "values": [
+          "09111 Chemnitz, Deutschland",
+          "0629 Mariupol, Ukraine"
+        ]
+      },
       "social": {
-        "title": "Соціальні мережі",
+        "title": "Soziale Netzwerke",
         "links": [
           {
             "name": "LinkedIn",
@@ -980,6 +975,68 @@
           }
         ]
       }
+    }
+  },
+  "cookie_banner": {
+    "title": "Wir verwenden Cookies",
+    "description": "Diese Website verwendet Cookies, um den Betrieb zu verbessern und zu personalisieren. Durch die weitere Nutzung der Website akzeptieren Sie unsere",
+    "link": "Cookie-Richtlinie",
+    "accept": "Akzeptieren",
+    "reject": "Ablehnen"
+  },
+  "modal_work_together": {
+    "title": "Lassen Sie uns zusammenarbeiten",
+    "name": "Name",
+    "email": "E-Mail",
+    "message": "Nachricht",
+    "submit": "Senden",
+    "success": "Nachricht erfolgreich gesendet"
+  },
+  "legal": {
+    "privacy": {
+      "title": "Datenschutzerklärung",
+      "intro": "Diese Erklärung erläutert, wie wir Ihre personenbezogenen Daten erheben, verwenden und schützen.",
+      "blocks": [
+        {
+          "title": "Datenerhebung",
+          "paragraphs": [
+            "Wir erheben nur die Informationen, die Sie uns freiwillig über das Kontaktformular oder während der Nutzung der Website zur Verfügung stellen."
+          ]
+        },
+        {
+          "title": "Datennutzung",
+          "paragraphs": [
+            "Die erhobenen Daten werden verwendet, um auf Ihre Anfragen zu antworten, den Betrieb der Website zu verbessern und die Sicherheit zu gewährleisten."
+          ]
+        }
+      ]
+    },
+    "impressum": {
+      "title": "Impressum",
+      "intro": "Gemäß den gesetzlichen Vorgaben in Deutschland finden Sie hier Informationen über den Websitebetreiber.",
+      "blocks": [
+        {
+          "title": "Betreiber",
+          "paragraphs": [
+            "Olha Chumbash",
+            "09111 Chemnitz, Deutschland",
+            "E-Mail: olhachumbash{'@'}gmail.com"
+          ]
+        }
+      ]
+    },
+    "cookies": {
+      "title": "Cookie-Richtlinie",
+      "intro": "Diese Website verwendet Cookies für die Funktionalität der Website, Analysen und zur Verbesserung der Benutzererfahrung.",
+      "blocks": [
+        {
+          "title": "Was wir verwenden",
+          "paragraphs": [
+            "Technische Cookies zur Speicherung der Sprachauswahl und des Menübetriebs.",
+            "Analytische Cookies, um die Nutzung der Website zu verstehen."
+          ]
+        }
+      ]
     }
   }
 }

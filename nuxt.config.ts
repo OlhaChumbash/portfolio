@@ -38,37 +38,42 @@ export default defineNuxtConfig({
     ],
   ],
 
-  i18n: {
-      bundle: {
-      optimizeTranslationDirective: false // Добавьте сюда
-    },
-    strategy: 'no_prefix',
-    defaultLocale: 'uk',
-    lazy: true,
-    langDir: 'locales',
-
-    locales: [
-      {
-        code: 'uk',
-        file: 'uk.json',
-        name: 'Українська'
-      },
-      {
-        code: 'en',
-        file: 'en.json',
-        name: 'English'
-      }
-    ],
-
-    detectBrowserLanguage: {
-      useCookie: true,
-      cookieKey: 'locale',
-      redirectOn: 'root',
-      fallbackLocale: 'uk',
-      alwaysRedirect: false
-    }
+i18n: {
+  bundle: {
+    optimizeTranslationDirective: false,
   },
 
+  strategy: 'no_prefix',
+  defaultLocale: 'ua',
+  lazy: true,
+  langDir: 'locales',
+
+  locales: [
+    {
+      code: 'ua',
+      file: 'ua.json',
+      name: 'Українська'
+    },
+    {
+      code: 'de',
+      file: 'de.json',
+      name: 'Deutsch'
+    },
+    {
+      code: 'en',
+      file: 'en.json',
+      name: 'English'
+    }
+  ],
+
+  detectBrowserLanguage: {
+    useCookie: true,
+    cookieKey: 'locale',
+    redirectOn: 'root',
+    fallbackLocale: 'ua',
+    alwaysRedirect: false
+  }
+},
   app: {
     baseURL: '/portfolio/',
     head: {

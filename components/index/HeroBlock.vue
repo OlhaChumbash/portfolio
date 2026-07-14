@@ -65,9 +65,9 @@
               data-sal-delay="160"
               data-sal-duration="1100"
             >
-              <nuxt-link href="/contact" class="tp-btn-green">
+              <button type="button" class="tp-btn-green" @click="isModalOpen = true">
                 {{ $t('index.button') }}
-              </nuxt-link>
+              </button>
             </div>
 
           </div>

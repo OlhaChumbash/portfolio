@@ -1,127 +1,1042 @@
 {
-  "slider": {
-    "pre_title_1": "INTITA UNIVERSITY",
-    "title_1": "PROGRAM THE FUTURE",
-    "pre_title_2": "INTITA UNIVERSITY",
-    "title_2": "A STRONG AND DEVELOPED INTELLECT CAN COPE WITH CHALLENGES",
-    "button": "Want to study"
+  "seo": {
+    "index": {
+      "title": "Olha Chumbash Portfolio Junior Full Stack Developer",
+      "description": "Portfolio of Olha Chumbash — Junior Full Stack Developer. Projects, skills, work experience, education, certificates, and contact information."
+    },
+    "projects": {
+      "title": "Projects Olha Chumbash Junior Full Stack Developer",
+      "description": "A collection of web projects by Olha Chumbash, created using Vue.js, Nuxt.js, React, Node.js, Express.js, MongoDB, PostgreSQL, and modern web technologies."
+    },
+    "contact": {
+      "title": "Contact Olha Chumbash",
+      "description": "Get in touch with Olha Chumbash regarding collaboration, employment, freelance projects, or professional consultations in web development."
+    },
+    "privacy": {
+      "title": "Privacy Policy Olha Chumbash",
+      "description": "Privacy policy of Olha Chumbash's portfolio website. Information on personal data processing, cookie usage, and user rights."
+    }
   },
-  "request": {
-    "title": "Application Form for a Prospective Student at INTITA University",
-    "first_name": "Your name",
-    "second_name": "Your last name",
-    "email": "E-mail",
-    "phone": "Mobile phone",
-    "address": "City of residence",
-    "about_us": "Where did you get the information about us?",
-    "button": "SEND",
-    "success": "Your application has been successfully submitted",
-    "success_btn": "Ok",
-    "recaptcha": "Please confirm that you are not a robot."
+  "index": {
+    "pre_title_1": "Olha Chumbash",
+    "title_1": "Full Stack",
+    "title_2": "Developer",
+    "button": "Let's work together",
+    "all_projects": "All Projects",
+    "scroll_down": "Scroll Down",
+    "about_me": {
+      "subtitle": "ABOUT ME",
+      "title": "Hi, I'm Olha Chumbash!",
+      "description_1": "I am a Junior Fullstack Developer, passionate about creating modern web applications and learning the latest technologies. I am constantly improving my knowledge, working on my own projects, and striving to write clean, high-quality, and maintainable code.",
+      "description_2": "My previous professional experience has taught me to approach complex problems systematically, adapt quickly to new challenges, and find effective solutions. In my work, I value responsibility, attention to detail, teamwork, and open communication.",
+      "description_3": "My goal is to grow as a Fullstack Developer, participate in building useful digital products, and contribute to the growth of the team and projects.",
+      "download_cv": "Download CV"
+    },
+    "work_experience": {
+      "title": "My Professional Growth and Experience",
+      "awards": "Professional Achievements",
+      "items": {
+        "logistics_manager": {
+          "year": "February 2017 - February 2022",
+          "title": "Logistics Manager",
+          "text": "Coordinated logistics processes and managed a team of 5 drivers. Managed the budget and organized over 35 transport orders daily. Optimized processes, reducing delays by 20% and increasing overall work efficiency by 13%.",
+          "meta": "Zapravsky GmbH"
+        },
+        "school_secretary": {
+          "year": "August 2012 - January 2017",
+          "title": "Secretary",
+          "text": "Provided administrative support to a team of 25 employees. Managed over 200 documents, reports, and work records monthly. Improved office process organization and communication with parents and external partners.",
+          "meta": "Mariupol School No. 44"
+        }
+      }
+    },
+    "skills": {
+      "title_1": "Skills &",
+      "title_2": "Knowledge",
+      "languages_title": "Languages",
+      "softSkills_title": "Soft Skills",
+      "technicalSkills": [
+        {
+          "title": "Frontend Development",
+          "items": [
+            {
+              "title": "JavaScript",
+              "icon": "devicon-javascript-plain colored"
+            },
+            {
+              "title": "React JS",
+              "icon": "devicon-react-original colored"
+            },
+            {
+              "title": "Vue JS",
+              "icon": "devicon-vuejs-plain colored"
+            },
+            {
+              "title": "Nuxt JS",
+              "icon": "devicon-nuxtjs-plain colored"
+            },
+            {
+              "title": "HTML5",
+              "icon": "devicon-html5-plain colored"
+            },
+            {
+              "title": "CSS3",
+              "icon": "devicon-css3-plain colored"
+            },
+            {
+              "title": "Bootstrap",
+              "icon": "devicon-bootstrap-plain colored"
+            },
+            {
+              "title": "Tailwind CSS",
+              "icon": "devicon-tailwindcss-original colored"
+            },
+            {
+              "title": "jQuery",
+              "icon": "devicon-jquery-plain colored"
+            },
+            {
+              "title": "TypeScript",
+              "icon": "devicon-typescript-plain colored"
+            }
+          ]
+        },
+        {
+          "title": "Backend Development",
+          "items": [
+            {
+              "title": "Node.js",
+              "icon": "devicon-nodejs-plain colored"
+            },
+            {
+              "title": "Express.js",
+              "icon": "devicon-express-original"
+            },
+            {
+              "title": "Laravel",
+              "icon": "devicon-laravel-plain colored"
+            },
+            {
+              "title": "EJS",
+              "icon": "fa-solid fa-code text-primary"
+            },
+            {
+              "title": "Python",
+              "icon": "devicon-python-plain colored"
+            },
+            {
+              "title": "Django",
+              "icon": "devicon-django-plain colored"
+            },
+            {
+              "title": "REST API",
+              "icon": "devicon-fastapi-plain colored"
+            },
+            {
+              "title": "Next.js",
+              "icon": "devicon-nextjs-plain colored"
+            }
+          ]
+        },
+        {
+          "title": "Databases",
+          "items": [
+            {
+              "title": "MongoDB",
+              "icon": "devicon-mongodb-plain colored"
+            },
+            {
+              "title": "PostgreSQL",
+              "icon": "devicon-postgresql-plain colored"
+            },
+            {
+              "title": "SQL",
+              "icon": "fa-solid fa-database text-primary",
+              "color": "#336791"
+            }
+          ]
+        },
+        {
+          "title": "Tools & Workflow",
+          "items": [
+            {
+              "title": "GitHub",
+              "icon": "devicon-github-original"
+            },
+            {
+              "title": "Git",
+              "icon": "devicon-git-plain colored"
+            },
+            {
+              "title": "GitHub Copilot",
+              "icon": "fa-solid fa-robot  text-info"
+            },
+            {
+              "title": "Docker",
+              "icon": "devicon-docker-plain colored"
+            },
+            {
+              "title": "Postman",
+              "icon": "devicon-postman-plain colored"
+            },
+            {
+              "title": "Insomnia",
+              "icon": "devicon-openapi-plain colored"
+            },
+            {
+              "title": "Jira",
+              "icon": "devicon-jira-plain colored"
+            },
+            {
+              "title": "Figma",
+              "icon": "devicon-figma-plain colored"
+            },
+            {
+              "title": "VS Code",
+              "icon": "devicon-vscode-plain colored"
+            },
+            {
+              "title": "Trello",
+              "icon": "devicon-trello-plain colored"
+            },
+            {
+              "title": "Slack",
+              "icon": "devicon-slack-plain colored"
+            },
+            {
+              "title": "Vite",
+              "icon": "devicon-vite-plain colored"
+            },
+            {
+              "title": "MS Office",
+              "icon": "devicon-windows8-original colored"
+            },
+            {
+              "title": "ChatGPT",
+              "icon": "fa-solid fa-robot text-success"
+            }
+          ]
+        },
+        {
+          "title": "Concepts & Methodologies",
+          "items": [
+            {
+              "title": "OOP",
+              "icon": "devicon-java-plain colored"
+            },
+            {
+              "title": "Pixel Perfect",
+              "icon": "devicon-css3-plain colored"
+            },
+            {
+              "title": "Responsive Design",
+              "icon": "devicon-html5-plain colored"
+            },
+            {
+              "title": "CI/CD Basics",
+              "icon": "devicon-githubactions-plain colored"
+            },
+            {
+              "title": "Unit Testing",
+              "icon": "devicon-jest-plain colored"
+            },
+            {
+              "title": "PWA",
+              "icon": "devicon-chrome-plain colored"
+            },
+            {
+              "title": "SDLC",
+              "icon": "devicon-git-plain colored"
+            },
+            {
+              "title": "Scrum",
+              "icon": "devicon-jira-plain colored"
+            },
+            {
+              "title": "Microservices",
+              "icon": "fa-solid fa-cubes"
+            }
+          ]
+        }
+      ],
+      "languages": [
+        {
+          "title": "German",
+          "level": "B2",
+          "icon": "fa-solid fa-language"
+        },
+        {
+          "title": "English",
+          "level": "B2",
+          "icon": "fa-solid fa-language"
+        },
+        {
+          "title": "Ukrainian",
+          "level": "Native",
+          "icon": "fa-solid fa-language"
+        },
+        {
+          "title": "Russian",
+          "level": "Native",
+          "icon": "fa-solid fa-language"
+        }
+      ],
+      "softSkills": [
+        {
+          "title": "Teamwork",
+          "icon": "fa-solid fa-users"
+        },
+        {
+          "title": "Problem Solving",
+          "icon": "fa-solid fa-lightbulb"
+        },
+        {
+          "title": "Adaptability",
+          "icon": "fa-solid fa-arrows-rotate"
+        },
+        {
+          "title": "Fast Learner",
+          "icon": "fa-solid fa-brain"
+        },
+        {
+          "title": "Self-organization",
+          "icon": "fa-solid fa-list-check"
+        }
+      ]
+    },
+    "education": {
+      "title": "Education & Professional Training",
+      "item_1": {
+        "images": [],
+        "title": "Fullstack Developer",
+        "place": "Vinnytsia IT Academy",
+        "date": "February 2023 — Present",
+        "description": "Training as a Fullstack Developer. Gained practical skills in creating modern web applications, working with both client-side and server-side technologies.",
+        "list": [
+          "Frontend Development",
+          "Backend Development",
+          "Databases",
+          "JavaScript",
+          "HTML/CSS",
+          "Full-Stack Web App Development"
+        ]
+      },
+      "item_2": {
+        "images": [
+          "index/education/certificates/certificate_25.webp",
+          "index/education/certificates/certificate_31.webp"
+        ],
+        "title": "German Language Course B2",
+        "place": "Volkshochschule Chemnitz",
+        "date": "January 2025 — June 2025",
+        "description": "Intensive B2 level German language course designed to improve professional and everyday communication.",
+        "list": [
+          "B2 Level Grammar",
+          "Professional Vocabulary",
+          "Speaking Practice",
+          "Preparation for working in a German-speaking environment"
+        ]
+      },
+      "item_3": {
+        "images": [
+          "index/education/certificates/certificate_1.webp",
+          "index/education/certificates/certificate_2.webp",
+          "index/education/certificates/certificate_4.webp",
+          "index/education/certificates/certificate_5.webp",
+          "index/education/certificates/certificate_7.webp",
+          "index/education/certificates/certificate_10.webp",
+          "index/education/certificates/certificate_11.webp",
+          "index/education/certificates/certificate_12.webp",
+          "index/education/certificates/certificate_13.webp",
+          "index/education/certificates/certificate_14.webp",
+          "index/education/certificates/certificate_15.webp",
+          "index/education/certificates/certificate_16.webp",
+          "index/education/certificates/certificate_17.webp",
+          "index/education/certificates/certificate_18.webp",
+          "index/education/certificates/certificate_19.webp"
+        ],
+        "title": "Meta Certificates",
+        "place": "Meta",
+        "date": "September 2024 — September 2025",
+        "description": "Online certification programs from Meta on web development and modern technologies.",
+        "list": [
+          "Front-End Development",
+          "Back-End Development",
+          "APIs",
+          "React",
+          "UX/UI",
+          "JavaScript",
+          "HTML/CSS",
+          "Full-Stack Development"
+        ]
+      },
+      "item_4": {
+        "images": [
+          "index/education/certificates/certificate_8.webp",
+          "index/education/certificates/certificate_9.webp"
+        ],
+        "title": "Google Certificates",
+        "place": "Google",
+        "date": "June 2025 — September 2025",
+        "description": "Google certification program focusing on the foundations of IT Support and Technical Maintenance.",
+        "list": [
+          "IT Support Fundamentals",
+          "Computer Systems",
+          "Networking",
+          "Security",
+          "Technical Troubleshooting"
+        ]
+      },
+      "item_5": {
+        "images": [
+          "index/education/certificates/certificate_21.webp",
+          "index/education/certificates/certificate_22.webp",
+          "index/education/certificates/certificate_23.webp"
+        ],
+        "title": "SheCodes Certificates",
+        "place": "SheCodes",
+        "date": "September 2024",
+        "description": "Practical courses in web development and creating responsive web interfaces.",
+        "list": [
+          "Web Development",
+          "Responsive Design",
+          "React",
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ]
+      },
+      "item_6": {
+        "images": [
+          "index/education/certificates/certificate_26.webp",
+          "index/education/certificates/certificate_27.webp",
+          "index/education/certificates/certificate_28.webp",
+          "index/education/certificates/certificate_29.webp",
+          "index/education/certificates/certificate_30.webp"
+        ],
+        "title": "Bachelor of Laws",
+        "place": "Kharkiv National University of Internal Affairs",
+        "date": "October 2008 — October 2012",
+        "description": "Higher education majoring in Law.",
+        "list": [
+          "Legal Education",
+          "Legal Disciplines",
+          "Analytical Thinking",
+          "Working with Regulatory Documents"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "title": "My Projects",
+    "button": "All Projects",
+    "view_project": "View Project",
+    "hero": {
+      "pre_title": "MY PROJECTS",
+      "title": "Solutions merging design and technology",
+      "breadcrumb_main": "Home",
+      "breadcrumb_current": "Projects"
+    },
+    "project_1": {
+      "title": "INTITA University",
+      "description": "The official university website representing educational programs, study opportunities, and student interaction.",
+      "image": "projects/project_1.webp",
+      "link": "https://university.intita.com/",
+      "date": "November 2025 — April 2026",
+      "items": [
+        "Development of a responsive and dynamic frontend using Vue.js and Nuxt 3.",
+        "Creation of interactive student registration and inquiry forms.",
+        "Web accessibility (a11y) improvements: semantic markup, ARIA attributes, screen reader support, and keyboard navigation.",
+        "Development of modal components with dynamic content, including PDF information blocks."
+      ],
+      "technologies": [
+        {
+          "name": "Vue.js",
+          "icon": "devicon-vuejs-plain"
+        },
+        {
+          "name": "Nuxt 3",
+          "icon": "devicon-nuxtjs-plain"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "devicon-javascript-plain"
+        },
+        {
+          "name": "HTML",
+          "icon": "devicon-html5-plain"
+        },
+        {
+          "name": "CSS",
+          "icon": "devicon-css3-plain"
+        },
+        {
+          "name": "GitHub",
+          "icon": "devicon-github-original"
+        }
+      ]
+    },
+    "project_2": {
+      "title": "INTITA Technology Lyceum",
+      "description": "A modern educational institution with a technological focus and a practical approach to learning.",
+      "image": "projects/project_2.webp",
+      "link": "https://lyceum.intita.com/",
+      "date": "October 2025 — November 2025",
+      "items": [
+        "Development of a responsive and dynamic frontend with Vue.js and Nuxt 3.",
+        "Implementation of multi-language support in Ukrainian and English.",
+        "Creation of interactive student registration and inquiry forms.",
+        "Integration of galleries, sliders, and Google Maps."
+      ],
+      "technologies": [
+        {
+          "name": "Vue.js",
+          "icon": "devicon-vuejs-plain"
+        },
+        {
+          "name": "Nuxt 3",
+          "icon": "devicon-nuxtjs-plain"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "devicon-javascript-plain"
+        },
+        {
+          "name": "HTML",
+          "icon": "devicon-html5-plain"
+        },
+        {
+          "name": "CSS",
+          "icon": "devicon-css3-plain"
+        },
+        {
+          "name": "Git",
+          "icon": "devicon-git-plain"
+        }
+      ]
+    },
+    "project_3": {
+      "title": "INJOBE",
+      "description": "Job-matching platform for job search, vacancy management, and interaction between candidates and companies.",
+      "image": "projects/project_3.webp",
+      "link": "https://injobe.com/",
+      "date": "June 2025",
+      "items": [
+        "Development of an admin panel to manage users, vacancies, and job applications.",
+        "Implementation of backend logic using controllers, models, and API routes.",
+        "Designing and executing CRUD operations for vacancies and candidate profiles.",
+        "Form validation and error handling integration to improve system reliability."
+      ],
+      "technologies": [
+        {
+          "name": "PHP",
+          "icon": "devicon-php-plain"
+        },
+        {
+          "name": "Laravel",
+          "icon": "devicon-laravel-plain"
+        },
+        {
+          "name": "Vue.js",
+          "icon": "devicon-vuejs-plain"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "devicon-javascript-plain"
+        },
+        {
+          "name": "HTML",
+          "icon": "devicon-html5-plain"
+        },
+        {
+          "name": "CSS",
+          "icon": "devicon-css3-plain"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "devicon-postgresql-plain"
+        },
+        {
+          "name": "Docker",
+          "icon": "devicon-docker-plain"
+        },
+        {
+          "name": "GitHub",
+          "icon": "devicon-github-original"
+        }
+      ]
+    },
+    "project_4": {
+      "title": "Live Memory of Vinnytsia",
+      "description": "A website dedicated to preserving the memory of those who gave their lives for the freedom of Ukraine. A space honoring courage, sacrifice, and love for the motherland.",
+      "image": "projects/project_4.webp",
+      "link": "https://live-memory.vn.ua/",
+      "date": "January 2025 — March 2025",
+      "items": [
+        "Development and configuration of the database schema and migrations.",
+        "Implementation of server-side logic using controllers and models.",
+        "Creating APIs and Web routes for client-server interaction.",
+        "Form validation and error handling implementation."
+      ],
+      "technologies": [
+        {
+          "name": "PHP",
+          "icon": "devicon-php-plain"
+        },
+        {
+          "name": "Laravel",
+          "icon": "devicon-laravel-original"
+        },
+        {
+          "name": "Vue.js",
+          "icon": "devicon-vuejs-plain"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "devicon-javascript-plain"
+        },
+        {
+          "name": "HTML",
+          "icon": "devicon-html5-plain"
+        },
+        {
+          "name": "CSS",
+          "icon": "devicon-css3-plain"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "devicon-postgresql-plain"
+        },
+        {
+          "name": "Docker",
+          "icon": "devicon-docker-plain"
+        },
+        {
+          "name": "GitHub",
+          "icon": "devicon-github-original"
+        }
+      ]
+    },
+    "project_5": {
+      "title": "KAVA VETERANA",
+      "description": "A social support project for veterans, helping them develop professional skills and adapt to civilian life.",
+      "image": "projects/project_5.webp",
+      "link": "",
+      "date": "May 2024 — December 2024",
+      "items": [
+        "Development and maintenance of the admin panel.",
+        "Implementation of server-side logic and data management features.",
+        "Working with database structure, models, and migrations.",
+        "Performing CRUD operations for efficient data processing.",
+        "Testing API endpoints to ensure stable communication between frontend, backend, and administrative panels."
+      ],
+      "technologies": [
+        {
+          "name": "Node.js",
+          "icon": "devicon-nodejs-plain"
+        },
+        {
+          "name": "Express",
+          "icon": "devicon-express-original"
+        },
+        {
+          "name": "EJS",
+          "icon": "devicon-javascript-plain"
+        },
+        {
+          "name": "MongoDB",
+          "icon": "devicon-mongodb-plain"
+        },
+        {
+          "name": "Mongoose",
+          "icon": "devicon-mongodb-plain"
+        },
+        {
+          "name": "Docker",
+          "icon": "devicon-docker-plain"
+        },
+        {
+          "name": "Swagger",
+          "icon": "devicon-swagger-plain"
+        },
+        {
+          "name": "Postman",
+          "icon": "devicon-postman-plain"
+        },
+        {
+          "name": "GitHub",
+          "icon": "devicon-github-original"
+        }
+      ]
+    },
+    "project_6": {
+      "title": "Oksana Tatarina School",
+      "description": "An English language school website featuring courses, learning programs, and information for students.",
+      "image": "projects/project_6.webp",
+      "link": "https://tatarina.intita.com/",
+      "date": "February 2024 — April 2024",
+      "items": [
+        "Development of a pixel-perfect, responsive landing page.",
+        "Translating UI designs from Figma into a complete frontend implementation.",
+        "Creating interactive navigation and UI components.",
+        "Ensuring correct display across various devices."
+      ],
+      "technologies": [
+        {
+          "name": "HTML",
+          "icon": "devicon-html5-plain"
+        },
+        {
+          "name": "CSS",
+          "icon": "devicon-css3-plain"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "devicon-javascript-plain"
+        },
+        {
+          "name": "jQuery",
+          "icon": "devicon-jquery-plain"
+        },
+        {
+          "name": "Bootstrap",
+          "icon": "devicon-bootstrap-plain"
+        },
+        {
+          "name": "Swiper",
+          "icon": "devicon-swiper-original"
+        },
+        {
+          "name": "GitHub",
+          "icon": "devicon-github-original"
+        }
+      ]
+    },
+    "project_7": {
+      "title": "Online German School",
+      "description": "A German language learning platform focused on conversational practice and linguistic skill development.",
+      "image": "projects/project_7.webp",
+      "link": "https://pokhilkodarina.intita.com/",
+      "date": "November 2023 — December 2023",
+      "items": [
+        "Development of a responsive landing page to present the teacher's services.",
+        "Creation of interactive elements, sliders, and smooth navigation.",
+        "Optimization of the website for different devices and browsers.",
+        "Task management using Trello for an efficient workflow."
+      ],
+      "technologies": [
+        {
+          "name": "HTML",
+          "icon": "devicon-html5-plain"
+        },
+        {
+          "name": "CSS",
+          "icon": "devicon-css3-plain"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "devicon-javascript-plain"
+        },
+        {
+          "name": "jQuery",
+          "icon": "devicon-jquery-plain"
+        },
+        {
+          "name": "Bootstrap",
+          "icon": "devicon-bootstrap-plain"
+        },
+        {
+          "name": "Swiper",
+          "icon": "devicon-swiper-original"
+        },
+        {
+          "name": "Trello",
+          "icon": "devicon-trello-plain"
+        },
+        {
+          "name": "GitHub",
+          "icon": "devicon-github-original"
+        }
+      ]
+    },
+    "project_8": {
+      "title": "TUI Travel Agency",
+      "description": "A travel agency website for vacation search and smooth client interaction.",
+      "image": "projects/project_8.webp",
+      "link": "https://travelagency.intita.com/",
+      "date": "November 2023 — December 2023",
+      "items": [
+        "Development of a visually accurate and responsive landing page.",
+        "Implementation of interactive sliders and smooth scrolling features.",
+        "Creation of a multilingual user interface.",
+        "Optimization of performance and cross-browser compatibility."
+      ],
+      "technologies": [
+        {
+          "name": "HTML",
+          "icon": "devicon-html5-plain"
+        },
+        {
+          "name": "CSS",
+          "icon": "devicon-css3-plain"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "devicon-javascript-plain"
+        },
+        {
+          "name": "jQuery",
+          "icon": "devicon-jquery-plain"
+        },
+        {
+          "name": "Bootstrap",
+          "icon": "devicon-bootstrap-plain"
+        },
+        {
+          "name": "Swiper",
+          "icon": "devicon-swiper-original"
+        },
+        {
+          "name": "Trello",
+          "icon": "devicon-trello-plain"
+        },
+        {
+          "name": "GitHub",
+          "icon": "devicon-github-original"
+        }
+      ]
+    },
+    "project_9": {
+      "title": "Employment Program for IT Beginners",
+      "description": "A support project for specialists taking their first steps in IT and building their professional skill sets.",
+      "image": "projects/project_9.webp",
+      "link": "https://it.uspih.vn.ua/",
+      "date": "October 2023 — November 2023",
+      "items": [
+        "Development of a responsive landing page presenting the academy's courses and programs.",
+        "Creation of interactive blocks featuring video and information content.",
+        "Translating Figma design into a fully realized frontend.",
+        "Optimization of navigation and mobile layout."
+      ],
+      "technologies": [
+        {
+          "name": "HTML",
+          "icon": "devicon-html5-plain"
+        },
+        {
+          "name": "CSS",
+          "icon": "devicon-css3-plain"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "devicon-javascript-plain"
+        },
+        {
+          "name": "jQuery",
+          "icon": "devicon-jquery-plain"
+        },
+        {
+          "name": "Bootstrap",
+          "icon": "devicon-bootstrap-plain"
+        },
+        {
+          "name": "Swiper",
+          "icon": "devicon-swiper-original"
+        },
+        {
+          "name": "GitHub",
+          "icon": "devicon-github-original"
+        }
+      ]
+    },
+    "project_10": {
+      "title": "Support Program for Veterans and IDPs",
+      "description": "A social project aimed at developing IT skills and professional adaptation of veterans and internally displaced persons.",
+      "image": "projects/project_10.webp",
+      "link": "https://dobrogolight.intita.com/",
+      "date": "September 2023 — October 2023",
+      "items": [
+        "Development of a responsive and visually accurate landing page to present the academy's programs.",
+        "Translating Figma design layout into a complete frontend structure.",
+        "Creation of interactive sections, video blocks, and informational components.",
+        "Optimization of navigation, mobile responsiveness, and overall user experience."
+      ],
+      "technologies": [
+        {
+          "name": "HTML",
+          "icon": "devicon-html5-plain"
+        },
+        {
+          "name": "CSS",
+          "icon": "devicon-css3-plain"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "devicon-javascript-plain"
+        },
+        {
+          "name": "jQuery",
+          "icon": "devicon-jquery-plain"
+        },
+        {
+          "name": "Bootstrap",
+          "icon": "devicon-bootstrap-plain"
+        },
+        {
+          "name": "Swiper",
+          "icon": "devicon-swiper-original"
+        },
+        {
+          "name": "Trello",
+          "icon": "devicon-trello-plain"
+        },
+        {
+          "name": "GitHub",
+          "icon": "devicon-github-original"
+        }
+      ]
+    }
+  },
+  "contact-form": {
+    "name": "Name*",
+    "email": "Email*",
+    "phone": "Phone*",
+    "message": "Your message*",
+    "privacy_text": "I agree with the",
+    "privacy_link": "privacy policy",
+    "button": "Submit",
+    "success": "Your message has been sent successfully",
+    "errors": {
+      "required": "This field is required",
+      "email": "Please enter a valid email address",
+      "phone": "Please enter a valid phone number",
+      "message": "Message must be at least 10 characters",
+      "privacy": "You must agree to the privacy policy"
+    }
   },
   "menu": {
-    "university": "University",
-    "faculties": "Faculties",
-    "contacts": "Contacts"
-  },
-  "university": {
-    "mission": "Mission",
-    "free": "Free",
-    "individuals": "individuals",
-    "university": "University",
-    "desc": "We form free individuals with a sense of human dignity, capable of innovative activity, who successfully realise themselves in Ukraine and in the world"
-  },
-  "principles": {
-    "title_1": "Principles and",
-    "title_2": "methods",
-    "label_1": "Person",
-    "desc_1": "A person is at the centre of the future specialist. We create a personalised plan for building a successful career for each person with support until employment",
-    "label_2": "Learning",
-    "desc_2": "Learning is an exciting and meaningful journey",
-    "label_3": "Market demands",
-    "desc_3": "We train in accordance with market requirements",
-    "label_4": "Approach",
-    "desc_4": "Curricula are developed for each specialisation, each set, each client company",
-    "label_5": "First job",
-    "desc_5": "Intensive training is nothing superfluous, only what is needed to get your first job",
-    "label_6": "Instructors",
-    "desc_6": "Competent, experienced practitioners are involved in the training process and teach the competencies they themselves possess",
-    "label_7": "Practice",
-    "desc_7": "Many practical classes are real environment at each stage. Theory must be reinforced by practice, this is the only way to form an adequate understanding of processes",
-    "label_8": "Realization",
-    "desc_8": "We structure our training so that you can choose and develop in the specialisation you like. Professional realization i  your favourite occupation is an opportunity to live a full life",
-    "label_9": "Self-education",
-    "desc_9": "Self-education is mandatory at each stage of study - we teach you to use resources for self-study competently and regularly, and to plan your time effectively",
-    "label_10": "Programs",
-    "desc_10": "We constantly change and improve our training programmes in line with market requirements",
-    "label_11": "Talents",
-    "desc_11": "Motivated talents receive quality education for free",
-    "label_12": "Real projects",
-    "desc_12": "Training and internships on real projects. Project activities as a way to consolidate knowledge and skills and a prerequisite for moving to the next stage of study. Teamwork is a must-have"
-  },
-  "environment": {
-    "title_1": "People and",
-    "title_2": "environment",
-    "label_1": "Value",
-    "desc_1": "the manifestation of everyone's own creative abilities. Independent thinking is a source of new and creative solutions",
-    "label_2": "Mindset",
-    "desc_2": "kindness, tolerance, care for others, the world around us, and its improvement are the foundation of positive thinking for every graduate",
-    "label_3": "Help",
-    "desc_3": "students build adequate self-esteem and self-confidence, which allows them to achieve their goals. We form  moral integrity and the ability to defend one's rightness with arguments",
-    "label_4": "Promote",
-    "desc_4": "values that form a correct understanding of self-realisation and success",
-    "label_5": "Teach",
-    "desc_5": "students to think critically and not be afraid of responsibility for mistakes. We teach you to think and express your thoughts and value the opinions of others",
-    "label_6": "Train",
-    "desc_6": "you to adapt quickly. We teach you to apply the acquired knowledge and skills in conditions of  constant change",
-    "label_7": "Build",
-    "desc_7": "an environment where students are motivated to learn and teachers are ready to share their experience. We fill educational life with real, meaningful events that create a special community of lifelong like-minded friends.",
-    "label_8": "Create",
-    "desc_8": "an environment where students are motivated to learn and teachers are ready to share their experience. We fill the educational life with real, authentic events that form a special community of like-minded friends for life",
-    "label_9": "Develop",
-    "desc_9": "creativity and innovation that will allow us to compete in the market. Become the one who controls the machines, not the one who is controlled by them. Become a content creator, not a content consumer"
-  },
-  "result": {
-    "title": "Result",
-    "item_1": "Quality education should be effective",
-    "item_2": "The result of education is a guaranteed successful professional implementation in the Ukrainian economy",
-    "item_3": "The best investment in a successful future is a high-quality, effective education",
-    "item_4": "A university diploma is an indication of the level of competence of a specialist, not of the courses taken or subjects read",
-    "item_5": "We create world-class specialists",
-    "item_6": "Every graduate is our pride. Our graduates promote true values in society",
-    "item_7": "We create new, modern standards of prestigious and effective education"
-  },
-  "counters": {
-    "title_1": "HARMONIOUS UNION",
-    "list_1_1": "Education and science",
-    "list_1_2": "Human",
-    "list_2_1": "High-tech business",
-    "list_2_2": "Smart infrastructure",
-    "title_2": "ENGINEERING",
-    "title_3": "INFORMATION TECHNOLOGY (IT)",
-    "title_4": "BUSINESS AND ENTREPRENEURSHIP",
-    "title_5": "MEDICAL SOLUTIONS",
-    "title_6": "CREATIVITY AND IMAGINATION",
-    "title_7": "SOLUTIONS FOR SECURITY AND PEACE"
-  },
-  "faculties": {
-    "title": "Faculties",
-    "label_1": "Faculty of Engineering, Production and Construction (G)",
-    "label_2": "Faculty of Information Technology (F)",
-    "label_3": "Faculty of Drone Engineering",
-    "label_4": "Faculty of Business, Administration and Law (D)",
-    "link_1_1": "G1 Chemical Technology and Engineering",
-    "link_1_2": "G4 Energy Production",
-    "link_1_3": "G7 Automation, Computer-Integrated Technology and Robotics",
-    "link_1_4": "G22 Biomedical Engineering",
-    "link_2_1": "F3 Computer Science",
-    "link_2_2": "F5 Cybersecurity and Information Protection",
-    "link_2_3": "F6 Information Systems and Technologies",
-    "link_3_1": "G12 Drone Engineering (Aeronautical and Rocket and Space Engineering)",
-    "link_4_1": "D3 Management",
-    "link_4_2": "D5 Marketing"
+    "index": "Home",
+    "projects": "Projects",
+    "contact": "Contact",
+    "about": "About me",
+    "skills": "Skills",
+    "experience": "Experience",
+    "education": "Education",
+    "certificates": "Certificates",
+    "privacy_policy": "Privacy Policy",
+    "impressum": "Imprint"
   },
   "contacts": {
-    "title": "Contacts"
+    "title": "Contact Me",
+    "form_title": "Send Me a Message",
+    "items": {
+      "contact": {
+        "title": "Contact",
+        "email": "olhachumbash{'@'}gmail.com",
+        "phones": [
+          "+4915174466630",
+          "+380973246983"
+        ]
+      },
+      "address": {
+        "title": "Address",
+        "values": [
+          "09111 Chemnitz, Germany",
+          "0629 Mariupol, Ukraine"
+        ]
+      },
+      "social": {
+        "title": "Social Networks",
+        "links": [
+          {
+            "name": "LinkedIn",
+            "url": "https://www.linkedin.com/in/olha-chumbash-597568269/",
+            "icon": "fa-brands fa-linkedin-in"
+          },
+          {
+            "name": "GitHub",
+            "url": "https://github.com/OlhaChumbash",
+            "icon": "fa-brands fa-github"
+          },
+          {
+            "name": "Telegram",
+            "url": "https://t.me/olya_from_m",
+            "icon": "fa-brands fa-telegram"
+          },
+          {
+            "name": "WhatsApp",
+            "url": "https://wa.me/380973246983",
+            "icon": "fa-brands fa-whatsapp"
+          },
+          {
+            "name": "Instagram",
+            "url": "https://www.instagram.com/olya_from_m?igsh=MXBlM2E5YzdwY2Rzbw==",
+            "icon": "fa-brands fa-instagram"
+          }
+        ]
+      }
+    }
+  },
+  "cookie_banner": {
+    "title": "We use cookies",
+    "description": "This website uses cookies to improve usability and personalization. By continuing to use the site, you accept our",
+    "link": "Cookie Policy",
+    "accept": "Accept",
+    "reject": "Decline"
+  },
+  "modal_work_together": {
+    "title": "Let's work together",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "submit": "Submit",
+    "success": "Message sent successfully"
+  },
+  "legal": {
+    "privacy": {
+      "title": "Privacy Policy",
+      "intro": "This policy explains how we collect, use, and protect your personal data.",
+      "blocks": [
+        {
+          "title": "Data Collection",
+          "paragraphs": [
+            "We only collect information that you voluntarily provide through the contact form or while using the website."
+          ]
+        },
+        {
+          "title": "Data Usage",
+          "paragraphs": [
+            "The collected data is used to respond to your inquiries, improve website performance, and ensure security."
+          ]
+        }
+      ]
+    },
+    "impressum": {
+      "title": "Impressum",
+      "intro": "In accordance with German law, information regarding the website owner is provided below.",
+      "blocks": [
+        {
+          "title": "Owner",
+          "paragraphs": [
+            "Olha Chumbash",
+            "09111 Chemnitz, Germany",
+            "Email: olhachumbash{'@'}gmail.com"
+          ]
+        }
+      ]
+    },
+    "cookies": {
+      "title": "Cookie Policy",
+      "intro": "This website uses cookies for operational integrity, analytics, and improving user experience.",
+      "blocks": [
+        {
+          "title": "What We Use",
+          "paragraphs": [
+            "Technical cookies to save language preferences and system navigation.",
+            "Analytical cookies to understand website usage patterns."
+          ]
+        }
+      ]
+    }
   }
 }

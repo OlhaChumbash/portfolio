@@ -1,7 +1,9 @@
 <template>
-  <div class="footer__lang d-flex align-items-center justify-content-md-end position-relative m-0" @click="handleToggle" @mouseenter="open = true" @mouseleave="open = false" :class="[directionClass, themeClass, { 'is-open': open }]">
+  <div class="footer__lang d-flex align-items-center justify-content-md-end position-relative m-0" @click="handleToggle"
+    @mouseenter="open = true" @mouseleave="open = false" :class="[directionClass, themeClass, { 'is-open': open }]">
     <div class="footer__lang-img mr-15">
-      <img class="rounded-circle" :src="currentFlag" :alt="currentLangLabel" />
+      <img v-if="currentFlag" class="rounded-circle" :src="currentFlag" :alt="currentLangLabel" />
+      <span v-else class="footer__lang-code">{{ currentLangLabel }}</span>
     </div>
 
     <div class="footer__lang-wrapper">
@@ -10,10 +12,17 @@
       </span>
 
       <ul :class="['footer__lang-list', 'tp-lang-list-2', open ? 'tp-lang-list-open-2' : '']">
-        <li v-if="$i18n.locale !== 'uk'" @click="switchLang('uk')" class="footer__lang-item">
+        <li v-if="$i18n.locale !== 'ua'" @click="switchLang('ua')" class="footer__lang-item">
           <img class="footer__lang-flag" :src="flagUa" alt="Українська" />
           <span>
-            {{ labelFormat === "short" ? "UK" : "Українська" }}
+            {{ labelFormat === "short" ? "UA" : "Українська" }}
+          </span>
+        </li>
+
+        <li v-if="$i18n.locale !== 'de'" @click.stop="switchLang('de')" class="footer__lang-item">
+          <img class="footer__lang-flag" :src="flagDe" alt="Deutsch" />
+          <span>
+            {{ labelFormat === "short" ? "DE" : "Deutsch" }}
           </span>
         </li>
 
@@ -31,6 +40,8 @@
 <script>
 import flagUa from "~/assets/img/common/lang-ua.webp";
 import flagEn from "~/assets/img/common/lang-en.webp";
+import flagDe from "~/assets/img/common/lang-de.webp";
+
 
 export default {
   props: {
@@ -52,17 +63,31 @@ export default {
       open: false,
       flagUa,
       flagEn,
+      flagDe
     };
   },
   computed: {
     currentLangLabel() {
       if (this.labelFormat === "short") {
-        return this.$i18n.locale === "uk" ? "UK" : "EN";
+        if (this.$i18n.locale === "ua") return "UA";
+        if (this.$i18n.locale === "de") return "DE";
+        return "EN";
       }
-      return this.$i18n.locale === "uk" ? "Українська" : "English";
+      if (this.$i18n.locale === "ua") return "Українська";
+      if (this.$i18n.locale === "de") return "Deutsch";
+      return "English";
     },
     currentFlag() {
-      return this.$i18n.locale === "uk" ? this.flagUa : this.flagEn;
+      switch (this.$i18n.locale) {
+        case "ua":
+          return this.flagUa;
+        case "de":
+          return this.flagDe;
+        case "en":
+          return this.flagEn;
+        default:
+          return this.flagEn;
+      }
     },
     directionClass() {
       return this.direction === "down" ? "lang-dropdown-down" : "lang-dropdown-up";
@@ -139,6 +164,19 @@ export default {
       border-radius: 50%;
     }
   }
+}
+
+.footer__lang-code {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--tp-theme-2);
+  color: var(--tp-common-white);
+  font-size: 12px;
+  font-weight: 600;
 }
 
 .lang-dropdown-up {

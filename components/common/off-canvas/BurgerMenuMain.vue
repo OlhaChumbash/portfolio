@@ -19,9 +19,7 @@
             </div>
            <div class="mobile-menu fix mb-40 menu-counter mean-container d-lg-none">
               <div class="mean-bar">
-                <!-- MobileMenus start -->
-                <mobile-menus />
-                <!-- MobileMenus end -->
+                <mobile-menus @close="closeOffcanvas" />
               </div>
             </div>
 
