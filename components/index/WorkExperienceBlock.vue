@@ -80,43 +80,37 @@
 
 
 <script>
-
 import thumb_bg from '~/assets/img/history/history-2.jpg';
 import SalScrollAnimationMixin from "~/mixins/SalScrollAnimationMixin";
 
-
 export default {
-
   mixins: [SalScrollAnimationMixin],
-
 
   data() {
     return {
+      thumb_bg
+    };
+  },
 
-      thumb_bg,
-
-
-      history_lists: [
+  computed: {
+    history_lists() {
+      return [
         {
           year: this.$t('index.work_experience.items.logistics_manager.year'),
           title: this.$t('index.work_experience.items.logistics_manager.title'),
           text: this.$t('index.work_experience.items.logistics_manager.text'),
           meta: this.$t('index.work_experience.items.logistics_manager.meta'),
         },
-
         {
           year: this.$t('index.work_experience.items.school_secretary.year'),
           title: this.$t('index.work_experience.items.school_secretary.title'),
           text: this.$t('index.work_experience.items.school_secretary.text'),
           meta: this.$t('index.work_experience.items.school_secretary.meta'),
         }
-      ]
-
+      ];
     }
   }
-
-}
-
+};
 </script>
 
 

@@ -132,7 +132,7 @@ export default {
   margin: 4px 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .mobile-menu-toggle {
     display: inline-block;
   }
