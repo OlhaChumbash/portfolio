@@ -1,7 +1,6 @@
 <template>
   <div class="fix">
     <HeaderMain />
-
     <main>
       <slot></slot>
     </main>
