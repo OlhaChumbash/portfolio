@@ -1,7 +1,7 @@
 <template>
   <div class="product__modal modal fade" :id="modal_id" tabindex="-1" aria-labelledby="productModal" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
+      <div class="modal-content ">
         <div class="product__modal-wrapper p-4 position-relative">
 
           <div class="product__modal-close position-absolute" style="top: 15px; right: 15px; z-index: 10;">
@@ -60,7 +60,6 @@ export default {
 </script>
 
 <style scoped>
-/* Дополнительные стили для идеального отображения */
 .product__modal-wrapper {
   background: #ffffff;
   border-radius: 8px;
@@ -72,5 +71,23 @@ export default {
 
 .product__modal-close-btn:hover {
   transform: scale(1.1);
+}
+
+@media (max-width: 576px) {
+  :deep(.modal-dialog) {
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+    height: 100%; 
+  }
+
+/*   
+  :deep(.modal-body), 
+  :deep(.modal-header), 
+  :deep(.modal-footer) {
+    padding-top: 60px;
+    padding-left: 15px;  
+    padding-right: 15px;
+  } */
 }
 </style>
