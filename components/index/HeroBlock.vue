@@ -1,9 +1,9 @@
 <template>
   <section class="slider__area pt-100 slider__overlay-2 slider__overlay-2-2 p-relative z-index-1">
     <div class="slider__shape-2">
-      <img class="slider__shape-2-1" src="~/assets/img/slider/2/shape/slider-shape-1.png" alt="">
-      <img class="slider__shape-2-2" src="~/assets/img/slider/2/shape/slider-shape-2.png" alt="">
-      <img class="slider__shape-2-3" src="~/assets/img/slider/2/shape/slider-shape-3.png" alt="">
+      <img class="slider__shape-2-1" src="~/assets/img/slider/slider-shape-1.png" alt="">
+      <img class="slider__shape-2-2" src="~/assets/img/slider/slider-shape-2.png" alt="">
+      <img class="slider__shape-2-3" src="~/assets/img/slider/slider-shape-3.png" alt="">
     </div>
 
     <div class="slider__portfolio-btn">

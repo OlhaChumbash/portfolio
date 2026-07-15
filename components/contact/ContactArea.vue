@@ -53,54 +53,12 @@
 <script>
 import ContactForm from './ContactForm.vue';
 import ContactTopArea from './ContactTopArea.vue';
-import location_icon_1 from "~/assets/img/contact/icon/contact-icon-1.png";
-import location_icon_2 from "~/assets/img/contact/icon/contact-icon-2.png";
-import location_icon_3 from "~/assets/img/contact/icon/contact-icon-3.png";
+
 
 export default {
   components: {
     ContactTopArea,
     ContactForm
-  },
-  computed: {
-    contactItems() {
-      return [
-        {
-          icon: location_icon_1,
-          subtitle: this.$t('contacts.items.contact.title'),
-          links: [
-            {
-              type: 'email',
-              value: this.$t('contacts.items.contact.email')
-            },
-            ...this.$tm('contacts.items.contact.phones').map((_, index) => ({
-              type: 'phone',
-              value: this.$t(`contacts.items.contact.phones.${index}`)
-            }))
-          ]
-        },
-
-        {
-          icon: location_icon_3,
-          subtitle: this.$t('contacts.items.address.title'),
-          links: this.$tm('contacts.items.address.values').map((_, index) => ({
-            type: 'address',
-            value: this.$t(`contacts.items.address.values.${index}`)
-          }))
-        },
-
-        {
-          icon: location_icon_2,
-          subtitle: this.$t('contacts.items.social.title'),
-          links: this.$tm('contacts.items.social.links').map((_, index) => ({
-            type: 'social',
-            name: this.$t(`contacts.items.social.links.${index}.name`),
-            url: this.$t(`contacts.items.social.links.${index}.url`),
-            icon: this.$t(`contacts.items.social.links.${index}.icon`)
-          }))
-        }
-      ]
-    }
   }
 }
 </script>

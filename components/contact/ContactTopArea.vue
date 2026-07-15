@@ -15,14 +15,10 @@
 </template>
 
 <script>
-import bg from '~/assets/img/contact/contact-bg.png';
 export default {
   props:{
     title:String,
     subtitle:String,
-  },
-  data(){
-    return {bg}
   }
 };
 </script>

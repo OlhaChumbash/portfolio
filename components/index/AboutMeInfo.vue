@@ -9,7 +9,7 @@
           <div class="about__me-info-content" data-sal="slide-up" data-sal-delay="130" data-sal-duration="1000">
             <h4 class="about__me-info-title">
               {{ $t('index.about_me.title') }}
-              <img src="~/assets/img/about/about-me-title-icon.png" alt="" />
+              <img src="~/assets/img/index/hero-block/about-me-title-icon.png" alt="" />
             </h4>
             <p>
               {{ $t('index.about_me.description_1') }}
