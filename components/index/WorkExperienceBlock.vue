@@ -35,7 +35,7 @@
               </div>
 
 
-              <div class="history__list-content">
+              <div class="history__list-content p-4 p-sm-0">
                 <div class="history__list-dot">
                   <span></span>
                 </div>

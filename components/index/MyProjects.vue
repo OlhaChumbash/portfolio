@@ -1,5 +1,5 @@
 <template>
-  <section id="my-projects" class="elements__carousel-area pt-110">
+  <section id="my-projects" class="elements__carousel-area pt-50 pt-md-110 pb-60 pb-md-140">
     <div class="container">
       <div class="row projects__titles-container">
         <div class="col-xxl-7 col-xl-7">
@@ -106,12 +106,6 @@ export default {
 
 <style lang="scss" scoped>
 .elements__carousel-area {
-  padding: 10px 0 60px;
-
-  @media (max-width: 992px) {
-    padding: 5px 0;
-  }
-
   a:focus-visible,
   button:focus-visible {
     outline: 0;

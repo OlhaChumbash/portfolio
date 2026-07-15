@@ -13,7 +13,6 @@
             <div class="offcanvas__top mb-10 d-flex justify-content-between align-items-center">
               <div class="offcanvas__logo logo">
                   <nuxt-link href="/" target="_blank">
-                  <!-- <img src="~/assets/img/logo/logo.webp" alt="logo"> -->
                   </nuxt-link>
               </div>
             </div>
