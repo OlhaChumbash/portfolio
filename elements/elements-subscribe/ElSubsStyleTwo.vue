@@ -34,7 +34,7 @@
               <div class="newsletter__agree newsletter__agree-2 d-flex align-items-start mb-35">
                   <input class="e-check-input" type="checkbox" id="h-agree">
                   <label class="e-check-label" for="h-agree">I agree to the 
-                    <nuxt-link href="/policy">Privacy Policy.</nuxt-link>
+                    <nuxt-link href="/privacy-policy">Privacy Policy.</nuxt-link>
                   </label>
               </div>
             </form>

@@ -206,8 +206,8 @@
               </div>
               <div class="col-sm-6">
                 <div class="footer__link text-sm-end">
-                  <nuxt-link href="/policy">Privacy Policy</nuxt-link>
-                  <nuxt-link href="/terms">Terms of Use</nuxt-link>
+                  <nuxt-link href="/privacy-policy">Privacy Policy</nuxt-link>
+                  <nuxt-link href="/impressum">Impressum</nuxt-link>
                 </div>
               </div>
             </div>

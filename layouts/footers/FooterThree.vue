@@ -29,7 +29,7 @@
             <div class="col-lg-4 col-md-5 col-sm-8">
               <div class="footer__widget footer-col-2-3">
                 <ul id="footer-list-inline-2">
-                  <li><nuxt-link href="/policy">Privacy Policy</nuxt-link></li>
+                  <li><nuxt-link href="/privacy-policy">Privacy Policy</nuxt-link></li>
                   <li><nuxt-link href="/help">Help Center</nuxt-link></li>
                 </ul>
               </div>

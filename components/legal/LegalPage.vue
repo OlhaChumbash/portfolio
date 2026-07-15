@@ -5,15 +5,31 @@
         <div class="row justify-content-center">
           <div class="col-lg-8">
             <div class="legal__card">
-              <h1 class="legal__title">{{ content.title }}</h1>
-              <p v-if="content.intro" class="legal__intro">{{ content.intro }}</p>
-              <div v-for="(block, index) in content.blocks" :key="index" class="legal__block">
-                <h2 v-if="block.title" class="legal__block-title">{{ block.title }}</h2>
-                <p v-for="(paragraph, paragraphIndex) in block.paragraphs" :key="paragraphIndex" class="legal__paragraph">
-                  {{ paragraph }}
+              <h1 class="legal__title">{{ t(`legal.${props.pageKey}.title`) }}</h1>
+              <p v-if="hasIntro" class="legal__intro">
+                {{ t(`legal.${props.pageKey}.intro`) }}
+              </p>
+
+              <div v-for="blockIndex in blockIndices" :key="blockIndex" class="legal__block">
+                <h2 v-if="hasBlockTitle(blockIndex)" class="legal__block-title">
+                  {{ t(`legal.${props.pageKey}.blocks.${blockIndex}.title`) }}
+                </h2>
+
+                <p 
+                  v-for="pIndex in getParagraphIndices(blockIndex)" 
+                  :key="pIndex" 
+                  class="legal__paragraph"
+                >
+                  {{ t(`legal.${props.pageKey}.blocks.${blockIndex}.paragraphs.${pIndex}`) }}
                 </p>
-                <ul v-if="block.list" class="legal__list">
-                  <li v-for="(item, itemIndex) in block.list" :key="itemIndex">{{ item }}</li>
+
+                <ul v-if="hasList(blockIndex)" class="legal__list">
+                  <li 
+                    v-for="lIndex in getListIndices(blockIndex)" 
+                    :key="lIndex"
+                  >
+                    {{ t(`legal.${props.pageKey}.blocks.${blockIndex}.list.${lIndex}`) }}
+                  </li>
                 </ul>
               </div>
             </div>
@@ -35,17 +51,45 @@ const props = defineProps({
     required: true,
   },
 });
+const { t, te, tm } = useI18n();
+const hasIntro = computed(() => te(`legal.${props.pageKey}.intro`));
 
-const { t } = useI18n();
+const blockIndices = computed(() => {
+  const rawBlocks = tm(`legal.${props.pageKey}.blocks`);
+  if (!rawBlocks || !Array.isArray(rawBlocks)) return [];
+  return rawBlocks.map((_, index) => index);
+});
 
-const content = computed(() => t(`legal.${props.pageKey}`, { returnObjects: true }));
+const hasBlockTitle = (blockIndex) => {
+  return te(`legal.${props.pageKey}.blocks.${blockIndex}.title`);
+};
+
+const getParagraphIndices = (blockIndex) => {
+  const rawParagraphs = tm(`legal.${props.pageKey}.blocks.${blockIndex}.paragraphs`);
+  if (!rawParagraphs || !Array.isArray(rawParagraphs)) return [];
+  return rawParagraphs.map((_, index) => index);
+};
+
+const hasList = (blockIndex) => {
+  return te(`legal.${props.pageKey}.blocks.${blockIndex}.list`);
+};
+
+const getListIndices = (blockIndex) => {
+  const rawList = tm(`legal.${props.pageKey}.blocks.${blockIndex}.list`);
+  if (!rawList || !Array.isArray(rawList)) return [];
+  return rawList.map((_, index) => index);
+};
 
 useHead({
-  title: () => `${t(`legal.${props.pageKey}.title`)} | ${t("seo.index.title")}`,
+  title: () => {
+    const pageTitle = te(`legal.${props.pageKey}.title`) ? t(`legal.${props.pageKey}.title`) : "";
+    const siteTitle = t("seo.index.title") || "";
+    return pageTitle ? `${pageTitle} | ${siteTitle}` : siteTitle;
+  },
   meta: [
     {
       name: "description",
-      content: () => t(`legal.${props.pageKey}.intro`),
+      content: () => (te(`legal.${props.pageKey}.intro`) ? t(`legal.${props.pageKey}.intro`) : ""),
     },
   ],
 });

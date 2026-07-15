@@ -43,10 +43,10 @@
                 <div class="footer__widget-content">
                   <ul>
                     <li><nuxt-link href="/about">About Us</nuxt-link></li>
-                    <li><nuxt-link href="/terms">Terms of Use</nuxt-link></li>
+                    <li><nuxt-link href="/impressum">Impressum</nuxt-link></li>
                     <li><nuxt-link href="/services">Our Services</nuxt-link></li>
                     <li><nuxt-link href="/help">Changelog</nuxt-link></li>
-                    <li><nuxt-link href="/policy">Privacy policy</nuxt-link></li>
+                    <li><nuxt-link href="/privacy-policy">Privacy policy</nuxt-link></li>
                   </ul>
                 </div>
               </div>
