@@ -11,26 +11,12 @@
                     <img class="logo" :src="logoWhite" alt="Olha Chumbash logo" loading="lazy" />
                   </nuxt-link>
                 </div>
-                <div class="footer__widget-content">
-                  <div class="footer__info">
-                    <div class="footer__contact">
-                      <div>
-                        <span>
-                          <a class="footer__contact-mail" href="mailto:olhachumbash@gmail.com" aria-label="Email me">
-                            {{ $t("contacts.items.contact.email") }}
-                          </a>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
             <div class="footer__menu-wrapper">
-              <div class="main-menu main-menu-ff-space">
+              <div class="main-menu main-menu-ff-space d-flex justify-content-center align-items-center h-100">
                 <nav id="mobile-menu" aria-label="Footer Navigation">
                   <FooterMenu />
-                  <!-- <NavMenu role="navigation" /> -->
                 </nav>
               </div>
             </div>
@@ -42,7 +28,7 @@
           <div class="footer__bottom-inner">
             <div class="row">
 
-              <div class="col-sm-4">
+              <div class="col-12 col-md-6 col-lg-4">
                 <div class="footer__privacy_policy">
                   <p>
                     <NuxtLink class="policy-link" to="/privacy-policy">{{ $t('menu.privacy_policy') }}</NuxtLink>
@@ -53,40 +39,33 @@
                 </div>
               </div>
 
-              <div class="col-sm-4">
-                <div class="footer__copyright">
-                  <p class="copyright-link">© {{ new Date().getFullYear() }} Olha Chumbash</p>
-                </div>
-              </div>
-
-              <div class="col-sm-4">
-                <div class="text-sm-end">
+              <div class="col-12 col-md-6  col-lg-4">
+                <div class="d-flex justify-content-center">
                   <div class="footer__copyright footer__social">
-                    <div class="footer__social">
+                    <div class="footer__social mb-4">
                       <Social color="light" />
                     </div>
                   </div>
                 </div>
               </div>
+
+              <div class=" col-12 col-lg-4">
+                <div class="footer__copyright">
+                  <p class="copyright-link">© {{ new Date().getFullYear() }} Olha Chumbash</p>
+                </div>
+              </div>
+
+
             </div>
           </div>
         </div>
       </div>
     </div>
   </footer>
-  <!-- <PrivacyPolicyModal modal_id="privacyPolicyModal" :pdfSrc="privacyPdf" /> -->
-
-  <!-- image popup start -->
-  <!-- <image-popup ref="image_popup" :images="qrcodeImg" aria-label="Image popup" /> -->
-  <!-- image popup end -->
 </template>
 
 <script>
-// import ImagePopup from "~~/components/common/modals/ImagePopup.vue";
 import Social from "~~/components/social/Social.vue";
-// import qrcode from "~/assets/img/icon/qrcode.webp";
-// import NavMenu from "./NavMenu.vue";
-// import PrivacyPolicyModal from "~~/components/common/modals/PrivacyPolicyModal.vue";
 import FooterMenu from "~/layouts/footers/FooterMenu.vue";
 import logoWhite from "~/assets/img/logo/logo-white.png";
 export default {
