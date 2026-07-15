@@ -122,3 +122,6 @@ display: none;
 div.swiper .swiper-initialized .swiper-horizontal .award__item-wrapper .swiper-backface-hidden {
     z-index: -8;
 }
+section[id] {
+  scroll-margin-top: 80px;
+}

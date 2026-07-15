@@ -220,16 +220,6 @@ export default {
   }
 }
 
-.lang-dark {
-  .footer__lang-selected-lang {
-    color: var(--tp-theme-2);
-
-    &::after {
-      color: var(--tp-theme-2);
-    }
-  }
-}
-
 .lang-light {
   .footer__lang-selected-lang {
     color: var(--tp-common-black);

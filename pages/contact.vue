@@ -6,9 +6,8 @@
 
 <script setup>
 import { useI18n } from "vue-i18n";
-
 import LayoutMain from "~~/layouts/LayoutMain.vue";
-import ContactArea from "~~/components/contact-page/ContactArea.vue";
+import ContactArea from "~~/components/contact/ContactArea.vue";
 
 const { t } = useI18n();
 

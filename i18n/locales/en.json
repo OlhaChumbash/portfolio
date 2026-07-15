@@ -434,7 +434,7 @@
       "description": "The official university website representing educational programs, study opportunities, and student interaction.",
       "image": "projects/project_1.webp",
       "link": "https://university.intita.com/",
-      "date": "November 2025 — April 2026",
+      "date": "November 2025 —  January 2026",
       "items": [
         "Development of a responsive and dynamic frontend using Vue.js and Nuxt 3.",
         "Creation of interactive student registration and inquiry forms.",
@@ -988,45 +988,104 @@
   "legal": {
     "privacy": {
       "title": "Privacy Policy",
-      "intro": "This policy explains how we collect, use, and protect your personal data.",
+      "intro": "This privacy policy explains how we collect, process, and protect your personal data on this website. The information below is provided in accordance with the General Data Protection Regulation (GDPR) and German legislation.",
       "blocks": [
         {
-          "title": "Data Collection",
+          "title": "Controller",
           "paragraphs": [
-            "We only collect information that you voluntarily provide through the contact form or while using the website."
+            "The website is operated by Olha Chumbash.",
+            "09111 Chemnitz, Germany",
+            "Tel.: +49 15 17 44 666 30",
+            "Email: olhachumbash{'@'}gmail.com"
           ]
         },
         {
-          "title": "Data Usage",
+          "title": "Data We Process",
           "paragraphs": [
-            "The collected data is used to respond to your inquiries, improve website performance, and ensure security."
+            "When you use the contact form or send an email, we process your name, email address, and the content of your message.",
+            "During your visit to the website, technical data such as IP address, browser type, request time, and requested pages may be stored in server log files."
+          ]
+        },
+        {
+          "title": "Purpose and Legal Basis",
+          "paragraphs": [
+            "We process your data to respond to inquiries, ensure the functionality of the website, and protect against abuse.",
+            "The legal basis is Article 6(1)(b) GDPR for contact requests and Article 6(1)(f) GDPR for legitimate interests in the secure and functional operation of the website."
+          ]
+        },
+        {
+          "title": "Hosting and Security (SSL/TLS)",
+          "paragraphs": [
+            "This website uses the services of an external hosting provider for the technical delivery of the pages. Visitor data (e.g., IP addresses) is processed on the provider's servers solely for the purpose of secure service delivery in accordance with Article 28 GDPR.",
+            "To protect your data during transmission, we use modern SSL or TLS encryption. You can recognize an encrypted connection by the padlock symbol in your browser's address bar and the https:// prefix."
+          ]
+        },
+        {
+          "title": "Data Retention Period",
+          "paragraphs": [
+            "Personal data is processed and stored only for the period necessary to achieve the purpose of its collection (e.g., to respond to your inquiry) or in accordance with statutory retention periods."
+          ]
+        },
+        {
+          "title": "Cookies and Analytics",
+          "paragraphs": [
+            "The website uses necessary cookies to store language settings and basic navigation. Optional analytical cookies may be used to improve website performance.",
+            "You can disable or delete cookies in your browser settings. Some features may become only partially available."
+          ]
+        },
+        {
+          "title": "Your Rights",
+          "paragraphs": [
+            "You have the right to access, rectification, erasure, restriction of processing, objection to processing, and data portability.",
+            "If you have any questions or complaints, you can contact us directly or file a complaint with the competent data protection authority in Germany."
           ]
         }
       ]
     },
     "impressum": {
-      "title": "Impressum",
-      "intro": "In accordance with German law, information regarding the website owner is provided below.",
+      "title": "Legal Notice (Impressum)",
+      "intro": "In accordance with German legislation, the following mandatory information is provided for the operation of this website.",
       "blocks": [
         {
-          "title": "Owner",
+          "title": "Operator",
           "paragraphs": [
             "Olha Chumbash",
             "09111 Chemnitz, Germany",
+            "Tel.: +49 15 17 44 666 30",
             "Email: olhachumbash{'@'}gmail.com"
+          ]
+        },
+        {
+          "title": "Person Responsible for Content",
+          "paragraphs": [
+            "Olha Chumbash",
+            "For questions regarding the content of the website, please contact the email address provided."
+          ]
+        },
+        {
+          "title": "Disclaimer",
+          "paragraphs": [
+            "The content of this website has been created with the utmost care. However, we cannot guarantee the completeness, accuracy, or up-to-dateness of all materials."
+          ]
+        },
+        {
+          "title": "EU Dispute Resolution (Online Dispute Resolution)",
+          "paragraphs": [
+            "The European Commission provides a platform for online dispute resolution (ODR): https://ec.europa.eu/consumers/odr.",
+            "We are neither obligated nor willing to participate in dispute resolution proceedings before a consumer arbitration board."
           ]
         }
       ]
     },
     "cookies": {
       "title": "Cookie Policy",
-      "intro": "This website uses cookies for operational integrity, analytics, and improving user experience.",
+      "intro": "This website uses cookies for technical operations, analytics, and to improve the user experience.",
       "blocks": [
         {
           "title": "What We Use",
           "paragraphs": [
-            "Technical cookies to save language preferences and system navigation.",
-            "Analytical cookies to understand website usage patterns."
+            "Technical cookies to save language preferences and navigation states.",
+            "Analytical cookies to understand how users interact with the website and to improve it."
           ]
         }
       ]

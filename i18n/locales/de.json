@@ -22,7 +22,7 @@
     "title_1": "Full Stack",
     "title_2": "Developer",
     "button": "Lassen Sie uns zusammenarbeiten",
-    "all_projects": "All Projects",
+    "all_projects": "Alle Projekte",
     "scroll_down": "Scroll Down",
     "about_me": {
       "subtitle": "ÜBER MICH",
@@ -434,7 +434,7 @@
       "description": "Offizielle Website der Universität zur Präsentation von Bildungsprogrammen, Studienmöglichkeiten und zur Interaktion mit Studierenden.",
       "image": "projects/project_1.webp",
       "link": "https://university.intita.com/",
-      "date": "November 2025 — April 2026",
+      "date": "November 2025 — Januar 2026",
       "items": [
         "Entwicklung eines responsiven und dynamischen Frontends mit Vue.js und Nuxt 3.",
         "Erstellung interaktiver Formulare für die Registrierung von Studierenden und für Anfragen.",
@@ -988,45 +988,104 @@
   "legal": {
     "privacy": {
       "title": "Datenschutzerklärung",
-      "intro": "Diese Erklärung erläutert, wie wir Ihre personenbezogenen Daten erheben, verwenden und schützen.",
+      "intro": "Diese Datenschutzerklärung erklärt, wie wir Ihre personenbezogenen Daten auf dieser Website erheben, verarbeiten und schützen. Die folgenden Informationen werden gemäß der Datenschutz-Grundverordnung (DSGVO) und den deutschen gesetzlichen Bestimmungen bereitgestellt.",
       "blocks": [
         {
-          "title": "Datenerhebung",
+          "title": "Verantwortliche Stelle",
           "paragraphs": [
-            "Wir erheben nur die Informationen, die Sie uns freiwillig über das Kontaktformular oder während der Nutzung der Website zur Verfügung stellen."
+            "Die Website wird betrieben von Olha Chumbash.",
+            "09111 Chemnitz, Deutschland",
+            "Tel.: +49 15 17 44 666 30",
+            "E-Mail: olhachumbash{'@'}gmail.com"
           ]
         },
         {
-          "title": "Datennutzung",
+          "title": "Daten, die wir verarbeiten",
           "paragraphs": [
-            "Die erhobenen Daten werden verwendet, um auf Ihre Anfragen zu antworten, den Betrieb der Website zu verbessern und die Sicherheit zu gewährleisten."
+            "Wenn Sie das Kontaktformular nutzen oder uns eine E-Mail senden, verarbeiten wir Ihren Namen, Ihre E-Mail-Adresse und den Inhalt Ihrer Nachricht.",
+            "Beim Besuch der Website können technische Daten wie IP-Adresse, Browsertyp, Uhrzeit der Anfrage und besuchte Seiten in den Server-Logfiles gespeichert werden."
+          ]
+        },
+        {
+          "title": "Zweck und Rechtsgrundlage",
+          "paragraphs": [
+            "Wir verarbeiten Ihre Daten zur Beantwortung von Anfragen, zur Gewährleistung des Website-Betriebs und zum Schutz vor Missbrauch.",
+            "Die Rechtsgrundlage basiert auf Art. 6 Abs. 1 lit. b DSGVO für Kontaktanfragen und Art. 6 Abs. 1 lit. f DSGVO für berechtigte Interessen an einem sicheren und funktionellen Betrieb der Website."
+          ]
+        },
+        {
+          "title": "Hosting und Sicherheit (SSL/TLS)",
+          "paragraphs": [
+            "Diese Website nutzt die Dienste eines externen Hosting-Anbieters für die technische Bereitstellung der Seiten. Die Daten der Besucher (z. B. IP-Adressen) werden auf den Servern des Anbieters ausschließlich zum Zweck der sicheren Bereitstellung der Dienste gemäß Art. 28 DSGVO verarbeitet.",
+            "Um Ihre Daten bei der Übertragung zu schützen, verwenden wir eine moderne SSL- bzw. TLS-Verschlüsselung. Sie erkennen eine verschlüsselte Verbindung an dem Schloss-Symbol in der Adresszeile Ihres Browsers und dem Präfix https://."
+          ]
+        },
+        {
+          "title": "Dauer der Datenspeicherung",
+          "paragraphs": [
+            "Personenbezogene Daten werden nur so lange verarbeitet und gespeichert, wie es zur Erreichung des Zwecks ihrer Erhebung erforderlich ist (z. B. zur Beantwortung Ihrer Anfrage) oder wie es die gesetzlichen Aufbewahrungsfristen vorsehen."
+          ]
+        },
+        {
+          "title": "Cookies und Analyse",
+          "paragraphs": [
+            "Die Website verwendet notwendige Cookies, um Spracheinstellungen und die Basisnavigation zu speichern. Optional können Analyse-Cookies verwendet werden, um die Leistung der Website zu verbessern.",
+            "Sie können Cookies in Ihren Browsereinstellungen deaktivieren oder löschen. Einige Funktionen stehen dann möglicherweise nur noch eingeschränkt zur Verfügung."
+          ]
+        },
+        {
+          "title": "Ihre Rechte",
+          "paragraphs": [
+            "Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Widerspruch gegen die Verarbeitung sowie auf Datenübertragbarkeit.",
+            "Wenn Sie Fragen oder Beschwerden haben, können Sie sich direkt an uns wenden oder eine Beschwerde bei der zuständigen Datenschutzaufsichtsbehörde in Deutschland einreichen."
           ]
         }
       ]
     },
     "impressum": {
       "title": "Impressum",
-      "intro": "Gemäß den gesetzlichen Vorgaben in Deutschland finden Sie hier Informationen über den Websitebetreiber.",
+      "intro": "Gemäß den deutschen gesetzlichen Bestimmungen finden Sie nachfolgend die Pflichtangaben für den Betrieb dieser Website.",
       "blocks": [
         {
-          "title": "Betreiber",
+          "title": "Diensteanbieter",
           "paragraphs": [
             "Olha Chumbash",
             "09111 Chemnitz, Deutschland",
+            "Tel.: +49 15 17 44 666 30",
             "E-Mail: olhachumbash{'@'}gmail.com"
+          ]
+        },
+        {
+          "title": "Inhaltlich Verantwortliche",
+          "paragraphs": [
+            "Olha Chumbash",
+            "Bei Fragen zum Inhalt der Website wenden Sie sich bitte an die angegebene E-Mail-Adresse."
+          ]
+        },
+        {
+          "title": "Haftungshinweis",
+          "paragraphs": [
+            "Die Inhalte dieser Website wurden mit größtmöglicher Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen."
+          ]
+        },
+        {
+          "title": "EU-Streitschlichtung (Online-Streitbeilegung)",
+          "paragraphs": [
+            "Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: https://ec.europa.eu/consumers/odr.",
+            "Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen."
           ]
         }
       ]
     },
     "cookies": {
       "title": "Cookie-Richtlinie",
-      "intro": "Diese Website verwendet Cookies für die Funktionalität der Website, Analysen und zur Verbesserung der Benutzererfahrung.",
+      "intro": "Diese Website verwendet Cookies für den technischen Betrieb, für Analysen und zur Verbesserung der Benutzererfahrung.",
       "blocks": [
         {
           "title": "Was wir verwenden",
           "paragraphs": [
-            "Technische Cookies zur Speicherung der Sprachauswahl und des Menübetriebs.",
-            "Analytische Cookies, um die Nutzung der Website zu verstehen."
+            "Technische Cookies zur Speicherung von Spracheinstellungen und des Navigationsstatus.",
+            "Analyse-Cookies, um zu verstehen, wie Benutzer mit der Website interagieren, und um diese zu verbessern."
           ]
         }
       ]

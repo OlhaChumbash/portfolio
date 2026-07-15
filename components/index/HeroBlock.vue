@@ -1,13 +1,13 @@
 <template>
   <section class="slider__area pt-100 slider__overlay-2 slider__overlay-2-2 p-relative z-index-1">
     <div class="slider__shape-2">
-      <img class="slider__shape-2-1" src="~/assets/img/slider/2/shape/slider-shape-1.png" alt="">
-      <img class="slider__shape-2-2" src="~/assets/img/slider/2/shape/slider-shape-2.png" alt="">
-      <img class="slider__shape-2-3" src="~/assets/img/slider/2/shape/slider-shape-3.png" alt="">
+      <img class="slider__shape-2-1" src="~/assets/img/slider/slider-shape-1.png" alt="">
+      <img class="slider__shape-2-2" src="~/assets/img/slider/slider-shape-2.png" alt="">
+      <img class="slider__shape-2-3" src="~/assets/img/slider/slider-shape-3.png" alt="">
     </div>
 
     <div class="slider__portfolio-btn">
-      <nuxt-link href="/" class="slider-portfolio-btn">
+      <nuxt-link href="/projects" class="slider-portfolio-btn">
         <svg width="12" height="12" viewBox="0 0 14 14" fill="none">
           <path
             d="M3.5 2.25001C3.5 1.28351 2.7165 0.500001 1.75 0.500001C0.783502 0.500001 0 1.28351 0 2.25001C0 3.2165 0.783502 4 1.75 4C2.7165 4 3.5 3.2165 3.5 2.25001Z"
@@ -38,39 +38,19 @@
         <div class="col-xxl-5 col-xl-5 col-lg-6">
           <div class="slider__content-2">
 
-            <span 
-              class="slider__title-pre-2"
-              data-sal="slide-up"
-              data-sal-delay="130"
-              data-sal-duration="700"
-            >
+            <span class="slider__title-pre-2" data-sal="slide-up" data-sal-delay="130" data-sal-duration="700">
               {{ $t('index.pre_title_1') }}
             </span>
 
-            <h3 
-              class="slider__title-2"
-              data-sal="slide-up"
-              data-sal-delay="140"
-              data-sal-duration="900"
-            >
+            <h3 class="slider__title-2" data-sal="slide-up" data-sal-delay="140" data-sal-duration="900">
               {{ $t('index.title_1') }}
               <br>
               {{ $t('index.title_2') }}
 
             </h3>
 
-            <div 
-              class="slider__btn-2"
-              data-sal="slide-up"
-              data-sal-delay="160"
-              data-sal-duration="1100"
-            >
-              <button
-  type="button"
-  class="tp-btn-green"
-  data-bs-toggle="modal"
-  data-bs-target="#requestModal"
->
+            <div class="slider__btn-2" data-sal="slide-up" data-sal-delay="160" data-sal-duration="1100">
+              <button type="button" class="tp-btn-green" data-bs-toggle="modal" data-bs-target="#requestModal">
                 {{ $t('index.button') }}
               </button>
             </div>
@@ -80,19 +60,15 @@
 
         <div class="col-xxl-5 col-xl-5 col-lg-5">
           <div class="slider__thumb-wrapper-2 pt-20 ml-40 " data-overlay="green" data-overlay-opacity="3">
-            <div 
-              class="slider__thumb-2 m-img text-center"
-              data-sal="slide-left"
-              data-sal-delay="180"
-              data-sal-duration="1200"
-            >
+            <div class="slider__thumb-2 m-img text-center" data-sal="slide-left" data-sal-delay="180"
+              data-sal-duration="1200">
               <img src="~/assets/img/index/hero-block/hero_photo3.png" alt="">
             </div>
           </div>
         </div>
       </div>
     </div>
-<ProductModal modal_id="requestModal" />
+    <ProductModal modal_id="requestModal" />
   </section>
 </template>
 

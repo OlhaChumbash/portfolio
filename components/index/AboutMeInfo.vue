@@ -1,5 +1,5 @@
 <template>
-  <section id="about-me" class="about__me-info pb-90 pt-110">
+  <section id="about-me" class="about__me-info pt-50 pt-md-110 pb-60 pb-md-140">
     <div class="container">
       <div class="row">
         <div class="col-xl-4 col-lg-3">
@@ -9,7 +9,7 @@
           <div class="about__me-info-content" data-sal="slide-up" data-sal-delay="130" data-sal-duration="1000">
             <h4 class="about__me-info-title">
               {{ $t('index.about_me.title') }}
-              <img src="~/assets/img/about/about-me-title-icon.png" alt="" />
+              <img src="~/assets/img/index/hero-block/about-me-title-icon.png" alt="" />
             </h4>
             <p>
               {{ $t('index.about_me.description_1') }}
