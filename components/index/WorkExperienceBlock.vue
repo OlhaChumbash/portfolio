@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-xxl-6 col-xl-6 col-lg-6">
-          <div class="section__title-wrapper-4 mb-60">          
+          <div class="section__title-wrapper-4 mb-60">
 
             <h3 class="section__title-4">
               {{ $t('index.work_experience.title') }}
@@ -19,17 +19,14 @@
             <div class="history__thumb">
               <img src="~/assets/img/index/work-experience/work-experience-img.webp" alt="Work experience">
             </div>
-
           </div>
         </div>
 
 
         <div class="col-xxl-6 col-xl-6 col-lg-6">
-
           <div class="history__list">
-
-            <!-- Замість align-items-start пишемо align-items-stretch, а для десктопів повертаємо start -->
-<div v-for="(item, i) in history_lists" :key="i" class="history__list-item d-flex flex-column flex-md-row align-items-stretch align-items-md-start">
+            <div v-for="(item, i) in history_lists" :key="i"
+              class="history__list-item d-flex flex-column flex-md-row align-items-stretch align-items-md-start">
 
               <div class="history__year" data-sal="slide-right" data-sal-delay="130" data-sal-duration="1000">
                 <h5 class="history__year-title">
@@ -39,7 +36,6 @@
 
 
               <div class="history__list-content">
-
                 <div class="history__list-dot">
                   <span></span>
                 </div>
@@ -56,42 +52,27 @@
                     {{ item.text }}
                   </p>
 
-
                   <div class="history__list-meta">
                     <span>
                       {{ item.meta }}
                     </span>
                   </div>
-
                 </div>
-
               </div>
-
             </div>
-
           </div>
-
         </div>
-
       </div>
-
     </div>
   </section>
 </template>
 
 
 <script>
-import thumb_bg from '~/assets/img/history/history-2.jpg';
 import SalScrollAnimationMixin from "~/mixins/SalScrollAnimationMixin";
 
 export default {
   mixins: [SalScrollAnimationMixin],
-
-  data() {
-    return {
-      thumb_bg
-    };
-  },
 
   computed: {
     history_lists() {
