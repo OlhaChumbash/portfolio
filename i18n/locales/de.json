@@ -434,7 +434,7 @@
       "description": "Offizielle Website der Universität zur Präsentation von Bildungsprogrammen, Studienmöglichkeiten und zur Interaktion mit Studierenden.",
       "image": "projects/project_1.webp",
       "link": "https://university.intita.com/",
-      "date": "November 2025 — April 2026",
+      "date": "November 2025 — Januar 2026",
       "items": [
         "Entwicklung eines responsiven und dynamischen Frontends mit Vue.js und Nuxt 3.",
         "Erstellung interaktiver Formulare für die Registrierung von Studierenden und für Anfragen.",
