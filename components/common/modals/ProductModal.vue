@@ -29,7 +29,7 @@
 </template>
 
 <script>
-import ContactForm from "~~/components/contact-page/ContactForm.vue";
+import ContactForm from "~~/components/contact/ContactForm.vue";
 
 export default {
   components: {
