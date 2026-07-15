@@ -20,13 +20,12 @@ const { t } = useI18n();
 const items = computed(() => [
   { to: "/", label: t("menu.index") },
   { to: "/#about-me", label: t("menu.about") },
-  { to: "/#my-skills", label: t("menu.skills") },
   { to: "/projects", label: t("menu.projects") },
+  { to: "/#my-experience", label: t("menu.experience") },
+  { to: "/#my-skills", label: t("menu.skills") },
   { to: "/#my-education", label: t("menu.education") },
   { to: "/contact", label: t("menu.contact") },
-  { to: "/privacy-policy", label: t("menu.privacy_policy") },
-  { to: "/impressum", label: t("menu.impressum") },
-  // { to: "/cookies", label: t("menu.cookies") },
+  { to: "/#my-sertificates", label: t("menu.certificates") },
 ]);
 
 const closeMenu = () => {

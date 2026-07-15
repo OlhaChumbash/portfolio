@@ -162,7 +162,7 @@ export default {
   }
 
   @media #{$xs} {
-    margin: unset;
+    margin: 0 auto;
   }
 }
 
