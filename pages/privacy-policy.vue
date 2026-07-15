@@ -1,23 +1,7 @@
 <template>
-  <LayoutMain>
-    privacy-policy
-  </LayoutMain>
+  <LegalPage page-key="privacy" />
 </template>
 
 <script setup>
-import { useI18n } from "vue-i18n";
-
-import LayoutMain from "~~/layouts/LayoutMain.vue";
-
-const { t } = useI18n();
-
-useHead({
-  title: () => t("seo.privacy-policy.title"),
-  meta: [
-    {
-      name: "description",
-      content: () => t("seo.privacy-policy.description"),
-    },
-  ],
-});
+import LegalPage from "~/components/legal/LegalPage.vue";
 </script>
