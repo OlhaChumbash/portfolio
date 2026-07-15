@@ -1,6 +1,6 @@
 <template>
   <LayoutMain>
-    <section class="legal__page py-5 py-lg-6">
+    <section class="legal__page pt-50 pt-md-110 pb-60 pb-md-140 py-5 py-lg-6">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8">

@@ -1,5 +1,5 @@
 <template>
-  <section id="my-sertificates" class="gallery mt-60 mb-60">
+  <section id="my-sertificates" class="gallery pt-50 pt-md-110 pb-60 pb-md-140">
     <div class="gallery__wrapper">
       <div class="gallery__track" @mouseenter="paused = true" @mouseleave="paused = false" :class="{ paused }">
         <div v-for="(item, index) in galleryImages" :key="index" class="gallery__item" @click="openPopup(index)">
@@ -73,7 +73,6 @@ const galleryImages = [
 
 ];
 </script>
-
 <style scoped>
 .gallery {
   width: 100%;
@@ -88,20 +87,39 @@ const galleryImages = [
 .gallery__track {
   display: flex;
   width: max-content;
-  gap: 20px;
+  gap: 10px;
   animation: scroll 100s linear infinite;
+}
+
+@media (min-width: 768px) {
+  .gallery__track {
+    gap: 20px;
+  }
 }
 
 .gallery__track.paused {
   animation-play-state: paused;
 }
-
 .gallery__item {
-  width: calc((100vw - 60px) / 4);
-  height: 500px;
+  width: 80vw; 
+  height: 300px; 
   flex-shrink: 0;
   cursor: pointer;
   overflow: hidden;
+}
+
+@media (min-width: 576px) {
+  .gallery__item {
+    width: calc((100vw - 45px) / 2);
+    height: 380px;
+  }
+}
+
+@media (min-width: 992px) {
+  .gallery__item {
+    width: calc((100vw - 60px) / 4);
+    height: 500px;
+  }
 }
 
 .gallery__item img {
@@ -110,7 +128,6 @@ const galleryImages = [
   object-fit: contain;
   transition: .3s;
 }
-
 
 .gallery__item:hover img {
   transform: scale(1.05);

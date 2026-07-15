@@ -1,6 +1,5 @@
 <template>
   <ContactTopArea title="" :subtitle="$t('contacts.title')" />
-
   <div class="contact__item-area contact__translate-2">
     <div class="container">
       <div class="row">
@@ -37,15 +36,12 @@
       </div>
     </div>
   </div>
-  <section class="contact__form-area pt-90 pb-90">
+  <section class="contact__form-area pt-50 pt-md-110 pb-60 pb-md-140">
     <div class="container">
       <div class="row">
         <div class="col-xl-12">
           <div class="contact__form-2">
-            <!-- <h3 class="contact__form-2-title">
-              {{ $t('contacts.form_title') }}
-            </h3> -->
-            <contact-form />
+            <ContactForm />
             <p class="ajax-response"></p>
           </div>
         </div>
