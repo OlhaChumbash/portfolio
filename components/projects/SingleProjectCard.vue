@@ -2,9 +2,12 @@
   <div class="project-card" :class="{ 'project-card--reverse': isEven }">
 
     <div class="project-card__image-container">
-      <img :src="getImagePath(image)" :alt="title" class="project-card__image" />
+      <ProjectMediaCard 
+        :image="image" 
+        :title="title" 
+        :code-snippet="codeSnippet" 
+      />
     </div>
-
 
     <div class="project-card__content">
       <div class="project-card__content-top d-flex align-items-center justify-content-between">
@@ -23,16 +26,18 @@
           </a>
         </div>
       </div>
-      <div class="mb-30 blog__meta-10 has-date" bis_skin_checked="1">
-        <span><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+      
+      <div class="mb-30 blog__meta-10 has-date">
+        <span>
+          <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M7.5 14C11.0899 14 14 11.0899 14 7.5C14 3.91015 11.0899 1 7.5 1C3.91015 1 1 3.91015 1 7.5C1 11.0899 3.91015 14 7.5 14Z"
               stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
             <path d="M7.5 3.59961V7.49961L10.1 8.79961" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
               stroke-linejoin="round"></path>
-          </svg> {{ date }}</span>
+          </svg> {{ date }}
+        </span>
       </div>
-
 
       <div class="project-card__description">
         <p> {{ description }} </p>
@@ -44,7 +49,6 @@
         </li>
       </ul>
 
-
       <div v-if="technologies.length" class="project-card__technologies">
         <div class="technology-list pt-30">
           <div v-for="(technology, index) in technologies" :key="index" class="technology-item">
@@ -52,24 +56,25 @@
             <span>
               {{ technology.name }}
             </span>
-
           </div>
         </div>
       </div>
     </div>
+
   </div>
 </template>
 
-
 <script>
-import { useRuntimeConfig } from '#imports';
+import ProjectMediaCard from './ProjectMediaCard.vue';
 
 export default {
   name: "SingleProjectCard",
+  components: {
+    ProjectMediaCard
+  },
   props: {
     title: String,
     description: String,
-
     date: {
       type: String,
       default: ""
@@ -83,7 +88,6 @@ export default {
       default: () => []
     },
     image: String,
-
     link: {
       type: String,
       required: true,
@@ -91,21 +95,14 @@ export default {
     isEven: {
       type: Boolean,
       default: false
-    }
-  },
-  methods: {
-    getImagePath(path) {
-      if (!path) return "";
-      const config = useRuntimeConfig();
-      const base = config.app.baseURL || "/";
-      const cleanBase = base.endsWith("/") ? base.slice(0, -1) : base;
-      const normalized = path.startsWith("/") ? path : `/${path}`;
-      return `${cleanBase}${normalized}`;
+    },
+    codeSnippet: {
+      type: Array,
+      default: () => []
     }
   }
 };
 </script>
-
 
 <style scoped>
 .project-card {
@@ -128,15 +125,7 @@ export default {
   width: 876px;
   height: 548px;
   flex-shrink: 0;
-  overflow: hidden;
-}
-
-.project-card__image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  display: block;
+  overflow: visible; /* Изменено с hidden на visible, чтобы 3D-разворот не обрезался */
 }
 
 .project-card__list {
@@ -150,7 +139,6 @@ export default {
 .project-card__list li {
   margin-bottom: 10px;
 }
-
 
 .project-card__content {
   width: calc(100% - 876px - 56px);
@@ -245,7 +233,6 @@ export default {
 }
 
 @media (max-width:1200px) {
-
   .project-card,
   .project-card--reverse {
     gap: 40px;
@@ -261,7 +248,6 @@ export default {
 }
 
 @media (max-width:992px) {
-
   .project-card,
   .project-card--reverse {
     flex-direction: column;
@@ -306,6 +292,5 @@ export default {
     font-size: 15px;
     line-height: 1.6;
   }
-
 }
 </style>

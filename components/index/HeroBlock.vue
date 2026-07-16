@@ -37,16 +37,13 @@
       <div class="row align-items-center">
         <div class="col-xxl-5 col-xl-5 col-lg-6">
           <div class="slider__content-2">
-
             <span class="slider__title-pre-2" data-sal="slide-up" data-sal-delay="130" data-sal-duration="700">
               {{ $t('index.pre_title_1') }}
             </span>
-
             <h3 class="slider__title-2" data-sal="slide-up" data-sal-delay="140" data-sal-duration="900">
-              {{ $t('index.title_1') }}
+              <TypewriterText :text="$t('index.title_1')" :speed="70" :keepCursor="false" />
               <br>
-              {{ $t('index.title_2') }}
-
+              <TypewriterText :text="$t('index.title_2')" :speed="70" :delay="1500" :keepCursor="true" />
             </h3>
 
             <div class="slider__btn-2" data-sal="slide-up" data-sal-delay="160" data-sal-duration="1100">
@@ -75,10 +72,13 @@
 <script>
 import SalScrollAnimationMixin from '~/mixins/SalScrollAnimationMixin'
 import ProductModal from '~/components/common/modals/ProductModal.vue'
+import TypewriterText from "@/components/common/TypewriterText.vue";
+
 
 export default {
   components: {
-    ProductModal
+    ProductModal,
+    TypewriterText
   },
 
   mixins: [SalScrollAnimationMixin],
