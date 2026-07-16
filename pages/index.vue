@@ -2,9 +2,9 @@
   <LayoutMain>
     <HeroBlock />
     <AboutMeInfo />
+    <WorkExperienceBlock />
     <MyProjects />
     <SkillsBlock />
-    <WorkExperienceBlock />
     <EducationBlock />
     <CertificatesGalleryBlock />
   </LayoutMain>
@@ -17,8 +17,8 @@ import LayoutMain from "~~/layouts/LayoutMain.vue";
 import HeroBlock from "~/components/index/HeroBlock.vue";
 import AboutMeInfo from "~/components/index/AboutMeInfo.vue";
 import MyProjects from "~~/components/index/MyProjects.vue";
-import SkillsBlock from "~~/components/index/SkillsBlock.vue";
 import WorkExperienceBlock from "~~/components/index/WorkExperienceBlock.vue";
+import SkillsBlock from "~~/components/index/SkillsBlock.vue";
 import EducationBlock from "~~/components/index/EducationBlock.vue";
 import CertificatesGalleryBlock from "~~/components/index/CertificatesGalleryBlock.vue";
 

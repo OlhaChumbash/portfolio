@@ -63,22 +63,22 @@
 @forward 'layout/footer';
 
 .blue-color {
-    color: #5C94C5;
+    color: var(--accent-blue);
 }
 .blue-clolor-bg {
-    background-color: #5C94C5;
+    background-color: var(--accent-blue);
 }
 .blue-dark-color-bg{
-    background-color: #37648B;
+    background-color: var(--accent-blue);
 }
 .gray-color {
-    color: #6c757d;
+    color: var(--text-muted);
 }
 .orange-color{
-    color: #fd7e14;
+    color: var(--accent-rose);
 }
 .white-color{
-    color: #fff;
+    color: var(--text-primary);
 }
 .font-banner{
     font-family: "Space Grotesk", sans-serif;

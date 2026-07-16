@@ -85,6 +85,7 @@ body {
 	color: var(--tp-text-body);
 	line-height: 26px;
 	scroll-behavior: smooth;
+	background-color: var(--bg-primary);
 }
 
 a{
@@ -102,7 +103,7 @@ h4,
 h5,
 h6 {
 	font-family: var(--tp-ff-heading);
-	color: var(--tp-heading-primary);
+	color: var(--text-primary);
 	margin-top: 0px;
 	font-weight: var(--tp-fw-bold);
 	line-height: 1.2;
@@ -180,7 +181,7 @@ a:hover{
 }
 
 a:hover{
-	color: var(--tp-theme-1);
+	color: var(--accent-rose);
 }
 
 a,
@@ -192,7 +193,7 @@ button {
 }
 
 body a {
-	color: var(--tp-common-black);
+	color: var(--accent-rose);
 	text-decoration: none;
 }
 

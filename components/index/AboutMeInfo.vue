@@ -21,7 +21,7 @@
 
          <div class="about__me-info-bottom d-flex d-sm-flex justify-content-end align-items-center mt-40">  
             <div class="about__me-info-btn ms-auto me-sm-0">
-              <button type="button" class="tp-btn align-items-center" @click="downloadCv">
+              <button type="button" class="tp-btn-green align-items-center" @click="downloadCv">
                 {{ $t('index.about_me.download_cv') }}
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1 7H13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />

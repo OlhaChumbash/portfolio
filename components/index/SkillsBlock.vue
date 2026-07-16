@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="section__title-wrapper-9 mb-55">
-          <h3 class="section__title-9">
+          <h3 class="section__title">
             {{ $t('index.skills.title_1') }}
             {{ $t('index.skills.title_2') }}
           </h3>
