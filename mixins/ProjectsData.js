@@ -1,26 +1,29 @@
+import projectCodeSnippets from "@/mixins/projectCodeSnippets";
 export default {
   computed: {
-    projectsData() {
-      const projects = this.$tm("projects") || {};
+   projectsData() {
+  const projects = this.$tm("projects") || {};
 
-      const projectKeys = Object.keys(projects).filter((key) =>
-        key.startsWith("project_")
-      );
+  const projectKeys = Object.keys(projects).filter((key) =>
+    key.startsWith("project_")
+  );
 
-      return projectKeys.map((key, index) => ({
-        id: index + 1,
+  const result = projectKeys.map((key, index) => ({
+    id: index + 1,
+    image: this.$t(`projects.${key}.image`),
+    title: this.$t(`projects.${key}.title`),
+    description: this.$t(`projects.${key}.description`),
+    date: this.$t(`projects.${key}.date`),
+    link: this.$t(`projects.${key}.link`),
+    items: this.getArrayTranslations(`projects.${key}.items`),
+    technologies: this.getTechnologies(`projects.${key}.technologies`),
+    codeSnippet: projectCodeSnippets[key] || []
+  }));
 
-        image: this.$t(`projects.${key}.image`),
-        title: this.$t(`projects.${key}.title`),
-        description: this.$t(`projects.${key}.description`),
-        date: this.$t(`projects.${key}.date`),
-        link: this.$t(`projects.${key}.link`),
+  console.log(result);
 
-        items: this.getArrayTranslations(`projects.${key}.items`),
-
-       technologies: this.getTechnologies(`projects.${key}.technologies`),
-      }));
-    },
+  return result;
+},
   },
 
  methods: {
