@@ -5,7 +5,7 @@
         <div class="col-xxl-6 col-xl-6 col-lg-6">
           <div class="section__title-wrapper-4 mb-60">
 
-            <h3 class="section__title-4">
+            <h3 class="section__title">
               {{ $t('index.work_experience.title') }}
             </h3>
           </div>
@@ -127,7 +127,7 @@ export default {
   left: -60px;
   width: 320px;
   height: 140px;
-  background: #101010;
+  background: var(--text-muted);
   z-index: 1;
 }
 </style>

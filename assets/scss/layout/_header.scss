@@ -941,7 +941,7 @@
             animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
             -webkit-box-shadow: 0px 4px 10px rgba(3, 4, 28, 0.1);
             box-shadow: 0px 4px 10px rgba(3, 4, 28, 0.1);
-            background: var(--tp-common-white);
+            background: var(--bg-primary);
 
             &.header-sticky-blur{
                 background-color: rgba(255,255,255,.8);
@@ -1452,10 +1452,10 @@
                 & ul{
                     & li{
                         & a{
-                            color: var(--tp-common-black);
+                            color: var(--text-primary);
                             padding: 22px 0;
                             &::after{
-                                color: var(--tp-common-black);
+                                color: var(--text-primary);
                             }
                             &::before{
                                 bottom: 0;
@@ -1475,7 +1475,7 @@
                                     }
 
                                     &::before{
-                                        background-color: var(--tp-theme-6);
+                                        background-color: var(--text-primary);
                                     }
                                 }
 
@@ -1493,7 +1493,7 @@
 
                         &:hover{
                             & > a{
-                                color: var(--tp-theme-6);
+                                color: var(--text-primary);
 
                                 &::after{
                                     color: var(--tp-theme-6);

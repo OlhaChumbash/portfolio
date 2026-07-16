@@ -390,7 +390,7 @@
                 width: 82.5%;
                 height: 100%;
                 z-index: -1;
-                background-color: #D9EFEF;
+                background-color: var(--accent-rose);
 
                 @include rtl{
                     right:auto;
@@ -455,7 +455,7 @@
                     width: 80%;
                     height: 245px;
                     z-index: -1;
-                    background-color: var(--tp-grey-7);
+                    background-color: var(--text-muted);
 
                     @include rtl{
                         left: 70px;
@@ -4813,7 +4813,7 @@
 
 .slider-portfolio-btn{
     font-size: 13px;
-    color: var(--tp-common-black);
+    color: var(--text-primary);
     text-transform: uppercase;
     font-weight: 500;
     font-family: var(--tp-ff-inter);
@@ -4826,10 +4826,6 @@
             margin-right: 0;
             margin-left: 7px;
         }
-    }
-
-    &:hover{
-        color: var(--tp-theme-2);
     }
 }
 

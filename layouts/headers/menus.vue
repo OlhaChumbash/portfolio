@@ -86,7 +86,36 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-a.active-link {
-  color: var(--tp-theme-primary, #0d6efd) !important;
-}
+  ul {
+    & > li {
+      & > a {
+        color: var(--text-primary) !important;
+        transition: color 0.3s ease;
+        &:hover,
+        &.active-link {
+          color: var(--accent-rose) !important;
+        }
+      }
+    }
+  }
+
+
+  .submenu,
+  .mega-menu {
+    li {
+      a {
+        color: var(--bg-primary) !important; 
+        transition: color 0.3s ease;
+        &:hover,
+        &.active-link {
+          color: var(--accent-rose) !important; 
+        }
+      }
+    }
+  }
+  .has-dropdown {
+    & > a:not(.active-link) {
+      color: var(--text-primary) !important;
+    }
+  }
 </style>

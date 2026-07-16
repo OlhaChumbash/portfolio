@@ -9,7 +9,7 @@
     &__title{
         $self: &;
         font-size: 70px;
-        color: var(--tp-common-black);
+        color: var(--text-primary);
         font-weight: var(--tp-fw-bold);
         line-height: 1;
         font-family: var(--tp-ff-space);
@@ -1187,7 +1187,7 @@
             font-size: 60px;
             line-height: 1;
             letter-spacing: -0.04em;
-            color: var(--tp-common-black);
+            color: var(--text-primary);
             margin-bottom: 25px;
 
             @media #{$lg}{

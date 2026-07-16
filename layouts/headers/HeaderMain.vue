@@ -8,7 +8,7 @@
               <div class="logo-flex-width">
                 <div class="logo">
                   <nuxt-link href="/">
-                    <img src="~/assets/img/logo/logo.ico" alt="logo" />
+                    <img src="~/assets/img/logo/logo-white.png" alt="logo" />
                   </nuxt-link>
                 </div>
               </div>
