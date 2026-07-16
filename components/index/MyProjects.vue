@@ -11,7 +11,7 @@
         <div class="col-xxl-5 col-xl-5 mt-10">
           <div class="projects__button_container d-flex justify-content-center">
             <nuxt-link to="projects" aria-label="Open page with all projects"
-              class="tp-btn-4 tp-style-border projects__button">
+              class="tp-btn-green tp-style-border projects__button">
               {{ $t("projects.button") }}
             </nuxt-link>
           </div>

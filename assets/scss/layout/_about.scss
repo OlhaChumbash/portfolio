@@ -2635,7 +2635,6 @@
                 line-height: 1;
                 letter-spacing: 0.04em;
                 text-transform: uppercase;
-                color: var(--tp-common-black);
                 position: relative;
                 padding-left: 13px;
 
@@ -2652,7 +2651,7 @@
                     @include transform(translateY(-50%));
                     width: 3px;
                     height: 100%;
-                    background-color: var(--tp-common-black);
+                    background-color: var(--text-primary);
                     @include rtl{
                         left: auto;
                         right: 0;
@@ -2670,7 +2669,6 @@
                 & p{
                     font-size: 18px;
                     line-height: 1.56;
-                    color: #525258;
                 }
             }
             &-social{

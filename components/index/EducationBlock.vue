@@ -5,7 +5,7 @@
         <div class="col-xxl-8 col-xl-9 col-lg-10">
           <div class="section__title-wrapper-10 mb-60">
             <!-- <span class="section__title-pre-10">Vision for the city</span> -->
-            <h3 class="section__title-10"> {{ $t(`index.education.title`) }}</h3>
+            <h3 class="section__title"> {{ $t(`index.education.title`) }}</h3>
           </div>
         </div>
       </div>

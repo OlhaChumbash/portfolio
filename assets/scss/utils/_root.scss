@@ -2,6 +2,25 @@
 @use 'typography' as *;
 
 :root {
+    /* Custom portfolio theme variables */
+    --bg-primary: #1A1C23;
+    --bg-primary-rgb: 5, 5, 10;
+    --bg-secondary: #242731;
+    --bg-secondary-rgb: 14, 12, 26;
+    --border-color: #1B1633;
+    --border-color-rgb: 27, 22, 51;
+    --text-primary: #FFFFFF;
+    --text-primary-rgb: 255, 255, 255;
+    --text-muted: #7E8294;
+    --text-muted-rgb: 125, 121, 154;
+    --accent-rose: #D49BB3;
+    --accent-rose-rgb: 255, 46, 147;
+    --accent-blue: #3F00FF;
+    --accent-blue-rgb: 63, 0, 255;
+    --accent-orange: #FF8A00;
+    --accent-orange-rgb: 255, 138, 0;
+    --gradient-rose: linear-gradient(90deg, #FF2E93 0%, #FF8A00 100%);
+
     /**
     @font family declaration
     */

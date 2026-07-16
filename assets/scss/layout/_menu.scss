@@ -129,7 +129,7 @@
                     & a{
                         position: relative;
                         z-index: 11;
-						color: var(--tp-common-black);
+						color: var(--text-primary);
                         font-weight: 400;
                         font-size: 14px;
                         padding: 0 25px;
@@ -165,7 +165,7 @@
                     }
                     &:hover{
                         & > a{
-                            color: var(--tp-common-orange);
+                            color: var(--accent-rose);
                             padding-left: 43px;
 
                             @include rtl{
@@ -176,7 +176,7 @@
                                 width: 12px;
                             }
                             &::after{
-                                color: var(--tp-common-orange);
+                                color: var(--accent-rose);
                             }
                         }
                         & > .submenu{
@@ -302,9 +302,9 @@
 
             &:hover{
 				& > a{
-					color: var(--tp-common-orange);
+					color: var(--accent-rose);
 					&::after{
-						color: var(--tp-common-orange);
+						color: var(--accent-rose);
 					}
 				}
 				& > .submenu{
@@ -731,7 +731,7 @@
                     }
                 }
                 & a{
-                    color: var(--tp-common-black-10);
+                    color: var(--text-primary);
                     padding: 25px 0;
                     font-size: 15px;
                     font-family: var(--tp-ff-roboto);
@@ -741,7 +741,7 @@
                 &.has-dropdown{
                     & a{
                         &::after{
-                            color: var(--tp-common-black-10);
+                            color: var(--text-primary);
                         }
                     }
                 }
@@ -749,19 +749,19 @@
                 & .submenu{
                     & li{
                         & a{
-                            color: var(--tp-common-black-10);
+                            color: var(--text-muted);
 
                             &::before{
-                                background-color: var(--tp-theme-6);
+                                background-color: var(--accent-rose);
                             }
                         }
 
                         &:hover{
                             & > a{
-                                color: var(--tp-theme-6);
+                                color: var(--accent-rose);
 
                                 &::after{
-                                    color: var(--tp-theme-6);
+                                    color: var(--accent-rose);
                                 }
                             }
                         }
@@ -794,10 +794,10 @@
 
                 &:hover{
                     & > a{
-                        color: var(--tp-theme-6);
+                        color: var(--accent-rose);
 
                         &::after{
-                            color: var(--tp-theme-6);
+                            color: var(--accent-rose);
                         }
                     }
                 }

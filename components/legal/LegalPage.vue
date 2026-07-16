@@ -106,6 +106,7 @@ useHead({
 .legal__title {
   font-size: 2rem;
   margin-bottom: 12px;
+  color: var(--bg-primary)
 }
 
 .legal__intro {

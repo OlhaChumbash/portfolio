@@ -15,10 +15,10 @@
           <a v-if="link" :href="link" target="_blank" rel="noopener noreferrer" class="project-card__button"
             aria-label="Open project">
             <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="25" cy="25" r="24.5" stroke="#DF5430" />
+              <circle cx="25" cy="25" r="24.5" stroke="#D49BB3" />
               <path
                 d="M19.0006 29.6666C18.6331 30.0341 18.6331 30.6299 19.0006 30.9974C19.3681 31.3649 19.9639 31.3649 20.3314 30.9974L19.666 30.332L19.0006 29.6666ZM31.2737 19.6654C31.2737 19.1457 30.8524 18.7244 30.3327 18.7244L21.8637 18.7244C21.344 18.7244 20.9227 19.1457 20.9227 19.6654C20.9227 20.1851 21.344 20.6064 21.8637 20.6064L29.3917 20.6064L29.3917 28.1344C29.3917 28.6541 29.813 29.0754 30.3327 29.0754C30.8524 29.0754 31.2737 28.6541 31.2737 28.1344L31.2737 19.6654ZM19.666 30.332L20.3314 30.9974L30.9981 20.3308L30.3327 19.6654L29.6673 19L19.0006 29.6666L19.666 30.332Z"
-                fill="#DF5430" />
+                fill="#D49BB3" />
             </svg>
           </a>
         </div>
@@ -144,7 +144,7 @@ export default {
   font-size: 18px;
   margin-bottom: 32px;
   padding-left: 10px;
-  border-left: 2px solid #101010;
+  border-left: 2px solid var(--accent-rose);
 }
 
 .project-card__list li {
@@ -171,7 +171,6 @@ export default {
 .project-card__title {
   font-size: 32px;
   font-weight: 700;
-  color: #03041c;
   line-height: 1.2;
   margin-bottom: 0;
 }
@@ -183,7 +182,6 @@ export default {
 .project-card__description p {
   font-size: 18px;
   line-height: 1.7;
-  color: #525252;
   margin: 0;
 }
 
@@ -201,8 +199,8 @@ export default {
 }
 
 .project-card__button:hover circle {
-  fill: #DF5430;
-  stroke: #DF5430;
+  fill: var(--accent-rose);
+  stroke: var(--accent-rose);
 }
 
 .project-card__button:hover path {

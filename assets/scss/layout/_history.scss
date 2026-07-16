@@ -256,7 +256,7 @@
                 font-weight: 500;
                 font-family: var(--tp-ff-space);
                 color: var(--tp-text-1);
-                background-color: var(--tp-grey-9);
+                border: 1px solid var(--text-primary);
                 border-radius: 20px;
                 @extend %tp-transition;
 
