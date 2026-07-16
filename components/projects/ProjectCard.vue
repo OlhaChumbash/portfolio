@@ -4,7 +4,7 @@
       <SingleProjectCard v-for="(project, index) in projectsData" :key="project.id" :title="project.title"
         :description="project.description" :date="project.date" :items="project.items"
         :technologies="project.technologies" :link="project.link" :image="project.image" :is-even="index % 2 === 1"
-        :button-text="$t('projects.view_project')" />
+        :code-snippet="project.codeSnippet" :button-text="$t('projects.view_project')" />
     </div>
   </section>
 </template>
