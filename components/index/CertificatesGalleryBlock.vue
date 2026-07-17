@@ -69,6 +69,7 @@ const galleryImages = [
   baseAsset("/index/education/certificates/certificate_37.webp"),
   baseAsset("/index/education/certificates/certificate_23.webp"),
   baseAsset("/index/education/certificates/certificate_24.webp"),
+  baseAsset("/index/education/certificates/certificate_43.webp"),
   baseAsset("/index/education/certificates/certificate_25.webp"),
   baseAsset("/index/education/certificates/certificate_26.webp"),
   baseAsset("/index/education/certificates/certificate_36.webp"),
