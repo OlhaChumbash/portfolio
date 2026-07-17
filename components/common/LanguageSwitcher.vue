@@ -12,21 +12,21 @@
       </span>
 
       <ul :class="['footer__lang-list', 'tp-lang-list-2', open ? 'tp-lang-list-open-2' : '']">
-        <li v-if="$i18n.locale !== 'ua'" @click="switchLang('ua')" class="footer__lang-item">
+        <li v-if="activeLocale !== 'ua'" @click="switchLang('ua')" class="footer__lang-item">
           <img class="footer__lang-flag" :src="flagUa" alt="Українська" />
           <span>
             {{ labelFormat === "short" ? "UA" : "Українська" }}
           </span>
         </li>
 
-        <li v-if="$i18n.locale !== 'de'" @click.stop="switchLang('de')" class="footer__lang-item">
+        <li v-if="activeLocale !== 'de'" @click.stop="switchLang('de')" class="footer__lang-item">
           <img class="footer__lang-flag" :src="flagDe" alt="Deutsch" />
           <span>
             {{ labelFormat === "short" ? "DE" : "Deutsch" }}
           </span>
         </li>
 
-        <li v-if="$i18n.locale !== 'en'" @click="switchLang('en')" class="footer__lang-item">
+        <li v-if="activeLocale !== 'en'" @click="switchLang('en')" class="footer__lang-item">
           <img class="footer__lang-flag" :src="flagEn" alt="English" />
           <span>
             {{ labelFormat === "short" ? "EN" : "English" }}
@@ -42,7 +42,6 @@ import flagUa from "~/assets/img/common/lang-ua.webp";
 import flagEn from "~/assets/img/common/lang-en.webp";
 import flagDe from "~/assets/img/common/lang-de.webp";
 
-
 export default {
   props: {
     labelFormat: {
@@ -55,30 +54,34 @@ export default {
     },
     theme: {
       type: String,
-      default: "dark", // або "light"
+      default: "dark",
     },
   },
   data() {
     return {
       open: false,
+      localLocale: null, 
       flagUa,
       flagEn,
       flagDe
     };
   },
   computed: {
+    activeLocale() {
+      return this.localLocale || this.$i18n.locale;
+    },
     currentLangLabel() {
       if (this.labelFormat === "short") {
-        if (this.$i18n.locale === "ua") return "UA";
-        if (this.$i18n.locale === "de") return "DE";
+        if (this.activeLocale === "ua") return "UA";
+        if (this.activeLocale === "de") return "DE";
         return "EN";
       }
-      if (this.$i18n.locale === "ua") return "Українська";
-      if (this.$i18n.locale === "de") return "Deutsch";
+      if (this.activeLocale === "ua") return "Українська";
+      if (this.activeLocale === "de") return "Deutsch";
       return "English";
     },
     currentFlag() {
-      switch (this.$i18n.locale) {
+      switch (this.activeLocale) {
         case "ua":
           return this.flagUa;
         case "de":
@@ -101,6 +104,7 @@ export default {
       this.open = !this.open;
     },
     switchLang(lang) {
+      this.localLocale = lang;
       this.$i18n.setLocale(lang);
       localStorage.setItem("lang", lang);
       this.open = false;
@@ -108,8 +112,13 @@ export default {
   },
   mounted() {
     const savedLang = localStorage.getItem("lang");
-    if (savedLang && savedLang !== this.$i18n.locale) {
-      this.$i18n.setLocale(savedLang);
+    if (savedLang) {
+      this.localLocale = savedLang;
+      if (savedLang !== this.$i18n.locale) {
+        this.$i18n.setLocale(savedLang);
+      }
+    } else {
+      this.localLocale = this.$i18n.locale;
     }
   },
 };

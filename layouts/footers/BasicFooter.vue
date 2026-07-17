@@ -6,11 +6,6 @@
           <div class="footer__wrapper">
             <div>
               <div class="footer__widget footer-col-1">
-                <div class="footer__logo">
-                  <nuxt-link to="/" aria-label="Home page">
-                    <img class="logo" :src="logoWhite" alt="Olha Chumbash logo" loading="lazy" />
-                  </nuxt-link>
-                </div>
               </div>
             </div>
             <div class="footer__menu-wrapper">
@@ -67,16 +62,8 @@
 <script>
 import Social from "~~/components/social/Social.vue";
 import FooterMenu from "~/layouts/footers/FooterMenu.vue";
-import logoWhite from "~/assets/img/logo/logo-white.png";
 export default {
   components: { Social, FooterMenu },
-
-  data() {
-    return {
-      logoWhite,
-    };
-  },
-
   computed: {
     privacyPdf() {
       const locale = this.$i18n.locale || "ua";
@@ -115,10 +102,6 @@ export default {
 
 .footer__contact-call {
   margin-bottom: 19px;
-}
-
-.logo {
-  width: 80px;
 }
 
 .footer__contact-mail {
