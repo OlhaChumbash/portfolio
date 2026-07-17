@@ -284,19 +284,19 @@ export default {
     }
 
     ::v-deep circle {
-      stroke: #DF5430 !important;
+      stroke: var(--accent-green) !important;
       fill: transparent !important;
       transition: fill 0.2s ease, stroke 0.2s ease;
     }
 
     ::v-deep path {
-      fill: #DF5430 !important;
+      fill: var(--accent-green) !important;
       transition: fill 0.2s ease;
     }
 
     &:hover {
       ::v-deep circle {
-        fill: #DF5430 !important;
+        fill: var(--accent-green) !important;
         stroke: #ffffff !important;
       }
 
@@ -331,7 +331,7 @@ export default {
 }
 
 ::v-deep(.carousel__pagination-button--active) {
-  background-color: #DF5430 !important;
+  background-color: var(--accent-green) !important;
 }
 
 ::v-deep(.elements__carousel .carousel__pagination li .carousel__pagination-button) {

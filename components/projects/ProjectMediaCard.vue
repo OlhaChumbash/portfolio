@@ -145,7 +145,7 @@ export default {
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    border-radius: 12px;
+    border-radius: 4px;
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
@@ -258,7 +258,7 @@ export default {
 }
 
 .terminal-body {
-    padding: 24px;
+    padding: 12px;
     overflow-y: auto;
     flex-grow: 1;
     background: #121212;
@@ -286,5 +286,24 @@ export default {
     user-select: none;
     width: 24px;
     text-align: right;
+}
+
+@media (max-width: 576px) {
+    .terminal-close {
+        padding: 3px 6px;
+        font-size: 9px;
+        border-radius: 4px;
+    }
+    .terminal-title {
+        position: static;
+        transform: none;
+        font-size: 11px;
+        margin-left: 50px; 
+    }
+    
+    
+    .terminal-body {
+        padding: 12px; 
+    }
 }
 </style>
