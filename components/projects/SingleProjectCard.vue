@@ -125,7 +125,7 @@ export default {
   width: 876px;
   height: 548px;
   flex-shrink: 0;
-  overflow: visible; /* Изменено с hidden на visible, чтобы 3D-разворот не обрезался */
+  overflow: visible; 
 }
 
 .project-card__list {
@@ -133,7 +133,7 @@ export default {
   font-size: 18px;
   margin-bottom: 32px;
   padding-left: 10px;
-  border-left: 2px solid var(--accent-rose);
+  border-left: 2px solid var(--accent-green);
 }
 
 .project-card__list li {

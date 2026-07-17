@@ -153,6 +153,7 @@ export default {
     gap: 15px;
     cursor: pointer;
     transition: color 0.2s ease;
+    margin-bottom: 10px;
 
     &:hover {
       color: var(--tp-theme-1);
