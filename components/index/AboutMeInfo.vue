@@ -47,7 +47,8 @@ export default {
       const locale = this.$i18n.locale || 'uk';
       const fileName = locale === 'de' ? 'cv-de.pdf' : locale === 'en' ? 'cv-en.pdf' : 'cv-ua.pdf';
       const link = document.createElement('a');
-      link.href = `/cv/${fileName}`;
+      const config = useRuntimeConfig()
+      link.href = `${config.app.baseURL}cv/${fileName}`
       link.download = fileName;
       document.body.appendChild(link);
       link.click();
