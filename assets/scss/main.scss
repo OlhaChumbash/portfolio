@@ -125,3 +125,28 @@ div.swiper .swiper-initialized .swiper-horizontal .award__item-wrapper .swiper-b
 section[id] {
   scroll-margin-top: 80px;
 }
+/* Вказуємо всьому документу, що колірна схема лише темна */
+html {
+  color-scheme: dark !important;
+}
+
+body {
+  background-color: var(--bg-primary, #111111) !important;
+  color: var(--tp-text-body, #ffffff) !important;
+}
+
+@media (prefers-color-scheme: light) {
+  html {
+    color-scheme: dark !important;
+  }
+  body {
+    background-color: #1A1C23 !important; 
+    color: #ffffff !important;
+  }
+  
+  .code-trigger-btn, .terminal-close {
+    background-color: rgba(18, 18, 18, 0.85) !important;
+    color: #D49BB3 !important;
+    border-color: rgba(212, 155, 179, 0.4) !important;
+  }
+}

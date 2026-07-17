@@ -1490,6 +1490,8 @@
         & .modal-content{
             padding: 40px;
             border-radius: 0;
+            max-width: 1000px;
+            margin:0 auto;
 
             @media #{$xs}{
                 padding: 60px 0 !important; 
@@ -1531,10 +1533,10 @@
                 width: 44px;
                 line-height: 44px;
                 background-color: transparent;
-                color: var(--tp-text-1);
+                color: var(--bg-primary);
                 border-radius: 50%;
                 &:hover{
-                    color: var(--tp-theme-1);
+                    color: var(--accent-green);
                     @include transform(rotate(90deg));
                 }
 

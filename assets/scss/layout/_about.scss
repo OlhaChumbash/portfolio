@@ -2637,6 +2637,7 @@
                 text-transform: uppercase;
                 position: relative;
                 padding-left: 13px;
+                color: var(--accent-green);
 
                 @include rtl{
                     padding-left: 0;
@@ -2651,7 +2652,7 @@
                     @include transform(translateY(-50%));
                     width: 3px;
                     height: 100%;
-                    background-color: var(--text-primary);
+                    background-color: var(--accent-green);
                     @include rtl{
                         left: auto;
                         right: 0;

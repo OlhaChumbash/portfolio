@@ -1,9 +1,8 @@
 <template>
-  <section class="slider__area pt-100 slider__overlay-2 slider__overlay-2-2 p-relative z-index-1">
+  <section class="slider__area pt-100 pb-100 slider__overlay-2 slider__overlay-2-2 p-relative z-index-1">
+    
     <div class="slider__shape-2">
-      <img class="slider__shape-2-1" src="~/assets/img/slider/slider-shape-1.png" alt="">
-      <img class="slider__shape-2-2" src="~/assets/img/slider/slider-shape-2.png" alt="">
-      <img class="slider__shape-2-3" src="~/assets/img/slider/slider-shape-3.png" alt="">
+      <MatrixRain />
     </div>
 
     <div class="slider__portfolio-btn">
@@ -33,9 +32,10 @@
       </p>
     </div>
 
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-xxl-5 col-xl-5 col-lg-6">
+    <div class="container slider__content-wrapper">
+      <div class="row align-items-center justify-content-between gx-5">
+        
+        <div class="col-xxl-6 col-xl-6 col-lg-6">
           <div class="slider__content-2">
             <span class="slider__title-pre-2" data-sal="slide-up" data-sal-delay="130" data-sal-duration="700">
               {{ $t('index.pre_title_1') }}
@@ -51,18 +51,18 @@
                 {{ $t('index.button') }}
               </button>
             </div>
-
           </div>
         </div>
 
-        <div class="col-xxl-5 col-xl-5 col-lg-5">
-          <div class="slider__thumb-wrapper-2 pt-20 ml-40 " data-overlay="green" data-overlay-opacity="3">
+        <div class="col-xxl-5 col-xl-6 col-lg-5">
+          <div class="slider__thumb-wrapper-2 pt-20 ml-60" data-overlay="green" data-overlay-opacity="3">
             <div class="slider__thumb-2 m-img text-center" data-sal="slide-left" data-sal-delay="180"
               data-sal-duration="1200">
               <img src="~/assets/img/index/hero-block/hero_photo3.png" alt="">
             </div>
           </div>
         </div>
+
       </div>
     </div>
     <ProductModal modal_id="requestModal" />
@@ -73,12 +73,13 @@
 import SalScrollAnimationMixin from '~/mixins/SalScrollAnimationMixin'
 import ProductModal from '~/components/common/modals/ProductModal.vue'
 import TypewriterText from "@/components/common/TypewriterText.vue";
-
+import MatrixRain from "@/components/index/MatrixRain.vue"; 
 
 export default {
   components: {
     ProductModal,
-    TypewriterText
+    TypewriterText,
+    MatrixRain
   },
 
   mixins: [SalScrollAnimationMixin],
@@ -90,3 +91,33 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.slider__area {
+  position: relative;
+}
+
+.slider__shape-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none; 
+}
+
+.slider__content-wrapper {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+/* Збільшуємо відстань між текстом та картинкою на великих моніторах */
+@media (min-width: 1200px) {
+  .ml-60 {
+    margin-left: 60px !important;
+  }
+}
+</style>

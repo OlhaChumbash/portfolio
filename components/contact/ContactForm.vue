@@ -50,7 +50,7 @@
       </div>
       <input type="checkbox" name="botcheck" class="hidden" style="display:none" />
       <div class="col-md-5 w-100 d-flex  justify-content-end">
-        <button type="submit" class="tp-btn" :disabled="isSubmitting">
+        <button type="submit" class="tp-btn-green" :disabled="isSubmitting">
           {{ $t('contact-form.button') }}
         </button>
       </div>
