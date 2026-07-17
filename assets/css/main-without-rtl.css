@@ -39937,7 +39937,7 @@ p.checkout-coupon button {
 }
 
 .payment-method .btn-link {
-  -moz-user-select: none;
+  /* -moz-user-select: none; */
   background: no-repeat;
   border: medium none;
   border-radius: 0;

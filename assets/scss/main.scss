@@ -81,7 +81,7 @@
     color: var(--text-primary);
 }
 .font-banner{
-    font-family: "Space Grotesk", sans-serif;
+    font-family: "Inter", sans-serif;
 }
 .mbm-skip{
  mix-blend-mode: normal; 
@@ -125,12 +125,12 @@ div.swiper .swiper-initialized .swiper-horizontal .award__item-wrapper .swiper-b
 section[id] {
   scroll-margin-top: 80px;
 }
-/* Вказуємо всьому документу, що колірна схема лише темна */
 html {
   color-scheme: dark !important;
 }
 
 body {
+//   font-family: "Inter", sans-serif;
   background-color: var(--bg-primary, #111111) !important;
   color: var(--tp-text-body, #ffffff) !important;
 }

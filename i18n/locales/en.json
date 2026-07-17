@@ -137,9 +137,9 @@
               "icon": "devicon-nextjs-plain colored"
             },
             {
-            "title": "Swagger",
-            "icon": "devicon-swagger-plain colored"
-             }
+              "title": "Swagger",
+              "icon": "devicon-swagger-plain colored"
+            }
           ]
         },
         {
@@ -229,25 +229,34 @@
               "title": "OOP"
             },
             {
-              "title": "Pixel Perfect"            
+              "title": "FSD (Feature-Sliced Design)"
             },
             {
-              "title": "Responsive Design"            
+              "title": "SOLID / DRY / KISS"
             },
             {
-              "title": "CI/CD Basics"            
+              "title": "REST API / GraphQL"
             },
             {
-              "title": "Unit Testing"            
+              "title": "Core Web Vitals & Optimization"
+            },
+            {
+              "title": "Responsive & Pixel Perfect"
+            },
+            {
+              "title": "Accessibility (a11y)"
+            },
+            {
+              "title": "CI/CD Basics"
+            },
+            {
+              "title": "Unit Testing"
             },
             {
               "title": "PWA"
             },
             {
-              "title": "SDLC"              
-            },
-            {
-              "title": "Scrum"
+              "title": "SDLC / Scrum"
             },
             {
               "title": "Microservices"
@@ -322,7 +331,7 @@
           "index/education/certificates/certificate_25.webp",
           "index/education/certificates/certificate_31.webp"
         ],
-        "title": "German Language Course B2",
+        "title": "German language course B2",
         "place": "Volkshochschule Chemnitz",
         "date": "January 2025 — June 2025",
         "description": "Intensive B2 level German language course designed to improve professional and everyday communication.",
@@ -902,7 +911,7 @@
     "privacy_link": "privacy policy",
     "button": "Submit",
     "success": "Your message has been sent successfully",
-    "error": "Something went wrong. Please try again.",    
+    "error": "Something went wrong. Please try again.",
     "errors": {
       "required": "This field is required",
       "email": "Please enter a valid email address",
@@ -939,7 +948,7 @@
         "title": "Address",
         "values": [
           "09111 Chemnitz, Germany",
-          "0629 Mariupol, Ukraine"
+          "87555 Mariupol, Ukraine"
         ]
       },
       "social": {
@@ -1075,7 +1084,7 @@
         {
           "title": "EU Dispute Resolution (Online Dispute Resolution)",
           "paragraphs": [
-            "The European Commission provides a platform for online dispute resolution (ODR): https://ec.europa.eu/consumers/odr.",
+            "The European Commission provides a platform for online dispute resolution (ODR): {url}",
             "We are neither obligated nor willing to participate in dispute resolution proceedings before a consumer arbitration board."
           ]
         }

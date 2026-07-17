@@ -59,27 +59,81 @@
 
 <script>
 import menuData from "~~/mixins/menuData";
-
 export default {
   mixins: [menuData],
 
+  data() {
+    return {
+      activeHash: "", // Здесь храним ID секции, которая сейчас на экране
+      observer: null,
+    };
+  },
+
+  mounted() {
+    this.initScrollObserver();
+  },
+
+  beforeUnmount() {
+    if (this.observer) {
+      this.observer.disconnect();
+    }
+  },
+
   methods: {
+    initScrollObserver() {
+      const options = {
+        root: null,
+        rootMargin: "-20% 0px -40% 0px", 
+        threshold: 0,
+      };
+
+      this.observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            this.activeHash = `#${entry.target.id}`;
+          }
+        });
+      }, options);
+
+      this.menuData.forEach((menu) => {
+        if (menu.link && menu.link.includes("#")) {
+          const id = menu.link.split("#")[1];
+          const element = document.getElementById(id);
+          if (element) {
+            this.observer.observe(element);
+          }
+        }
+      });
+    },
+
     isActive(link) {
       if (!link) return false;
-
       const currentPath = this.$route.path;
-      const currentHash = this.$route.hash;
-
       if (link.includes("#")) {
         const [path, hash] = link.split("#");
+        const cleanPath = path || "/";
 
-        return (
-          currentPath === (path || "/") &&
-          currentHash === `#${hash}`
-        );
+        if (currentPath !== cleanPath && currentPath !== `${cleanPath}/`) {
+          return false;
+        }
+        if (typeof window !== "undefined" && window.scrollY < 100) {
+          return false;
+        }
+        return this.activeHash === `#${hash}`;
+      }
+      if (this.activeHash && currentPath === "/") {
+        return false;
       }
 
       return currentPath === link || currentPath === `${link}/`;
+    }
+  },
+  watch: {
+    "$route.path"() {
+      this.$nextTick(() => {
+        if (this.observer) this.observer.disconnect();
+        this.initScrollObserver();
+      });
     }
   }
 };
@@ -98,7 +152,6 @@ export default {
       }
     }
   }
-
 
   .submenu,
   .mega-menu {
