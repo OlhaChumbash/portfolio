@@ -110,7 +110,7 @@
             },
             {
               "title": "Express.js",
-              "icon": "devicon-express-original"
+              "icon": "devicon-express-original text-primary"
             },
             {
               "title": "Laravel",
@@ -135,7 +135,11 @@
             {
               "title": "Next.js",
               "icon": "devicon-nextjs-plain colored"
-            }
+            },
+            {
+            "title": "Swagger",
+            "icon": "devicon-swagger-plain colored"
+             }
           ]
         },
         {
@@ -161,7 +165,7 @@
           "items": [
             {
               "title": "GitHub",
-              "icon": "devicon-github-original"
+              "icon": "devicon-github-original text-dark"
             },
             {
               "title": "Git",
