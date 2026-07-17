@@ -128,7 +128,7 @@ export default {
   display: block;
   width: 24px;
   height: 2px;
-  background: var(--tp-common-black);
+  background: var(--accent-green);
   margin: 4px 0;
 }
 

@@ -40,7 +40,6 @@ export default {
       type: String,
       default: 'productModal'
     },
-    // Оставляем props на случай, если они используются внешними компонентами
     item: {
       type: Object,
       default: () => ({})
@@ -80,14 +79,5 @@ export default {
     max-width: 100%;
     height: 100%; 
   }
-
-/*   
-  :deep(.modal-body), 
-  :deep(.modal-header), 
-  :deep(.modal-footer) {
-    padding-top: 60px;
-    padding-left: 15px;  
-    padding-right: 15px;
-  } */
 }
 </style>

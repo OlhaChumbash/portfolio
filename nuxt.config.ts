@@ -78,7 +78,9 @@ i18n: {
     baseURL: '/portfolio/',
     head: {
       title: "Portfolio Olha Chumbash",
-
+      meta: [
+        { name: 'color-scheme', content: 'dark' }
+      ],
       link: [
         {
           rel: 'icon',
