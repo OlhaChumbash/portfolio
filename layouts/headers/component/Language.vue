@@ -1,4 +1,4 @@
-<!-- <template>
+<template>
   <span>
     <span @click="handleToggle" class="header__lang-selected-lang tp-lang-toggle" id="tp-header-lang-toggle">
       {{ currentLang.name }}
@@ -34,4 +34,4 @@ export default {
     }
   }
 }
-</script> -->
+</script>
