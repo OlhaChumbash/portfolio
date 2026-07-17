@@ -47,7 +47,7 @@
             </h3>
 
             <div class="slider__btn-2" data-sal="slide-up" data-sal-delay="160" data-sal-duration="1100">
-              <button type="button" class="tp-btn-green" data-bs-toggle="modal" data-bs-target="#requestModal">
+              <button type="button" class="tp-btn-white" data-bs-toggle="modal" data-bs-target="#requestModal">
                 {{ $t('index.button') }}
               </button>
             </div>
@@ -65,19 +65,19 @@
 
       </div>
     </div>
-    <ProductModal modal_id="requestModal" />
+    <RequestModal modal_id="requestModal" />
   </section>
 </template>
 
 <script>
 import SalScrollAnimationMixin from '~/mixins/SalScrollAnimationMixin'
-import ProductModal from '~/components/common/modals/ProductModal.vue'
+import RequestModal from '~/components/common/modals/RequestModal.vue'
 import TypewriterText from "@/components/common/TypewriterText.vue";
 import MatrixRain from "@/components/index/MatrixRain.vue"; 
 
 export default {
   components: {
-    ProductModal,
+    RequestModal,
     TypewriterText,
     MatrixRain
   },

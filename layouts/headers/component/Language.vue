@@ -1,18 +1,10 @@
-<template>
+<!-- <template>
   <span>
-    <span
-        @click="handleToggle"
-        class="header__lang-selected-lang tp-lang-toggle"
-        id="tp-header-lang-toggle"
-    >
+    <span @click="handleToggle" class="header__lang-selected-lang tp-lang-toggle" id="tp-header-lang-toggle">
       {{ currentLang.name }}
     </span>
     <ul :class="`header__lang-list tp-lang-list ${open ? 'tp-lang-list-open' : ''}`">
-      <li
-          v-for="loc in locales"
-          :key="loc.code"
-          @click="switchLanguage(loc.code)"
-      >
+      <li v-for="loc in locales" :key="loc.code" @click="switchLanguage(loc.code)">
         {{ loc.name }}
       </li>
     </ul>
@@ -42,4 +34,4 @@ export default {
     }
   }
 }
-</script>
+</script> -->

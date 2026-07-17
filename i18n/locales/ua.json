@@ -137,9 +137,9 @@
               "icon": "devicon-nextjs-plain colored"
             },
             {
-            "title": "Swagger",
-            "icon": "devicon-swagger-plain colored"
-             }
+              "title": "Swagger",
+              "icon": "devicon-swagger-plain colored"
+            }
           ]
         },
         {
@@ -229,25 +229,34 @@
               "title": "OOP"
             },
             {
-              "title": "Pixel Perfect"            
+              "title": "FSD (Feature-Sliced Design)"
             },
             {
-              "title": "Responsive Design"            
+              "title": "SOLID / DRY / KISS"
             },
             {
-              "title": "CI/CD Basics"            
+              "title": "REST API / GraphQL"
             },
             {
-              "title": "Unit Testing"            
+              "title": "Core Web Vitals & Optimization"
+            },
+            {
+              "title": "Responsive & Pixel Perfect"
+            },
+            {
+              "title": "Accessibility (a11y)"
+            },
+            {
+              "title": "CI/CD Basics"
+            },
+            {
+              "title": "Unit Testing"
             },
             {
               "title": "PWA"
             },
             {
-              "title": "SDLC"              
-            },
-            {
-              "title": "Scrum"
+              "title": "SDLC / Scrum"
             },
             {
               "title": "Microservices"
@@ -371,7 +380,7 @@
           "index/education/certificates/certificate_8.webp",
           "index/education/certificates/certificate_9.webp"
         ],
-        "title": "Google Сертифікати",
+        "title": "Google сертифікати",
         "place": "Google",
         "date": "Червень 2025 — Вересень 2025",
         "description": "Сертифікаційна програма Google, присвячена основам IT-підтримки та технічного обслуговування.",
@@ -899,7 +908,7 @@
     "phone": "Телефон*",
     "message": "Ваше повідомлення*",
     "privacy_text": "Я погоджуюся з",
-    "privacy_link": "політикою приватності",    
+    "privacy_link": "політикою приватності",
     "button": "Надіслати",
     "success": "Ваше повідомлення успішно відправлено",
     "error": "Помилка відправки форми. Спробуйте ще раз.",
@@ -936,12 +945,12 @@
         ]
       },
       "address": {
-      "title": "Адреса",
-      "values": [
-        "09111 Хемніц, Німеччина",
-        "0629 Маріуполь, Україна"
-      ]
-    },
+        "title": "Адреса",
+        "values": [
+          "09111 Хемніц, Німеччина",
+          "87555 Маріуполь, Україна"
+        ]
+      },
       "social": {
         "title": "Соціальні мережі",
         "links": [
@@ -988,7 +997,7 @@
     "message": "Повідомлення",
     "submit": "Надіслати",
     "success": "Повідомлення успішно надіслано"
-  },  
+  },
   "legal": {
     "privacy": {
       "title": "Політика приватності",
@@ -1073,10 +1082,10 @@
           ]
         },
         {
-          "title": "Вирішення суперечок в ЄС (Online-Streitbeilegung)",
+          "title": "Врегулювання суперечок в ЄС (Онлайн-врегулювання суперечок)",
           "paragraphs": [
-            "Європейська комісія надає платформу для онлайн-вирішення суперечок (OS): https://ec.europa.eu/consumers/odr.",
-            "Ми не зобов'язані та не готові брати участь у процедурах вирішення спорів перед споживчим арбітражним органом."
+            "Європейська комісія надає платформу для онлайн-врегулювання суперечок (ODR): {url}",
+            "Ми не зобов'язані та не маємо наміру брати участь у процедурах врегулювання суперечок у споживчому арбітражі."
           ]
         }
       ]

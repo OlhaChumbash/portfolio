@@ -136,9 +136,9 @@
               "title": "Next.js",
               "icon": "devicon-nextjs-plain colored"
             },
-           {
-            "title": "Swagger",
-            "icon": "devicon-swagger-plain colored"
+            {
+              "title": "Swagger",
+              "icon": "devicon-swagger-plain colored"
             }
           ]
         },
@@ -226,31 +226,40 @@
           "type": "concepts",
           "items": [
             {
-              "title": "OOP"
+              "title": "OOP (Objektorientierte Programmierung)"
             },
             {
-              "title": "Pixel Perfect"            
+              "title": "FSD (Feature-Sliced Design)"
             },
             {
-              "title": "Responsive Design"            
+              "title": "SOLID / DRY / KISS"
             },
             {
-              "title": "CI/CD Basics"            
+              "title": "REST API / GraphQL"
             },
             {
-              "title": "Unit Testing"            
+              "title": "Web Performance & Core Web Vitals"
             },
             {
-              "title": "PWA"
+              "title": "Responsive & Pixel Perfect Design"
             },
             {
-              "title": "SDLC"              
+              "title": "Barrierefreiheit (a11y)"
             },
             {
-              "title": "Scrum"
+              "title": "CI/CD-Grundlagen"
             },
             {
-              "title": "Microservices"
+              "title": "Unit Testing"
+            },
+            {
+              "title": "PWA (Progressive Web Apps)"
+            },
+            {
+              "title": "SDLC / Scrum"
+            },
+            {
+              "title": "Mikroservices"
             }
           ]
         }
@@ -899,7 +908,7 @@
     "phone": "Telefon*",
     "message": "Ihre Nachricht*",
     "privacy_text": "Ich stimme der",
-    "privacy_link": "Datenschutzerklärung zu",    
+    "privacy_link": "Datenschutzerklärung zu",
     "button": "Senden",
     "success": "Ihre Nachricht wurde erfolgreich gesendet",
     "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
@@ -939,7 +948,7 @@
         "title": "Adresse",
         "values": [
           "09111 Chemnitz, Deutschland",
-          "0629 Mariupol, Ukraine"
+          "87555 Mariupol, Ukraine"
         ]
       },
       "social": {
@@ -1075,7 +1084,7 @@
         {
           "title": "EU-Streitschlichtung (Online-Streitbeilegung)",
           "paragraphs": [
-            "Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: https://ec.europa.eu/consumers/odr.",
+            "Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: {url}",
             "Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen."
           ]
         }
