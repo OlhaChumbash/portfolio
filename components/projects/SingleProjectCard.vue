@@ -2,11 +2,7 @@
   <div class="project-card" :class="{ 'project-card--reverse': isEven }">
 
     <div class="project-card__image-container">
-      <ProjectMediaCard 
-        :image="image" 
-        :title="title" 
-        :code-snippet="codeSnippet" 
-      />
+      <ProjectMediaCard :image="image" :title="title" :code-snippet="codeSnippet" />
     </div>
 
     <div class="project-card__content">
@@ -26,7 +22,7 @@
           </a>
         </div>
       </div>
-      
+
       <div class="mb-30 blog__meta-10 has-date">
         <span>
           <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -125,7 +121,7 @@ export default {
   width: 876px;
   height: 548px;
   flex-shrink: 0;
-  overflow: visible; 
+  overflow: visible;
 }
 
 .project-card__list {
@@ -207,7 +203,7 @@ export default {
   gap: 8px;
   padding: 8px 12px;
   border: 1px solid #eee;
-  border-radius: 8px;
+  border-radius: 4px;
   font-size: 14px;
 }
 
@@ -215,13 +211,12 @@ export default {
   font-size: 24px;
 }
 
-@media (max-width:1548px) {
+@media (max-width: 1548px) {
   .project-card {
     max-width: 100%;
   }
 
   .project-card__image-container {
-    width: 60%;
     height: auto;
     aspect-ratio: 876 / 548;
   }
@@ -232,14 +227,25 @@ export default {
   }
 }
 
-@media (max-width:1200px) {
+@media (max-width: 1200px) {
+
   .project-card,
   .project-card--reverse {
-    gap: 40px;
+    gap: 20px;
   }
 
   .project-card__image-container {
-    width: 55%;
+    width: 60%;
+  }
+
+  .project-card__image-container :deep(.project-card__image-container),
+  .project-card__image-container :deep(.flip-card-inner),
+  .project-card__image-container :deep(.flip-card-front),
+  .project-card__image-container :deep(.flip-card-back),
+  .project-card__image-container :deep(.project-card__image),
+  .project-card__image-container :deep(.terminal) {
+    width: 100% !important;
+    height: 100% !important;
   }
 
   .project-card__content {
@@ -247,11 +253,12 @@ export default {
   }
 }
 
-@media (max-width:992px) {
+@media (max-width: 992px) {
+
   .project-card,
   .project-card--reverse {
     flex-direction: column;
-    gap: 40px;
+    gap: 0px;
     margin: 0;
   }
 
@@ -262,9 +269,19 @@ export default {
     max-height: 500px;
   }
 
+  .project-card__image-container :deep(.project-card__image-container),
+  .project-card__image-container :deep(.flip-card-inner),
+  .project-card__image-container :deep(.flip-card-front),
+  .project-card__image-container :deep(.flip-card-back),
+  .project-card__image-container :deep(.project-card__image),
+  .project-card__image-container :deep(.terminal) {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
   .project-card__content {
     width: 100%;
-    padding: 40px 30px !important;
+    padding: 20px 30px 60px !important;
   }
 
   .project-card__title {
@@ -272,25 +289,31 @@ export default {
   }
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .project-card__content {
-    padding: 35px 25px !important;
+    padding: 10px 25px 90px !important;
   }
 }
 
-@media (max-width:576px) {
+@media (max-width: 576px) {
   .project-card__image-container {
     aspect-ratio: 4 / 3;
     max-height: 300px;
   }
 
-  .project-card__content {
-    padding: 30px 20px !important;
-  }
-
   .project-card__description p {
     font-size: 15px;
     line-height: 1.6;
+  }
+
+  .project-card__image-container :deep(.terminal-close) {
+    padding: 3px 8px;
+    font-size: 11px;
+    border-radius: 4px;
+  }
+
+  .project-card__image-container :deep(.terminal-body code) {
+    font-size: 12px;
   }
 }
 </style>
