@@ -81,7 +81,7 @@
     color: var(--text-primary);
 }
 .font-banner{
-    font-family: "Space Grotesk", sans-serif;
+    font-family: "Inter", sans-serif;
 }
 .mbm-skip{
  mix-blend-mode: normal; 
@@ -130,6 +130,7 @@ html {
 }
 
 body {
+//   font-family: "Inter", sans-serif;
   background-color: var(--bg-primary, #111111) !important;
   color: var(--tp-text-body, #ffffff) !important;
 }
