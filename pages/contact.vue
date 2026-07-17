@@ -1,5 +1,6 @@
 <template>
   <LayoutMain>
+    <MatrixRain/>
     <ContactArea />
   </LayoutMain>
 </template>
@@ -8,6 +9,7 @@
 import { useI18n } from "vue-i18n";
 import LayoutMain from "~~/layouts/LayoutMain.vue";
 import ContactArea from "~~/components/contact/ContactArea.vue";
+import MatrixRain from '~/components/index/MatrixRain.vue';
 
 const { t } = useI18n();
 
