@@ -36,6 +36,18 @@
       "title": "Meine berufliche Entwicklung und Erfahrung",
       "awards": "Berufliche Erfolge",
       "items": {
+        "fullstack_developer": {
+          "year": "Oktober 2025 – Mai 2026",
+          "title": "Fullstack Developer",
+          "text": "Entwicklung und Pflege moderner Webanwendungen und Websites. Umsetzung interaktiver Funktionen, responsiver Layouts und benutzerfreundlicher Oberflächen. Integration mehrsprachiger Inhalte, Content-Management, Performance-Optimierung und kontinuierliche Weiterentwicklung bestehender Projekte.",
+          "meta": "Winnyzja IT-Akademie"
+        },
+        "junior_fullstack_developer": {
+          "year": "November 2023 – Oktober 2025",
+          "title": "Junior Fullstack Developer",
+          "text": "Entwicklung von Fullstack-Webanwendungen, Admin-Panels und Websites für reale Kundenprojekte. Implementierung von Backend-Logik, REST-APIs und Datenbanken mit PHP/Laravel, Node.js/Express, PostgreSQL und MongoDB. Erstellung dynamischer Frontends mit Vue.js, JavaScript, HTML, CSS und EJS sowie Umsetzung einer zuverlässigen Formularvalidierung.",
+          "meta": "Freelance · Projekte der Winnyzja IT-Akademie"
+        },
         "logistics_manager": {
           "year": "Februar 2017 - Februar 2022",
           "title": "Logistikmanagerin",
