@@ -62,91 +62,65 @@
 @forward 'layout/blog';
 @forward 'layout/footer';
 
-.blue-color {
-    color: var(--accent-blue);
-}
-.blue-clolor-bg {
-    background-color: var(--accent-blue);
-}
-.blue-dark-color-bg{
-    background-color: var(--accent-blue);
-}
-.gray-color {
-    color: var(--text-muted);
-}
-.orange-color{
-    color: var(--accent-rose);
-}
-.white-color{
-    color: var(--text-primary);
-}
-.font-banner{
-    font-family: "Inter", sans-serif;
-}
-.mbm-skip{
- mix-blend-mode: normal; 
-}
-.m-icon{
-    left: 57%;
-    top: 55%;
-}
+.blue-color { color: var(--accent-blue); }
+.blue-clolor-bg { background-color: var(--accent-blue); }
+.blue-dark-color-bg { background-color: var(--accent-blue); }
+.gray-color { color: var(--text-muted); }
+.orange-color { color: var(--accent-rose); }
+.white-color { color: var(--text-primary); }
 
-.slider__thumb-4 img
- {
+.font-banner {
+    font-family: "Space Grotesk", sans-serif !important;
+}
+.mbm-skip { mix-blend-mode: normal; }
+.m-icon { left: 57%; top: 55%; }
+
+.slider__thumb-4 img {
     background-color: transparent;
     mix-blend-mode: normal;
     width: 100%;
     height: auto;
 }
-.bg-t{
-    background: transparent;
+.bg-t { background: transparent; }
+.header__info-icon span { border: 1px solid #37648B; }
+.teachers { width: 68px; border-radius: 30px; }
+
+.modal-backdrop {
+    z-index: 0;
+    display: none;
+    .fade .show { z-index: -10; display: none; }
 }
-.header__info-icon span{
-    border: 1px solid #37648B; 
-}
-.teachers{
-    width: 68px;
-    border-radius: 30px;
-}
-.modal-backdrop{
-z-index:0;
-display: none;
-}
-.modal-backdrop .fade .show {
-    z-index:-10;
-    display:none;
-}
-.swiper, .swiper-container{
-    z-index: -8;
-}
+.swiper, .swiper-container { z-index: -8; }
 div.swiper .swiper-initialized .swiper-horizontal .award__item-wrapper .swiper-backface-hidden {
     z-index: -8;
 }
-section[id] {
-  scroll-margin-top: 80px;
-}
-html {
-  color-scheme: dark !important;
+section[id] { scroll-margin-top: 80px; }
+html { color-scheme: dark !important; }
+
+:root {
+    --tp-ff-body: "Space Grotesk", sans-serif !important;
+    --tp-ff-heading: "Space Grotesk", sans-serif !important;
+    --tp-ff-p: "Space Grotesk", sans-serif !important;
+    --tp-ff-manrope: "Space Grotesk", sans-serif !important;
 }
 
 body {
-//   font-family: "Inter", sans-serif;
-  background-color: var(--bg-primary, #111111) !important;
-  color: var(--tp-text-body, #ffffff) !important;
+    background-color: var(--bg-primary, #111111) !important;
+    color: var(--tp-text-body, #ffffff) !important;
+    font-family: "Space Grotesk", sans-serif !important;
+}
+
+// Перебиваем заголовки и класс карусели на квадратный Space Grotesk
+h1, h2, h3, h4, h5, h6, .font-banner, .projects__title, .projects__title a {
+    font-family: "Space Grotesk", sans-serif !important;
 }
 
 @media (prefers-color-scheme: light) {
-  html {
-    color-scheme: dark !important;
-  }
-  body {
-    background-color: #1A1C23 !important; 
-    color: #ffffff !important;
-  }
-  
-  .code-trigger-btn, .terminal-close {
-    background-color: rgba(18, 18, 18, 0.85) !important;
-    color: #D49BB3 !important;
-    border-color: rgba(212, 155, 179, 0.4) !important;
-  }
+    html { color-scheme: dark !important; }
+    body { background-color: #1A1C23 !important; color: #ffffff !important; }
+    .code-trigger-btn, .terminal-close {
+        background-color: rgba(18, 18, 18, 0.85) !important;
+        color: #D49BB3 !important;
+        border-color: rgba(212, 155, 179, 0.4) !important;
+    }
 }

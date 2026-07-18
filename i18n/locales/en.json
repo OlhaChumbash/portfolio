@@ -36,6 +36,18 @@
       "title": "My Professional Growth and Experience",
       "awards": "Professional Achievements",
       "items": {
+        "fullstack_developer": {
+          "year": "October 2025 – May 2026",
+          "title": "Fullstack Developer",
+          "text": "Developing and maintaining modern web applications and websites. Building interactive features, responsive layouts, and user-friendly interfaces. Integrating multilingual support, managing content, optimizing performance, and continuously improving existing projects.",
+          "meta": "Vinnytsia IT Academy"
+        },
+        "junior_fullstack_developer": {
+          "year": "November 2023 – October 2025",
+          "title": "Junior Fullstack Developer",
+          "text": "Developed full-stack web applications, admin panels, and websites for real client projects. Implemented backend logic, REST APIs, and databases using PHP/Laravel, Node.js/Express, PostgreSQL, and MongoDB. Built dynamic frontends with Vue.js, JavaScript, HTML, CSS, and EJS while ensuring reliable form validation and application stability.",
+          "meta": "Freelance · Vinnytsia IT Academy Projects"
+        },
         "logistics_manager": {
           "year": "February 2017 - February 2022",
           "title": "Logistics Manager",
@@ -438,7 +450,7 @@
     "view_project": "View Project",
     "hero": {
       "pre_title": "MY PROJECTS",
-      "title": "Solutions merging design and technology",
+      "title": "PRACTICAL EXPERIENCE BUILDING MODERN WEB SOLUTIONS",
       "breadcrumb_main": "Home",
       "breadcrumb_current": "Projects"
     },

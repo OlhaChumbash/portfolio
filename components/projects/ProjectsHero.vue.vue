@@ -40,24 +40,6 @@
             data-sal-delay="200"
             data-sal-duration="800"
           >
-
-            <span class="breadcrumb__item">
-              <NuxtLink to="/">
-                {{ $t("projects.hero.breadcrumb_main") }}
-              </NuxtLink>
-            </span>
-
-            <span class="dvdr">
-              <i class="fa-solid fa-circle-small"></i>
-            </span>
-
-            <span
-              class="breadcrumb__item breadcrumb__item-current-page"
-              aria-current="page"
-            >
-              {{ breadcrumbDefault }}
-            </span>
-
           </nav>
 
           </div>
@@ -161,7 +143,7 @@ onMounted(() => {
 
   &__title {
     font-family: var(--tp-ff-gotham);
-    margin-bottom: 32px;
+    margin-bottom: 42px;
 
     @media #{$lg} {
       font-size: 60px;
