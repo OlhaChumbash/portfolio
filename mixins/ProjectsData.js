@@ -20,8 +20,6 @@ export default {
     codeSnippet: projectCodeSnippets[key] || []
   }));
 
-  console.log(result);
-
   return result;
 },
   },
