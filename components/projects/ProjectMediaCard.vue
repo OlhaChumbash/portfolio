@@ -53,7 +53,9 @@ export default {
     },
     data() {
         return {
-            isCodeView: false
+            isCodeView: false,
+            demoPlayed: false,
+            demoTimeouts: []
         };
     },
     computed: {
@@ -106,6 +108,25 @@ export default {
         toggleView() {
             this.isCodeView = !this.isCodeView;
         },
+
+        playDemoFlip() {
+            if (this.demoPlayed) return;
+
+            this.demoPlayed = true;
+
+            this.demoTimeouts.push(
+                setTimeout(() => {
+                    this.isCodeView = true;
+
+                    this.demoTimeouts.push(
+                        setTimeout(() => {
+                            this.isCodeView = false;
+                        }, 1400)
+                    );
+
+                }, 1800)
+            );
+        },
         getImagePath(path) {
             if (!path) return "";
             const config = useRuntimeConfig();
@@ -114,7 +135,26 @@ export default {
             const normalized = path.startsWith("/") ? path : `/${path}`;
             return `${cleanBase}${normalized}`;
         }
-    }
+    },
+    mounted() {
+        this.observer = new IntersectionObserver(([entry]) => {
+            if (entry.isIntersecting && !this.demoPlayed) {
+                this.playDemoFlip();
+                this.observer.disconnect();
+            }
+        }, {
+            threshold: 0.5
+        });
+
+        this.observer.observe(this.$el);
+    },
+    beforeUnmount() {
+        this.demoTimeouts.forEach(clearTimeout);
+
+        if (this.observer) {
+            this.observer.disconnect();
+        }
+    },
 };
 </script>
 
@@ -166,7 +206,7 @@ export default {
     position: absolute;
     bottom: 24px;
     right: 24px;
-    background: rgba(18, 18, 18, 0.85);
+    background: var(--accent-green);
     backdrop-filter: blur(8px);
     border: 1px solid rgba(212, 155, 179, 0.4);
     color: #fff;
@@ -294,16 +334,16 @@ export default {
         font-size: 9px;
         border-radius: 4px;
     }
+
     .terminal-title {
         position: static;
         transform: none;
         font-size: 11px;
-        margin-left: 50px; 
+        margin-left: 50px;
     }
-    
-    
+
     .terminal-body {
-        padding: 12px; 
+        padding: 12px;
     }
 }
 </style>
