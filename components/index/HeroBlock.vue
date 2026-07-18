@@ -26,9 +26,9 @@
     </div>
 
     <div class="slider__mouse-scroll smooth d-flex align-items-center">
-      <a href="#footer" class="mouse-scroll-icon"></a>
+      <a href="#footer" class="mouse-scroll-icon slider-portfolio-btn"></a>
       <p>
-        <a href="#footer">{{ $t('index.scroll_down') }}</a>
+        <a href="#footer" class="slider-portfolio-btn">{{ $t('index.scroll_down') }}</a>
       </p>
     </div>
 
@@ -113,8 +113,9 @@ export default {
   z-index: 2;
   width: 100%;
 }
-
-/* Збільшуємо відстань між текстом та картинкою на великих моніторах */
+.slider__mouse-scroll-link{
+  color: var(--text-primary);
+}
 @media (min-width: 1200px) {
   .ml-60 {
     margin-left: 60px !important;
