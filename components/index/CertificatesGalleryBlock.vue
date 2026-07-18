@@ -1,13 +1,26 @@
 <template>
   <section id="my-sertificates" class="gallery pt-50 pt-md-110 pb-60 pb-md-140">
-    <div class="gallery__wrapper">
-      <div class="gallery__track" @mouseenter="paused = true" @mouseleave="paused = false" :class="{ paused }">
-        <div v-for="(item, index) in galleryImages" :key="index" class="gallery__item" @click="openPopup(index)">
-          <img :src="item" :alt="`gallery image ${index + 1}`" loading="lazy">
+    <div 
+      class="gallery__wrapper" 
+      ref="scrollContainer"
+      @mousedown="startDrag"
+      @mousemove="onDrag"
+      @mouseup="endDrag"
+      @mouseleave="handleMouseLeave"
+      @touchstart="startTouch"
+      @touchmove="onTouchMove"
+      @touchend="endDrag"
+    >
+      <div 
+        class="gallery__track" 
+        :class="{ 'paused': paused || isDragging, 'is-dragging': isDragging }"
+      >
+        <div v-for="(item, index) in galleryImages" :key="index" class="gallery__item" @click="handleItemClick(index)">
+          <img :src="item" :alt="`gallery image ${index + 1}`" loading="lazy" draggable="false">
         </div>
 
-        <div v-for="(item, index) in galleryImages" :key="'copy-' + index" class="gallery__item" @click="openPopup(index)">
-          <img :src="item" :alt="`gallery image ${index + 1}`" loading="lazy">
+        <div v-for="(item, index) in galleryImages" :key="'copy-' + index" class="gallery__item" @click="handleItemClick(index)">
+          <img :src="item" :alt="`gallery image ${index + 1}`" loading="lazy" draggable="false">
         </div>
       </div>
     </div>
@@ -29,9 +42,66 @@ const baseAsset = (path) => {
 };
 
 const imagePopup = ref(null);
+const scrollContainer = ref(null);
 const paused = ref(false);
-function openPopup(index) {
-  imagePopup.value.showImg(index);
+const isDragging = ref(false);
+const startX = ref(0);
+const scrollLeft = ref(0);
+const hasMoved = ref(false); 
+
+function handleItemClick(index) {
+  if (!hasMoved.value) {
+    imagePopup.value.showImg(index);
+  }
+}
+
+function startDrag(e) {
+  isDragging.value = true;
+  hasMoved.value = false;
+  paused.value = true;
+  startX.value = e.pageX - scrollContainer.value.offsetLeft;
+  scrollLeft.value = scrollContainer.value.scrollLeft;
+}
+
+function onDrag(e) {
+  if (!isDragging.value) return;
+  e.preventDefault();
+  const x = e.pageX - scrollContainer.value.offsetLeft;
+  const walk = (x - startX.value) * 1.5; // Скорость прокрутки
+  if (Math.abs(walk) > 5) {
+    hasMoved.value = true;
+  }
+  scrollContainer.value.scrollLeft = scrollLeft.value - walk;
+}
+
+function endDrag() {
+  isDragging.value = false;
+  setTimeout(() => {
+    paused.value = false;
+  }, 100);
+}
+
+function handleMouseLeave() {
+  if (isDragging.value) endDrag();
+  paused.value = false;
+}
+
+function startTouch(e) {
+  isDragging.value = true;
+  hasMoved.value = false;
+  paused.value = true;
+  startX.value = e.touches[0].pageX - scrollContainer.value.offsetLeft;
+  scrollLeft.value = scrollContainer.value.scrollLeft;
+}
+
+function onTouchMove(e) {
+  if (!isDragging.value) return;
+  const x = e.touches[0].pageX - scrollContainer.value.offsetLeft;
+  const walk = (x - startX.value) * 1.5;
+  if (Math.abs(walk) > 5) {
+    hasMoved.value = true;
+  }
+  scrollContainer.value.scrollLeft = scrollLeft.value - walk;
 }
 
 const galleryImages = [
@@ -73,9 +143,9 @@ const galleryImages = [
   baseAsset("/index/education/certificates/certificate_25.webp"),
   baseAsset("/index/education/certificates/certificate_26.webp"),
   baseAsset("/index/education/certificates/certificate_36.webp"),
-
 ];
 </script>
+
 <style scoped>
 .gallery {
   width: 100%;
@@ -83,8 +153,20 @@ const galleryImages = [
 }
 
 .gallery__wrapper {
-  overflow: hidden;
+  overflow-x: auto; 
   width: 100%;
+  cursor: grab;
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+  scroll-behavior: smooth;
+}
+
+.gallery__wrapper::-webkit-scrollbar {
+  display: none; 
+}
+
+.gallery__wrapper:active {
+  cursor: grabbing;
 }
 
 .gallery__track {
@@ -92,6 +174,7 @@ const galleryImages = [
   width: max-content;
   gap: 10px;
   animation: scroll 100s linear infinite;
+  will-change: transform;
 }
 
 @media (min-width: 768px) {
@@ -100,15 +183,18 @@ const galleryImages = [
   }
 }
 
-.gallery__track.paused {
+.gallery__track.paused,
+.gallery__track.is-dragging {
   animation-play-state: paused;
 }
+
 .gallery__item {
   width: 80vw; 
   height: 300px; 
   flex-shrink: 0;
   cursor: pointer;
   overflow: hidden;
+  user-select: none; 
 }
 
 @media (min-width: 576px) {
@@ -130,6 +216,7 @@ const galleryImages = [
   height: 100%;
   object-fit: contain;
   transition: .3s;
+  pointer-events: none; 
 }
 
 .gallery__item:hover img {
