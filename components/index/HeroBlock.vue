@@ -6,7 +6,7 @@
     </div>
 
     <div class="slider__portfolio-btn">
-      <nuxt-link href="/projects" class="slider-portfolio-btn">
+      <nuxt-link to="/projects" class="slider-portfolio-btn">
         <svg width="12" height="12" viewBox="0 0 14 14" fill="none">
           <path
             d="M3.5 2.25001C3.5 1.28351 2.7165 0.500001 1.75 0.500001C0.783502 0.500001 0 1.28351 0 2.25001C0 3.2165 0.783502 4 1.75 4C2.7165 4 3.5 3.2165 3.5 2.25001Z"
@@ -97,21 +97,23 @@ export default {
   position: relative;
 }
 
-.slider__shape-2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  overflow: hidden;
-  pointer-events: none; 
-}
-
 .slider__content-wrapper {
   position: relative;
   z-index: 2;
   width: 100%;
+}
+
+.slider__portfolio-btn {
+  position: absolute; 
+  z-index: 999 !important; 
+}
+
+.slider-portfolio-btn {
+  position: relative;
+  z-index: 1000 !important;
+  display: inline-flex; 
+  align-items: center;
+  pointer-events: auto !important; 
 }
 .slider__mouse-scroll-link{
   color: var(--text-primary);
