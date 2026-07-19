@@ -13,21 +13,21 @@
 
       <ul :class="['footer__lang-list', 'tp-lang-list-2', open ? 'tp-lang-list-open-2' : '']">
         <li v-if="activeLocale !== 'ua'" @click="switchLang('ua')" class="footer__lang-item">
-          <img class="footer__lang-flag" :src="flagUa" alt="Українська" />
+          <img class="footer__lang-flag" :src="flags.ua" alt="Українська" />
           <span>
             {{ labelFormat === "short" ? "UA" : "Українська" }}
           </span>
         </li>
 
         <li v-if="activeLocale !== 'de'" @click.stop="switchLang('de')" class="footer__lang-item">
-          <img class="footer__lang-flag" :src="flagDe" alt="Deutsch" />
+          <img class="footer__lang-flag" :src="flags.de" alt="Deutsch" />
           <span>
             {{ labelFormat === "short" ? "DE" : "Deutsch" }}
           </span>
         </li>
 
         <li v-if="activeLocale !== 'en'" @click="switchLang('en')" class="footer__lang-item">
-          <img class="footer__lang-flag" :src="flagEn" alt="English" />
+          <img class="footer__lang-flag" :src="flags.en" alt="English" />
           <span>
             {{ labelFormat === "short" ? "EN" : "English" }}
           </span>
@@ -60,37 +60,26 @@ export default {
   data() {
     return {
       open: false,
-      localLocale: null, 
-      flagUa,
-      flagEn,
-      flagDe
+      localLocale: 'en',
+      flags: {
+        ua: flagUa,
+        en: flagEn,
+        de: flagDe
+      }
     };
   },
   computed: {
     activeLocale() {
-      return this.localLocale || this.$i18n.locale;
+      return this.localLocale;
     },
     currentLangLabel() {
-      if (this.labelFormat === "short") {
-        if (this.activeLocale === "ua") return "UA";
-        if (this.activeLocale === "de") return "DE";
-        return "EN";
-      }
-      if (this.activeLocale === "ua") return "Українська";
-      if (this.activeLocale === "de") return "Deutsch";
-      return "English";
+      const isShort = this.labelFormat === "short";
+      if (this.activeLocale === "ua") return isShort ? "UA" : "Українська";
+      if (this.activeLocale === "de") return isShort ? "DE" : "Deutsch";
+      return isShort ? "EN" : "English";
     },
     currentFlag() {
-      switch (this.activeLocale) {
-        case "ua":
-          return this.flagUa;
-        case "de":
-          return this.flagDe;
-        case "en":
-          return this.flagEn;
-        default:
-          return this.flagEn;
-      }
+      return this.flags[this.activeLocale] || this.flags.en;
     },
     directionClass() {
       return this.direction === "down" ? "lang-dropdown-down" : "lang-dropdown-up";
@@ -105,20 +94,30 @@ export default {
     },
     switchLang(lang) {
       this.localLocale = lang;
-      this.$i18n.setLocale(lang);
+      if (this.$i18n && typeof this.$i18n.setLocale === 'function') {
+        this.$i18n.setLocale(lang);
+      }
       localStorage.setItem("lang", lang);
       this.open = false;
     },
   },
-  mounted() {
-    const savedLang = localStorage.getItem("lang");
-    if (savedLang) {
-      this.localLocale = savedLang;
-      if (savedLang !== this.$i18n.locale) {
-        this.$i18n.setLocale(savedLang);
-      }
-    } else {
+  created() {
+    if (this.$i18n && this.$i18n.locale) {
       this.localLocale = this.$i18n.locale;
+    }
+  },
+  mounted() {
+    if (typeof window !== 'undefined') {
+      const savedLang = localStorage.getItem("lang");
+
+      if (savedLang) {
+        this.localLocale = savedLang;
+        if (this.$i18n && savedLang !== this.$i18n.locale && this.$i18n.setLocale) {
+          this.$i18n.setLocale(savedLang);
+        }
+      } else if (this.$i18n && this.$i18n.locale) {
+        this.localLocale = this.$i18n.locale;
+      }
     }
   },
 };
