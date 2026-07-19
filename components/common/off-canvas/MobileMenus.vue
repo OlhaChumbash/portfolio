@@ -18,14 +18,12 @@ const emit = defineEmits(["close"]);
 const { t } = useI18n();
 
 const items = computed(() => [
-  { to: "/", label: t("menu.index") },
   { to: "/#about-me", label: t("menu.about") },
-  { to: "/projects", label: t("menu.projects") },
   { to: "/#my-experience", label: t("menu.experience") },
   { to: "/#my-skills", label: t("menu.skills") },
   { to: "/#my-education", label: t("menu.education") },
+  { to: "/projects", label: t("menu.projects") },
   { to: "/contact", label: t("menu.contact") },
-  { to: "/#my-sertificates", label: t("menu.certificates") },
 ]);
 
 const closeMenu = () => {

@@ -46,7 +46,7 @@
       </ul>
 
       <div v-if="technologies.length" class="project-card__technologies">
-        <div class="technology-list pt-30">
+        <div class="technology-list pb-30">
           <div v-for="(technology, index) in technologies" :key="index" class="technology-item">
             <i :class="[technology.icon, 'colored']"></i>
             <span>
