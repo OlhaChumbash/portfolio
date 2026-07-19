@@ -165,6 +165,7 @@ export default {
 }
 .project-subtitle{
   text-align: left;
+  color: var(--bg-primary);
 }
 
 .elements__carousel {
