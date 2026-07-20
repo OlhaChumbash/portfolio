@@ -24,8 +24,18 @@
                     <div class="terminal-body">
                         <pre v-if="highlightedCode.length"
                             :class="'language-' + parsedCodeData.language"><code :class="'language-' + parsedCodeData.language"><div v-for="(line, idx) in highlightedCode" :key="idx" class="code-line"><span class="line-number">{{ idx + 1 }}</span><span v-html="line"></span></div></code></pre>
-                        <pre
-                            v-else><code><div class="code-line"><span class="line-number">1</span><span style="color: #7a7a7a"></span></div></code></pre>
+                        <pre v-else>
+                            <code :class="'language-' + parsedCodeData.language">
+  <span
+    v-for="(line, idx) in highlightedCode"
+    :key="idx"
+    class="code-line"
+  >
+    <span class="line-number">{{ idx + 1 }}</span>
+    <span v-html="line"></span>
+  </span>
+</code>
+                        </pre>
                     </div>
                 </div>
             </div>
@@ -164,7 +174,7 @@ export default {
     height: 100%;
     perspective: 1500px;
     background: transparent;
-    overflow: visible !important;
+    overflow: hidden;
 }
 
 .flip-card-inner {
@@ -328,6 +338,14 @@ export default {
     text-align: right;
 }
 
+.terminal-body,
+.terminal-body *,
+.code-line,
+.code-line span {
+  user-select: text;
+  -webkit-user-select: text;
+  pointer-events: auto;
+}
 @media (max-width: 576px) {
     .terminal-close {
         padding: 3px 6px;

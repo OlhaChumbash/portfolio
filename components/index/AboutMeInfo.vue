@@ -28,9 +28,11 @@
                   <path d="M7 1L13 7L7 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
               </button>
+
             </div>
           </div>
           </div>
+          
         </div>
       </div>
     </div>
@@ -57,3 +59,32 @@ export default {
   },
 };
 </script>
+<style>
+/* Изолируем и выталкиваем контент на отдельный аппаратный слой */
+.about__me-info-content,
+.about__me-info-content p,
+.about__me-info-content h4 {
+  position: relative !important;
+  z-index: 999999 !important;
+  
+  /* Включаем выделение */
+  user-select: text !important;
+  -webkit-user-select: text !important;
+  -moz-user-select: text !important;
+  -ms-user-select: text !important;
+  
+  /* Разрешаем все действия мыши */
+  pointer-events: auto !important;
+  cursor: text !important;
+  
+  /* Фикс для багов рендеринга видеокарты/браузера (Magic Fix) */
+  transform: translateZ(0) !important;
+  will-change: transform, opacity;
+}
+
+/* Принудительно чистим псевдоэлементы, которые могли остаться от анимации */
+.about__me-info-content::before,
+.about__me-info-content::after {
+  display: none !important;
+}
+</style>
