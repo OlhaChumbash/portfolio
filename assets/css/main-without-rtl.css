@@ -481,21 +481,14 @@ input[type=color] {
   border-radius: 50%;
 }
 
-*::-moz-selection {
-  background: var(--tp-common-black);
-  color: var(--tp-common-white);
-  text-shadow: none;
-}
-
-::-moz-selection {
-  background: var(--tp-common-black);
-  color: var(--tp-common-white);
-  text-shadow: none;
-}
-
 ::selection {
-  background: var(--tp-common-black);
-  color: var(--tp-common-white);
+  background: var(--accent-rose);
+  color: #fff;
+  text-shadow: none;
+}
+*::-moz-selection {
+  background: var(--accent-rose);
+  color: #fff;
   text-shadow: none;
 }
 
@@ -39937,7 +39930,7 @@ p.checkout-coupon button {
 }
 
 .payment-method .btn-link {
-  /* -moz-user-select: none; */
+  -moz-user-select: none;
   background: no-repeat;
   border: medium none;
   border-radius: 0;

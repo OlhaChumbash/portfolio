@@ -121,7 +121,8 @@ export default {
   width: 876px;
   height: 548px;
   flex-shrink: 0;
-  overflow: visible;
+  /* overflow: visible; */
+overflow: hidden;
 }
 
 .project-card__list {
@@ -210,7 +211,10 @@ export default {
 .technology-item i {
   font-size: 24px;
 }
-
+.project-card__image {
+  pointer-events: none;
+  user-select: none;
+}
 @media (max-width: 1548px) {
   .project-card {
     max-width: 100%;
@@ -252,7 +256,9 @@ export default {
     width: 45%;
   }
 }
-
+.project-card__image {
+  pointer-events: none;
+}
 @media (max-width: 992px) {
 
   .project-card,
