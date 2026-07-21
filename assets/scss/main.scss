@@ -128,48 +128,36 @@ h1, h2, h3, h4, h5, h6, .font-banner, .projects__title, .projects__title a {
    КОМПЛЕКСНЫЙ ПРОБИВНОЙ ФИКС ДЛЯ ВЫДЕЛЕНИЯ ТЕКСТА
    ========================================================================== */
 
-/* 1. Возвращаем текстовый слой на самый верх относительно 
-      поломанных слайдеров и анимаций шаблона */
 p, span, h1, h2, h3, h4, h5, h6, li {
   position: relative !important;
-  z-index: 99999 !important;      /* Выталкиваем текст над всеми свайперами */
-  pointer-events: auto !important;  /* Разрешаем клики */
-  user-select: text !important;     /* Разрешаем выделение */
+  pointer-events: auto !important; 
+  user-select: text !important;     
   -webkit-user-select: text !important;
-  isolation: isolate !important;    /* Отсекаем эффекты mix-blend-mode */
+  isolation: isolate !important;   
 }
 
-/* 2. Лечим контейнеры анимации SAL.js, которые «замораживают» мышь */
 [data-sal].sal-animate {
   transform: none !important; 
   filter: none !important;
   will-change: auto !important;
 }
 
-/* 3. Лечим Swiper (карусель), который из-за z-index: -8 заблокировал экран */
 .swiper, 
 .swiper-container, 
 .swiper-wrapper, 
 .swiper-slide {
-  /* Освобождаем пространство для мыши вокруг текста */
   pointer-events: min-content; 
 }
 
-/* 4. Уничтожаем глобальный запрет на курсорnot-allowed */
 html *, body * {
   cursor: auto;
 }
 p, span, h1, h2, h3, h4, h5, h6, li, p a, span a {
-  cursor: text !important; /* Принудительно ставим значок буквы I */
+  cursor: text !important; 
 }
 a, button, a *, button * {
   cursor: pointer !important;
-} /* ==========================================================================
-   ФИНАЛЬНЫЙ ФИКС: ОТКЛЮЧАЕМ ЛОМАЮЩИЙСЯ КАСТАМНЫЙ КУРСОР ШАБЛОНА
-   ========================================================================== */
-
-/* Ищем стандартные классы кастомных курсоров (mouse-move, cursor-inner, pointer-wrap)
-   и полностью лишаем их возможности перехватывать клики мыши */
+} 
 .mouse-cursor,
 .custom-cursor,
 .cursor-inner,
@@ -179,22 +167,19 @@ a, button, a *, button * {
 #magicCursor,
 #mouseCursor {
   pointer-events: none !important;
-  display: none !important; /* Если скрипт совсем завис, просто убираем его с экрана */
+  display: none !important; 
 }
 
-/* Возвращаем отображение стандартного системного курсора операционной системы */
 html, body, html *, body * {
   cursor: auto !important;
 }
 
-/* Для текстовых элементов принудительно возвращаем палочку выделения */
 p, span, h1, h2, h3, h4, h5, h6, li, label {
   cursor: text !important;
   user-select: text !important;
   -webkit-user-select: text !important;
 }
 
-/* Для ссылок и кнопок — палец */
 a, button, input[type="submit"], .btn {
   cursor: pointer !important;
 }
