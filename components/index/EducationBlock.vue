@@ -91,6 +91,7 @@ export default {
 <style lang="scss" scoped>
 .tab-title {
   font-size: 18px;
+  color: var(--bg-primary);
 }
 
 .tab-date {

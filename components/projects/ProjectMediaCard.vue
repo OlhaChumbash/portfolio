@@ -24,8 +24,18 @@
                     <div class="terminal-body">
                         <pre v-if="highlightedCode.length"
                             :class="'language-' + parsedCodeData.language"><code :class="'language-' + parsedCodeData.language"><div v-for="(line, idx) in highlightedCode" :key="idx" class="code-line"><span class="line-number">{{ idx + 1 }}</span><span v-html="line"></span></div></code></pre>
-                        <pre
-                            v-else><code><div class="code-line"><span class="line-number">1</span><span style="color: #7a7a7a"></span></div></code></pre>
+                        <pre v-else>
+                            <code :class="'language-' + parsedCodeData.language">
+  <span
+    v-for="(line, idx) in highlightedCode"
+    :key="idx"
+    class="code-line"
+  >
+    <span class="line-number">{{ idx + 1 }}</span>
+    <span v-html="line"></span>
+  </span>
+</code>
+                        </pre>
                     </div>
                 </div>
             </div>
@@ -53,7 +63,9 @@ export default {
     },
     data() {
         return {
-            isCodeView: false
+            isCodeView: false,
+            demoPlayed: false,
+            demoTimeouts: []
         };
     },
     computed: {
@@ -106,6 +118,25 @@ export default {
         toggleView() {
             this.isCodeView = !this.isCodeView;
         },
+
+        playDemoFlip() {
+            if (this.demoPlayed) return;
+
+            this.demoPlayed = true;
+
+            this.demoTimeouts.push(
+                setTimeout(() => {
+                    this.isCodeView = true;
+
+                    this.demoTimeouts.push(
+                        setTimeout(() => {
+                            this.isCodeView = false;
+                        }, 1400)
+                    );
+
+                }, 1800)
+            );
+        },
         getImagePath(path) {
             if (!path) return "";
             const config = useRuntimeConfig();
@@ -114,7 +145,26 @@ export default {
             const normalized = path.startsWith("/") ? path : `/${path}`;
             return `${cleanBase}${normalized}`;
         }
-    }
+    },
+    mounted() {
+        this.observer = new IntersectionObserver(([entry]) => {
+            if (entry.isIntersecting && !this.demoPlayed) {
+                this.playDemoFlip();
+                this.observer.disconnect();
+            }
+        }, {
+            threshold: 0.5
+        });
+
+        this.observer.observe(this.$el);
+    },
+    beforeUnmount() {
+        this.demoTimeouts.forEach(clearTimeout);
+
+        if (this.observer) {
+            this.observer.disconnect();
+        }
+    },
 };
 </script>
 
@@ -124,7 +174,7 @@ export default {
     height: 100%;
     perspective: 1500px;
     background: transparent;
-    overflow: visible !important;
+    overflow: hidden;
 }
 
 .flip-card-inner {
@@ -145,7 +195,7 @@ export default {
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    border-radius: 12px;
+    border-radius: 4px;
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
@@ -166,7 +216,7 @@ export default {
     position: absolute;
     bottom: 24px;
     right: 24px;
-    background: rgba(18, 18, 18, 0.85);
+    background: var(--accent-green);
     backdrop-filter: blur(8px);
     border: 1px solid rgba(212, 155, 179, 0.4);
     color: #fff;
@@ -258,7 +308,7 @@ export default {
 }
 
 .terminal-body {
-    padding: 24px;
+    padding: 12px;
     overflow-y: auto;
     flex-grow: 1;
     background: #121212;
@@ -286,5 +336,32 @@ export default {
     user-select: none;
     width: 24px;
     text-align: right;
+}
+
+.terminal-body,
+.terminal-body *,
+.code-line,
+.code-line span {
+  user-select: text;
+  -webkit-user-select: text;
+  pointer-events: auto;
+}
+@media (max-width: 576px) {
+    .terminal-close {
+        padding: 3px 6px;
+        font-size: 9px;
+        border-radius: 4px;
+    }
+
+    .terminal-title {
+        position: static;
+        transform: none;
+        font-size: 11px;
+        margin-left: 50px;
+    }
+
+    .terminal-body {
+        padding: 12px;
+    }
 }
 </style>

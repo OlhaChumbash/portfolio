@@ -20,7 +20,7 @@
   "index": {
     "pre_title_1": "Olha Chumbash",
     "title_1": "Full Stack",
-    "title_2": "Developer  ",
+    "title_2": "Developer",
     "button": "Let's work together",
     "all_projects": "All Projects",
     "scroll_down": "Scroll Down",
@@ -36,6 +36,18 @@
       "title": "My Professional Growth and Experience",
       "awards": "Professional Achievements",
       "items": {
+        "fullstack_developer": {
+          "year": "October 2025 – May 2026",
+          "title": "Fullstack Developer",
+          "text": "Developing and maintaining modern web applications and websites. Building interactive features, responsive layouts, and user-friendly interfaces. Integrating multilingual support, managing content, optimizing performance, and continuously improving existing projects.",
+          "meta": "Vinnytsia IT Academy"
+        },
+        "junior_fullstack_developer": {
+          "year": "November 2023 – October 2025",
+          "title": "Junior Fullstack Developer",
+          "text": "Developed full-stack web applications, admin panels, and websites for real client projects. Implemented backend logic, REST APIs, and databases using PHP/Laravel, Node.js/Express, PostgreSQL, and MongoDB. Built dynamic frontends with Vue.js, JavaScript, HTML, CSS, and EJS while ensuring reliable form validation and application stability.",
+          "meta": "Freelance · Vinnytsia IT Academy Projects"
+        },
         "logistics_manager": {
           "year": "February 2017 - February 2022",
           "title": "Logistics Manager",
@@ -110,7 +122,7 @@
             },
             {
               "title": "Express.js",
-              "icon": "devicon-express-original"
+              "icon": "devicon-express-original text-primary"
             },
             {
               "title": "Laravel",
@@ -135,6 +147,10 @@
             {
               "title": "Next.js",
               "icon": "devicon-nextjs-plain colored"
+            },
+            {
+              "title": "Swagger",
+              "icon": "devicon-swagger-plain colored"
             }
           ]
         },
@@ -161,7 +177,7 @@
           "items": [
             {
               "title": "GitHub",
-              "icon": "devicon-github-original"
+              "icon": "devicon-github-original text-dark"
             },
             {
               "title": "Git",
@@ -225,25 +241,34 @@
               "title": "OOP"
             },
             {
-              "title": "Pixel Perfect"            
+              "title": "FSD (Feature-Sliced Design)"
             },
             {
-              "title": "Responsive Design"            
+              "title": "SOLID / DRY / KISS"
             },
             {
-              "title": "CI/CD Basics"            
+              "title": "REST API / GraphQL"
             },
             {
-              "title": "Unit Testing"            
+              "title": "Core Web Vitals & Optimization"
+            },
+            {
+              "title": "Responsive & Pixel Perfect"
+            },
+            {
+              "title": "Accessibility (a11y)"
+            },
+            {
+              "title": "CI/CD Basics"
+            },
+            {
+              "title": "Unit Testing"
             },
             {
               "title": "PWA"
             },
             {
-              "title": "SDLC"              
-            },
-            {
-              "title": "Scrum"
+              "title": "SDLC / Scrum"
             },
             {
               "title": "Microservices"
@@ -299,7 +324,7 @@
     "education": {
       "title": "Education & Professional Training",
       "item_1": {
-        "images": [],
+        "images": [ "index/education/certificates/certificate_44.webp"],
         "title": "Fullstack Developer",
         "place": "Vinnytsia IT Academy",
         "date": "February 2023 — Present",
@@ -318,7 +343,7 @@
           "index/education/certificates/certificate_25.webp",
           "index/education/certificates/certificate_31.webp"
         ],
-        "title": "German Language Course B2",
+        "title": "German language course B2",
         "place": "Volkshochschule Chemnitz",
         "date": "January 2025 — June 2025",
         "description": "Intensive B2 level German language course designed to improve professional and everyday communication.",
@@ -425,7 +450,7 @@
     "view_project": "View Project",
     "hero": {
       "pre_title": "MY PROJECTS",
-      "title": "Solutions merging design and technology",
+      "title": "PRACTICAL EXPERIENCE BUILDING MODERN WEB SOLUTIONS",
       "breadcrumb_main": "Home",
       "breadcrumb_current": "Projects"
     },
@@ -898,7 +923,7 @@
     "privacy_link": "privacy policy",
     "button": "Submit",
     "success": "Your message has been sent successfully",
-    "error": "Something went wrong. Please try again.",    
+    "error": "Something went wrong. Please try again.",
     "errors": {
       "required": "This field is required",
       "email": "Please enter a valid email address",
@@ -935,7 +960,7 @@
         "title": "Address",
         "values": [
           "09111 Chemnitz, Germany",
-          "0629 Mariupol, Ukraine"
+          "87555 Mariupol, Ukraine"
         ]
       },
       "social": {
@@ -1071,7 +1096,7 @@
         {
           "title": "EU Dispute Resolution (Online Dispute Resolution)",
           "paragraphs": [
-            "The European Commission provides a platform for online dispute resolution (ODR): https://ec.europa.eu/consumers/odr.",
+            "The European Commission provides a platform for online dispute resolution (ODR): {url}",
             "We are neither obligated nor willing to participate in dispute resolution proceedings before a consumer arbitration board."
           ]
         }

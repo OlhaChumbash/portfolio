@@ -6,7 +6,7 @@
     </div>
 
     <div class="slider__portfolio-btn">
-      <nuxt-link href="/projects" class="slider-portfolio-btn">
+      <nuxt-link to="/projects" class="slider-portfolio-btn">
         <svg width="12" height="12" viewBox="0 0 14 14" fill="none">
           <path
             d="M3.5 2.25001C3.5 1.28351 2.7165 0.500001 1.75 0.500001C0.783502 0.500001 0 1.28351 0 2.25001C0 3.2165 0.783502 4 1.75 4C2.7165 4 3.5 3.2165 3.5 2.25001Z"
@@ -26,9 +26,9 @@
     </div>
 
     <div class="slider__mouse-scroll smooth d-flex align-items-center">
-      <a href="#footer" class="mouse-scroll-icon"></a>
+      <a href="#footer" class="mouse-scroll-icon slider-portfolio-btn"></a>
       <p>
-        <a href="#footer">{{ $t('index.scroll_down') }}</a>
+        <a href="#footer" class="slider-portfolio-btn">{{ $t('index.scroll_down') }}</a>
       </p>
     </div>
 
@@ -47,7 +47,7 @@
             </h3>
 
             <div class="slider__btn-2" data-sal="slide-up" data-sal-delay="160" data-sal-duration="1100">
-              <button type="button" class="tp-btn-green" data-bs-toggle="modal" data-bs-target="#requestModal">
+              <button type="button" class="tp-btn-white" data-bs-toggle="modal" data-bs-target="#requestModal">
                 {{ $t('index.button') }}
               </button>
             </div>
@@ -65,19 +65,19 @@
 
       </div>
     </div>
-    <ProductModal modal_id="requestModal" />
+    <RequestModal modal_id="requestModal" />
   </section>
 </template>
 
 <script>
 import SalScrollAnimationMixin from '~/mixins/SalScrollAnimationMixin'
-import ProductModal from '~/components/common/modals/ProductModal.vue'
+import RequestModal from '~/components/common/modals/RequestModal.vue'
 import TypewriterText from "@/components/common/TypewriterText.vue";
 import MatrixRain from "@/components/index/MatrixRain.vue"; 
 
 export default {
   components: {
-    ProductModal,
+    RequestModal,
     TypewriterText,
     MatrixRain
   },
@@ -97,24 +97,27 @@ export default {
   position: relative;
 }
 
-.slider__shape-2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  overflow: hidden;
-  pointer-events: none; 
-}
-
 .slider__content-wrapper {
   position: relative;
   z-index: 2;
   width: 100%;
 }
 
-/* Збільшуємо відстань між текстом та картинкою на великих моніторах */
+.slider__portfolio-btn {
+  position: absolute; 
+  z-index: 999 !important; 
+}
+
+.slider-portfolio-btn {
+  position: relative;
+  z-index: 1000 !important;
+  display: inline-flex; 
+  align-items: center;
+  pointer-events: auto !important; 
+}
+.slider__mouse-scroll-link{
+  color: var(--text-primary);
+}
 @media (min-width: 1200px) {
   .ml-60 {
     margin-left: 60px !important;

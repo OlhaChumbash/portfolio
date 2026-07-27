@@ -77,6 +77,18 @@ export default {
   computed: {
     history_lists() {
       return [
+         {
+          year: this.$t('index.work_experience.items.fullstack_developer.year'),
+          title: this.$t('index.work_experience.items.fullstack_developer.title'),
+          text: this.$t('index.work_experience.items.fullstack_developer.text'),
+          meta: this.$t('index.work_experience.items.fullstack_developer.meta'),
+        },
+        {
+          year: this.$t('index.work_experience.items.junior_fullstack_developer.year'),
+          title: this.$t('index.work_experience.items.junior_fullstack_developer.title'),
+          text: this.$t('index.work_experience.items.junior_fullstack_developer.text'),
+          meta: this.$t('index.work_experience.items.junior_fullstack_developer.meta'),
+        },
         {
           year: this.$t('index.work_experience.items.logistics_manager.year'),
           title: this.$t('index.work_experience.items.logistics_manager.title'),
@@ -130,4 +142,5 @@ export default {
   background: var(--text-muted);
   z-index: 1;
 }
+
 </style>

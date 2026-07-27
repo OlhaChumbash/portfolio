@@ -15,19 +15,25 @@
                   {{ t(`legal.${props.pageKey}.blocks.${blockIndex}.title`) }}
                 </h2>
 
-                <p 
-                  v-for="pIndex in getParagraphIndices(blockIndex)" 
-                  :key="pIndex" 
-                  class="legal__paragraph"
-                >
-                  {{ t(`legal.${props.pageKey}.blocks.${blockIndex}.paragraphs.${pIndex}`) }}
+                <p v-for="pIndex in getParagraphIndices(blockIndex)" :key="pIndex" class="legal__paragraph">
+                  <!-- Используем официальный компонент интерполяции. Линтер JSON будет доволен! -->
+                  <i18n-t :keypath="`legal.${props.pageKey}.blocks.${blockIndex}.paragraphs.${pIndex}`" scope="global">
+                    <!-- Связываем плейсхолдер {url} из JSON со слотом #url -->
+                    <template #url>
+                      <a 
+                        href="https://ec.europa.eu/consumers/odr" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        class="legal__link"
+                      >
+                        https://ec.europa.eu/consumers/odr
+                      </a>
+                    </template>
+                  </i18n-t>
                 </p>
 
                 <ul v-if="hasList(blockIndex)" class="legal__list">
-                  <li 
-                    v-for="lIndex in getListIndices(blockIndex)" 
-                    :key="lIndex"
-                  >
+                  <li v-for="lIndex in getListIndices(blockIndex)" :key="lIndex">
                     {{ t(`legal.${props.pageKey}.blocks.${blockIndex}.list.${lIndex}`) }}
                   </li>
                 </ul>
@@ -122,6 +128,7 @@ useHead({
 .legal__block-title {
   font-size: 1.1rem;
   margin-bottom: 12px;
+  color: var(--bg-primary);
 }
 
 .legal__paragraph,
@@ -132,5 +139,15 @@ useHead({
 
 .legal__list {
   padding-left: 18px;
+}
+
+/* Стилизация внешней ссылки */
+:deep(.legal__link) {
+  color: #0066cc;
+  text-decoration: underline;
+  word-break: break-all;
+}
+:deep(.legal__link:hover) {
+  text-decoration: none;
 }
 </style>

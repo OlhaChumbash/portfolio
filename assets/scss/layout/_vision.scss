@@ -18,7 +18,7 @@
                     font-family: var(--tp-ff-space);
                     font-weight: 500;
                     font-size: 17px;
-                    color: var(--text-muted);
+                    color: var(--bg-primary);
                     padding: 24px 36px;
                     width: 100%;
                     text-align: left;
@@ -68,10 +68,10 @@
                     &:hover,
                     &.active{
                         box-shadow: 0px 4px 10px rgba(150, 21, 35, 0.3);
-                        color: var(--tp-common-white);
+                        color: var(--bg-primary);
 
                         & span{
-                            color: var(--tp-common-white);
+                            color: var(--bg-primary);
                         }
                         &::after{
                             opacity: 1;

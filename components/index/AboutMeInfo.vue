@@ -28,9 +28,11 @@
                   <path d="M7 1L13 7L7 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
               </button>
+
             </div>
           </div>
           </div>
+          
         </div>
       </div>
     </div>
@@ -47,7 +49,8 @@ export default {
       const locale = this.$i18n.locale || 'uk';
       const fileName = locale === 'de' ? 'cv-de.pdf' : locale === 'en' ? 'cv-en.pdf' : 'cv-ua.pdf';
       const link = document.createElement('a');
-      link.href = `/cv/${fileName}`;
+      const config = useRuntimeConfig()
+      link.href = `${config.app.baseURL}cv/${fileName}`
       link.download = fileName;
       document.body.appendChild(link);
       link.click();
@@ -56,3 +59,23 @@ export default {
   },
 };
 </script>
+<style>
+.about__me-info-content,
+.about__me-info-content p,
+.about__me-info-content h4 {
+  position: relative !important;
+   user-select: text !important;
+  -webkit-user-select: text !important;
+  -moz-user-select: text !important;
+  -ms-user-select: text !important;
+  pointer-events: auto !important;
+  cursor: text !important;
+  transform: translateZ(0) !important;
+  will-change: transform, opacity;
+}
+
+.about__me-info-content::before,
+.about__me-info-content::after {
+  display: none !important;
+}
+</style>

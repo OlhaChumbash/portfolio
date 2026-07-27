@@ -6,8 +6,9 @@
       <div class="row">
         <div v-for="(item, index) in contactItems" :key="index" class="col-xl-4 col-lg-4 col-md-6">
           <div class="contact__item text-center mb-30 transition-3 white-bg">
-            <div class="contact__icon">
-              <img :src="item.icon" alt="">
+            <!-- ЗАМІНЕНО: тепер тут універсальний тег <i> замість <img> -->
+            <div class="contact__icon-box">
+              <i :class="[item.iconClass, 'contact__main-icon']"></i>
             </div>
             <div class="contact__content">
               <span class="contact-item-subtitle">
@@ -25,7 +26,7 @@
                   <span v-else-if="link.type === 'address'">
                     {{ link.value }}
                   </span>
-                  <a v-else :href="link.url" target="_blank" rel="noopener noreferrer">
+                  <a v-else :href="link.url" target="_blank" rel="noopener noreferrer" class="social-link-item">
                     <i :class="link.icon"></i>
                     {{ link.name }}
                   </a>
@@ -42,9 +43,6 @@
       <div class="row">
         <div class="col-xl-12">
           <div class="contact__form-2">
-            <!-- <h3 class="contact__form-2-title">
-              {{ $t('contacts.form_title') }}
-            </h3> -->
             <contact-form />
             <p class="ajax-response"></p>
           </div>
@@ -57,9 +55,6 @@
 <script>
 import ContactForm from './ContactForm.vue';
 import ContactTopArea from './ContactTopArea.vue';
-import location_icon_1 from "~/assets/img/contact/icon/contact-icon-1.png";
-import location_icon_2 from "~/assets/img/contact/icon/contact-icon-2.png";
-import location_icon_3 from "~/assets/img/contact/icon/contact-icon-3.png";
 
 export default {
   components: {
@@ -70,7 +65,8 @@ export default {
     contactItems() {
       return [
         {
-          icon: location_icon_1,
+          // Клас для іконки слухавки / зв'язку (Font Awesome)
+          iconClass: 'fas fa-phone-alt', 
           subtitle: this.$t('contacts.items.contact.title'),
           links: [
             {
@@ -85,7 +81,8 @@ export default {
         },
 
         {
-          icon: location_icon_3,
+          // Клас для іконки карти / локації
+          iconClass: 'fas fa-map-marker-alt', 
           subtitle: this.$t('contacts.items.address.title'),
           links: this.$tm('contacts.items.address.values').map((_, index) => ({
             type: 'address',
@@ -94,7 +91,8 @@ export default {
         },
 
         {
-          icon: location_icon_2,
+          // Клас для іконки "користувачі" або "мережі"
+          iconClass: 'fas fa-share-alt', 
           subtitle: this.$t('contacts.items.social.title'),
           links: this.$tm('contacts.items.social.links').map((_, index) => ({
             type: 'social',
@@ -110,9 +108,34 @@ export default {
 </script>
 
 <style scoped>
-.content a, .content span{
+.content a, .content span {
   display: block;
   font-size: 22px;
   margin-bottom: 8px;
+  color: var(--bg-primary); 
+  transition: color 0.3s ease;
+}
+
+.content a:hover {
+  color: var(--accent-rose); 
+}
+
+.contact__icon-box {
+  margin-bottom: 20px;
+}
+
+.contact__main-icon {
+  font-size: 80px; 
+  color: var(--accent-green); 
+  transition: color 0.3s ease;
+}
+
+.contact__item:hover .contact__main-icon {
+  color: var(--accent-rose); 
+}
+
+.social-link-item i {
+  margin-right: 8px; 
+  color: inherit; 
 }
 </style>

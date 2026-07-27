@@ -12,22 +12,22 @@
       </span>
 
       <ul :class="['footer__lang-list', 'tp-lang-list-2', open ? 'tp-lang-list-open-2' : '']">
-        <li v-if="$i18n.locale !== 'ua'" @click="switchLang('ua')" class="footer__lang-item">
-          <img class="footer__lang-flag" :src="flagUa" alt="Українська" />
+        <li v-if="activeLocale !== 'ua'" @click="switchLang('ua')" class="footer__lang-item">
+          <img class="footer__lang-flag" :src="flags.ua" alt="Українська" />
           <span>
             {{ labelFormat === "short" ? "UA" : "Українська" }}
           </span>
         </li>
 
-        <li v-if="$i18n.locale !== 'de'" @click.stop="switchLang('de')" class="footer__lang-item">
-          <img class="footer__lang-flag" :src="flagDe" alt="Deutsch" />
+        <li v-if="activeLocale !== 'de'" @click.stop="switchLang('de')" class="footer__lang-item">
+          <img class="footer__lang-flag" :src="flags.de" alt="Deutsch" />
           <span>
             {{ labelFormat === "short" ? "DE" : "Deutsch" }}
           </span>
         </li>
 
-        <li v-if="$i18n.locale !== 'en'" @click="switchLang('en')" class="footer__lang-item">
-          <img class="footer__lang-flag" :src="flagEn" alt="English" />
+        <li v-if="activeLocale !== 'en'" @click="switchLang('en')" class="footer__lang-item">
+          <img class="footer__lang-flag" :src="flags.en" alt="English" />
           <span>
             {{ labelFormat === "short" ? "EN" : "English" }}
           </span>
@@ -37,82 +37,73 @@
   </div>
 </template>
 
-<script>
-import flagUa from "~/assets/img/common/lang-ua.webp";
-import flagEn from "~/assets/img/common/lang-en.webp";
-import flagDe from "~/assets/img/common/lang-de.webp";
+<script setup>
+import { computed, ref, onMounted } from 'vue'
+import { useI18n } from '#imports'
 
+import flagUa from "~/assets/img/common/lang-ua.webp"
+import flagEn from "~/assets/img/common/lang-en.webp"
+import flagDe from "~/assets/img/common/lang-de.webp"
 
-export default {
-  props: {
-    labelFormat: {
-      type: String,
-      default: "full",
-    },
-    direction: {
-      type: String,
-      default: "up",
-    },
-    theme: {
-      type: String,
-      default: "dark", // або "light"
-    },
+const props = defineProps({
+  labelFormat: {
+    type: String,
+    default: "full",
   },
-  data() {
-    return {
-      open: false,
-      flagUa,
-      flagEn,
-      flagDe
-    };
+  direction: {
+    type: String,
+    default: "up",
   },
-  computed: {
-    currentLangLabel() {
-      if (this.labelFormat === "short") {
-        if (this.$i18n.locale === "ua") return "UA";
-        if (this.$i18n.locale === "de") return "DE";
-        return "EN";
-      }
-      if (this.$i18n.locale === "ua") return "Українська";
-      if (this.$i18n.locale === "de") return "Deutsch";
-      return "English";
-    },
-    currentFlag() {
-      switch (this.$i18n.locale) {
-        case "ua":
-          return this.flagUa;
-        case "de":
-          return this.flagDe;
-        case "en":
-          return this.flagEn;
-        default:
-          return this.flagEn;
-      }
-    },
-    directionClass() {
-      return this.direction === "down" ? "lang-dropdown-down" : "lang-dropdown-up";
-    },
-    themeClass() {
-      return this.theme === "light" ? "lang-light" : "lang-dark";
-    },
+  theme: {
+    type: String,
+    default: "dark",
   },
-  methods: {
-    handleToggle() {
-      this.open = !this.open;
-    },
-    switchLang(lang) {
-      this.$i18n.setLocale(lang);
-      localStorage.setItem("lang", lang);
-      this.open = false;
-    },
-  },
-  mounted() {
-    const savedLang = localStorage.getItem("lang");
-    if (savedLang && savedLang !== this.$i18n.locale) {
-      this.$i18n.setLocale(savedLang);
-    }
-  },
-};
+})
+
+const { locale, setLocale } = useI18n()
+const open = ref(false)
+const flags = {
+  ua: flagUa,
+  en: flagEn,
+  de: flagDe
+}
+
+const activeLocale = computed(() => locale.value)
+const currentLangLabel = computed(() => {
+  const isShort = props.labelFormat === "short"
+  if (activeLocale.value === "ua") return isShort ? "UA" : "Українська"
+  if (activeLocale.value === "de") return isShort ? "DE" : "Deutsch"
+  return isShort ? "EN" : "English"
+})
+
+const currentFlag = computed(() => {
+  return flags[activeLocale.value] || flags.en
+})
+
+const directionClass = computed(() => {
+  return props.direction === "down" ? "lang-dropdown-down" : "lang-dropdown-up"
+})
+
+const themeClass = computed(() => {
+  return props.theme === "light" ? "lang-light" : "lang-dark"
+})
+
+const handleToggle = () => {
+  open.value = !open.value
+}
+
+const switchLang = async (lang) => {
+  await setLocale(lang)
+  localStorage.setItem("lang", lang)
+  open.value = false
+}
+
+onMounted(() => {
+  const savedLang = localStorage.getItem("lang")
+  if (savedLang && savedLang !== locale.value) {
+    setLocale(savedLang)
+  }
+})
 </script>
 
 <style lang="scss" scoped>

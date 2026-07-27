@@ -1,7 +1,7 @@
 {
   "seo": {
     "index": {
-      "title": "Ольга Чумбаш Портфоліо Junior Full Stack Developer ",
+      "title": "Ольга Чумбаш Портфоліо Junior Full Stack Developer",
       "description": "Портфоліо Ольги Чумбаш — Junior Full Stack Developer. Проєкти, навички, досвід роботи, освіта, сертифікати та контактна інформація."
     },
     "projects": {
@@ -20,7 +20,7 @@
   "index": {
     "pre_title_1": "Ольга Чумбаш",
     "title_1": "Full Stack",
-    "title_2": "Developer  ",
+    "title_2": "Developer",
     "button": "Давайте працювати разом",
     "all_projects": "Усі проєкти",
     "scroll_down": "Scroll Down",
@@ -36,6 +36,18 @@
       "title": "Мій професійний розвиток та досвід",
       "awards": "Професійні досягнення",
       "items": {
+        "fullstack_developer": {
+          "year": "Жовтень 2025 — Травень 2026",
+          "title": "Fullstack Developer",
+          "text": "Розробка та підтримка сучасних вебзастосунків і вебсайтів. Створення інтерактивних функцій, адаптивних інтерфейсів і багатомовної підтримки. Робота з керуванням контентом, оптимізацією продуктивності та постійним вдосконаленням проєктів.",
+          "meta": "Вінницька IT-Академія"
+        },
+        "junior_fullstack_developer": {
+          "year": "Листопад 2023 — Жовтень 2025",
+          "title": "Junior Fullstack Developer",
+          "text": "Розробка Fullstack вебзастосунків, адміністративних панелей і вебсайтів для реальних клієнтських проєктів. Реалізація серверної логіки, REST API та баз даних із використанням PHP/Laravel, Node.js/Express, PostgreSQL і MongoDB. Створення динамічних інтерфейсів на Vue.js, JavaScript, HTML, CSS та EJS, а також впровадження надійної валідації форм.",
+          "meta": "Фриланс · проєкти Вінницької IT-Академії"
+        },
         "logistics_manager": {
           "year": "Лютий 2017 - Лютий 2022",
           "title": "Менеджерка з логістики",
@@ -110,7 +122,7 @@
             },
             {
               "title": "Express.js",
-              "icon": "devicon-express-original"
+              "icon": "devicon-express-original text-primary"
             },
             {
               "title": "Laravel",
@@ -135,6 +147,10 @@
             {
               "title": "Next.js",
               "icon": "devicon-nextjs-plain colored"
+            },
+            {
+              "title": "Swagger",
+              "icon": "devicon-swagger-plain colored"
             }
           ]
         },
@@ -161,7 +177,7 @@
           "items": [
             {
               "title": "GitHub",
-              "icon": "devicon-github-original"
+              "icon": "devicon-github-original text-dark"
             },
             {
               "title": "Git",
@@ -225,25 +241,34 @@
               "title": "OOP"
             },
             {
-              "title": "Pixel Perfect"            
+              "title": "FSD (Feature-Sliced Design)"
             },
             {
-              "title": "Responsive Design"            
+              "title": "SOLID / DRY / KISS"
             },
             {
-              "title": "CI/CD Basics"            
+              "title": "REST API / GraphQL"
             },
             {
-              "title": "Unit Testing"            
+              "title": "Core Web Vitals & Optimization"
+            },
+            {
+              "title": "Responsive & Pixel Perfect"
+            },
+            {
+              "title": "Accessibility (a11y)"
+            },
+            {
+              "title": "CI/CD Basics"
+            },
+            {
+              "title": "Unit Testing"
             },
             {
               "title": "PWA"
             },
             {
-              "title": "SDLC"              
-            },
-            {
-              "title": "Scrum"
+              "title": "SDLC / Scrum"
             },
             {
               "title": "Microservices"
@@ -299,7 +324,7 @@
     "education": {
       "title": "Освіта та підвищення кваліфікації",
       "item_1": {
-        "images": [],
+        "images": [ "index/education/certificates/certificate_44.webp"],
         "title": "Fullstack Developer",
         "place": "Вінницька IT-Академія",
         "date": "Лютий 2023 — дотепер",
@@ -367,7 +392,7 @@
           "index/education/certificates/certificate_8.webp",
           "index/education/certificates/certificate_9.webp"
         ],
-        "title": "Google Сертифікати",
+        "title": "Google сертифікати",
         "place": "Google",
         "date": "Червень 2025 — Вересень 2025",
         "description": "Сертифікаційна програма Google, присвячена основам IT-підтримки та технічного обслуговування.",
@@ -425,7 +450,7 @@
     "view_project": "Переглянути проєкт",
     "hero": {
       "pre_title": "МОЇ ПРОЄКТИ",
-      "title": "Рішення, які поєднують дизайн і технології",
+      "title": "Практичний досвід у створенні сучасних веб-рішень",
       "breadcrumb_main": "Головна",
       "breadcrumb_current": "Проєкти"
     },
@@ -895,7 +920,7 @@
     "phone": "Телефон*",
     "message": "Ваше повідомлення*",
     "privacy_text": "Я погоджуюся з",
-    "privacy_link": "політикою приватності",    
+    "privacy_link": "політикою приватності",
     "button": "Надіслати",
     "success": "Ваше повідомлення успішно відправлено",
     "error": "Помилка відправки форми. Спробуйте ще раз.",
@@ -932,12 +957,12 @@
         ]
       },
       "address": {
-      "title": "Адреса",
-      "values": [
-        "09111 Хемніц, Німеччина",
-        "0629 Маріуполь, Україна"
-      ]
-    },
+        "title": "Адреса",
+        "values": [
+          "09111 Хемніц, Німеччина",
+          "87555 Маріуполь, Україна"
+        ]
+      },
       "social": {
         "title": "Соціальні мережі",
         "links": [
@@ -984,7 +1009,7 @@
     "message": "Повідомлення",
     "submit": "Надіслати",
     "success": "Повідомлення успішно надіслано"
-  },  
+  },
   "legal": {
     "privacy": {
       "title": "Політика приватності",
@@ -1069,10 +1094,10 @@
           ]
         },
         {
-          "title": "Вирішення суперечок в ЄС (Online-Streitbeilegung)",
+          "title": "Врегулювання суперечок в ЄС (Онлайн-врегулювання суперечок)",
           "paragraphs": [
-            "Європейська комісія надає платформу для онлайн-вирішення суперечок (OS): https://ec.europa.eu/consumers/odr.",
-            "Ми не зобов'язані та не готові брати участь у процедурах вирішення спорів перед споживчим арбітражним органом."
+            "Європейська комісія надає платформу для онлайн-врегулювання суперечок (ODR): {url}",
+            "Ми не зобов'язані та не маємо наміру брати участь у процедурах врегулювання суперечок у споживчому арбітражі."
           ]
         }
       ]
