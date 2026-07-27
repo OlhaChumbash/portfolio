@@ -115,6 +115,7 @@ const galleryImages = [
   baseAsset("/index/education/certificates/certificate_7.webp"),
   baseAsset("/index/education/certificates/certificate_34.webp"),
   baseAsset("/index/education/certificates/certificate_8.webp"),
+  baseAsset("/index/education/certificates/certificate_44.webp"),
   baseAsset("/index/education/certificates/certificate_9.webp"),
   baseAsset("/index/education/certificates/certificate_10.webp"),
   baseAsset("/index/education/certificates/certificate_35.webp"),

@@ -324,7 +324,7 @@
     "education": {
       "title": "Освіта та підвищення кваліфікації",
       "item_1": {
-        "images": [],
+        "images": [ "index/education/certificates/certificate_44.webp"],
         "title": "Fullstack Developer",
         "place": "Вінницька IT-Академія",
         "date": "Лютий 2023 — дотепер",
