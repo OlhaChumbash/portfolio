@@ -324,7 +324,7 @@
     "education": {
       "title": "Education & Professional Training",
       "item_1": {
-        "images": [],
+        "images": [ "index/education/certificates/certificate_44.webp"],
         "title": "Fullstack Developer",
         "place": "Vinnytsia IT Academy",
         "date": "February 2023 — Present",

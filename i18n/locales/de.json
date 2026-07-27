@@ -324,7 +324,7 @@
     "education": {
       "title": "Ausbildung und Weiterbildung",
       "item_1": {
-        "images": [],
+        "images": [ "index/education/certificates/certificate_44.webp"],
         "title": "Fullstack Developer",
         "place": "IT-Akademie Winnyzja",
         "date": "Februar 2023 — heute",
