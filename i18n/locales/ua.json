@@ -322,12 +322,27 @@
       ]
     },
     "education": {
-      "title": "Освіта та підвищення кваліфікації",
+      "title": "Освіта та підвищення кваліфікації",      
       "item_1": {
+        "images": [],
+        "title": "Перекваліфікація на фахівчиню з розробки програмного забезпечення",
+        "place": "Robotron Bildungs- und Beratungszentrum GmbH",
+        "date": "Серпень 2026 — дотепер",
+        "description": "Професійна перекваліфікація за спеціальністю розробки програмного забезпечення з акцентом на створенні, впровадженні та супроводі програмних застосунків.",
+        "list": [
+          "Програмування та розробка програмного забезпечення",
+          "Об'єктно-орієнтоване програмування",
+          "Бази даних і SQL",
+          "Веброзробка",
+          "Тестування програмного забезпечення та виправлення помилок",
+          "Планування та реалізація програмних проєктів"
+        ]
+      },
+      "item_2": {
         "images": [ "index/education/certificates/certificate_44.webp"],
         "title": "Fullstack Developer",
         "place": "Вінницька IT-Академія",
-        "date": "Лютий 2023 — дотепер",
+        "date": "Лютий 2023 — Червень 2026",
         "description": "Навчання за напрямом Fullstack Developer. Отримані практичні навички створення сучасних вебзастосунків, роботи з клієнтською та серверною частиною.",
         "list": [
           "Frontend-розробка",
@@ -338,7 +353,7 @@
           "Розробка повноцінних вебзастосунків"
         ]
       },
-      "item_2": {
+      "item_3": {
         "images": [
           "index/education/certificates/certificate_25.webp",
           "index/education/certificates/certificate_31.webp"
@@ -354,7 +369,7 @@
           "Підготовка до роботи в німецькомовному середовищі"
         ]
       },
-      "item_3": {
+      "item_4": {
         "images": [
           "index/education/certificates/certificate_1.webp",
           "index/education/certificates/certificate_2.webp",
@@ -387,7 +402,7 @@
           "Full-Stack Development"
         ]
       },
-      "item_4": {
+      "item_5": {
         "images": [
           "index/education/certificates/certificate_8.webp",
           "index/education/certificates/certificate_9.webp"
@@ -404,7 +419,7 @@
           "Усунення технічних проблем"
         ]
       },
-      "item_5": {
+      "item_6": {
         "images": [
           "index/education/certificates/certificate_21.webp",
           "index/education/certificates/certificate_22.webp",
@@ -423,7 +438,7 @@
           "JavaScript"
         ]
       },
-      "item_6": {
+      "item_7": {
         "images": [
           "index/education/certificates/certificate_26.webp",
           "index/education/certificates/certificate_27.webp",

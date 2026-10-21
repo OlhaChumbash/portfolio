@@ -283,7 +283,7 @@ export default {
 
 .terminal-title {
     position: absolute;
-    left: 50%;
+    left: 48%;
     transform: translateX(-50%);
     font-family: 'Fira Code', monospace;
     font-size: 13px;
@@ -358,6 +358,7 @@ export default {
         transform: none;
         font-size: 11px;
         margin-left: 50px;
+        left: 0;
     }
 
     .terminal-body {
