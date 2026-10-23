@@ -322,20 +322,25 @@
       ]
     },
     "education": {
-      "title": "Ausbildung und Weiterbildung",      
+      "title": "Ausbildung und Weiterbildung",    
       "item_1": {
         "images": [],
         "title": "Umschulung zur Fachinformatikerin für Anwendungsentwicklung",
         "place": "Robotron Bildungs- und Beratungszentrum GmbH",
         "date": "August 2026 — heute",
-        "description": "Berufliche Umschulung zur Fachinformatikerin für Anwendungsentwicklung mit Schwerpunkt auf der Entwicklung, Implementierung und Wartung von Softwareanwendungen.",
+        "description": "Berufliche Umschulung zur Fachinformatikerin für Anwendungsentwicklung mit Schwerpunkt auf der Entwicklung, Implementierung und Wartung von Softwareanwendungen. Die Umschulung vermittelt fundierte IT-Kenntnisse, praxisorientierte Entwicklungskompetenzen und bereitet auf den IHK-Abschluss vor.",
         "list": [
-          "Programmierung und Softwareentwicklung",
-          "Objektorientierte Programmierung",
-          "Datenbanken und SQL",
-          "Webentwicklung",
-          "Softwaretests und Fehlerbehebung",
-          "Planung und Umsetzung von Softwareprojekten"
+          "Vorbereitung auf den IHK-Abschluss als Fachinformatikerin für Anwendungsentwicklung",
+          "Programmierung und Entwicklung moderner Softwareanwendungen",
+          "Objektorientierte Programmierung (OOP)",
+          "Datenbankdesign und SQL",
+          "Webentwicklung und Gestaltung von Benutzeroberflächen",
+          "Softwaretests, Debugging und Fehlerbehebung",
+          "Planung und Umsetzung von Softwareprojekten",
+          "IT-Sicherheit und Datenschutz",
+          "Praktische Berufserfahrung durch ein betriebliches Praktikum",
+          "Vorbereitung auf die theoretische und praktische IHK-Prüfung",
+          "Aufbau praxisrelevanter Kompetenzen für den deutschen IT-Arbeitsmarkt"
         ]
       },
       "item_2": {

@@ -322,22 +322,27 @@
       ]
     },
     "education": {
-      "title": "Education & Professional Training",
-        "item_1": {
-          "images": [],
-          "title": "Retraining as an IT Specialist in Application Development",
-          "place": "Robotron Bildungs- und Beratungszentrum GmbH",
-          "date": "August 2026 — Present",
-          "description": "Vocational retraining in application development, focusing on the development, implementation, and maintenance of software applications.",
-          "list": [
-            "Programming and software development",
-            "Object-oriented programming",
-            "Databases and SQL",
-            "Web development",
-            "Software testing and debugging",
-            "Planning and implementation of software projects"
-          ]
-        },
+      "title": "Education & Professional Training",       
+      "item_1": {
+        "images": [],
+        "title": "Retraining as an IT Specialist in Application Development",
+        "place": "Robotron Bildungs- und Beratungszentrum GmbH",
+        "date": "August 2026 — Present",
+        "description": "Vocational retraining in application development, focusing on the development, implementation, and maintenance of software applications. The program provides a solid foundation in IT, practical software development skills, and preparation for the German IHK professional qualification.",
+        "list": [
+          "Preparation for the IHK qualification as an IT Specialist in Application Development",
+          "Programming and modern software development",
+          "Object-oriented programming (OOP)",
+          "Database design and SQL",
+          "Web development and user interface design",
+          "Software testing, debugging, and troubleshooting",
+          "Planning and implementing software projects",
+          "IT security and data protection",
+          "Practical work experience through an industry internship",
+          "Preparation for the theoretical and practical IHK examinations",
+          "Development of practical skills for the German IT job market"
+        ]
+      },
       "item_2": {
         "images": [ "index/education/certificates/certificate_44.webp"],
         "title": "Fullstack Developer",
